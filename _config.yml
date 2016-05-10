@@ -110,7 +110,7 @@ defaults:
       path: "" # all files
     values:
       layout: "page"
-      show-avatar: false
+      show-avatar: true
 
 # Exclude these files from production site
 exclude:

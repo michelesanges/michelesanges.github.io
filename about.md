@@ -6,20 +6,12 @@ bigimg: "https://lh3.googleusercontent.com/Plk3cRXrnEwX5EzAmy-bF9ucbaRhTThCBcIUL
 ---
 Mi chiamo Michele Sanges. Non sono mai di buon umore.
 
-Se vuoi scrivermi, l'indirizzo è <michele.sanges@gmail.com>  
-Se vuoi scrivermi cose **riservatissime**, la mia chiave GPG è **AD0F8FA0**   
+Se vuoi scrivermi, l'indirizzo è <michele.sanges@gmail.com>.  
+Se vuoi scrivermi cose **riservatissime**, la mia chiave GPG è **AD0F8FA0**.   
 
-```gpg --keyserver a.keyserver.pki.scientia.net --recv-keys AD0F8FA0```  
+```gpg --keyserver pgp.mit.edu --recv-keys AD0F8FA0```  
+
 oppure  
-```gpg --keyserver a.keyserver.pki.scientia.net --search-keys michele.sanges@gmail.com```
 
-<!--My name is Inigo Montoya. I have the following qualities:
+```gpg --keyserver pgp.mit.edu --search-keys michele.sanges@gmail.com```
 
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.-->
