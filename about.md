@@ -9,7 +9,7 @@ Mi chiamo Michele Sanges. Non sono mai di buon umore.
 Se vuoi scrivermi, l'indirizzo è <michele.sanges@gmail.com>  
 Se vuoi scrivermi cose **riservatissime**, la mia chiave GPG è **AD0F8FA0**   
 
-```gpg --keyserver a.keyserver.pki.scientia.net --recv-keys AD0F8FA0```
+```gpg --keyserver a.keyserver.pki.scientia.net --recv-keys AD0F8FA0```  
 oppure  
 ```gpg --keyserver a.keyserver.pki.scientia.net --search-keys michele.sanges@gmail.com```
 
