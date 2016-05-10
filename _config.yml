@@ -68,7 +68,7 @@ footer-links-active:
   google-photo: true
   anobii: true
   #google-maps: true
-  email: true
+  email: false
   twitter: false
   github: true
   linkedin: false
