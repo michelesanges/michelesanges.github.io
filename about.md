@@ -7,7 +7,7 @@ bigimg: "https://lh3.googleusercontent.com/Plk3cRXrnEwX5EzAmy-bF9ucbaRhTThCBcIUL
 Mi chiamo Michele Sanges. Non sono mai di buon umore.
 
 Se vuoi scrivermi, l'indirizzo è <michele.sanges@gmail.com>.  
-Se vuoi scrivermi cose **riservatissime**, la mia chiave GPG è **AD0F8FA0**.   
+Se vuoi scrivermi cose **riservatissime**, l'ID della mia chiave GPG pubblica è **AD0F8FA0**.   
 
 ```gpg --keyserver pgp.mit.edu --recv-keys AD0F8FA0```  
 
