@@ -21,11 +21,6 @@ Il mio Medico
 come Medico  
 fa lo scrittore di ricette  
 il prescrittore di medicine sotto dettatura  
-Mi dia la Tachipirina  
-il Moment  
-due confezioni, prego  
-e ci metta pure la Novalgina  
-che la vita è dolorosa.  
 
 Il mio Medico  
 come Medico  
@@ -37,8 +32,7 @@ Il mio Medico
 come Medico  
 non usa l’email  
 ma ha una segretaria  
-che trascrive su un foglio le medicine  
-che i pazienti chiedono per telefono  
+che trascrive su un foglio le richieste dei pazienti__
 che dà al medico  
 che trascrive sulla ricetta  
 che dà alla segretaria  
@@ -71,7 +65,6 @@ Accompagnatore turistico
 Addestratore di cani  
 Aiuto cuoco  
 Antropologo  
-
 
 Chissà come sarebbe  
 il mio medico   
