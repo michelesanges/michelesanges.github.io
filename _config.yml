@@ -29,9 +29,12 @@ description: A virtual proof that name is awesome!
 navbar-links:
   Blog: "blog"
   Cicloturismo: "cicloturismo"
-  #Social:
-    #- Facebook: "https://www.facebook.com/sanges.michele"" target=_blank"
-    #- instagram: https://www.instagram.com/michele.sanges/
+  Social:
+    - Facebook: "https://www.facebook.com/sanges.michele"
+    - Instagram: "https://www.instagram.com/michele.sanges/"
+    - Photo Stream: "https://goo.gl/photos/VTacmZPyBwioSu2v5"
+    - Anobii: "http://www.anobii.com/michelesanges/books"
+    - GitHub: "https://github.com/michelesanges/"
   #Resources:
     #- Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     #- Learn markdown: "http://www.markdowntutorial.com/"
@@ -59,6 +62,55 @@ author:
   twitter: yourname   # eg. daattali
   linkedin: yourlink  # eg. "pub/dean-attali/8/946/143"
   stackoverflow: yourlink  # eg. "3943160/daattali"
+
+  # social icons and sharing options
+social:
+  - icon:	facebook
+    image:       "/img/facebook.png"
+    target:      "_blank"
+    url:	https://www.facebook.com/sanges.michele
+    desc: Connect with me on Facebook
+    share_url: https://www.facebook.com/sanges.michele
+    share_title: ?t=
+    share_link: "&amp;u="
+
+  - icon:	instagram
+    image:       "/img/instagram.png"
+    target:      "_blank"
+    url:	https://www.instagram.com/michele.sanges/
+    desc: Follow me on Instagram
+    share_url: http://twitter.com/share
+    share_title: ?text=
+    share_link: "&amp;url="
+
+
+  - icon:	google-foto
+    image:       "/img/google_foto.png"
+    target:      "_blank"
+    url:	https://goo.gl/photos/VTacmZPyBwioSu2v5
+    desc: See my Google Photo Stream
+    share_url: https://www.facebook.com/sanges.michele
+    share_title: ?t=
+    share_link: "&amp;u="
+
+  - icon:       anobii
+    image:       "/img/anobii.png"
+    target:      "_blank"
+    url:        http://www.anobii.com/michelesanges/books
+    desc: Follow me on Anobii
+    share_url:
+    share_title: ?text=
+    share_link: "&amp;url="
+
+  - icon:	github
+    image:       "/img/github.png"
+    target:      "_blank"
+    url:	https://github.com/michelesanges/
+    desc:	Fork me on Github
+    share_url:
+    share_title:
+    share_link:
+ 
 
 # Select which links to show in the footer
 footer-links-active:
