@@ -34,11 +34,7 @@ navbar-links:
     - Instagram: "https://www.instagram.com/michele.sanges/"
     - Photo Stream: "https://goo.gl/photos/VTacmZPyBwioSu2v5"
     - Anobii: "http://www.anobii.com/michelesanges/books"
-    - GitHub: "https://github.com/michelesanges/"
-  #Resources:
-    #- Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    #- Learn markdown: "http://www.markdowntutorial.com/"
-    #- GitHub Pages: "https://pages.github.com/"
+    #- GitHub: "https://github.com/michelesanges/"
   About: "about"
   #Author's home: "http://deanattali.com"
 
@@ -122,7 +118,7 @@ footer-links-active:
   #google-maps: true
   email: false
   twitter: false
-  github: true
+  github: false
   linkedin: false
   stackoverflow: false
 

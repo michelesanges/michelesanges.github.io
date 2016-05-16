@@ -7,8 +7,7 @@ show-avatar: true
 ---
 Mi chiamo Michele Sanges e non sono mai di buon umore.
 
-Se vuoi scrivermi, l'indirizzo è <michele.sanges@gmail.com>.  
-Se vuoi scrivermi cose **riservatissime** e stralunate, l'ID della mia chiave **GPG** pubblica è **AD0F8FA0**.   
+Se vuoi scrivermi, l'indirizzo è <michele.sanges@gmail.com>. Se vuoi scrivermi cose **riservatissime** e stralunate, l'ID della mia chiave **GPG** pubblica è **AD0F8FA0**.   
 
 ```gpg --keyserver pgp.mit.edu --recv-keys AD0F8FA0```  
 
