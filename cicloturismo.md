@@ -16,10 +16,5 @@ bigimg: "https://lh3.googleusercontent.com/bgMFFTqA8NqzmPDyCX_1A_ws7wOn48fhehLGm
 - <a href="https://drive.google.com/open?id=1WSDh3--R4NSNzPPQ-YOB0YDv6FM&usp=sharing" target="_blank">Lago Massaciuccoli - Lucca</a>
 - <a href="https://drive.google.com/open?id=1HEbczwzu4U1_5NzpV0zYkfC15uw&usp=sharing" target="_blank">Sulle strade bianche dell'Eroica</a>
 
-- <a href="mappa.html?mappa=tracks/bike/da-berceto-ad-aulla-tappa-11-in-bici.geojson" target="_blank">@@@@@@@@@@@ PROVA ########</a>
-
-
-
-
 
 
