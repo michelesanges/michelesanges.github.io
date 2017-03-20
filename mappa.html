@@ -89,13 +89,13 @@ console.log("inside draw_map callback: "+ featarr[i].getGeometry().getType() + "
 					bounds.extend(position); //do this for each coordinate
 
 					var marker_start = new google.maps.Marker({position, map: map, animation: google.maps.Animation.BOUNCE, 
-					icon: 'http://michelesanges.github.io/img/google_foto.png', label:"Start"});
+					icon: 'http://michelesanges.github.io/img/bike_start.png', label:"Start"});
 
 					position = featarr[i].getGeometry().getAt(featarr[i].getGeometry().getLength() - 1);
 					bounds.extend(position);
 
 					var marker_stop = new google.maps.Marker({position, map: map, animation: google.maps.Animation.BOUNCE, 
-					icon: 'http://michelesanges.github.io/img/google_foto.png', label:"Stop"});
+					icon: 'http://michelesanges.github.io/img/bike_stop.png', label:"Stop"});
 
 					map.fitBounds(bounds);
 					map.setCenter(bounds.getCenter());
