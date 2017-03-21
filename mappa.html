@@ -48,6 +48,7 @@
 	var distance_matrix_service;
 	var data;
 	var chart;
+	var marker_select;
 
 	function init_map()
 	{
@@ -88,13 +89,13 @@ console.log("inside draw_map callback: "+ featarr[i].getGeometry().getType() + "
 
 					bounds.extend(position); //do this for each coordinate
 
-					var marker_start = new google.maps.Marker({position, map: map, animation: google.maps.Animation.BOUNCE, 
+					var marker_start = new google.maps.Marker({position, map: map, animation: google.maps.Animation.DROP, 
 					icon: 'http://michelesanges.github.io/img/bike_start.png', label:"Start"});
 
 					position = featarr[i].getGeometry().getAt(featarr[i].getGeometry().getLength() - 1);
 					bounds.extend(position);
 
-					var marker_stop = new google.maps.Marker({position, map: map, animation: google.maps.Animation.BOUNCE, 
+					var marker_stop = new google.maps.Marker({position, map: map, animation: google.maps.Animation.DROP, 
 					icon: 'http://michelesanges.github.io/img/bike_stop.png', label:"Stop"});
 
 					map.fitBounds(bounds);
@@ -104,15 +105,13 @@ console.log("inside draw_map callback: "+ featarr[i].getGeometry().getType() + "
 					display_path_elevation(featarr[i].getGeometry().getArray(), map);
 
 					// path lenght
-					polyLengthInMeters = google.maps.geometry.spherical.computeLength(featarr[i].getGeometry().getArray());					
+					polyLengthInMeters = google.maps.geometry.spherical.computeLength(featarr[i].getGeometry().getArray());
 					polyLengthInMeters = polyLengthInMeters/1000;
 					
 					var info_window = new google.maps.InfoWindow();
-					info_window.setPosition(bounds.getCenter());
+					info_window.setPosition(position);
 					info_window.setContent("Distance: " + polyLengthInMeters.toFixed(1) + " [km]");
-		                  			     
 					info_window.open(map);
-
 				}
 
 			}
@@ -157,7 +156,7 @@ console.log("elevations.length=" + elevations.length);
 		{
 			// Create a new chart in the elevation_chart_div DIV.
 			chart = new google.visualization.ColumnChart(document.getElementById('elevation_chart_div'));
-			google.visualization.events.addListener(chart, 'select', selectHandler);
+			google.visualization.events.addListener(chart, 'select', select_handler);
 
 			// Extract the data from which to populate the chart.
 			// Because the samples are equidistant, the 'Sample'
@@ -166,38 +165,53 @@ console.log("elevations.length=" + elevations.length);
 			data = new google.visualization.DataTable();
 			data.addColumn('string', 'Sample');
 			data.addColumn('number', 'Elevation');
+			data.addColumn('number', 'Latitude');
+			data.addColumn('number', 'Longitude');
 			data.addColumn({type:'string',role:'tooltip'});
 
 			for (var i = 0; i < elevations.length; i++)
 			{
-				data.addRow(['', elevations[i].elevation,  "Elev: " + elevations[i].elevation + " [m]\n" + "Pos: " + elevations[i].location]);
+				data.addRow(['', elevations[i].elevation,  elevations[i].location.lat(), elevations[i].location.lng(),
+				"Elev: " + elevations[i].elevation + " [m]\n" + "Pos: " + elevations[i].location]);
 			}
 
-			// Draw the chart using the data within its DIV.
 			chart.draw(data, {
 			height: 400,
 			legend: 'none',
-			title: 'Path elevation',
+ 			title: 'Path elevation',
 			titleX: 'Distance [Km]',
 			titleY: 'Elevation [m]',
 			hAxis:{maxValue:550}
 			});
+			
 		}
 	}
 	
-	function selectHandler(e)
+	function select_handler(e)
 	{  
 		var selectedItem = chart.getSelection()[0];
 		if (selectedItem)
 		{
-			var value = data.getValue(selectedItem.row, 2/*selectedItem.column*/);
-			console.log("value=" + value);
+			var lat = data.getValue(selectedItem.row, 2/*selectedItem.column*/);
+			var lon = data.getValue(selectedItem.row, 3/*selectedItem.column*/);
+			console.log("value=" + lat+ lon);
 
 		}
 	  
-// 		var marker_start = new google.maps.Marker({position, map: map, animation: google.maps.Animation.BOUNCE, 
-// 		icon: 'http://michelesanges.github.io/img/google_foto.png', label:"Start"});
-	  
+		var position = new google.maps.LatLng(lat, lon);
+
+		if (marker_select == undefined)
+		{
+			marker_select = new google.maps.Marker({
+			position: position,
+			map: map, 
+			animation: google.maps.Animation.DROP,
+			});
+		}
+		else
+		{
+			marker_select.setPosition(position);
+		}	  
 	}
 
 	</script>
