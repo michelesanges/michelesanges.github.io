@@ -40,15 +40,17 @@
 // 	console.log(getParameter("mappa"));
 
 	// Load the Visualization API and the columnchart package.
-// 	google.load('visualization', '1', {packages: ['columnchart']});
- google.load("visualization", "1", {packages:["corechart"]});
+	google.load("visualization", "1", {packages:["corechart"]});
  
 	var map;
 	var elevator_service;
 	var distance_matrix_service;
-	var data;
+	var data_table;
+	var position_table;
+	var poly_length;
 	var chart;
 	var marker_select;
+	var position_array;
 
 	function init_map()
 	{
@@ -68,52 +70,65 @@
 // });  
 	}
 
-
 	function draw_map(featarr)
 	{
+		console.log("inside draw_map callback");
+
 		for (var i = 0; i < featarr.length; i++)
 		{
-console.log("inside draw_map callback: "+ featarr[i].getGeometry().getType() + " - i = " +i);
+			console.log("feature " + i + " of type " + featarr[i].getGeometry().getType());
 
 			if (featarr[i].getGeometry().getType() == "LineString") 
 			{
-				console.log("len: " + featarr[i].getGeometry().getLength());	
+				console.log("number of points: " + featarr[i].getGeometry().getLength());	
 
-				// marker a inizio e fine percorso
-				// featarr[i].getGeometry().forEachLatLng(set_marker);
-				if (featarr[i].getGeometry().getLength() > 0)
-				{
-					var bounds = new google.maps.LatLngBounds();
+				var position_array = featarr[i].getGeometry();
 
-					var position = featarr[i].getGeometry().getAt(0);
+				var bounds = new google.maps.LatLngBounds();
+				featarr[i].getGeometry().forEachLatLng(
+					function(position)
+					{
+						bounds.extend(position); //do this for each coordinate
+					});
+				
+				map.fitBounds(bounds);
+				map.setCenter(bounds.getCenter());
 
-					bounds.extend(position); //do this for each coordinate
+// featarr[i].getGeometry().getAt(0);
 
-					var marker_start = new google.maps.Marker({position, map: map, animation: google.maps.Animation.DROP, 
-					icon: 'http://michelesanges.github.io/img/bike_start.png', label:"Start"});
+				// path lenght
+				poly_length = google.maps.geometry.spherical.computeLength(featarr[i].getGeometry().getArray());
+				poly_length = poly_length/1000;	// in km
+				poly_length = poly_length.toFixed(1); // one decimal place
 
-					position = featarr[i].getGeometry().getAt(featarr[i].getGeometry().getLength() - 1);
-					bounds.extend(position);
+				// Draw the path, using the Visualization API and the Elevation service.
+				display_path_elevation(featarr[i].getGeometry().getArray(), map);
 
-					var marker_stop = new google.maps.Marker({position, map: map, animation: google.maps.Animation.DROP, 
-					icon: 'http://michelesanges.github.io/img/bike_stop.png', label:"Stop"});
+// 				var info_window = new google.maps.InfoWindow();
+// 				info_window.setPosition(position);
+// 				info_window.setContent("Distance: " + poly_length + " [km]");
+// 				info_window.open(map);
+			}
+			else if (featarr[i].getGeometry().getType() == "Point") 
+			{
+				featarr[i].getGeometry().forEachLatLng(
+					function(position)
+					{
+						var icon;
+						if (featarr[i].getProperty("name") == "Startpoint")
+						{
+							icon = 'http://michelesanges.github.io/img/bike_start.png'; 
+						}
+						else if (featarr[i].getProperty("name") == "Stoppoint")
+						{
+							icon = 'http://michelesanges.github.io/img/bike_stop.png'; 
+						}
 
-					map.fitBounds(bounds);
-					map.setCenter(bounds.getCenter());
+						new google.maps.Marker({position , map: map, icon: icon, 
+						label:{text:featarr[i].getProperty("description"), color:"white", fontSize:"20px"/*, fontWeight:"Bold" */}});	
+					});
 
-					// Draw the path, using the Visualization API and the Elevation service.
-					display_path_elevation(featarr[i].getGeometry().getArray(), map);
-
-					// path lenght
-					polyLengthInMeters = google.maps.geometry.spherical.computeLength(featarr[i].getGeometry().getArray());
-					polyLengthInMeters = polyLengthInMeters/1000;
-					
-					var info_window = new google.maps.InfoWindow();
-					info_window.setPosition(position);
-					info_window.setContent("Distance: " + polyLengthInMeters.toFixed(1) + " [km]");
-					info_window.open(map);
-				}
-
+				map.data.remove(featarr[i]);
 			}
 		}
 
@@ -149,56 +164,54 @@ console.log("inside draw_map callback: "+ featarr[i].getGeometry().getType() + "
 	// and plots the elevation profile on a Visualization API ColumnChart.
 	function plot_elevation(elevations, status)
 	{
-console.log("elevations status=" + status);
-console.log("elevations.length=" + elevations.length);
+		console.log("elevations status=" + status);
+		console.log("elevations.length=" + elevations.length);
 
 		if (status == 'OK')
 		{
 			// Create a new chart in the elevation_chart_div DIV.
 			chart = new google.visualization.ColumnChart(document.getElementById('elevation_chart_div'));
-			google.visualization.events.addListener(chart, 'select', select_handler);
+			google.visualization.events.addListener(chart, 'onmouseover', select_handler);
 
 			// Extract the data from which to populate the chart.
 			// Because the samples are equidistant, the 'Sample'
 			// column here does double duty as distance along the
 			// X axis.
-			data = new google.visualization.DataTable();
-			data.addColumn('string', 'Sample');
-			data.addColumn('number', 'Elevation');
-			data.addColumn('number', 'Latitude');
-			data.addColumn('number', 'Longitude');
-			data.addColumn({type:'string',role:'tooltip'});
+			data_table = new google.visualization.DataTable();
+			data_table.addColumn('string', 'Sample');
+			data_table.addColumn('number', 'Elevation');
+			data_table.addColumn({type:'string',role:'tooltip'});
+
+			position_table = new google.visualization.DataTable();
+			position_table.addColumn('number', 'Latitude');
+			position_table.addColumn('number', 'Longitude');
 
 			for (var i = 0; i < elevations.length; i++)
 			{
-				data.addRow(['', elevations[i].elevation,  elevations[i].location.lat(), elevations[i].location.lng(),
+				data_table.addRow(['', elevations[i].elevation, /* elevations[i].location.lat(), elevations[i].location.lng(),*/
 				"Elev: " + elevations[i].elevation + " [m]\n" + "Pos: " + elevations[i].location]);
+
+				position_table.addRow([elevations[i].location.lat(), elevations[i].location.lng()]);
 			}
 
-			chart.draw(data, {
+			
+			chart.draw(data_table, {
 			height: 400,
 			legend: 'none',
- 			title: 'Path elevation',
+ 			title: 'Path lenght: ' + poly_length + " [km]",
 			titleX: 'Distance [Km]',
 			titleY: 'Elevation [m]',
 			hAxis:{maxValue:550}
 			});
-			
 		}
 	}
 	
 	function select_handler(e)
-	{  
-		var selectedItem = chart.getSelection()[0];
-		if (selectedItem)
-		{
-			var lat = data.getValue(selectedItem.row, 2/*selectedItem.column*/);
-			var lon = data.getValue(selectedItem.row, 3/*selectedItem.column*/);
-			console.log("value=" + lat+ lon);
+	{
+		var lat = position_table.getValue(e.row, 0);
+		var lon = position_table.getValue(e.row, 1);
 
-		}
-	  
-		var position = new google.maps.LatLng(lat, lon);
+		var position = new google.maps.LatLng(lat, lon);	
 
 		if (marker_select == undefined)
 		{
@@ -206,12 +219,12 @@ console.log("elevations.length=" + elevations.length);
 			position: position,
 			map: map, 
 			animation: google.maps.Animation.DROP,
-			});
+		});
 		}
 		else
 		{
 			marker_select.setPosition(position);
-		}	  
+		}
 	}
 
 	</script>

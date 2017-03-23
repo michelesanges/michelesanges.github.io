@@ -9,8 +9,8 @@
                 "type": "Point"
             },
             "properties": {
-                "description": "stazione fs berceto",
-                "name": "stazione fs berceto"
+                "description": "Stazione FS berceto",
+                "name": "Startpoint"
             },
             "type": "Feature"
         },
@@ -24,7 +24,7 @@
             },
             "properties": {
                 "description": "Aulla, MS",
-                "name": "Aulla, MS"
+                "name": "Stoppoint"
             },
             "type": "Feature"
         },
