@@ -35,40 +35,50 @@
 		}
 
 		return r;
-	} 
+	}
 
 // 	console.log(getParameter("mappa"));
 
 	// Load the Visualization API and the columnchart package.
 	google.load("visualization", "1", {packages:["corechart"]});
  
+	var chart;
+	var elevation_table;
+	var position_table;
 	var map;
 	var elevator_service;
-	var distance_matrix_service;
-	var data_table;
-	var position_table;
-	var poly_length;
-	var chart;
-	var marker_select;
-	var position_array;
+	var path_length;
+	var path;
+	var marker_position;
+	var called_num = 0;
+	var subpath_max_point_number = 100;
 
 	function init_map()
 	{
-		map = new google.maps.Map(document.getElementById("map_div"), {mapTypeId:google.maps.MapTypeId.HYBRID});
-		map.data.loadGeoJson('http://michelesanges.github.io/dataset/' + getParameter("mappa"), {}, draw_map);
+		// Create a new chart in the elevation_chart_div DIV.
+		chart = new google.visualization.ColumnChart(document.getElementById('elevation_chart_div'));
+		google.visualization.events.addListener(chart, 'onmouseover', select_handler);
 
-// global infowindow
-// When the user clicks, open an infowindow
-// map.data.addListener('click', function(event)
-// {
-// var myHTML = event.feature.getProperty("name");
-// console.log("myHTML="+myHTML);
-// infowindow.setContent("<div style='width:150px; text-align: center;'>"+myHTML+"</div>");
-// infowindow.setPosition(event.feature.getGeometry().getAt(0));
-// infowindow.setOptions({pixelOffset: new google.maps.Size(0,30)});
-// infowindow.open(map);
-// });  
+		// Extract the data from which to populate the chart.
+		// Because the samples are equidistant, the 'Sample'
+		// column here does double duty as distance along the
+		// X axis.
+		elevation_table = new google.visualization.DataTable();
+		elevation_table.addColumn('string', 'Sample');
+		elevation_table.addColumn('number', 'Elevation');
+		elevation_table.addColumn({type:'string',role:'tooltip'});
+		
+		position_table = new google.visualization.DataTable();
+		position_table.addColumn('number', 'Latitude');
+		position_table.addColumn('number', 'Longitude');
+
+		elevator_service = new google.maps.ElevationService;
+
+		map = new google.maps.Map(document.getElementById("map_div"), {mapTypeId:google.maps.MapTypeId.HYBRID});
+
+		map.data.loadGeoJson('http://michelesanges.github.io/dataset/' + getParameter("mappa"), {}, draw_map);
 	}
+
 
 	function draw_map(featarr)
 	{
@@ -80,9 +90,7 @@
 
 			if (featarr[i].getGeometry().getType() == "LineString") 
 			{
-				console.log("number of points: " + featarr[i].getGeometry().getLength());	
-
-				var position_array = featarr[i].getGeometry();
+				console.log("path points: " + featarr[i].getGeometry().getLength());	
 
 				var bounds = new google.maps.LatLngBounds();
 				featarr[i].getGeometry().forEachLatLng(
@@ -95,17 +103,19 @@
 				map.setCenter(bounds.getCenter());
 
 				// path lenght
-				poly_length = google.maps.geometry.spherical.computeLength(featarr[i].getGeometry().getArray());
-				poly_length = poly_length/1000;	// in km
-				poly_length = poly_length.toFixed(1); // one decimal place
+				path_length = google.maps.geometry.spherical.computeLength(featarr[i].getGeometry().getArray());
+				path_length = path_length/1000;	// in km
+				path_length = path_length.toFixed(1); // one decimal place
 
 				// Draw the path, using the Visualization API and the Elevation service.
-				display_path_elevation(featarr[i].getGeometry().getArray(), map);
+				path = featarr[i].getGeometry().getArray();
 
-// 				var info_window = new google.maps.InfoWindow();
-// 				info_window.setPosition(position);
-// 				info_window.setContent("Distance: " + poly_length + " [km]");
-// 				info_window.open(map);
+				total_num_compute_path_elevation_call = parseInt(path.length / subpath_max_point_number) + 1;
+				
+				console.log("total_num_compute_path_elevation_call " + total_num_compute_path_elevation_call);
+
+				compute_path_elevation(0);
+				
 			}
 			else if (featarr[i].getGeometry().getType() == "Point") 
 			{
@@ -129,32 +139,29 @@
 				map.data.remove(featarr[i]);
 			}
 		}
-
 	}
 
 
-	function display_path_elevation(path, map)
+	function compute_path_elevation(n)
 	{
-		elevator_service = new google.maps.ElevationService;
+		var sub_path = path.slice(n * subpath_max_point_number, n * subpath_max_point_number + subpath_max_point_number);
+		console.log("subarray  lenght: " + sub_path.length);
 
 		// Display a polyline of the elevation path.
 		new google.maps.Polyline
 		({
-			path: path,
+			path: sub_path,
 			strokeColor: '#0000CC',
 			strokeOpacity: 0.4,
 			strokeWeight: 5,
 			map: map
 		});
 
-		// Create a PathElevationRequest object using this array.
-		// Ask for 256 samples along that path.
-		// Initiate the path request.
 		elevator_service.getElevationAlongPath
 		({
-			'path': path,
-			'samples': 512
-		}, plot_elevation);
+			'path': sub_path,
+			'samples': sub_path.length
+		}, plot_elevation /*function(elevations, status) {plot_elevation(elevations, status, pippo)}*/);
 	}
 
 
@@ -163,47 +170,44 @@
 	function plot_elevation(elevations, status)
 	{
 		console.log("elevations status=" + status);
-		console.log("elevations.length=" + elevations.length);
 
 		if (status == 'OK')
 		{
-			// Create a new chart in the elevation_chart_div DIV.
-			chart = new google.visualization.ColumnChart(document.getElementById('elevation_chart_div'));
-			google.visualization.events.addListener(chart, 'onmouseover', select_handler);
-
-			// Extract the data from which to populate the chart.
-			// Because the samples are equidistant, the 'Sample'
-			// column here does double duty as distance along the
-			// X axis.
-			data_table = new google.visualization.DataTable();
-			data_table.addColumn('string', 'Sample');
-			data_table.addColumn('number', 'Elevation');
-			data_table.addColumn({type:'string',role:'tooltip'});
-
-			position_table = new google.visualization.DataTable();
-			position_table.addColumn('number', 'Latitude');
-			position_table.addColumn('number', 'Longitude');
+			console.log("elevations.length=" + elevations.length);
 
 			for (var i = 0; i < elevations.length; i++)
 			{
-				data_table.addRow(['', elevations[i].elevation, /* elevations[i].location.lat(), elevations[i].location.lng(),*/
-				"Elev: " + elevations[i].elevation + " [m]\n" + "Pos: " + elevations[i].location]);
+				elevation_table.addRow(['', elevations[i].elevation, "Elev: " + elevations[i].elevation + " [m]\n" + "Pos: " + elevations[i].location]);
 
 				position_table.addRow([elevations[i].location.lat(), elevations[i].location.lng()]);
 			}
 
-			
-			chart.draw(data_table, {
-			height: 400,
-			legend: 'none',
- 			title: 'Path lenght: ' + poly_length + " [km]",
-			titleX: 'Distance [Km]',
-			titleY: 'Elevation [m]',
-			hAxis:{maxValue:550}
-			});
+			called_num += 1;
+			console.log(">>>>>>>>>> called_num= " + called_num);
+
+			if (called_num < total_num_compute_path_elevation_call)
+			{
+				compute_path_elevation(called_num);
+			}
+			else
+			{
+				chart.draw(elevation_table, {
+				height: 400,
+				legend: 'none',
+				title: 'Path lenght: ' + path_length + " [km]",
+				titleX: 'Distance [Km]',
+				titleY: 'Elevation [m]',
+				hAxis:{maxValue:550}
+				});
+			}
+		}
+		else
+		{
+			compute_path_elevation(called_num);
 		}
 	}
-	
+
+
 	function select_handler(e)
 	{
 		var lat = position_table.getValue(e.row, 0);
@@ -211,9 +215,9 @@
 
 		var position = new google.maps.LatLng(lat, lon);	
 
-		if (marker_select == undefined)
+		if (marker_position == undefined)
 		{
-			marker_select = new google.maps.Marker({
+			marker_position = new google.maps.Marker({
 			position: position,
 			map: map, 
 			animation: google.maps.Animation.DROP,
@@ -221,7 +225,7 @@
 		}
 		else
 		{
-			marker_select.setPosition(position);
+			marker_position.setPosition(position);
 		}
 	}
 
