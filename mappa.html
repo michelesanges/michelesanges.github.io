@@ -51,14 +51,14 @@
 	var path;
 	var marker_position;
 	var called_num = 0;
-	var subpath_max_point_number = 100;
+	var subpath_max_point_number = 200;
 
 	function init_map()
 	{
 		// Create a new chart in the elevation_chart_div DIV.
-		chart = new google.visualization.ColumnChart(document.getElementById('elevation_chart_div'));
-		google.visualization.events.addListener(chart, 'onmouseover', select_handler);
-
+		chart = new google.visualization.AreaChart/*LineChart*//*ColumnChart*/(document.getElementById('elevation_chart_div'));
+		google.visualization.events.addListener(chart, 'onmouseover', onmouseover_handler);
+			  
 		// Extract the data from which to populate the chart.
 		// Because the samples are equidistant, the 'Sample'
 		// column here does double duty as distance along the
@@ -92,6 +92,7 @@
 			{
 				console.log("path points: " + featarr[i].getGeometry().getLength());	
 
+				// center the map
 				var bounds = new google.maps.LatLngBounds();
 				featarr[i].getGeometry().forEachLatLng(
 					function(position)
@@ -111,11 +112,10 @@
 				path = featarr[i].getGeometry().getArray();
 
 				total_num_compute_path_elevation_call = parseInt(path.length / subpath_max_point_number) + 1;
-				
+
 				console.log("total_num_compute_path_elevation_call " + total_num_compute_path_elevation_call);
 
 				compute_path_elevation(0);
-				
 			}
 			else if (featarr[i].getGeometry().getType() == "Point") 
 			{
@@ -143,7 +143,7 @@
 
 
 	function compute_path_elevation(n)
-	{
+	{	
 		var sub_path = path.slice(n * subpath_max_point_number, n * subpath_max_point_number + subpath_max_point_number);
 		console.log("subarray  lenght: " + sub_path.length);
 
@@ -160,8 +160,8 @@
 		elevator_service.getElevationAlongPath
 		({
 			'path': sub_path,
-			'samples': sub_path.length
-		}, plot_elevation /*function(elevations, status) {plot_elevation(elevations, status, pippo)}*/);
+			'samples': sub_path.length /*512*/
+		}, plot_elevation);
 	}
 
 
@@ -170,7 +170,7 @@
 	function plot_elevation(elevations, status)
 	{
 		console.log("elevations status=" + status);
-
+		
 		if (status == 'OK')
 		{
 			console.log("elevations.length=" + elevations.length);
@@ -187,29 +187,46 @@
 
 			if (called_num < total_num_compute_path_elevation_call)
 			{
+				pause(1000);
 				compute_path_elevation(called_num);
+
 			}
-			else
-			{
+// 			else
+// 			{
 				chart.draw(elevation_table, {
 				height: 400,
 				legend: 'none',
 				title: 'Path lenght: ' + path_length + " [km]",
 				titleX: 'Distance [Km]',
-				titleY: 'Elevation [m]',
-				hAxis:{maxValue:550}
+				titleY: 'Elevation [m]'
 				});
-			}
+// 			}
 		}
 		else
 		{
+			console.log(">>>>>>>>>> status= " + status);
+
+			pause(1000);
 			compute_path_elevation(called_num);
 		}
+		
 	}
 
 
-	function select_handler(e)
+	function pause(millis)
 	{
+		var date = Date.now();
+		var curDate = null;
+
+		do 
+		{
+			curDate = Date.now();
+		} while (curDate-date < millis);
+	}
+
+
+	function onmouseover_handler(e)
+	{	
 		var lat = position_table.getValue(e.row, 0);
 		var lon = position_table.getValue(e.row, 1);
 
@@ -221,11 +238,14 @@
 			position: position,
 			map: map, 
 			animation: google.maps.Animation.DROP,
+// 			label:{text:lat + "," + lon , color:"white", fontSize:"20px"/*, fontWeight:"Bold" */}
 		});
 		}
 		else
 		{
 			marker_position.setPosition(position);
+// 			label = google.maps.MarkerLabel(label:{text:lat + "," + lon , color:"white", fontSize:"20px"/*, fontWeight:"Bold" */});
+// 			marker_position.setLabel(lat);
 		}
 	}
 
