@@ -28,7 +28,17 @@ description: A virtual proof that name is awesome!
 # List of links in the navigation bar
 navbar-links:
   Blog: "blog"
-  Cicloturismo: "cicloturismo"
+  Cicloturismo:
+      - Pontremoli-Castelnuovo Magra: "https://drive.google.com/open?id=1wOLIDFFEBJZF10umCtSjSrZ1lq8&usp=sharing"
+      - Equi Terme: "https://drive.google.com/open?id=1xvuLJJB35LNyThXZ-8sD9m0CpVE&usp=sharing"
+      - Campocecina: "https://drive.google.com/open?id=1oRC8jGOxfGSZ1sPGiUeqbCFEbIQ&usp=sharing"
+      - La via del polleggio: "https://drive.google.com/open?id=1cdFs43xWW_7_O9ucBDpPOkYXX6A&usp=sharing"
+      - Bologna - Mare under the moon light: "https://drive.google.com/open?id=1Ga2C1ro7J0g-n8TUDnblOP8f0ls&usp=sharing"
+      - Valli di Comacchio: "https://drive.google.com/open?id=11sB4F4Par19TgiNMzytU75Pn5kc&usp=sharing"
+      - Umbria: "https://drive.google.com/open?id=1q9x-WGZSyVwA9mUGt2RYapILjes&usp=sharing"
+      - Isola d'Elba: "https://drive.google.com/open?id=1Q4jkeLe5KafmOrMhnDVWsbMWh6U&usp=sharing"
+      - Lago Massaciuccoli - Lucca: "https://drive.google.com/open?id=1WSDh3--R4NSNzPPQ-YOB0YDv6FM&usp=sharing"
+      - Sulle strade bianche dell'Eroica: "https://drive.google.com/open?id=1HEbczwzu4U1_5NzpV0zYkfC15uw&usp=sharing"
   Social:
     - Facebook: "https://www.facebook.com/sanges.michele"
     - Instagram: "https://www.instagram.com/michele.sanges/"
