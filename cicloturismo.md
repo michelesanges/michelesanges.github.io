@@ -2,7 +2,14 @@
 layout: page
 title: Cicloturismo
 subtitle: Il termine traccia denota solitamente un segno, un'orma o una scia, ma possiede diversi altri significati.
-bigimg: "https://lh3.googleusercontent.com/bgMFFTqA8NqzmPDyCX_1A_ws7wOn48fhehLGmaHkrF3xTQ7A_TDpPh6vtgvR3m-X32I0tkYcBH_Mg0aO-3IQDljdtnaQ53R_ifolH2fA_rSTc3PYg3tmB9vecjM3f7o11m9V5xQ5cwT2sfCblY8zI7X1jggFzq3XB7UcW_qhIXRlgJ_lIQjdfL_pp5OOftJ7i0JWlO2kawykEDzOixiXLRG5bK0gwft8oGhlrpprKU5exxXvBt71-WZ1fHjlc2AQFBoZPVX-9ecznKN-YUJKe4n71sFGPoek93yah_hHX3af5FtsW9zwDU31wUFQ-oaYW7FDRXLQpyrC6AA-tdNA4ZcBSFaK8wTJ2EA1sfd4znthJ39CkROTTLLQC8R3e6GfgffxhoiixZKsIv1XGROZJnWFAoY4JyDewXvVw2vpJDwwsMBe-zX5aatkJDutohbeYJFBRIZOdHiQomcZ1i-Q6lnVymxyHFbg--DJyuXZEbqClvZRy1rPEYMp946PAVaoPmqQjODcLOJ8dbCL7P67KCYsnYsAmsnMOrlQwGdonzSb31uIMmb1MH54C_FIY6pL56zuB2NqKJm-tDR_yXx5lsG1dHKkXK0=w901-h600-no"
+bigimg: [{"https://goo.gl/AHke13"},
+	 {"https://goo.gl/jc3Klg"},
+	 {"https://goo.gl/I2aSmb"},
+	 {"https://goo.gl/MMK2QA"},
+	 {"https://goo.gl/uwO5au"},
+	 {"https://goo.gl/CI0NvG"}, 
+         {"https://goo.gl/i8Hqu1"}, 
+         {"https://goo.gl/4jD9rb"}]
 ---
 
 - <a href="https://drive.google.com/open?id=1xGrzhtjdLYF_zswTsfnfGwlPyow&usp=sharing" target="_blank">[2017-04-17] - Aulla - Amola - Virgoletta - Villafranca - Castelnuovo Magra</a>
