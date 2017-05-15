@@ -5,8 +5,8 @@ subtitle: Il termine traccia denota solitamente un segno, un'orma o una scia, ma
 bigimg: https://goo.gl/i8Hqu1
 ---
 
-- <a href="https://drive.google.com/open?id=1k6vdZzH_pfoQH0yFTNjhmXF6At4&usp=sharing" target="_blank">[2017-04-17] - Tutte le tracce</a>
-
+- <a href="https://drive.google.com/open?id=1k6vdZzH_pfoQH0yFTNjhmXF6At4&usp=sharing" target="_blank">Tutte le tracce</a>
+<hr width="75%">
 - <a href="https://drive.google.com/open?id=1xGrzhtjdLYF_zswTsfnfGwlPyow&usp=sharing" target="_blank">[2017-04-17] - Aulla - Amola - Virgoletta - Villafranca - Castelnuovo Magra</a>
 - <a href="https://drive.google.com/open?id=1KarbCXSjhfjT-JXdQlYG-2_-XGc&usp=sharing" target="_blank">[2017-04-08] - Viareggio - Lucca, lungo il fiume Serchio</a>
 - <a href="https://drive.google.com/open?id=1wOLIDFFEBJZF10umCtSjSrZ1lq8&usp=sharing" target="_blank">[2017-04-01] - Pontremoli - Castelnuovo Magra</a>
