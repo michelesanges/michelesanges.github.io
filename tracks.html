@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	  <!-- This stylesheet contains specific styles for displaying the map
+		on this page. Replace it with your own styles as described in the
+		documentation:
+		https://developers.google.com/maps/documentation/javascript/tutorial -->
+	<!--     <link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css"> -->
+ <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }   
+      
+    </style>	
+	
+	<script src="https://www.google.com/jsapi"></script>
+
+	<style type="text/css"> 
+	.dropdown-check-list {
+	  display: inline-block;
+	}
+	.dropdown-check-list .anchor {
+	  position: relative;
+	  cursor: pointer;
+	  display: inline-block;
+	  padding: 5px 50px 5px 10px;
+	  border: 1px solid #ccc;
+	}
+	.dropdown-check-list .anchor:after {
+	  position: absolute;
+	  content: "";
+	  border-left: 2px solid black;
+	  border-top: 2px solid black;
+	  padding: 5px;
+	  right: 10px;
+	  top: 20%;
+	  -moz-transform: rotate(-135deg);
+	  -ms-transform: rotate(-135deg);
+	  -o-transform: rotate(-135deg);
+	  -webkit-transform: rotate(-135deg);
+	  transform: rotate(-135deg);
+	}
+	.dropdown-check-list .anchor:active:after {
+	  right: 8px;
+	  top: 21%;
+	}
+	.dropdown-check-list ul.items {
+	  padding: 2px;
+	  display: none;
+	  margin: 0;
+	  border: 1px solid #ccc;
+	  border-top: none;
+	}
+	.dropdown-check-list ul.items li {
+	  list-style: none;
+	}
+	.dropdown-check-list.visible .anchor {
+	  color: #0094ff;
+	}
+	.dropdown-check-list.visible .items {
+	  display: block;
+	}
+	</style>
+
+	</head>
+	<body>
+
+<!-- 	<div id="map_div" style="width:100%;height:400px;"></div> -->
+	<div id="map_div" style="width:100%;height:900px;"></div>
+<!-- 	<div id="elevation_chart_div" style="width:100%;height:400px;"></div>  -->
+
+	<script>
+		
+	var track_filename = new Array();
+	track_filename[0] = ['http://michelesanges.github.io/dataset/tracks/2017_04_17 - aulla - virgoletta - villafranca -castelnuovo magra - ricostruita.geojson', "Aulla - Virgoletta - Villafranca - Castelnuovo Magra", "rgb(255, 0, 0)"];
+	track_filename[1] = ['http://michelesanges.github.io/dataset/tracks/2017_04_08 - viareggio - lucca.geojson', "Viareggio - Lucca", "rgb(240, 10, 0)"];
+	track_filename[2] = ['http://michelesanges.github.io/dataset/tracks/2017_04_01 - pontremoli_castelnuovomagra_ricostruita.geojson', "Pontremoli Castelnuovomagra", "rgb(230, 20, 0)"];	
+	track_filename[3] = ['http://michelesanges.github.io/dataset/tracks/2016_08_15 - equi terme_completa.geojson', "Castelnuovo magra - Fosdinovo - Equi Terme - Aulla", "rgb(220, 30, 0)"];	
+
+	var track_layer = [];
+	var bounds;
+	var chart;
+	var position_table;
+	var map;
+	var elevator_service;
+	var path;
+	var marker_position;
+	var called_num = 0;
+	var subpath_max_point_number = 200;
+	var infowindow;
+
+	// crea la combo box con i nomi delle mappe
+	var div = document.createElement('list');
+	div.style.backgroundColor = 'white';
+	div.style.color = 'black';
+	div.style.fontFamily = 'Arial,sans-serif';
+	div.style.fontSize = '16px';	
+	div.className = "dropdown-check-list";
+	div.id = 'list1';
+
+	var html_cmd = '<span class="anchor">Select Tracks</span> <ul class="items"> ';
+	for (i = 0; i < track_filename.length; i++)
+	{
+		html_cmd = html_cmd + '<li><input type="checkbox" checked onclick="boxclick(this,' +  i + ')"/>' + track_filename[i][1] + '</li>'
+	}
+// 	html_cmd = html_cmd + ' <li> \
+//             <input type="checkbox" data-id="item" data-name="Item" /> Item \
+//             <ul> \
+//                 <li><input type="checkbox" data-id="subitem1" data-name="Subitem 1" /> Subitem 1</li> \
+//                 <li><input type="checkbox" data-id="subitem2" data-name="Subitem 2" /> Subitem 2</li> \
+//                 <li><input type="checkbox" data-name="Subitem 3" /> Subitem 3</li> \
+//             </ul> \
+//         </li>'
+	html_cmd = html_cmd + '</ul>';
+
+	div.innerHTML = html_cmd;
+	document.body.appendChild(div);
+
+        div.getElementsByClassName('anchor')[0].onclick = function (evt)
+        {
+		if (div.classList.contains('visible'))
+		{
+			div.classList.remove('visible');
+		}
+		else
+		{
+		    div.classList.add('visible');
+		}
+        }
+
+	function boxclick(box, category)
+	{
+		console.log("categoria " + category);
+
+		if (box.checked)
+		{	
+			console.log("categoria " + category + "checked");
+			track_layer[category].setMap(map) 
+		} 
+		else
+		{
+			console.log("categoria " + category + "unchecked");
+			track_layer[category].setMap(null)
+		}
+	}
+
+/*
+	function getParameter(whichOne)
+	{
+		var pairs = location.search.substring(1).split('&');
+		var r = "";
+		var tp = new Array();
+
+		for (var i = 0; i < pairs.length; i ++)
+		{
+			tp = pairs[i].split('=');
+
+			if (whichOne == tp[0])
+			{
+				r = unescape(tp[1].replace(/\+/g, " "));
+			}
+		}
+
+		return r;
+	}
+*/
+	// Load the Visualization API and the columnchart package.
+	google.load("visualization", "1", {packages:["corechart"]});
+ 
+	function init_map()
+	{
+/*
+		var filename = getParameter("mappa").replace(/^.*[\\\/]/, '')
+		var basename = filename.substring(0, filename.lastIndexOf("."));
+		console.log("basename" + basename);
+*/
+
+		position_table = new google.visualization.DataTable();
+		position_table.addColumn('number', 'Latitude');
+		position_table.addColumn('number', 'Longitude');
+
+		elevator_service = new google.maps.ElevationService;
+
+		map = new google.maps.Map(document.getElementById("map_div"), {mapTypeId:google.maps.MapTypeId.HYBRID});
+		bounds = new google.maps.LatLngBounds();
+		infowindow = new google.maps.InfoWindow({
+		    content: '<div class = "corp" style="width:100%; height: 500px">' + '<div id = "infowindow_div">' + '</div>' + '</div>' + 
+		      '<h1><!--Map title--><div id="map_info_div"></div></h1>'
+		})
+
+		// Create a new chart in the elevation_chart_div DIV.
+// 		chart = new google.visualization.AreaChart/*LineChart*//*ColumnChart*/(document.getElementById('infowindow_div'));
+// 		google.visualization.events.addListener(chart, 'onmouseover', onmouseover_handler);
+		
+		for (var i = 0; i < track_filename.length; i++)
+		{
+			  (
+			  function(i)
+			  {
+				  track_layer[i] = new google.maps.Data();		
+				  track_layer[i].loadGeoJson(track_filename[i][0], {}, draw_map);		  
+				  track_layer[i].setStyle({
+							  //   icon: '//example.com/path/to/image.png',
+							  //   fillColor: 'green',
+								strokeColor: track_filename[i][2],
+								strokeWeight: 4
+							  });
+				  track_layer[i].setMap(map);
+
+				  track_layer[i].addListener('click', function(event)
+				  {
+					infowindow.setPosition(event.latLng)
+					infowindow.setOptions({pixelOffset: new google.maps.Size(10, -15)})
+					infowindow.setMap(map);
+
+					draw_path(event.feature.getGeometry().getArray(), i);
+						  
+// 					document.getElementById('comments').innerHTML = track_filename[i][1];
+				  });
+				  
+				  track_layer[i].addListener('mouseout', function(event)
+				  {
+					infowindow.setMap(null);
+				  });
+			  }
+			  )(i)
+		}	
+		map.controls[google.maps.ControlPosition.TOP_RIGHT].push(/*combo_box_div*/list1);		
+	}
+
+	function draw_map(featarr)
+	{
+		console.log("inside draw_map callback");
+
+		for (var i = 0; i < featarr.length; i++)
+		{
+			console.log("feature " + i + " of type " + featarr[i].getGeometry().getType());
+			
+			// center the map
+			featarr[i].getGeometry().forEachLatLng(
+				function(position)
+				{
+					bounds.extend(position); //do this for each coordinate
+				});
+
+			map.fitBounds(bounds);
+			map.setCenter(bounds.getCenter());
+		}
+	}
+
+	//Defining the path for which to plot the elevation
+	function draw_path(path, i)
+	{
+		chart = new google.visualization.AreaChart(document.getElementById(/*'elevation_chart_div'*/'infowindow_div'));
+		google.visualization.events.addListener(chart, 'onmouseover', onmouseover_handler);
+
+		var pathRequest = {
+		    'path': path,
+		    'samples': 256
+		};
+
+		var length = google.maps.geometry.spherical.computeLength(path);
+		
+		elevator_service.getElevationAlongPath(pathRequest, function(results, status) {
+		    plotElevation(results, status, length, i);
+		});
+	}
+
+
+	function plotElevation(results, status, length, n)
+	{
+		if (status != google.maps.ElevationStatus.OK)
+		{
+			return;
+		}
+
+		var elevations = results;
+
+		var elevationPath = [];
+		for (var i = 0; i < results.length; i++)
+		{
+			elevationPath.push(elevations[i].location);
+		}
+
+		var data = new google.visualization.DataTable();
+		data.addColumn('string', 'Sample');
+		data.addColumn('number', 'Altitudine');
+		position_table.removeRows(0, position_table.getNumberOfRows());
+		
+		for (var i = 0; i < results.length; i++)
+		{
+			data.addRow(['', elevations[i].elevation]);
+			position_table.addRow([elevations[i].location.lat(), elevations[i].location.lng()]);
+		}
+
+		var path_length = length/1000;	// in km
+		path_length = path_length.toFixed(1); // one decimal place
+
+		chart.draw(data, {
+			height: 400,
+			legend: 'none',
+			fontSize: 20,
+			title:  track_filename[n][1] + '\nPath lenght:' + path_length + " [km]",
+			titleX: 'Distance [Km]',
+			titleY: 'Elevation [m]'
+		});
+
+// 		document.getElementById('map_info_div').innerHTML = track_filename[n][1] + '<hr>Path lenght: ' + path_length + " [km]";
+	}
+
+
+	function pause(millis)
+	{
+		var date = Date.now();
+		var curDate = null;
+
+		do 
+		{
+			curDate = Date.now();
+		} while (curDate-date < millis);
+	}
+
+
+	function onmouseover_handler(e)
+	{	
+		var lat = position_table.getValue(e.row, 0);
+		var lon = position_table.getValue(e.row, 1);
+
+		var position = new google.maps.LatLng(lat, lon);	
+
+		if (marker_position == undefined)
+		{
+			marker_position = new google.maps.Marker({
+				position: position,
+				map: map, 
+				animation: google.maps.Animation.DROP,
+	// 			label:{text:lat + "," + lon , color:"white", fontSize:"20px"/*, fontWeight:"Bold" */}
+			});
+		}
+		else
+		{
+			marker_position.setPosition(position);
+// 			label = google.maps.MarkerLabel(label:{text:lat + "," + lon , color:"white", fontSize:"20px"/*, fontWeight:"Bold" */});
+// 			marker_position.setLabel(lat);
+		}
+	}
+
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwR5MtCCmXualVOiq27XnxxosJhitng-k&callback=init_map&libraries=geometry"></script>
+	<!--
+	To use this code on your website, get a free API key from Google.
+	Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+	-->
+
+	</body>
+</html>

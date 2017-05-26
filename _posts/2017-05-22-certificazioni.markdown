@@ -4,12 +4,13 @@ title:  "Di certificazioni e altre amenità"
 ---
 Sto cercando di ottenere il Certificato di Agibilità del mio appartamento allo scopo di venderlo o affittarlo, ancora non so, accetterò come un segno del destino
 il primo dei due eventi che si verificherà. Allo stato attuale, l'unica cosa di cui sono certo è che sto spendendo un sacco di soldi.  
+
 Il rilascio del Certificato di Agibilità è condizionato, tra le altre cose, al possesso dei Certificati di Conformità degli impianti dell'immobile.
 Per fortuna sono sprovvisto della certificazione del solo impianto elettrico.
 
 Contatto una ditta e mi metto d'accordo per un sopralluogo. Al termine del veloce controllo - pochi minuti - l'impianto viene ritenuto in regola.
 Chiedo quindi al tecnico quali siano i tempi necessari al rilascio della certificazione.  
-"Guardi, è immediato. Vado a casa, inserisco i suoi dati nel modulo prestampato e le invio il certificato per email", è la risposta. 
+"Guardi, è immediato. Vado a casa, inserisco i suoi dati nel modulo prestampato e le invio il certificato per email", è la risposta.   
 "Bene", dico io, "e qual è il costo?".  
 "Quattrocento euro, Iva compresa".  
 "Grazie, le faccio sapere".
