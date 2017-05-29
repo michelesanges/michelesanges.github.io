@@ -95,7 +95,6 @@
 	var path;
 	var marker_position;
 	var called_num = 0;
-	var subpath_max_point_number = 200;
 	var infowindow;
 
 	// crea la combo box con i nomi delle mappe
@@ -227,10 +226,10 @@
 // 					document.getElementById('comments').innerHTML = track_filename[i][1];
 				  });
 				  
-				  track_layer[i].addListener('mouseout', function(event)
-				  {
-					infowindow.setMap(null);
-				  });
+// 				  track_layer[i].addListener('mouseout', function(event)
+// 				  {
+// 					infowindow.setMap(null);
+// 				  });
 			  }
 			  )(i)
 		}	
@@ -260,11 +259,19 @@
 	//Defining the path for which to plot the elevation
 	function draw_path(path, i)
 	{
+	       var subsampled_path = new Array();
+	       
+	       var max_sample_num = 1000;
+	       for (var sample = 0; sample < max_sample_num; sample++)
+	       {
+			subsampled_path[sample] = path[Math.trunc(sample * path.length / max_sample_num)];
+	       }
+	       
 		chart = new google.visualization.AreaChart(document.getElementById(/*'elevation_chart_div'*/'infowindow_div'));
 		google.visualization.events.addListener(chart, 'onmouseover', onmouseover_handler);
 
 		var pathRequest = {
-		    'path': path,
+		    'path': subsampled_path,
 		    'samples': 256
 		};
 
@@ -273,6 +280,7 @@
 		elevator_service.getElevationAlongPath(pathRequest, function(results, status) {
 		    plotElevation(results, status, length, i);
 		});
+		
 	}
 
 
