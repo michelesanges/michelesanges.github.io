@@ -75,24 +75,24 @@
 	<body>
 
 <!-- 	<div id="map_div" style="width:100%;height:400px;"></div> -->
-	<div id="map_div" style="width:100%;height:600px;"></div>
+	<div id="map_div" style="width:100%;height:500px;"></div>
 	<div id="elevation_chart_div" style="width:100%;height:300px;"></div> 
 
 	<script>
-		
+	
+	// elenco tracce
 	var track_filename = new Array();
-	track_filename[0] = ['http://michelesanges.github.io/dataset/tracks/2017-05-27 - viareggio - livorno.geojson', "[2017-05-27] - Viareggio - Livorno", "rgb(255, 0, 0)"];
-	track_filename[1] = ['http://michelesanges.github.io/dataset/tracks/2017-04-17 - aulla - virgoletta - villafranca -castelnuovo magra - ricostruita.geojson', "[2017-04-17] - Aulla - Villafranca - Castelnuovo magra", "rgb(200, 10, 0)"];
-	track_filename[2] = ['http://michelesanges.github.io/dataset/tracks/2017-04-08 - viareggio - lucca.geojson', "[2017-04-08] - Viareggio - Lucca", "rgb(150, 20, 0)"];	
-	track_filename[3] = ['http://michelesanges.github.io/dataset/tracks/2017-04-01 - pontremoli_castelnuovomagra_ricostruita.geojson', "[2017-04-01] - Pontremoli - AUlla", "rgb(100, 30, 0)"];	
-	track_filename[4] = ['http://michelesanges.github.io/dataset/tracks/2016-08-08 - campocecina.geojson', "[2016-08-08] - Campocecina", "rgb(50, 30, 0)"];	
+	track_filename[0] = ['http://michelesanges.github.io/dataset/tracks/2017-06-02 - passo resia - merano - ricostruita.geojson', "[2017-06-02] - Sulle tracce della via Claudia Augusta - Passo Resia - Merano", "rgb(255, 0, 0)"];
+	track_filename[1] = ['http://michelesanges.github.io/dataset/tracks/2017-05-27 - viareggio - livorno.geojson', "[2017-05-27] - Viareggio - Livorno", "rgb(255, 0, 0)"];
+	track_filename[2] = ['http://michelesanges.github.io/dataset/tracks/2017-04-17 - aulla - virgoletta - villafranca -castelnuovo magra - ricostruita.geojson', "[2017-04-17] - Aulla - Villafranca - Castelnuovo magra", "rgb(200, 10, 0)"];
+	track_filename[3] = ['http://michelesanges.github.io/dataset/tracks/2017-04-08 - viareggio - lucca.geojson', "[2017-04-08] - Viareggio - Lucca", "rgb(150, 20, 0)"];	
+	track_filename[4] = ['http://michelesanges.github.io/dataset/tracks/2017-04-01 - pontremoli_castelnuovomagra_ricostruita.geojson', "[2017-04-01] - Pontremoli - AUlla", "rgb(100, 30, 0)"];	
+	track_filename[5] = ['http://michelesanges.github.io/dataset/tracks/2016-08-08 - campocecina.geojson', "[2016-08-08] - Campocecina", "rgb(50, 30, 0)"];	
 
-	
-	
-	
 	var track_layer = [];
 	var bounds;
 	var chart;
+	var data_table;
 	var position_table;
 	var map;
 	var elevator_service;
@@ -185,6 +185,10 @@
 		console.log("basename" + basename);
 */
 
+		data_table = new google.visualization.DataTable();
+		data_table.addColumn('string', 'Sample');
+		data_table.addColumn('number', 'Altitudine');
+
 		position_table = new google.visualization.DataTable();
 		position_table.addColumn('number', 'Latitude');
 		position_table.addColumn('number', 'Longitude');
@@ -193,15 +197,23 @@
 
 		map = new google.maps.Map(document.getElementById("map_div"), {mapTypeId:google.maps.MapTypeId.HYBRID});
 		bounds = new google.maps.LatLngBounds();
+
 		infowindow = new google.maps.InfoWindow({
-		    content: '<div class = "corp" style="width:100%; height: 500px">' + '<div id = "infowindow_div">' + '</div>' + '</div>' + 
-		      '<h1><!--Map title--><div id="map_info_div"></div></h1>'
+		    content: '<div class = "corp" style="width:20px; height: 20px background-color: #00FF00; ">' + '<div id = "infowindow_div" >' + '</div>' + '</div>' + 
+		      '<h2 style="color: brown"><!--Map title--><div id="map_info_div"></div></h2><h3>Click to see the elevation profile</h3>'
 		})
 
 		// Create a new chart in the elevation_chart_div DIV.
-// 		chart = new google.visualization.AreaChart/*LineChart*//*ColumnChart*/(document.getElementById('infowindow_div'));
-// 		google.visualization.events.addListener(chart, 'onmouseover', onmouseover_handler);
-		
+		chart = new google.visualization.AreaChart/*LineChart*//*ColumnChart*/(document.getElementById('elevation_chart_div'));
+		google.visualization.events.addListener(chart, 'onmouseover', onmouseover_handler);
+		chart.draw(data_table, {
+			height: 400,
+			legend: 'none',
+			fontSize: 20,
+			titleX: 'Distance [Km]',
+			titleY: 'Elevation [m]'
+		});
+
 		for (var i = 0; i < track_filename.length; i++)
 		{
 			  (
@@ -210,23 +222,23 @@
 				  track_layer[i] = new google.maps.Data();		
 				  track_layer[i].loadGeoJson(track_filename[i][0], {}, draw_map);		  
 				  track_layer[i].setStyle({
-								icon: 'http://michelesanges.github.io/img/bike_start.png',
-								fillColor: 'green',
+// 								icon: 'http://michelesanges.github.io/img/bike_start.png',
+// 								fillColor: 'green',
 								strokeColor: track_filename[i][2],
-								strokeWeight: 4
+								strokeWeight: 5
 							  });
 				  track_layer[i].setMap(map);
 
-				  track_layer[i].addListener('mouseover', function(event)
+				  track_layer[i].addListener('click', function(event)
 				  {
-// 					infowindow.setPosition(event.latLng)
-// 					infowindow.setOptions({pixelOffset: new google.maps.Size(10, -15)})
-// 					infowindow.setMap(map);
 
-					track_layer[i].setStyle({
-								      strokeColor: "rgb(0,0,255)",
-								      strokeWeight: 6
-								});
+					for (var n = 0; n < track_filename.length; n++)
+					{
+						track_layer[n].setStyle({
+									      strokeColor: (n==i) ? "rgb(0,0,255)" : track_filename[n][2],
+									      strokeWeight: (n==i) ? 8 : 5
+									});
+					}
 
 					// center the map
 					var single_bound = new google.maps.LatLngBounds();
@@ -242,12 +254,20 @@
 					draw_path(event.feature.getGeometry().getArray(), i);  
 				  });
 				  
+				  track_layer[i].addListener('mouseover', function(event)
+				  {
+					infowindow.setPosition(event.latLng);
+					infowindow.setOptions({pixelOffset: new google.maps.Size(10, -15)});
+// 					infowindow.setMap(map);
+					
+// infowindow.setContent('<html><body bgcolor="#E6E6FA"><h2>'+track_filename[i][1]+'</h2><h3>Click to see the elevation profile</h3></body></html>');
+					infowindow.open(map);
+					document.getElementById('map_info_div'/*'iw_title'*/).innerHTML = track_filename[i][1];
+				  });
+				  
 				  track_layer[i].addListener('mouseout', function(event)
 				  {
-					track_layer[i].setStyle({
-								      strokeColor: track_filename[i][2],
-								      strokeWeight: 4
-								});
+					infowindow.close();				    
 // 					infowindow.setMap(null);
 				  });
 			  }
@@ -255,6 +275,7 @@
 		}	
 		map.controls[google.maps.ControlPosition.TOP_CENTER].push(/*combo_box_div*/list1);		
 	}
+
 
 	function draw_map(featarr)
 	{
@@ -276,6 +297,7 @@
 		}
 	}
 
+
 	//Defining the path for which to plot the elevation
 	function draw_path(path, i)
 	{
@@ -286,9 +308,6 @@
 	       {
 			subsampled_path[sample] = path[Math.trunc(sample * path.length / max_sample_num)];
 	       }
-	       
-		chart = new google.visualization.AreaChart(document.getElementById('elevation_chart_div'/*'infowindow_div'*/));
-		google.visualization.events.addListener(chart, 'onmouseover', onmouseover_handler);
 
 		var pathRequest = {
 		    'path': subsampled_path,
@@ -297,10 +316,10 @@
 
 		var length = google.maps.geometry.spherical.computeLength(path);
 		
-		elevator_service.getElevationAlongPath(pathRequest, function(results, status) {
-		    plotElevation(results, status, length, i);
+		elevator_service.getElevationAlongPath(pathRequest, function(results, status)
+		{
+			  plotElevation(results, status, length, i);
 		});
-		
 	}
 
 
@@ -319,21 +338,19 @@
 			elevationPath.push(elevations[i].location);
 		}
 
-		var data = new google.visualization.DataTable();
-		data.addColumn('string', 'Sample');
-		data.addColumn('number', 'Altitudine');
+		data_table.removeRows(0, data_table.getNumberOfRows());
 		position_table.removeRows(0, position_table.getNumberOfRows());
 		
 		for (var i = 0; i < results.length; i++)
 		{
-			data.addRow(['', elevations[i].elevation]);
+			data_table.addRow(['', elevations[i].elevation]);
 			position_table.addRow([elevations[i].location.lat(), elevations[i].location.lng()]);
 		}
 
 		var path_length = length/1000;	// in km
 		path_length = path_length.toFixed(1); // one decimal place
 
-		chart.draw(data, {
+		chart.draw(data_table, {
 			height: 400,
 			legend: 'none',
 			fontSize: 20,
@@ -341,8 +358,6 @@
 			titleX: 'Distance [Km]',
 			titleY: 'Elevation [m]'
 		});
-
-// 		document.getElementById('map_info_div').innerHTML = track_filename[n][1] + '<hr>Path lenght: ' + path_length + " [km]";
 	}
 
 
