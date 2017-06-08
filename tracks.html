@@ -208,6 +208,7 @@
 		// Create a new chart in the elevation_chart_div DIV.
 		chart = new google.visualization.AreaChart/*LineChart*//*ColumnChart*/(document.getElementById('elevation_chart_div'));
 		google.visualization.events.addListener(chart, 'onmouseover', onmouseover_handler);
+		google.visualization.events.addListener(chart, 'onmouseout', onmouseout_handler);
 		chart.draw(data_table, {
 			height: 400,
 			legend: 'none',
@@ -393,12 +394,18 @@
 		}
 		else
 		{
+			marker_position.setMap(map);
 			marker_position.setPosition(position);
 // 			label = google.maps.MarkerLabel(label:{text:lat + "," + lon , color:"white", fontSize:"20px"/*, fontWeight:"Bold" */});
 // 			marker_position.setLabel(lat);
 		}
 	}
 
+	function onmouseout_handler(e)
+	{	
+		marker_position.setMap(null);
+	}
+	
 	</script>
 
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwR5MtCCmXualVOiq27XnxxosJhitng-k&callback=init_map&libraries=geometry"></script>
