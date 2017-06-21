@@ -82,17 +82,18 @@
 	
 	// elenco tracce
 	var track_filename = new Array();
-	track_filename[0] = ['http://michelesanges.github.io/dataset/tracks/2017-06-04 - lago di caldonazzo - bassano del grappa - ricostruita.geojson', "[2017-06-04] - Sulle tracce della via Claudia Augusta - Lago di Caldonazzo - Bassano del Grappa", "rgb(255, 0, 0)"];
-	track_filename[1] = ['http://michelesanges.github.io/dataset/tracks/2017-06-03 - merano - trento.geojson', "[2017-06-03] - Sulle tracce della via Claudia Augusta - Merano - Trento", "rgb(255, 0, 0)"];
-	track_filename[2] = ['http://michelesanges.github.io/dataset/tracks/2017-06-02 - passo resia - merano - ricostruita.geojson', "[2017-06-02] - Sulle tracce della via Claudia Augusta - Passo Resia - Merano", "rgb(255, 0, 0)"];
-	track_filename[3] = ['http://michelesanges.github.io/dataset/tracks/2017-05-27 - viareggio - livorno.geojson', "[2017-05-27] - Viareggio - Livorno", "rgb(255, 0, 0)"];
-	track_filename[4] = ['http://michelesanges.github.io/dataset/tracks/2017-04-17 - aulla - virgoletta - villafranca -castelnuovo magra - ricostruita.geojson', "[2017-04-17] - Aulla - Villafranca - Castelnuovo magra", "rgb(200, 10, 0)"];
-	track_filename[5] = ['http://michelesanges.github.io/dataset/tracks/2017-04-08 - viareggio - lucca.geojson', "[2017-04-08] - Viareggio - Lucca", "rgb(150, 20, 0)"];	
-	track_filename[6] = ['http://michelesanges.github.io/dataset/tracks/2017-04-01 - pontremoli_castelnuovomagra_ricostruita.geojson', "[2017-04-01] - Pontremoli - AUlla", "rgb(100, 30, 0)"];	
-	track_filename[7] = ['http://michelesanges.github.io/dataset/tracks/2016-08-08 - campocecina.geojson', "[2016-08-08] - Campocecina", "rgb(50, 30, 0)"];	
+	track_filename[0] = ['http://michelesanges.github.io/dataset/tracks/2017-06-04 - lago di caldonazzo - bassano del grappa - ricostruita.geojson', "[2017-06-04] - Sulle tracce della via Claudia Augusta - Lago di Caldonazzo - Bassano del Grappa", "rgb(0, 255, 20)", true];
+	track_filename[1] = ['http://michelesanges.github.io/dataset/tracks/2017-06-03 - merano - trento.geojson', "[2017-06-03] - Sulle tracce della via Claudia Augusta - Merano - Trento", "rgb(50, 200, 40)", true];
+	track_filename[2] = ['http://michelesanges.github.io/dataset/tracks/2017-06-02 - passo resia - merano - ricostruita.geojson', "[2017-06-02] - Sulle tracce della via Claudia Augusta - Passo Resia - Merano", "rgb(100, 150, 60)", true];
+	track_filename[3] = ['http://michelesanges.github.io/dataset/tracks/2017-05-27 - viareggio - livorno.geojson', "[2017-05-27] - Viareggio - Livorno", "rgb(150, 100, 80)", true];
+	track_filename[4] = ['http://michelesanges.github.io/dataset/tracks/2017-04-17 - aulla - virgoletta - villafranca -castelnuovo magra - ricostruita.geojson', "[2017-04-17] - Aulla - Villafranca - Castelnuovo magra", "rgb(200, 50, 100)", true];
+	track_filename[5] = ['http://michelesanges.github.io/dataset/tracks/2017-04-08 - viareggio - lucca.geojson', "[2017-04-08] - Viareggio - Lucca", "rgb(250, 0, 120)", true];	
+	track_filename[6] = ['http://michelesanges.github.io/dataset/tracks/2017-04-01 - pontremoli_castelnuovomagra_ricostruita.geojson', "[2017-04-01] - Pontremoli - Aulla", "rgb(230, 20, 140)", true];	
+	track_filename[7] = ['http://michelesanges.github.io/dataset/tracks/2016-08-08 - campocecina.geojson', "[2016-08-08] - Campocecina", "rgb(210, 30, 160)", true];	
+	track_filename[8] = ['http://michelesanges.github.io/dataset/tracks/lagastrello.geojson', "Lagastrello", "rgb(190, 40, 180)", true];	
+	track_filename[9] = ['http://michelesanges.github.io/dataset/tracks/lagastrello2.geojson', "Lagastrello - secondo percorso", "rgb(170, 50, 200)", true];	
 
 	var track_layer = [];
-	var bounds;
 	var chart;
 	var data_table;
 	var position_table;
@@ -103,60 +104,45 @@
 	var called_num = 0;
 	var infowindow;
 
-	// crea la combo box con i nomi delle mappe
-	var div = document.createElement('list');
-	div.style.backgroundColor = 'white';
-	div.style.color = 'black';
-	div.style.fontFamily = 'Arial,sans-serif';
-	div.style.fontSize = '16px';	
-	div.className = "dropdown-check-list";
-	div.id = 'list1';
-
-	var html_cmd = '<span class="anchor">Tracks</span> <ul class="items"> ';
-	for (i = 0; i < track_filename.length; i++)
-	{
-		html_cmd = html_cmd + '<li><input type="checkbox" checked onclick="boxclick(this,' +  i + ')"/>' + track_filename[i][1] + '</li>'
-	}
-// 	html_cmd = html_cmd + ' <li> \
-//             <input type="checkbox" data-id="item" data-name="Item" /> Item \
-//             <ul> \
-//                 <li><input type="checkbox" data-id="subitem1" data-name="Subitem 1" /> Subitem 1</li> \
-//                 <li><input type="checkbox" data-id="subitem2" data-name="Subitem 2" /> Subitem 2</li> \
-//                 <li><input type="checkbox" data-name="Subitem 3" /> Subitem 3</li> \
-//             </ul> \
-//         </li>'
-	html_cmd = html_cmd + '</ul>';
-
-	div.innerHTML = html_cmd;
-	document.body.appendChild(div);
-
-        div.getElementsByClassName('anchor')[0].onclick = function (evt)
-        {
-		if (div.classList.contains('visible'))
-		{
-			div.classList.remove('visible');
-		}
-		else
-		{
-		    div.classList.add('visible');
-		}
-        }
-
 	function boxclick(box, category)
 	{
 		console.log("categoria " + category);
 
 		if (box.checked)
 		{	
-			track_layer[category].setMap(map) 
+			track_layer[category].setMap(map);
+			track_filename[category][3] = true;
 		} 
 		else
 		{
 			track_layer[category].setMap(null)
+			track_filename[category][3] = false;
 		}
+
+		// compute the new bound
+		var single_bound = new google.maps.LatLngBounds();
+		for (var track_num = 0; track_num < track_filename.length; track_num++)
+		{
+			if (track_filename[track_num][3] == true)
+			{
+				track_layer[track_num].forEach(function(feature)
+				{
+					// center the map
+					feature.getGeometry().forEachLatLng(
+						function(position)
+						{
+							single_bound.extend(position); //do this for each coordinate
+						});
+
+					map.fitBounds(single_bound);
+				});
+			}
+		}
+
+		map.setCenter(single_bound.getCenter());
 	}
 
-/*
+
 	function getParameter(whichOne)
 	{
 		var pairs = location.search.substring(1).split('&');
@@ -175,7 +161,7 @@
 
 		return r;
 	}
-*/
+
 	// Load the Visualization API and the columnchart package.
 	google.load("visualization", "1", {packages:["corechart"]});
  
@@ -186,7 +172,59 @@
 		var basename = filename.substring(0, filename.lastIndexOf("."));
 		console.log("basename" + basename);
 */
+		var map_index = getParameter("map_index").replace(/^.*[\\\/]/, '');
+console.log("map_index=" + map_index);
+console.log("track_filename.length=" + track_filename.length);
 
+		if (map_index != "")
+		{
+			// reset the visibility flag
+			for (var track_num = 0; track_num < track_filename.length; track_num++)
+			{
+				if (track_num != map_index)
+				{
+					track_filename[track_num][3] = false;
+				}
+			}
+		}
+
+		// crea la combo box con i nomi delle mappe
+		var div = document.createElement('list');
+		div.style.backgroundColor = 'white';
+		div.style.color = 'black';
+		div.style.fontFamily = 'Arial,sans-serif';
+		div.style.fontSize = '16px';	
+		div.className = "dropdown-check-list";
+		div.id = 'list1';
+		var html_cmd = '<span class="anchor">Tracks</span> <ul class="items"> ';
+		for (i = 0; i < track_filename.length; i++)
+		{
+			if (track_filename[i][3] == true)
+			{
+				html_cmd = html_cmd + '<li><input type="checkbox" checked onclick="boxclick(this,' +  i + ')"/>' + track_filename[i][1] + '</li>';
+			}
+			else	
+			{
+				html_cmd = html_cmd + '<li><input type="checkbox" unchecked onclick="boxclick(this,' +  i + ')"/>' + track_filename[i][1] + '</li>';
+			}
+		}
+		html_cmd = html_cmd + '</ul>';
+		div.innerHTML = html_cmd;	
+
+		document.body.appendChild(div);
+
+		div.getElementsByClassName('anchor')[0].onclick = function (evt)
+		{
+			if (div.classList.contains('visible'))
+			{
+				div.classList.remove('visible');
+			}
+			else
+			{
+			    div.classList.add('visible');
+			}
+		}
+		
 		data_table = new google.visualization.DataTable();
 		data_table.addColumn('string', 'Sample');
 		data_table.addColumn('number', 'Altitudine');
@@ -198,7 +236,8 @@
 		elevator_service = new google.maps.ElevationService;
 
 		map = new google.maps.Map(document.getElementById("map_div"), {mapTypeId:google.maps.MapTypeId.HYBRID});
-		bounds = new google.maps.LatLngBounds();
+
+		var bounds = new google.maps.LatLngBounds();
 
 		infowindow = new google.maps.InfoWindow({
 		    content: '<div class = "corp" style="width:20px; height: 20px background-color: #00FF00; ">' + '<div id = "infowindow_div" >' + '</div>' + '</div>' + 
@@ -207,8 +246,8 @@
 
 		// Create a new chart in the elevation_chart_div DIV.
 		chart = new google.visualization.AreaChart/*LineChart*//*ColumnChart*/(document.getElementById('elevation_chart_div'));
-		google.visualization.events.addListener(chart, 'onmouseover', onmouseover_handler);
-		google.visualization.events.addListener(chart, 'onmouseout', onmouseout_handler);
+		google.visualization.events.addListener(chart, 'onmouseover', chart_onmouseover_handler);
+		google.visualization.events.addListener(chart, 'onmouseout', chart_onmouseout_handler);
 		chart.draw(data_table, {
 			height: 400,
 			legend: 'none',
@@ -217,29 +256,53 @@
 			titleY: 'Elevation [m]'
 		});
 
-		for (var i = 0; i < track_filename.length; i++)
+		for (var track_num = 0; track_num < track_filename.length; track_num++)
 		{
-			  (
-			  function(i)
-			  {
-				  track_layer[i] = new google.maps.Data();		
-				  track_layer[i].loadGeoJson(track_filename[i][0], {}, draw_map);		  
-				  track_layer[i].setStyle({
+			(
+			function(track_num)
+			{
+				track_layer[track_num] = new google.maps.Data();
+			
+				track_layer[track_num].loadGeoJson(track_filename[track_num][0]);
+
+				track_layer[track_num].setStyle({
 // 								icon: 'http://michelesanges.github.io/img/bike_start.png',
 // 								fillColor: 'green',
-								strokeColor: track_filename[i][2],
-								strokeWeight: 5
-							  });
-				  track_layer[i].setMap(map);
+							      strokeColor: track_filename[track_num][2],
+							      strokeWeight: 8
+							});
+console.log("track_num=" + track_num);
 
-				  track_layer[i].addListener('click', function(event)
-				  {
+				if (track_filename[track_num][3] == true)
+				{
+					track_layer[track_num].setMap(map);
+					
+					track_layer[track_num].addListener('addfeature', function(event)
+					{
+						console.log("addfeature: " + event.feature.getGeometry().getType());
+						
+						// center the map
+						event.feature.getGeometry().forEachLatLng(
+							function(position)
+							{
+								bounds.extend(position); //do this for each coordinate
+							});
 
+						map.fitBounds(bounds);
+					});
+				}
+				else
+				{
+					track_layer[track_num].setMap(null)
+				}
+
+				track_layer[track_num].addListener('click', function(event)
+				{
 					for (var n = 0; n < track_filename.length; n++)
 					{
 						track_layer[n].setStyle({
-									      strokeColor: (n==i) ? "rgb(0,0,255)" : track_filename[n][2],
-									      strokeWeight: (n==i) ? 8 : 5
+									      strokeColor: (n==track_num) ? "rgb(0,0,255)" : track_filename[n][2],
+									      strokeWeight: (n==track_num) ? 10 : 8
 									});
 					}
 
@@ -254,52 +317,28 @@
 					map.fitBounds(single_bound);
 					map.setCenter(single_bound.getCenter());
 
-					draw_path(event.feature.getGeometry().getArray(), i);  
-				  });
-				  
-				  track_layer[i].addListener('mouseover', function(event)
-				  {
-					infowindow.setPosition(event.latLng);
-					infowindow.setOptions({pixelOffset: new google.maps.Size(10, -15)});
-// 					infowindow.setMap(map);
-					
-// infowindow.setContent('<html><body bgcolor="#E6E6FA"><h2>'+track_filename[i][1]+'</h2><h3>Click to see the elevation profile</h3></body></html>');
-					infowindow.open(map);
-					document.getElementById('map_info_div'/*'iw_title'*/).innerHTML = track_filename[i][1];
-				  });
-				  
-				  track_layer[i].addListener('mouseout', function(event)
-				  {
-					infowindow.close();				    
-// 					infowindow.setMap(null);
-				  });
-			  }
-			  )(i)
-		}	
-		map.controls[google.maps.ControlPosition.TOP_CENTER].push(/*combo_box_div*/list1);		
-	}
-
-
-	function draw_map(featarr)
-	{
-		console.log("inside draw_map callback");
-
-		for (var i = 0; i < featarr.length; i++)
-		{
-			console.log("feature " + i + " of type " + featarr[i].getGeometry().getType());
-			
-			// center the map
-			featarr[i].getGeometry().forEachLatLng(
-				function(position)
-				{
-					bounds.extend(position); //do this for each coordinate
+					draw_path(event.feature.getGeometry().getArray(), track_num);  
 				});
-
-			map.fitBounds(bounds);
-			map.setCenter(bounds.getCenter());
+				
+				track_layer[track_num].addListener('mouseover', function(event)
+				{
+				      infowindow.setPosition(event.latLng);
+				      infowindow.setOptions({pixelOffset: new google.maps.Size(10, -15)});
+				      infowindow.open(map);
+				      document.getElementById('map_info_div'/*'iw_title'*/).innerHTML = track_filename[track_num][1];
+				});
+				
+				track_layer[track_num].addListener('mouseout', function(event)
+				{
+				      infowindow.close();
+				});
+			}
+			)(track_num)
 		}
+		
+		map.setCenter(bounds.getCenter());
+		map.controls[google.maps.ControlPosition.TOP_CENTER].push(/*combo_box_div*/list1);
 	}
-
 
 	//Defining the path for which to plot the elevation
 	function draw_path(path, i)
@@ -376,7 +415,7 @@
 	}
 
 
-	function onmouseover_handler(e)
+	function chart_onmouseover_handler(e)
 	{	
 		var lat = position_table.getValue(e.row, 0);
 		var lon = position_table.getValue(e.row, 1);
@@ -401,7 +440,7 @@
 		}
 	}
 
-	function onmouseout_handler(e)
+	function chart_onmouseout_handler(e)
 	{	
 		marker_position.setMap(null);
 	}
