@@ -82,16 +82,31 @@
 	
 	// elenco tracce
 	var track_filename = new Array();
-	track_filename[0] = ['http://michelesanges.github.io/dataset/tracks/2017-06-04 - lago di caldonazzo - bassano del grappa - ricostruita.geojson', "[2017-06-04] - Sulle tracce della via Claudia Augusta - Lago di Caldonazzo - Bassano del Grappa", "rgb(0, 255, 20)", true];
-	track_filename[1] = ['http://michelesanges.github.io/dataset/tracks/2017-06-03 - merano - trento.geojson', "[2017-06-03] - Sulle tracce della via Claudia Augusta - Merano - Trento", "rgb(50, 200, 40)", true];
-	track_filename[2] = ['http://michelesanges.github.io/dataset/tracks/2017-06-02 - passo resia - merano - ricostruita.geojson', "[2017-06-02] - Sulle tracce della via Claudia Augusta - Passo Resia - Merano", "rgb(100, 150, 60)", true];
-	track_filename[3] = ['http://michelesanges.github.io/dataset/tracks/2017-05-27 - viareggio - livorno.geojson', "[2017-05-27] - Viareggio - Livorno", "rgb(150, 100, 80)", true];
-	track_filename[4] = ['http://michelesanges.github.io/dataset/tracks/2017-04-17 - aulla - virgoletta - villafranca -castelnuovo magra - ricostruita.geojson', "[2017-04-17] - Aulla - Villafranca - Castelnuovo magra", "rgb(200, 50, 100)", true];
-	track_filename[5] = ['http://michelesanges.github.io/dataset/tracks/2017-04-08 - viareggio - lucca.geojson', "[2017-04-08] - Viareggio - Lucca", "rgb(250, 0, 120)", true];	
-	track_filename[6] = ['http://michelesanges.github.io/dataset/tracks/2017-04-01 - pontremoli_castelnuovomagra_ricostruita.geojson', "[2017-04-01] - Pontremoli - Aulla", "rgb(230, 20, 140)", true];	
-	track_filename[7] = ['http://michelesanges.github.io/dataset/tracks/2016-08-08 - campocecina.geojson', "[2016-08-08] - Campocecina", "rgb(210, 30, 160)", true];	
-	track_filename[8] = ['http://michelesanges.github.io/dataset/tracks/lagastrello.geojson', "Lagastrello", "rgb(190, 40, 180)", true];	
-	track_filename[9] = ['http://michelesanges.github.io/dataset/tracks/lagastrello2.geojson', "Lagastrello - secondo percorso", "rgb(170, 50, 200)", true];	
+	// file name, nome traccia, colore traccia, flag traccia visibile, marker start, marker stop
+	track_filename[0] = ['http://michelesanges.github.io/dataset/tracks/2017-06-04 - lago di caldonazzo - bassano del grappa - ricostruita.geojson', 
+				'[2017-06-04] - Sulle tracce della via Claudia Augusta - Lago di Caldonazzo - Bassano del Grappa', 
+				"rgb(0, 255, 20)", 
+				true, null, null];
+	track_filename[1] = ['http://michelesanges.github.io/dataset/tracks/2017-06-03 - merano - trento.geojson',
+				'[2017-06-03] - Sulle tracce della via Claudia Augusta - Merano - Trento',
+				"rgb(50, 200, 40)",
+				true, null, null];
+	track_filename[2] = ['http://michelesanges.github.io/dataset/tracks/2017-06-02 - passo resia - merano - ricostruita.geojson', 
+				'[2017-06-02] - Sulle tracce della via Claudia Augusta - Passo Resia - Merano', 
+				"rgb(100, 150, 60)", 
+				true, null, null];
+	track_filename[3] = ['http://michelesanges.github.io/dataset/tracks/2017-05-27 - viareggio - livorno.geojson', 
+				'[2017-05-27] - Viareggio - Livorno', 
+				"rgb(150, 100, 80)", 
+				true, null, null];
+	track_filename[4] = ['http://michelesanges.github.io/dataset/tracks/2017-04-17 - aulla - virgoletta - villafranca - castelnuovo magra - ricostruita.geojson', 
+				'[2017-04-17] - Aulla - Villafranca - Castelnuovo magra', 
+				"rgb(200, 50, 100)", 
+				true, null, null];
+	track_filename[5] = ['http://michelesanges.github.io/dataset/tracks/2017-04-08 - viareggio - lucca.geojson', "[2017-04-08] - Viareggio - Lucca", "rgb(250, 0, 120)", true, null, null];	
+	track_filename[6] = ['http://michelesanges.github.io/dataset/tracks/2017-04-01 - pontremoli_castelnuovomagra_ricostruita.geojson', "[2017-04-01] - Pontremoli - Aulla", "rgb(230, 20, 140)", true, null, null];	
+	track_filename[7] = ['http://michelesanges.github.io/dataset/tracks/2016-08-08 - campocecina.geojson', "[2016-08-08] - Campocecina", "rgb(210, 30, 160)", true, null, null];	
+	track_filename[8] = ['http://michelesanges.github.io/dataset/tracks/lagastrello.geojson', "Lagastrello", "rgb(190, 40, 180)", true, null, null];	
 
 	var track_layer = [];
 	var chart;
@@ -112,11 +127,22 @@
 		{	
 			track_layer[category].setMap(map);
 			track_filename[category][3] = true;
+			
+			if (track_filename[category][4] != null)
+			{
+                        track_filename[category][4].setMap(map);
+                        track_filename[category][5].setMap(map);
+            }
 		} 
 		else
 		{
 			track_layer[category].setMap(null)
 			track_filename[category][3] = false;
+			if (track_filename[category][4] != null)
+			{
+                        track_filename[category][4].setMap(null);
+                        track_filename[category][5].setMap(null);
+            }
 		}
 
 		// compute the new bound
@@ -173,8 +199,6 @@
 		console.log("basename" + basename);
 */
 		var map_index = getParameter("map_index").replace(/^.*[\\\/]/, '');
-console.log("map_index=" + map_index);
-console.log("track_filename.length=" + track_filename.length);
 
 		if (map_index != "")
 		{
@@ -266,12 +290,10 @@ console.log("track_filename.length=" + track_filename.length);
 				track_layer[track_num].loadGeoJson(track_filename[track_num][0]);
 
 				track_layer[track_num].setStyle({
-// 								icon: 'http://michelesanges.github.io/img/bike_start.png',
-// 								fillColor: 'green',
+							      icon: " ",
 							      strokeColor: track_filename[track_num][2],
 							      strokeWeight: 8
 							});
-console.log("track_num=" + track_num);
 
 				if (track_filename[track_num][3] == true)
 				{
@@ -280,15 +302,68 @@ console.log("track_num=" + track_num);
 					track_layer[track_num].addListener('addfeature', function(event)
 					{
 						console.log("addfeature: " + event.feature.getGeometry().getType());
-						
+/*						
+						if (event.feature.getGeometry().getType() == "Point")
+						{
+
+							console.log("FEATURE NAME:" + event.feature.getProperty("name"));
+							
+							var string = event.feature.getProperty("name");
+							substring_start = "Inizio";
+							substring_stop = "Fine";
+
+							if (string.includes(substring_start))
+							{
+								track_layer[track_num].setStyle({icon: 'http://michelesanges.github.io/img/bike_start.png'});
+							}
+							else if (string.includes(substring_stop))
+							{
+								track_layer[track_num].setStyle({icon: 'http://michelesanges.github.io/img/bike_stop.png'});
+							}						
+						}
+*/
+
 						// center the map
 						event.feature.getGeometry().forEachLatLng(
 							function(position)
 							{
 								bounds.extend(position); //do this for each coordinate
+
+								if (event.feature.getGeometry().getType() == "Point")
+								{
+								      var string = event.feature.getProperty("name");
+								      substring_start = "Inizio";
+								      substring_stop = "Fine";
+
+								      var icona;
+								      if (string.includes(substring_start))
+								      {
+										 track_filename[track_num][4] = new google.maps.Marker({
+											  position: position,
+											  icon: 'http://michelesanges.github.io/img/bike_start.png',
+											  map: map
+										});
+								      }
+								      else if (string.includes(substring_stop))
+								      {
+										track_filename[track_num][5] = new google.maps.Marker({
+											  position: position,
+											  icon: 'http://michelesanges.github.io/img/bike_stop.png',
+											  map: map
+										});
+								      }
+								}
 							});
 
 						map.fitBounds(bounds);
+						
+						// se è stato passato un indice ed è questo, plotta l'altimetria
+						if ((map_index != "") && (track_num == map_index) && event.feature.getGeometry().getType() == "LineString")
+                        {
+                        console.log("sono dentro track_num: " + track_num);
+					draw_path(event.feature.getGeometry().getArray(), track_num);  
+                        
+                        }
 					});
 				}
 				else
@@ -301,6 +376,7 @@ console.log("track_num=" + track_num);
 					for (var n = 0; n < track_filename.length; n++)
 					{
 						track_layer[n].setStyle({
+									      icon: " ",
 									      strokeColor: (n==track_num) ? "rgb(0,0,255)" : track_filename[n][2],
 									      strokeWeight: (n==track_num) ? 10 : 8
 									});
@@ -401,19 +477,6 @@ console.log("track_num=" + track_num);
 			titleY: 'Elevation [m]'
 		});
 	}
-
-
-	function pause(millis)
-	{
-		var date = Date.now();
-		var curDate = null;
-
-		do 
-		{
-			curDate = Date.now();
-		} while (curDate-date < millis);
-	}
-
 
 	function chart_onmouseover_handler(e)
 	{	
