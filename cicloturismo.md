@@ -21,6 +21,6 @@ bigimg: https://goo.gl/i8Hqu1
 - <a href="https://drive.google.com/open?id=1HEbczwzu4U1_5NzpV0zYkfC15uw&usp=sharing" target="_blank">[2013-09-05] - Sulle strade bianche dell'Eroica</a>
 
 <hr width="75%">
-- <a href="https://drive.google.com/open?id=1k6vdZzH_pfoQH0yFTNjhmXF6At4&usp=sharing" target="_blank">Tutte le tracce</a>
+- <a href="http://michelesanges.github.io/tracks.html" target="_blank">Tutte le tracce</a>
 
 
