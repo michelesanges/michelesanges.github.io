@@ -1,0 +1,13 @@
+---
+layout: default
+images:
+  - image_path: https://goo.gl/y63BBe
+    title: Apple Pie
+  - image_path: https://goo.gl/7cQEx4
+    title: Birthday Cake
+---
+<ul class="photo-gallery">
+  {% for image in page.images %}
+    <li><img src="{{ image.image_path }}" alt="{{ image.title}}"/></li>
+  {% endfor %}
+</ul>
