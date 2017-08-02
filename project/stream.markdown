@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Stream"
+bigimg: https://goo.gl/QiLNG6
 images:
   - image_path: https://goo.gl/UVSM6m
     title: Apple Pie
@@ -16,7 +17,7 @@ images:
 <ul class="photo-gallery">
   {% for image in page.images %}
     <img src="{{ image.image_path }}" alt="{{ image.title}}"/>
-<!--    <p>-->
+    <p>
   {% endfor %}
 </ul>
 </center>
