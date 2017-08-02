@@ -3,9 +3,9 @@ layout: post
 title:  "Stream"
 images:
   - image_path: https://goo.gl/UVSM6m
-<!--    title: Apple Pie-->
+    title: Apple Pie
   - image_path: https://goo.gl/pnc4Zt
-<!--     title: Birthday Cake -->
+    title: Birthday Cake 
   - image_path: https://goo.gl/rQr7fr
   - image_path: https://goo.gl/GLHxPx
   - image_path: https://goo.gl/J2rbPs
