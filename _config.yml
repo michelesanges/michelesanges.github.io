@@ -89,9 +89,9 @@ social:
   - icon:	google-foto
     image:       "/img/google_foto.png"
     target:      "_blank"
-    url:	https://goo.gl/photos/VTacmZPyBwioSu2v5
+    url:	https://photos.app.goo.gl/U4ibwYJIhElqmwH73
     desc: See my Google Photo Stream
-    share_url: https://www.facebook.com/sanges.michele
+    share_url: 
     share_title: ?t=
     share_link: "&amp;u="
 

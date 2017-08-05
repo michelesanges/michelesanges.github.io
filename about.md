@@ -2,8 +2,7 @@
 layout: page
 title: About
 subtitle: Andrà a finire che, prima o poi, vi racconterò troppo di me.
-img: https://goo.gl/ynWENh
-show-avatar: true
+bigimg: https://goo.gl/aoKRE9
 ---
 Mi chiamo Michele Sanges e non sono mai di buon umore.
 
