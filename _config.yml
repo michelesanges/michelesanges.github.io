@@ -31,8 +31,8 @@ navbar-links:
   Cicloturismo: "cicloturismo"
   Social:
     - Facebook: "https://www.facebook.com/sanges.michele"
-    - Instagram: "https://www.instagram.com/michele.sanges/"
     - Anobii: "http://www.anobii.com/michelesanges/books"
+#    - Instagram: "https://www.instagram.com/michele.sanges/"
     #- GitHub: "https://github.com/michelesanges/"
   Photography:
     - Photovogue: "http://www.vogue.it/photovogue/portfolio/?id=149678"
@@ -56,7 +56,7 @@ author:
   name: Michele Sanges
   email: "michele.sanges@gmail.com"
   facebook: sanges.michele  # eg. daattali
-  instagram: https://www.instagram.com/michele.sanges/
+  #instagram: https://www.instagram.com/michele.sanges/
   google-photo: https://goo.gl/photos/J6n4SpRfPnE5ZsZh6
   anobii: http://www.anobii.com/michelesanges/books
   #google-maps: /bike_tracks/

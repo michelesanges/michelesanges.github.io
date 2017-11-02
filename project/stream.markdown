@@ -3,20 +3,21 @@ layout: post
 title:  "Stream"
 bigimg: https://goo.gl/QiLNG6
 images:
-  - image_path: https://goo.gl/UVSM6m
+  - image_path: https://goo.gl/dDg3H3
     title: Apple Pie
-  - image_path: https://goo.gl/pnc4Zt
+  - image_path: https://goo.gl/GLn6p8
     title: Birthday Cake 
-  - image_path: https://goo.gl/rQr7fr
-  - image_path: https://goo.gl/GLHxPx
-  - image_path: https://goo.gl/J2rbPs
-  - image_path: https://goo.gl/tYB2Q7
-  - image_path: https://goo.gl/mcmRAa
+  - image_path: https://goo.gl/CG8VgZ
+  - image_path: https://goo.gl/jpSxHB
+  - image_path: https://goo.gl/c6RT7k
 ---
 <center>
 <ul class="photo-gallery">
   {% for image in page.images %}
     <img src="{{ image.image_path }}" alt="{{ image.title}}"/>
+<!--    <div style="background-image: url(real_background_image.jpg);"> 
+        <img src="{{ image.image_path }}" alt="{{ image.title}}"/> 
+    </div> -->
     <p>
   {% endfor %}
 </ul>
