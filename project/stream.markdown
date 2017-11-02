@@ -14,10 +14,10 @@ images:
 <center>
 <ul class="photo-gallery">
   {% for image in page.images %}
-    <img src="{{ image.image_path }}" alt="{{ image.title}}"/>
-<!--    <div style="background-image: url(real_background_image.jpg);"> 
+<!--     <img src="{{ image.image_path }}" alt="{{ image.title}}"/> -->
+    <div style="background-image: url(https://goo.gl/dDg3H3);"> 
         <img src="{{ image.image_path }}" alt="{{ image.title}}"/> 
-    </div> -->
+    </div> 
     <p>
   {% endfor %}
 </ul>
