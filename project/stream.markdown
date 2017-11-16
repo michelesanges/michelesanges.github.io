@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: page
 title:  "Stream"
-bigimg: https://goo.gl/QiLNG6
+bigimg: https://goo.gl/dDg3H3
 images:
   - image_path: https://goo.gl/dDg3H3
     title: Apple Pie
