@@ -11,7 +11,7 @@ images:
   - image_path: https://goo.gl/jpSxHB
   - image_path: https://goo.gl/c6RT7k
 ---
-<div class="container" style="margin-left:25px;width=2000px">
+<div >
 <center>
   {% for image in page.images %}
     <img src="{{ image.image_path }}" alt="{{ image.title}}"/>
