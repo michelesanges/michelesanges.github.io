@@ -225,11 +225,11 @@ prose:
       - name: "layout"
         field:
           element: "hidden"
-          value: "post"
+          value: "photocollection"
       - name: "title"
         field:
           element: "text"
-          label: "Post title"
+          label: "photocollection title"
           placeholder: "Title"
           alterable: true
       - name: "subtitle"
