@@ -4890,8 +4890,8 @@ a.badge:focus {
 }
 .thumbnail > img,
 .thumbnail a > img {
-  margin-right: auto;
-  margin-left: auto;
+/*  margin-right: auto;
+  margin-left: auto;*/
 }
 a.thumbnail:hover,
 a.thumbnail:focus,
@@ -6321,8 +6321,8 @@ button.close {
 }
 .center-block {
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+/*  margin-right: auto;
+  margin-left: auto;*/
 }
 .pull-right {
   float: right !important;
