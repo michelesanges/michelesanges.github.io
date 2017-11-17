@@ -1,0 +1,47 @@
+---
+layout: page
+title: Photo Collection
+subtitle: Photo Collection subtitle
+<!-- bigimg: https://goo.gl/4CCBAC -->
+---
+
+<div class="photocollection-list">
+  {% for photocollection in paginator.photocollections %}
+  <article class="photocollection-preview">
+    <a href="{{ photocollection.url | prepend: site.baseurl }}">
+	  <h2 class="photocollection-title">{{ photocollection.title }}</h2>
+	
+	  {% if photocollection.subtitle %}
+	  <h3 class="photocollection-subtitle">
+	    {{ photocollection.subtitle }}
+	  </h3>
+	  {% endif %}  
+    </a>
+
+    <p class="photocollection-meta">
+      Posted on {{ photocollection.date | date: "%B %-d, %Y" }}
+    </p>
+  
+    <div class="post-entry">
+      {{ photocollection.content | truncatewords: 50 | strip_html | xml_escape}}
+	  <a href="{{ photocollection.url | prepend: site.baseurl }}" class="photocollection-read-more">[Read&nbsp;More]</a>
+    </div>
+  
+   </article>
+  {% endfor %}
+</div>
+
+{% if paginator.total_pages > 1 %}
+<ul class="pager main-pager">
+  {% if paginator.previous_page %}
+  <li class="previous">
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}
