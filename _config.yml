@@ -154,6 +154,9 @@ footer-links-active:
 #paginate_path: "/blog/page:num"
 
 paginate_multiple:
+- paginate: 5
+    paginate_path: '/blog/page:num'
+    sub_dir: '/blog'
   - paginate: 5
     paginate_path: '/blog/general/page:num/'
     sub_dir: '/general'
