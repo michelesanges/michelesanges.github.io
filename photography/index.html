@@ -1,30 +1,30 @@
 ---
 layout: page
-title: Photo Collection
-subtitle: Photo Collection subtitle
+title: Photo Collections
+subtitle: Photo Collections subtitle
 <!-- bigimg: https://goo.gl/4CCBAC -->
 ---
 
-<div class="photocollection-list">
-  {% for photocollection in paginator.photocollections %}
-  <article class="photocollection-preview">
-    <a href="{{ photocollection.url | prepend: site.baseurl }}">
-	  <h2 class="photocollection-title">{{ photocollection.title }}</h2>
+<div class="posts-list">
+  {% for post in paginator.photocollections %}
+  <article class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+	  <h2 class="post-title">{{ post.title }}</h2>
 	
-	  {% if photocollection.subtitle %}
-	  <h3 class="photocollection-subtitle">
-	    {{ photocollection.subtitle }}
+	  {% if post.subtitle %}
+	  <h3 class="post-subtitle">
+	    {{ post.subtitle }}
 	  </h3>
 	  {% endif %}  
     </a>
 
-    <p class="photocollection-meta">
-      Posted on {{ photocollection.date | date: "%B %-d, %Y" }}
+    <p class="post-meta">
+      Posted on {{ post.date | date: "%B %-d, %Y" }}
     </p>
   
     <div class="post-entry">
-      {{ photocollection.content | truncatewords: 50 | strip_html | xml_escape}}
-	  <a href="{{ photocollection.url | prepend: site.baseurl }}" class="photocollection-read-more">[Read&nbsp;More]</a>
+      {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
+	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
     </div>
   
    </article>
