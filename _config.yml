@@ -151,19 +151,20 @@ footer-links-active:
 paginate: 5
 paginate_path: "/blog/page:num"
 
+paginate_multiple:
+  - paginate: 5
+    paginate_path: '/page:num/'
+    sub_dir: '/general'
+  - paginate: 5
+    paginate_path: '/photography/page:num/'
+    sub_dir: '/photography'
+    
 # Default YAML values (more information on Jekyll's site)
 defaults:
   -
     scope:
       path: ""
       type: "posts"
-    values:
-      layout: "post"
-      comments: true  # add comments to all blog posts
-  -
-    scope:
-      path: ""
-      type: "photocollections"
     values:
       layout: "post"
       comments: true  # add comments to all blog posts
@@ -207,36 +208,6 @@ prose:
         field:
           element: "text"
           label: "Post title"
-          placeholder: "Title"
-          alterable: true
-      - name: "subtitle"
-        field:
-          element: "textarea"
-          label: "Subtitle"
-          placeholder: "A description of your post."
-          alterable: true
-      - name: "date"
-        field:
-          element: "text"
-          label: "Date"
-          help: "Enter date of post."
-          placeholder: "yyyy-mm-dd"
-          alterable: true
-      - name: "published"
-        field:
-          element: "checkbox"
-          label: "Publish"
-          help: "Check to publish post, uncheck to hide."
-  
-    _photocollections:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "photocollection"
-      - name: "title"
-        field:
-          element: "text"
-          label: "photocollection title"
           placeholder: "Title"
           alterable: true
       - name: "subtitle"
