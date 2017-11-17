@@ -7,8 +7,7 @@ bigimg: https://goo.gl/4CCBAC
 
 <div class="posts-list">
   {% for post in paginator.posts %}
-    {% if post.secondary != null %}
-    {% else %}
+    {% if post.secondary == 'secondary' %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h2 class="post-title">{{ post.title }}</h2>
