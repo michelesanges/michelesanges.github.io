@@ -2,6 +2,7 @@
 gems:
   - jemoji
   - jekyll-paginate
+  - jekyll-paginate-multiple
 
 # --- General options --- #
 # url is the full website URL
