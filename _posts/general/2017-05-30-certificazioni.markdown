@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Di certificazioni e altre amenità"
+type: blog
 ---
 Ho richiesto il Certificato di Agibilità del mio appartamento, ho intenzione di venderlo o affittarlo, ancora non so, accetterò come un segno del destino
 il primo dei due eventi che si verificherà. <!--Allo stato attuale, l'unica cosa di cui sono certo è che sto spendendo un sacco di soldi.  -->
