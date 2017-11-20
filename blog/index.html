@@ -7,7 +7,8 @@ bigimg: https://goo.gl/4CCBAC
 
 <div class="posts-list">
   {% for post in paginator.posts %}
-    {% alert(post.type); if post.type == 'photo' %}
+<script> alert(post.type); </script> 
+    {% if post.type == 'photo' %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h2 class="post-title">{{ post.title }}</h2>
