@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Care colleghe, cari colleghi"
-type: blog
+secondary: blog
 ---
 È tardo pomeriggio, l'uomo si ferma in autogrill, non ha fame ma ordina un Camogli e una bottiglia d'acqua. È stanco, mangia svogliatamente e con estrema lentezza, è lì solo per 
 ingannare il tempo. Al termine fa una telefonata e poi esce dal locale. Una sigaretta prima di salire in auto, percorre pochi metri e si ferma a fare benzina. Deve pagare, non ricorda il codice
