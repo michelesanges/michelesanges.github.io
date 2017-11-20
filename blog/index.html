@@ -4,42 +4,10 @@ title: Blog
 subtitle: Vedo facce tese e preoccupate
 bigimg: https://goo.gl/4CCBAC
 ---
-	<script src="https://www.google.com/jsapi"></script>
-
-	<script>
-	var blog_type;
-	function getParameter(whichOne)
-	{
-		var pairs = location.search.substring(1).split('&');
-		var r = "";
-		var tp = new Array();
-
-		for (var i = 0; i < pairs.length; i ++)
-		{
-			tp = pairs[i].split('=');
-
-			if (whichOne == tp[0])
-			{
-				r = unescape(tp[1].replace(/\+/g, " "));
-			}
-		}
-
-		return r;
-	}
-
-	
-	document.body.onload = function init_map()
-	{
-		blog_type = getParameter("blog_type").replace(/^.*[\\\/]/, '');
-		alert("yes");
-
-	}
-	
-	</script>
 
 <div class="posts-list">
   {% for post in paginator.posts %}
-    {% if post.type == blog_type %}
+    {% alert(post.type); if post.type == 'photo' %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h2 class="post-title">{{ post.title }}</h2>
