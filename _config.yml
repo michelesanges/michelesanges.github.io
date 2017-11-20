@@ -36,13 +36,9 @@ navbar-links:
     - Anobii: "http://www.anobii.com/michelesanges/books"
 #    - Instagram: "https://www.instagram.com/michele.sanges/"
     #- GitHub: "https://github.com/michelesanges/"
-  Photography:
-    - Photovogue: "http://www.vogue.it/photovogue/portfolio/?id=149678"
-    #- Stream: "https://photos.app.goo.gl/U4ibwYJIhElqmwH73"
-    - Les parisiens: "https://goo.gl/photos/qZsTiEjBd1VjQbcv7"
-    #- Hotel rooms: "https://photos.app.goo.gl/D4oRKW04Ajh1LNzP2"
-    #- Sport Courts: "https://photos.app.goo.gl/kLQcjkq3taKOlvDq1"
-  #Photography: "photography"
+  #Photography:
+    #- Photovogue: "http://www.vogue.it/photovogue/portfolio/?id=149678"
+    #- Les parisiens: "https://goo.gl/photos/qZsTiEjBd1VjQbcv7"
   About: "about"
   #Author's home: "http://deanattali.com"
 
