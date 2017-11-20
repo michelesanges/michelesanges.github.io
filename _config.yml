@@ -29,7 +29,7 @@ description: A virtual proof that name is awesome!
 # List of links in the navigation bar
 navbar-links:
   Blog: "blog"
-  Photography: "photography"
+  Photography: "blog/photography.html"
   Cicloturismo: "cicloturismo"
   Social:
     - Facebook: "https://www.facebook.com/sanges.michele"
