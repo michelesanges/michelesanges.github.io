@@ -3,11 +3,12 @@ layout: page
 title: Blog
 subtitle: Vedo facce tese e preoccupate
 bigimg: https://goo.gl/4CCBAC
+category: blog1
 ---
 
 <div class="posts-list">
   {% for post in paginator.posts %}
-    {% if post.secondary contains 'blog' %}
+    {% if post.categories contains 'blog1' %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h2 class="post-title">{{ post.title }}</h2>

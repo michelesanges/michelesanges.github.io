@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hotel Rooms"
-secondary: photo
+category: blog2
 <!--bigimg: https://goo.gl/dDg3H3-->
 images:
   - image_path: https://goo.gl/dDg3H3
