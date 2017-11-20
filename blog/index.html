@@ -7,6 +7,7 @@ bigimg: https://goo.gl/4CCBAC
 	<script src="https://www.google.com/jsapi"></script>
 
 	<script>
+	var blog_type;
 	function getParameter(whichOne)
 	{
 		var pairs = location.search.substring(1).split('&');
@@ -26,9 +27,10 @@ bigimg: https://goo.gl/4CCBAC
 		return r;
 	}
 
+	
 	document.body.onload = function init_map()
 	{
-		var blog_type = getParameter("blog_type").replace(/^.*[\\\/]/, '');
+		blog_type = getParameter("blog_type").replace(/^.*[\\\/]/, '');
 		alert("yes");
 
 	}
