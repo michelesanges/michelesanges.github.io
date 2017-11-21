@@ -2,6 +2,7 @@
 layout: page
 title: Photography
 ---
+    <ul>
 {% for photocollection in site.photocollections %}
   <div class="photocollection">
 <!--     <h2><a href="{{ photocollection.url }}">{{ photocollection.title }}</a></h2> -->
@@ -12,3 +13,4 @@ title: Photography
   </div>
  
 {% endfor %} 
+    </ul>
