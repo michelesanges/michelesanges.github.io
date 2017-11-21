@@ -1,19 +1,15 @@
 ---
 layout: post
-title:  "Hotel Rooms"
+title:  "Hotel"
 <!-- category: blog2 -->
 <!-- image_path: https://goo.gl/dDg3H3 -->
 thumbnail-path: https://goo.gl/dDg3H3
 short-description: this is the short description
 <!--bigimg: https://goo.gl/dDg3H3-->
 images:
-  - image_path: https://goo.gl/dDg3H3
-    title: Apple Pie
-  - image_path: https://goo.gl/GLn6p8
-    title: Birthday Cake 
-  - image_path: https://goo.gl/CG8VgZ
-  - image_path: https://goo.gl/jpSxHB
-  - image_path: https://goo.gl/c6RT7k
+  - image_path: https://goo.gl/ZM8PWF
+  - image_path: https://goo.gl/VP5XEi
+  - image_path: https://goo.gl/YK2SBj
 ---
 <div >
 <center>
