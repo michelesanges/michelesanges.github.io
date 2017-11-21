@@ -11,9 +11,11 @@ images:
   - image_path: https://goo.gl/euwTTo
   - image_path: https://goo.gl/8BNCdm
 ---
+<center>
 {% for image in page.images %}
   <div class="collection">
 	<img src="{{ image.image_path }}" alt="{{ image.title}}"/>
 	<p></p>
   </div>
 {% endfor %}
+</center>
