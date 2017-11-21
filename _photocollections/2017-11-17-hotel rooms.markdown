@@ -8,16 +8,16 @@ images:
   - image_path: https://goo.gl/VP5XEi
   - image_path: https://goo.gl/YK2SBj
 ---
-<!--<div >
+<div >
  {% for image in page.images %}
     <img src="{{ image.image_path }}" alt="{{ image.title}}"/>
     <p>
   {% endfor %}
-</div>-->
+</div>
 
-{% for image in page.images %}
+<!--{% for image in page.images %}
 	<div class="collection">
 	    <img src="{{ image.image_path }}" alt="{{ image.title}}"/>
 	    <p>
 	</div>
-{% endfor %}
+{% endfor %}-->
