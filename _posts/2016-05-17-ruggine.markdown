@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Ruggine"
-category: blog1
 ---
 Da un po' di tempo a questa parte, dalla tazza del mio water scende giù un lento e costante rivolo d'acqua. 
 Il fluire dell'acqua ha lasciato un segno lungo la parete di ceramica, una striatura colorata, un deposito di calcare color ruggine.
