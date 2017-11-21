@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Hotel"
 <!-- category: blog2 -->
 <!-- image_path: https://goo.gl/dDg3H3 -->
