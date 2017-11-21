@@ -145,9 +145,12 @@ footer-links-active:
 #markdown: kramdown
 #highlighter: rouge
 #permalink: /:year-:month-:day-:title/
-
+collections:
+  photocollections:
+    output: true
+    
 paginate: 5
-paginate_path: "/photography/page:num"
+paginate_path: "/blog/page:num"
 #paginate_path: "/blog/page:num"
 
 #paginate_multiple:
