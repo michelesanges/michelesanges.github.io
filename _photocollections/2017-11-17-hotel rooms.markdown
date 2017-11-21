@@ -11,10 +11,9 @@ images:
   - image_path: https://goo.gl/VP5XEi
   - image_path: https://goo.gl/YK2SBj
 ---
- {% for image in page.images %}
 <div >
+ {% for image in page.images %}
     <img src="{{ image.image_path }}" alt="{{ image.title}}"/>
-</div>
 <!--    <div style="background-image: url(https://goo.gl/dDg3H3);"> 
         <img src="{{ image.image_path }}" alt="{{ image.title}}"/> 
     </div> -->
@@ -22,5 +21,6 @@ images:
 <!--  <table style="background-image:url('image.image_path')"><tr><td></td></tr></table> -->
      <p>
   {% endfor %}
+</div>
 
 
