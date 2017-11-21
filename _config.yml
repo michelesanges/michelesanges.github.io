@@ -146,14 +146,15 @@ footer-links-active:
 #highlighter: rouge
 #permalink: /:year-:month-:day-:title/
 
-#paginate: 5
-#paginate_path: "/blog/page:num;/photography/page:num/"
+paginate: 5
+paginate_path: "/photo/page:num"
+#paginate_path: "/blog/page:num"
 
-paginate_multiple:
-  - paginate: 5
-    paginate_path: '/blog/page:num'
-  - paginate: 5
-    paginate_path: '/photo/page:num/'
+#paginate_multiple:
+  #- paginate: 5
+    #paginate_path: '/blog/page:num'
+  #- paginate: 5
+    #paginate_path: '/photo/page:num/'
     
 # Default YAML values (more information on Jekyll's site)
 defaults:
