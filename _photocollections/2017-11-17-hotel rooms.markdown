@@ -16,8 +16,8 @@ images:
 </div>-->
 
 {% for image in page.images %}
-  <div class="collection">
+<div class="collection">
 	<img src="{{ image.image_path }}" alt="{{ image.title}}"/>
 	<p>
-  </div>
+</div>
 {% endfor %}
