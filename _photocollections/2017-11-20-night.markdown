@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Night"
 subtitle: Photography - Collection
 thumbnail-path: https://goo.gl/dDg3H3
