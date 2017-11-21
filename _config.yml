@@ -147,7 +147,7 @@ footer-links-active:
 #permalink: /:year-:month-:day-:title/
 
 paginate: 5
-paginate_path: "/photo/page:num"
+paginate_path: "/photography/page:num"
 #paginate_path: "/blog/page:num"
 
 #paginate_multiple:
