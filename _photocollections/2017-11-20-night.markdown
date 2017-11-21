@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: post
 title:  "Night"
+subtitle: Photography
 thumbnail-path: https://goo.gl/dDg3H3
 short-description: this is the short description
 images:
