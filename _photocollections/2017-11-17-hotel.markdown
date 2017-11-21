@@ -1,6 +1,7 @@
 ---
 layout: page
 title:  "Hotel"
+subtitle: Photography - Collection
 thumbnail-path: https://goo.gl/dDg3H3
 short-description: this is the short description
 images:
@@ -8,16 +9,11 @@ images:
   - image_path: https://goo.gl/VP5XEi
   - image_path: https://goo.gl/YK2SBj
 ---
-<!--<div >
- {% for image in page.images %}
-    <img src="{{ image.image_path }}" alt="{{ image.title}}"/>
-    <p>
-  {% endfor %}
-</div>-->
-
+<center>
 {% for image in page.images %}
   <div class="collection">
 	<img src="{{ image.image_path }}" alt="{{ image.title}}"/>
 	<p></p>
   </div>
 {% endfor %}
+</center>
