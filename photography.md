@@ -6,7 +6,7 @@ title: Photography
   <div class="photocollection">
 <!--     <h2><a href="{{ photocollection.url }}">{{ photocollection.title }}</a></h2> -->
     <li>
-        <img src="{{ photocollection.thumbnail-path }}" alt="{{ photocollection.title }} width="100""/>
+        <img src="{{ photocollection.thumbnail-path }}" alt="{{ photocollection.title }}" width="100"/>
         <h2><a href="{{ photocollection.url }}">{{ photocollection.title }}</a></h2>
         <p>{{ photocollection.short-description }}</p>
     </li>
