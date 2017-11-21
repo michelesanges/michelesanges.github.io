@@ -2,7 +2,7 @@
 layout: page
 title: Photography
 ---
-<li> <h2><a href="http://www.vogue.it/photovogue/portfolio/?id=149678">PhotoVogue</a></h2>
+<li> <h2><a href="http://www.vogue.it/photovogue/portfolio/?id=149678" target="_blank">PhotoVogue</a></h2>
   <p>PhotoVogue Album</p>
 </li>
 {% for photocollection in site.photocollections %}
