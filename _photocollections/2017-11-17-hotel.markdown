@@ -2,7 +2,7 @@
 layout: page
 title:  "Hotel"
 subtitle: Photography - Collection
-thumbnail-path: https://goo.gl/dDg3H3
+thumbnail-path: https://goo.gl/VP5XEi
 short-description: this is the short description
 images:
   - image_path: https://goo.gl/ZM8PWF
