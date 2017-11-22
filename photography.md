@@ -4,18 +4,19 @@ title: Photography
 subtitle: Collections
 bigimg: https://goo.gl/rPDrJQ
 ---
-<ul>
-<li> <h2><a href="http://www.vogue.it/photovogue/portfolio/?id=149678" target="_blank">PhotoVogue</a></h2>
+<!-- <ul> -->
+<!-- <li> -->
+<h2><a href="http://www.vogue.it/photovogue/portfolio/?id=149678" target="_blank">PhotoVogue</a></h2>
   <p>PhotoVogue Album</p>
-</li>
+<!-- </li> -->
 {% for photocollection in site.photocollections %}
   <div class="photocollection">
-<!--     <h2><a href="{{ photocollection.url }}">{{ photocollection.title }}</a></h2> -->
-
-    <li><img src="{{ photocollection.thumbnail-path}}" width="150"/><h2><a href="{{ photocollection.url }}">{{ photocollection.title }}</a></h2>
+<!--     <li> -->
+    <img src="{{ photocollection.thumbnail-path}}" width="150"/><h2><a href="{{ photocollection.url }}">{{ photocollection.title }}</a></h2>
         <p>{{ photocollection.short-description }}</p>
-    </li>
+<!--     </li> -->
+    <hr>
   </div>
  
 {% endfor %}
-</ul>
+<!-- </ul> -->
