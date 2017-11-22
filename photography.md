@@ -12,7 +12,7 @@ bigimg: https://goo.gl/rPDrJQ
   <div class="photocollection">
 <!--     <h2><a href="{{ photocollection.url }}">{{ photocollection.title }}</a></h2> -->
 
-    <li> <h2><a href="{{ photocollection.url }}">{{ photocollection.title }}</a></h2>
+    <li><img src="{{ image.thumbnail-path}}" width=150/><h2><a href="{{ photocollection.url }}">{{ photocollection.title }}</a></h2>
         <p>{{ photocollection.short-description }}</p>
     </li>
   </div>
