@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "WAITING FOR THE SUNLIGHT"
-subtitle: Photography - Collection
+subtitle: Fotografia - Collezione
 thumbnail-path: https://goo.gl/34YcH2
 short-description: this is the short description
 images:
