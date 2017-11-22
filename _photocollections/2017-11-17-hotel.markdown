@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Hotel"
+title:  "HOTEL"
 subtitle: Photography - Collection
 thumbnail-path: https://goo.gl/VP5XEi
 short-description: this is the short description
