@@ -4,8 +4,8 @@ title: Photography
 subtitle: Collections
 bigimg: https://goo.gl/rPDrJQ
 ---
-<h2><a href="http://www.vogue.it/photovogue/portfolio/?id=149678" target="_blank">PhotoVogue</a></h2>
-  <p><i>Porfolio sulla piattaforma fotografica di Vogue Italia</i></p>
+<h2><a href="http://www.vogue.it/photovogue/portfolio/?id=149678" target="_blank">PHOTOVOGUE</a></h2>
+  <p>Porfolio sulla piattaforma fotografica di Vogue Italia</p>
   <hr>
 {% for photocollection in site.photocollections %}
   <div class="photocollection">
