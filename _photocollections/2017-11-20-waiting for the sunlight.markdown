@@ -5,11 +5,11 @@ subtitle: Photography - Collection
 thumbnail-path: https://goo.gl/NTThaa
 short-description: this is the short description
 images:
-  - image_path: https://goo.gl/NTThaa
+  - image_path: https://goo.gl/34YcH2
   - image_path: https://goo.gl/mFN3wH
   - image_path: https://goo.gl/nsPNG4
   - image_path: https://goo.gl/93sUhJ
-  - image_path: https://goo.gl/3UkP6i
+  - image_path: https://goo.gl/hmjT2p
   - image_path: https://goo.gl/cVeBUK
   - image_path: https://goo.gl/ES4VKC
   - image_path: https://goo.gl/RBMoqY
