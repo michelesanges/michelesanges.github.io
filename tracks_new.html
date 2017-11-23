@@ -1,0 +1,565 @@
+---
+layout: page
+title: Cicloturismo
+subtitle: Il termine traccia denota solitamente un segno, un'orma o una scia, ma possiede diversi altri significati.
+bigimg: https://goo.gl/WwtaW9
+---
+<!DOCTYPE html>
+
+<html>
+	<head>
+	  <!-- This stylesheet contains specific styles for displaying the map
+		on this page. Replace it with your own styles as described in the
+		documentation:
+		https://developers.google.com/maps/documentation/javascript/tutorial -->
+	<!--     <link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css"> -->
+ <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }   
+      
+    </style>	
+	
+	<script src="https://www.google.com/jsapi"></script>
+
+	<style type="text/css"> 
+	.dropdown-check-list {
+	  display: inline-block;
+	}
+	.dropdown-check-list .anchor {
+	  position: relative;
+	  cursor: pointer;
+	  display: inline-block;
+	  padding: 5px 50px 5px 10px;
+	  border: 1px solid #ccc;
+	}
+	.dropdown-check-list .anchor:after {
+	  position: absolute;
+	  content: "";
+	  border-left: 2px solid black;
+	  border-top: 2px solid black;
+	  padding: 5px;
+	  right: 10px;
+	  top: 20%;
+	  -moz-transform: rotate(-135deg);
+	  -ms-transform: rotate(-135deg);
+	  -o-transform: rotate(-135deg);
+	  -webkit-transform: rotate(-135deg);
+	  transform: rotate(-135deg);
+	}
+	.dropdown-check-list .anchor:active:after {
+	  right: 8px;
+	  top: 21%;
+	}
+	.dropdown-check-list ul.items {
+	  padding: 2px;
+	  display: none;
+	  margin: 0;
+	  border: 1px solid #ccc;
+	  border-top: none;
+	}
+	.dropdown-check-list ul.items li {
+	  list-style: none;
+	}
+	.dropdown-check-list.visible .anchor {
+	  color: #0094ff;
+	}
+	.dropdown-check-list.visible .items {
+	  display: block;
+	}
+	</style>
+
+	</head>
+	<body>
+
+<!-- 	<div id="map_div" style="width:100%;height:400px;"></div> -->
+	<div id="map_div" style="width:100%;height:500px;"></div>
+	<div id="elevation_chart_div" style="width:100%;height:300px;"></div> 
+
+	<script>
+	
+	// elenco tracce
+	var track_filename = new Array();
+	// file name, nome traccia, colore traccia, flag traccia visibile, marker start, marker stop
+	track_filename[0] = ['http://michelesanges.github.io/dataset/tracks/2017-08-07 - tour masochista.geojson', "[2017-08-07] - Due giorni su e giù per l'Appennino tosco emiliano", "rgb(190, 40, 180)", true, null, null];	
+	track_filename[1] = ['http://michelesanges.github.io/dataset/tracks/2017-06-04 - lago di caldonazzo - bassano del grappa - ricostruita.geojson', 
+				'[2017-06-04] - SULLE TRACCE DELLA VIA CLAUDIA AUGUSTA - Lago di Caldonazzo - Bassano del Grappa', 
+				"rgb(0, 255, 20)", true, null, null];
+	track_filename[2] = ['http://michelesanges.github.io/dataset/tracks/2017-06-03 - merano - trento.geojson',
+				'[2017-06-03] - SULLE TRACCE DELLA VIA CLAUDIA AUGUSTA - Merano - Trento',
+				"rgb(50, 200, 40)", true, null, null];
+	track_filename[3] = ['http://michelesanges.github.io/dataset/tracks/2017-06-02 - passo resia - merano - ricostruita.geojson', 
+				'[2017-06-02] - SULLE TRACCE DELLA VIA CLAUDIA AUGUSTA - Passo Resia - Merano', 
+				"rgb(100, 150, 60)", true, null, null];
+	track_filename[4] = ['http://michelesanges.github.io/dataset/tracks/2017-05-27 - viareggio - livorno.geojson', 
+				'[2017-05-27] - Viareggio - Livorno', 
+				"rgb(150, 100, 80)", true, null, null];
+	track_filename[5] = ['http://michelesanges.github.io/dataset/tracks/2017-04-17 - aulla - virgoletta - villafranca - castelnuovo magra - ricostruita.geojson', 
+				'[2017-04-17] - Aulla - Villafranca - Castelnuovo magra', 
+				"rgb(200, 50, 100)", true, null, null];
+	track_filename[6] = ['http://michelesanges.github.io/dataset/tracks/2017-04-08 - viareggio - lucca.geojson', 
+				'[2017-04-08] - Viareggio - Lucca',
+				"rgb(250, 0, 120)", true, null, null];	
+	track_filename[7] = ['http://michelesanges.github.io/dataset/tracks/2017-04-01 - pontremoli_castelnuovomagra_ricostruita.geojson',
+				'[2017-04-01] - Pontremoli - Castelnuovo Magra',
+				"rgb(230, 20, 140)", true, null, null];
+	track_filename[8] = ['http://michelesanges.github.io/dataset/tracks/2016-08-15 - equi terme_completa.geojson', 
+				'[2016-08-15] - Equi Terme',
+				"rgb(210, 30, 160)", true, null, null];
+	track_filename[9] = ['http://michelesanges.github.io/dataset/tracks/2016-08-08 - campocecina.geojson', 
+				'[2016-08-08] - Campocecina',
+				"rgb(210, 30, 160)", true, null, null];
+	track_filename[10] = ['http://michelesanges.github.io/dataset/tracks/2016-06-02 - la via del polleggio.geojson', 
+				'[2016-06-02] - LA VIA DEL POLLEGGIO - Mestre - Treviso',
+				"rgb(210, 30, 160)", true, null, null];
+	track_filename[11] = ['http://michelesanges.github.io/dataset/tracks/2016-06-03 - la via del polleggio.geojson', 
+				'[2016-06-03] - LA VIA DEL POLLEGGIO - Treviso - Bassano del Grappa',
+				"rgb(210, 30, 160)", true, null, null];
+	track_filename[12] = ['http://michelesanges.github.io/dataset/tracks/2016-06-04 - la via del polleggio.geojson', 
+				'[2016-06-04] - LA VIA DEL POLLEGGIO - Bassano del Grappa - Padova',
+				"rgb(210, 30, 160)", true, null, null];
+	track_filename[13] = ['http://michelesanges.github.io/dataset/tracks/2016-06-05 - la via del polleggio.geojson', 
+				'[2016-06-05] - LA VIA DEL POLLEGGIO - Padova - Monselice',
+				"rgb(210, 30, 160)", true, null, null];			
+	track_filename[14] = ['http://michelesanges.github.io/dataset/tracks/2016-05-21 - bologna-casalborsetti.geojson', 
+				'[2016-05-21] - BOLOGNA-MARE - Bologna - Campotto',
+				"rgb(210, 30, 160)", true, null, null];
+	track_filename[15] = ['http://michelesanges.github.io/dataset/tracks/2016-05-22 - bologna-casalborsetti.geojson', 
+				'[2016-05-22] - BOLOGNA-MARE - Campotto - Casalborsetti',
+				"rgb(210, 30, 160)", true, null, null];
+	track_filename[16] = ['http://michelesanges.github.io/dataset/tracks/2016-04-16 - tour_valli_comacchio.geojson', 
+				'[2016-04-16] - Valli di Comacchio',
+				"rgb(210, 30, 160)", true, null, null];
+	track_filename[17] = ['http://michelesanges.github.io/dataset/tracks/2015-09-16 - tour_umbria.geojson', 
+				'[2015-09-16] - TOUR UMBRIA - Perugia - Città di Castello',
+				"rgb(210, 30, 160)", true, null, null];
+	track_filename[18] = ['http://michelesanges.github.io/dataset/tracks/2015-09-17 - tour_umbria.geojson', 
+				'[2015-09-17] - TOUR UMBRIA - Città di Castello - Gubbio',
+				"rgb(210, 30, 160)", true, null, null];				
+	track_filename[19] = ['http://michelesanges.github.io/dataset/tracks/2015-09-18 - tour_umbria.geojson', 
+				'[2015-09-18] - TOUR UMBRIA - Gubbio - Assisi',
+				"rgb(210, 30, 160)", true, null, null];				
+	track_filename[20] = ['http://michelesanges.github.io/dataset/tracks/2015-09-19 - tour_umbria.geojson', 
+				'[2015-09-19] - TOUR UMBRIA - Assisi - Spoleto',
+				"rgb(210, 30, 160)", true, null, null];				
+	track_filename[21] = ['http://michelesanges.github.io/dataset/tracks/2015-09-20 - tour_umbria.geojson', 
+				'[2015-09-20] - TOUR UMBRIA - Spoleto - S. Maria degli Angeli',
+				"rgb(210, 30, 160)", true, null, null];		
+	var track_layer = [];
+	var chart;
+	var data_table;
+	var position_table;
+	var map;
+	var elevator_service;
+	var path;
+	var marker_position;
+	var called_num = 0;
+	var infowindow;
+
+	function boxclick(box, category)
+	{
+		console.log("categoria " + category);
+
+		if (box.checked)
+		{	
+			track_layer[category].setMap(map);
+			track_filename[category][3] = true;
+			
+			if (track_filename[category][4] != null)
+			{
+                        track_filename[category][4].setMap(map);
+                        track_filename[category][5].setMap(map);
+            }
+		} 
+		else
+		{
+			track_layer[category].setMap(null)
+			track_filename[category][3] = false;
+			if (track_filename[category][4] != null)
+			{
+                        track_filename[category][4].setMap(null);
+                        track_filename[category][5].setMap(null);
+            }
+		}
+
+		// compute the new bound
+		var single_bound = new google.maps.LatLngBounds();
+		for (var track_num = 0; track_num < track_filename.length; track_num++)
+		{
+			if (track_filename[track_num][3] == true)
+			{
+				track_layer[track_num].forEach(function(feature)
+				{
+					// center the map
+					feature.getGeometry().forEachLatLng(
+						function(position)
+						{
+							single_bound.extend(position); //do this for each coordinate
+						});
+
+					map.fitBounds(single_bound);
+				});
+			}
+		}
+
+		map.setCenter(single_bound.getCenter());
+	}
+
+
+	function getParameter(whichOne)
+	{
+		var pairs = location.search.substring(1).split('&');
+		var r = "";
+		var tp = new Array();
+
+		for (var i = 0; i < pairs.length; i ++)
+		{
+			tp = pairs[i].split('=');
+
+			if (whichOne == tp[0])
+			{
+				r = unescape(tp[1].replace(/\+/g, " "));
+			}
+		}
+
+		return r;
+	}
+
+	// Load the Visualization API and the columnchart package.
+	google.load("visualization", "1", {packages:["corechart"]});
+ 
+	function init_map()
+	{
+/*
+		var filename = getParameter("mappa").replace(/^.*[\\\/]/, '')
+		var basename = filename.substring(0, filename.lastIndexOf("."));
+		console.log("basename" + basename);
+*/
+		var map_index = getParameter("map_index").replace(/^.*[\\\/]/, '');
+
+		if (map_index != "")
+		{
+			// reset the visibility flag
+			for (var track_num = 0; track_num < track_filename.length; track_num++)
+			{
+				if (track_num != map_index)
+				{
+					track_filename[track_num][3] = false;
+				}
+			}
+		}
+
+		// crea la combo box con i nomi delle mappe
+		var div = document.createElement('list');
+		div.style.backgroundColor = 'white';
+		div.style.color = 'black';
+		div.style.fontFamily = 'Arial,sans-serif';
+		div.style.fontSize = '16px';	
+		div.className = "dropdown-check-list";
+		div.id = 'list1';
+		var html_cmd = '<span class="anchor">Tracks</span> <ul class="items"> ';
+		for (i = 0; i < track_filename.length; i++)
+		{
+			if (track_filename[i][3] == true)
+			{
+				html_cmd = html_cmd + '<li><input type="checkbox" checked onclick="boxclick(this,' +  i + ')"/>' + track_filename[i][1] + '</li>';
+			}
+			else	
+			{
+				html_cmd = html_cmd + '<li><input type="checkbox" unchecked onclick="boxclick(this,' +  i + ')"/>' + track_filename[i][1] + '</li>';
+			}
+		}
+		html_cmd = html_cmd + '</ul>';
+		div.innerHTML = html_cmd;	
+
+		document.body.appendChild(div);
+
+		div.getElementsByClassName('anchor')[0].onclick = function (evt)
+		{
+			if (div.classList.contains('visible'))
+			{
+				div.classList.remove('visible');
+			}
+			else
+			{
+			    div.classList.add('visible');
+			}
+		}
+		
+		data_table = new google.visualization.DataTable();
+		data_table.addColumn('string', 'Sample');
+		data_table.addColumn('number', 'Altitudine');
+
+		position_table = new google.visualization.DataTable();
+		position_table.addColumn('number', 'Latitude');
+		position_table.addColumn('number', 'Longitude');
+
+		elevator_service = new google.maps.ElevationService;
+
+		map = new google.maps.Map(document.getElementById("map_div"), {mapTypeId:google.maps.MapTypeId.HYBRID});
+
+		var bounds = new google.maps.LatLngBounds();
+
+		infowindow = new google.maps.InfoWindow({
+		    content: '<div class = "corp" style="width:20px; height: 20px background-color: #00FF00; ">' + '<div id = "infowindow_div" >' + '</div>' + '</div>' + 
+		      '<h2 style="color: brown"><!--Map title--><div id="map_info_div"></div></h2><h3>Click to see the elevation profile</h3>'
+		})
+
+		// Create a new chart in the elevation_chart_div DIV.
+		chart = new google.visualization.AreaChart/*LineChart*//*ColumnChart*/(document.getElementById('elevation_chart_div'));
+		google.visualization.events.addListener(chart, 'onmouseover', chart_onmouseover_handler);
+		google.visualization.events.addListener(chart, 'onmouseout', chart_onmouseout_handler);
+		chart.draw(data_table, {
+			height: 400,
+			legend: 'none',
+			fontSize: 20,
+			titleX: 'Distance [Km]',
+			titleY: 'Elevation [m]'
+		});
+
+		for (var track_num = 0; track_num < track_filename.length; track_num++)
+		{
+			(
+			function(track_num)
+			{
+				track_layer[track_num] = new google.maps.Data();
+			
+				track_layer[track_num].loadGeoJson(track_filename[track_num][0]);
+
+				track_layer[track_num].setStyle({
+							      icon: " ",
+							      strokeColor: track_filename[track_num][2],
+							      strokeWeight: 8
+							});
+
+				if (track_filename[track_num][3] == true)
+				{
+					track_layer[track_num].setMap(map);
+					
+					track_layer[track_num].addListener('addfeature', function(event)
+					{
+						console.log("addfeature: " + event.feature.getGeometry().getType());
+/*						
+						if (event.feature.getGeometry().getType() == "Point")
+						{
+
+							console.log("FEATURE NAME:" + event.feature.getProperty("name"));
+							
+							var string = event.feature.getProperty("name");
+							substring_start = "Inizio";
+							substring_stop = "Fine";
+
+							if (string.includes(substring_start))
+							{
+								track_layer[track_num].setStyle({icon: 'http://michelesanges.github.io/img/bike_start.png'});
+							}
+							else if (string.includes(substring_stop))
+							{
+								track_layer[track_num].setStyle({icon: 'http://michelesanges.github.io/img/bike_stop.png'});
+							}						
+						}
+*/
+
+						// center the map
+						event.feature.getGeometry().forEachLatLng(
+							function(position)
+							{
+								bounds.extend(position); //do this for each coordinate
+
+								if (event.feature.getGeometry().getType() == "Point")
+								{
+								      var string = event.feature.getProperty("name");
+								      substring_start = "Inizio";
+								      substring_stop = "Fine";
+
+								      var icona;
+								      if (string.includes(substring_start))
+								      {
+										 track_filename[track_num][4] = new google.maps.Marker({
+											  position: position,
+											  icon: 'http://michelesanges.github.io/img/bike_start.png',
+											  map: map
+										});
+								      }
+								      else if (string.includes(substring_stop))
+								      {
+										track_filename[track_num][5] = new google.maps.Marker({
+											  position: position,
+											  icon: 'http://michelesanges.github.io/img/bike_stop.png',
+											  map: map
+										});
+								      }
+								}
+							});
+
+						map.fitBounds(bounds);
+						
+						// se è stato passato un indice ed è questo, plotta l'altimetria
+						if ((map_index != "") && (track_num == map_index) && event.feature.getGeometry().getType() == "LineString")
+                        {
+                        console.log("sono dentro track_num: " + track_num);
+					draw_path(event.feature.getGeometry().getArray(), track_num);  
+                        
+                        }
+					});
+				}
+				else
+				{
+					track_layer[track_num].setMap(null)
+				}
+
+				track_layer[track_num].addListener('click', function(event)
+				{
+					for (var n = 0; n < track_filename.length; n++)
+					{
+						track_layer[n].setStyle({
+									      icon: " ",
+									      strokeColor: (n==track_num) ? "rgb(0,0,255)" : track_filename[n][2],
+									      strokeWeight: (n==track_num) ? 10 : 8
+									});
+					}
+
+					// center the map
+					var single_bound = new google.maps.LatLngBounds();
+					event.feature.getGeometry().forEachLatLng(
+						function(position)
+						{
+							single_bound.extend(position); //do this for each coordinate
+						});
+
+					map.fitBounds(single_bound);
+					map.setCenter(single_bound.getCenter());
+
+					draw_path(event.feature.getGeometry().getArray(), track_num);  
+				});
+				
+				track_layer[track_num].addListener('mouseover', function(event)
+				{
+				      infowindow.setPosition(event.latLng);
+				      infowindow.setOptions({pixelOffset: new google.maps.Size(10, -15)});
+				      infowindow.open(map);
+				      document.getElementById('map_info_div'/*'iw_title'*/).innerHTML = track_filename[track_num][1];
+				});
+				
+				track_layer[track_num].addListener('mouseout', function(event)
+				{
+				      infowindow.close();
+				});
+			}
+			)(track_num)
+		}
+		
+		map.setCenter(bounds.getCenter());
+		map.controls[google.maps.ControlPosition.TOP_CENTER].push(/*combo_box_div*/list1);
+	}
+
+	//Defining the path for which to plot the elevation
+	function draw_path(path, i)
+	{
+	       var subsampled_path = new Array();
+	       
+	       var max_sample_num = 1000;
+	       for (var sample = 0; sample < max_sample_num; sample++)
+	       {
+			subsampled_path[sample] = path[Math.trunc(sample * path.length / max_sample_num)];
+	       }
+
+		var pathRequest = {
+		    'path': subsampled_path,
+		    'samples': 256
+		};
+
+		var length = google.maps.geometry.spherical.computeLength(path);
+		
+		elevator_service.getElevationAlongPath(pathRequest, function(results, status)
+		{
+			  plotElevation(results, status, length, i);
+		});
+	}
+
+
+	function plotElevation(results, status, length, n)
+	{
+		if (status != google.maps.ElevationStatus.OK)
+		{
+			return;
+		}
+
+		var elevations = results;
+
+		var elevationPath = [];
+		for (var i = 0; i < results.length; i++)
+		{
+			elevationPath.push(elevations[i].location);
+		}
+
+		data_table.removeRows(0, data_table.getNumberOfRows());
+		position_table.removeRows(0, position_table.getNumberOfRows());
+		
+		for (var i = 0; i < results.length; i++)
+		{
+			data_table.addRow(['', elevations[i].elevation]);
+			position_table.addRow([elevations[i].location.lat(), elevations[i].location.lng()]);
+		}
+
+		var path_length = length/1000;	// in km
+		path_length = path_length.toFixed(1); // one decimal place
+
+		chart.draw(data_table, {
+			height: 400,
+			legend: 'none',
+			fontSize: 20,
+			title:  track_filename[n][1] + ' --- Path lenght: ' + path_length + " [km]",
+			titleX: 'Distance [Km]',
+			titleY: 'Elevation [m]'
+		});
+	}
+
+	function chart_onmouseover_handler(e)
+	{	
+		var lat = position_table.getValue(e.row, 0);
+		var lon = position_table.getValue(e.row, 1);
+
+		var position = new google.maps.LatLng(lat, lon);	
+
+		if (marker_position == undefined)
+		{
+			marker_position = new google.maps.Marker({
+				position: position,
+				map: map, 
+// 				animation: google.maps.Animation.DROP,
+// 				label:{text:lat + "," + lon , color:"white", fontSize:"20px"/*, fontWeight:"Bold" */}
+			});
+		}
+		else
+		{
+			marker_position.setMap(map);
+			marker_position.setPosition(position);
+// 			label = google.maps.MarkerLabel(label:{text:lat + "," + lon , color:"white", fontSize:"20px"/*, fontWeight:"Bold" */});
+// 			marker_position.setLabel(lat);
+		}
+	}
+
+	function chart_onmouseout_handler(e)
+	{	
+		marker_position.setMap(null);
+	}
+	
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwR5MtCCmXualVOiq27XnxxosJhitng-k&callback=init_map&libraries=geometry"></script>
+	<!--
+	To use this code on your website, get a free API key from Google.
+	Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+	-->
+
+	</body>
+</html>
