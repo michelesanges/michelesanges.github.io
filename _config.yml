@@ -2,6 +2,7 @@
 gems:
   - jemoji
   - jekyll-paginate
+  - jekyll-seo-tag
 
 # --- General options --- #
 # url is the full website URL
@@ -21,7 +22,7 @@ baseurl: ""
 title: Bit Error Rate
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+#description: Michele Sanges's awesome site: bike trips, photo and blog post!
 
 # --- Navigation bar options --- #
 
@@ -54,7 +55,7 @@ author:
   email: "michele.sanges@gmail.com"
   facebook: sanges.michele  # eg. daattali
   #instagram: https://www.instagram.com/michele.sanges/
-  google-photo: https://goo.gl/photos/J6n4SpRfPnE5ZsZh6
+  #google-photo: https://goo.gl/photos/J6n4SpRfPnE5ZsZh6
   anobii: http://www.anobii.com/michelesanges/books
   #google-maps: /bike_tracks/
   github: michelesanges    # eg. daattali
