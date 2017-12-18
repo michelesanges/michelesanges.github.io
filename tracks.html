@@ -1,3 +1,10 @@
+---
+layout: page
+title: Cicloturismo
+subtitle: <div id="track_filename"> </div>
+<!-- subtitle: Il termine traccia denota solitamente un segno, un'orma o una scia, ma possiede diversi altri significati. -->
+<!-- bigimg: https://goo.gl/WwtaW9 -->
+---
 <!DOCTYPE html>
 
 <html>
@@ -232,15 +239,19 @@
  
 	function init_map()
 	{
-/*
-		var filename = getParameter("mappa").replace(/^.*[\\\/]/, '')
-		var basename = filename.substring(0, filename.lastIndexOf("."));
-		console.log("basename" + basename);
-*/
+ 
+// @@@@@@@@@@@@@@@@@@@@@@@@@
+// var filename = getParameter("mappa").replace(/^.*[\\\/]/, '')
+// var basename = filename.substring(0, filename.lastIndexOf("."));
+// console.log("basename" + basename);
+// @@@@@@@@@@@@@@@@@@@@@@@@@ 
+
 		var map_index = getParameter("map_index").replace(/^.*[\\\/]/, '');
 
 		if (map_index != "")
 		{
+			document.getElementById('track_filename').innerHTML = track_filename[map_index][1];
+
 			// reset the visibility flag
 			for (var track_num = 0; track_num < track_filename.length; track_num++)
 			{
@@ -249,6 +260,10 @@
 					track_filename[track_num][3] = false;
 				}
 			}
+		}
+		else
+		{
+			document.getElementById('track_filename').innerHTML = "Tutte le tracce";
 		}
 
 		// crea la combo box con i nomi delle mappe

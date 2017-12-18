@@ -4,6 +4,7 @@ title: Cicloturismo
 subtitle: Il termine traccia denota solitamente un segno, un'orma o una scia, ma possiede diversi altri significati.
 bigimg: https://goo.gl/WwtaW9
 ---
+<h2>
 - <a href="https://drive.google.com/open?id=13vrIVpfs-UdKaRHAi0Q0iIRaa6k&usp=sharing" target="_blank">[2017-08-07] - Due giorni su e giù per l'Appennino tosco emiliano</a>
 - <a href="https://drive.google.com/open?id=1hj3sWT_fr3Ge119nEvXzRD_FIdM&usp=sharing" target="_blank">[2017-06-02] - Sulle tracce della Via Claudia Augusta</a>
 - <a href="https://drive.google.com/open?id=1m-C9PGES7bLrPu0gbruAaU6GacA&usp=sharing" target="_blank">[2017-05-27] - Viareggio - Livorno</a>
@@ -21,6 +22,6 @@ bigimg: https://goo.gl/WwtaW9
 - <a href="https://drive.google.com/open?id=1HEbczwzu4U1_5NzpV0zYkfC15uw&usp=sharing" target="_blank">[2013-09-05] - Sulle strade bianche dell'Eroica</a>
 
 <hr width="75%">
-- <a href="http://michelesanges.github.io/tracks.html" target="_blank">Tutte le tracce</a>
-
+- <a href="http://michelesanges.github.io/tracks.html">TUTTE LE TRACCE</a>
+</h2>
 
