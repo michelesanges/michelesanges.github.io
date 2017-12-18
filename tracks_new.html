@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cicloturismo
-subtitle: track_filename[n][1]
+subtitle: <div id="track_filename"> </div>
 <!-- subtitle: Il termine traccia denota solitamente un segno, un'orma o una scia, ma possiede diversi altri significati. -->
 <!-- bigimg: https://goo.gl/WwtaW9 -->
 ---
@@ -245,6 +245,14 @@ subtitle: track_filename[n][1]
 		console.log("basename" + basename);
 */
 		var map_index = getParameter("map_index").replace(/^.*[\\\/]/, '');
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		if (map_index != "")
+		{
+		document.getElementById('track_filename').innerHTML = track_filename[map_index][1];
+		}
+		
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 		if (map_index != "")
 		{
