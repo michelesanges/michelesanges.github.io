@@ -2,8 +2,6 @@
 layout: page
 title: Cicloturismo
 subtitle: <div id="track_filename"> </div>
-<!-- subtitle: Il termine traccia denota solitamente un segno, un'orma o una scia, ma possiede diversi altri significati. -->
-<!-- bigimg: https://goo.gl/WwtaW9 -->
 ---
 <!DOCTYPE html>
 
@@ -77,85 +75,27 @@ subtitle: <div id="track_filename"> </div>
 	  display: block;
 	}
 	</style>
-
+		
 	</head>
+
 	<body>
 
 	<div id="map_div" style="width:100%;height:500px;"></div>
-	<div id="elevation_chart_div" style="width:100%;height:300px;"></div> 
+	<div id="elevation_chart_div" style="width:100%;height:300px;"></div>
+	<p>
+	<div id="imageHolder"></div>
+ 	<p>
+   <div id="pointHolder"></div>	
+ 	<p>
+ 	<p>
 
-	// carica l'elenco delle tracce nell'array track_filename[]
-	document.writeln('<script type="text/javascript" src="track_array.js"></script>');
-
+	</body>	
+	
 	<script>
-
-	// elenco tracce
-// 	var track_filename = new Array();
-// 	// file name, nome traccia, colore traccia, flag traccia visibile, marker start, marker stop
-// 	track_filename[0] = ['http://michelesanges.github.io/dataset/tracks/2017-08-07 - tour masochista.geojson', "[2017-08-07] - Due giorni su e giù per l'Appennino tosco emiliano", "rgb(190, 40, 180)", true, null, null];	
-// 	track_filename[1] = ['http://michelesanges.github.io/dataset/tracks/2017-06-04 - lago di caldonazzo - bassano del grappa - ricostruita.geojson', 
-// 				'[2017-06-04] - SULLE TRACCE DELLA VIA CLAUDIA AUGUSTA - Lago di Caldonazzo - Bassano del Grappa', 
-// 				"rgb(0, 255, 20)", true, null, null];
-// 	track_filename[2] = ['http://michelesanges.github.io/dataset/tracks/2017-06-03 - merano - trento.geojson',
-// 				'[2017-06-03] - SULLE TRACCE DELLA VIA CLAUDIA AUGUSTA - Merano - Trento',
-// 				"rgb(50, 200, 40)", true, null, null];
-// 	track_filename[3] = ['http://michelesanges.github.io/dataset/tracks/2017-06-02 - passo resia - merano - ricostruita.geojson', 
-// 				'[2017-06-02] - SULLE TRACCE DELLA VIA CLAUDIA AUGUSTA - Passo Resia - Merano', 
-// 				"rgb(100, 150, 60)", true, null, null];
-// 	track_filename[4] = ['http://michelesanges.github.io/dataset/tracks/2017-05-27 - viareggio - livorno.geojson', 
-// 				'[2017-05-27] - Viareggio - Livorno', 
-// 				"rgb(150, 100, 80)", true, null, null];
-// 	track_filename[5] = ['http://michelesanges.github.io/dataset/tracks/2017-04-17 - aulla - virgoletta - villafranca - castelnuovo magra - ricostruita.geojson', 
-// 				'[2017-04-17] - Aulla - Villafranca - Castelnuovo magra', 
-// 				"rgb(200, 50, 100)", true, null, null];
-// 	track_filename[6] = ['http://michelesanges.github.io/dataset/tracks/2017-04-08 - viareggio - lucca.geojson', 
-// 				'[2017-04-08] - Viareggio - Lucca',
-// 				"rgb(250, 0, 120)", true, null, null];	
-// 	track_filename[7] = ['http://michelesanges.github.io/dataset/tracks/2017-04-01 - pontremoli_castelnuovomagra_ricostruita.geojson',
-// 				'[2017-04-01] - Pontremoli - Castelnuovo Magra',
-// 				"rgb(230, 20, 140)", true, null, null];
-// 	track_filename[8] = ['http://michelesanges.github.io/dataset/tracks/2016-08-15 - equi terme_completa.geojson', 
-// 				'[2016-08-15] - Equi Terme',
-// 				"rgb(210, 30, 160)", true, null, null];
-// 	track_filename[9] = ['http://michelesanges.github.io/dataset/tracks/2016-08-08 - campocecina.geojson', 
-// 				'[2016-08-08] - Campocecina',
-// 				"rgb(210, 30, 160)", true, null, null];
-// 	track_filename[10] = ['http://michelesanges.github.io/dataset/tracks/2016-06-02 - la via del polleggio.geojson', 
-// 				'[2016-06-02] - LA VIA DEL POLLEGGIO - Mestre - Treviso',
-// 				"rgb(210, 30, 160)", true, null, null];
-// 	track_filename[11] = ['http://michelesanges.github.io/dataset/tracks/2016-06-03 - la via del polleggio.geojson', 
-// 				'[2016-06-03] - LA VIA DEL POLLEGGIO - Treviso - Bassano del Grappa',
-// 				"rgb(210, 30, 160)", true, null, null];
-// 	track_filename[12] = ['http://michelesanges.github.io/dataset/tracks/2016-06-04 - la via del polleggio.geojson', 
-// 				'[2016-06-04] - LA VIA DEL POLLEGGIO - Bassano del Grappa - Padova',
-// 				"rgb(210, 30, 160)", true, null, null];
-// 	track_filename[13] = ['http://michelesanges.github.io/dataset/tracks/2016-06-05 - la via del polleggio.geojson', 
-// 				'[2016-06-05] - LA VIA DEL POLLEGGIO - Padova - Monselice',
-// 				"rgb(210, 30, 160)", true, null, null];			
-// 	track_filename[14] = ['http://michelesanges.github.io/dataset/tracks/2016-05-21 - bologna-casalborsetti.geojson', 
-// 				'[2016-05-21] - BOLOGNA-MARE - Bologna - Campotto',
-// 				"rgb(210, 30, 160)", true, null, null];
-// 	track_filename[15] = ['http://michelesanges.github.io/dataset/tracks/2016-05-22 - bologna-casalborsetti.geojson', 
-// 				'[2016-05-22] - BOLOGNA-MARE - Campotto - Casalborsetti',
-// 				"rgb(210, 30, 160)", true, null, null];
-// 	track_filename[16] = ['http://michelesanges.github.io/dataset/tracks/2016-04-16 - tour_valli_comacchio.geojson', 
-// 				'[2016-04-16] - Valli di Comacchio',
-// 				"rgb(210, 30, 160)", true, null, null];
-// 	track_filename[17] = ['http://michelesanges.github.io/dataset/tracks/2015-09-16 - tour_umbria.geojson', 
-// 				'[2015-09-16] - TOUR UMBRIA - Perugia - Città di Castello',
-// 				"rgb(210, 30, 160)", true, null, null];
-// 	track_filename[18] = ['http://michelesanges.github.io/dataset/tracks/2015-09-17 - tour_umbria.geojson', 
-// 				'[2015-09-17] - TOUR UMBRIA - Città di Castello - Gubbio',
-// 				"rgb(210, 30, 160)", true, null, null];				
-// 	track_filename[19] = ['http://michelesanges.github.io/dataset/tracks/2015-09-18 - tour_umbria.geojson', 
-// 				'[2015-09-18] - TOUR UMBRIA - Gubbio - Assisi',
-// 				"rgb(210, 30, 160)", true, null, null];				
-// 	track_filename[20] = ['http://michelesanges.github.io/dataset/tracks/2015-09-19 - tour_umbria.geojson', 
-// 				'[2015-09-19] - TOUR UMBRIA - Assisi - Spoleto',
-// 				"rgb(210, 30, 160)", true, null, null];				
-// 	track_filename[21] = ['http://michelesanges.github.io/dataset/tracks/2015-09-20 - tour_umbria.geojson', 
-// 				'[2015-09-20] - TOUR UMBRIA - Spoleto - S. Maria degli Angeli',
-// 				"rgb(210, 30, 160)", true, null, null];		
+	// carica l'elenco delle tracce nell'array track_filename[]
+	include('track_array.js');
+	include('photo_array.js');
+	
 	var track_layer = [];
 	var chart;
 	var data_table;
@@ -166,6 +106,8 @@ subtitle: <div id="track_filename"> </div>
 	var marker_position;
 	var called_num = 0;
 	var infowindow;
+	var map_index;
+
 
 	function boxclick(box, category)
 	{
@@ -248,7 +190,10 @@ subtitle: <div id="track_filename"> </div>
 // console.log("basename" + basename);
 // @@@@@@@@@@@@@@@@@@@@@@@@@ 
 
-		var map_index = getParameter("map_index").replace(/^.*[\\\/]/, '');
+// document.getElementById('image_array').src= 'photo.js';
+// 	include('photo.js');
+
+		map_index = getParameter("map_index").replace(/^.*[\\\/]/, '');
 
 		if (map_index != "")
 		{
@@ -469,7 +414,15 @@ subtitle: <div id="track_filename"> </div>
 		}
 		
 		map.setCenter(bounds.getCenter());
-		map.controls[google.maps.ControlPosition.TOP_CENTER].push(/*combo_box_div*/list1);
+		if (map_index == "")
+		{
+			map.controls[google.maps.ControlPosition.TOP_CENTER].push(list1);
+		}
+		
+		if (map_index != "")
+		{
+			set_image(0);
+		}
 	}
 
 	//Defining the path for which to plot the elevation
@@ -563,6 +516,59 @@ subtitle: <div id="track_filename"> </div>
 	{	
 		marker_position.setMap(null);
 	}
+
+	function include(file)
+	{
+
+		var script  = document.createElement('script');
+		script.src  = file;
+		script.type = 'text/javascript';
+// 		script.defer = true;
+// 		script.sync = true;
+
+		document.getElementsByTagName('head').item(0).appendChild(script);	
+	}	
+	
+	function set_image(par)
+	{
+// 		if (image_array[map_index].length != 'undefined')
+// 		{
+// 			var html_cmd = "<center>";
+// 			for (var i = 0; i < image_array[map_index].length; i++)
+// 			{
+// 				html_cmd += "<img src='" + image_array[map_index][i] + "'/><p></<p>";
+// 			}
+// 			html_cmd += "/<center>";
+// 			document.getElementById("imageHolder").innerHTML = html_cmd;
+// 		}
+
+		if (image_array[map_index].length != 'undefined')
+		{
+                    document.getElementById("imageHolder").innerHTML="<center><img src='" + image_array[map_index][par] + "'/></center>";
+
+                    var cmd = "<center>" ;
+                    
+                    for (var n = 0; n < image_array[map_index].length; n++)
+                    {
+                                var bullet;
+                                if (par == n)
+                                {
+                                    bullet=9724;
+                                }
+                                else
+                                {
+                                    bullet=9723;
+                                }
+                                
+                                    cmd += "<a href=javascript:set_image(" + n + ") style=text-decoration:none>&#" + bullet + "</a>"
+                    }
+
+                    cmd += "<center>" 
+                    document.getElementById("pointHolder").innerHTML=cmd; 	
+        }
+
+
+}
 	
 	</script>
 
@@ -570,7 +576,6 @@ subtitle: <div id="track_filename"> </div>
 	<!--
 	To use this code on your website, get a free API key from Google.
 	Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
-	-->
-
-	</body>
+	-->	
 </html>
+</script>

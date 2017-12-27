@@ -19,7 +19,8 @@ bigimg: https://goo.gl/WwtaW9
 - <a href="https://drive.google.com/open?id=1q9x-WGZSyVwA9mUGt2RYapILjes&usp=sharing" target="_blank">[2015-09-16] - Tour dell'Umbria</a><hr>
 - <a href="https://drive.google.com/open?id=1Q4jkeLe5KafmOrMhnDVWsbMWh6U&usp=sharing" target="_blank">[2015-05-30] - Tour dell'Isola d'Elba</a><hr>
 - <a href="https://drive.google.com/open?id=1WSDh3--R4NSNzPPQ-YOB0YDv6FM&usp=sharing" target="_blank">[2013-10-26] - Lago Massaciuccoli - Lucca</a><hr>
-- <a href="https://drive.google.com/open?id=1HEbczwzu4U1_5NzpV0zYkfC15uw&usp=sharing" target="_blank">[2013-09-05] - Sulle strade bianche dell'Eroica</a><hr>
+<!-- - <a href="https://drive.google.com/open?id=1HEbczwzu4U1_5NzpV0zYkfC15uw&usp=sharing" target="_blank">[2013-09-05] - Sulle strade bianche dell'Eroica</a><hr> -->
+- <a href="http://michelesanges.github.io/tracks.html?map_index=0">[2013-09-05] - Sulle strade bianche dell'Eroica</a><hr>
 
 <hr width="75%">
 - <a href="http://michelesanges.github.io/tracks.html">TUTTE LE TRACCE</a>
