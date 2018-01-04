@@ -39,7 +39,7 @@
 				"rgb(205, 220, 57)", true, null, null];
 	track_filename[1][4] = ['http://michelesanges.github.io/dataset/tracks/2015-09-20 - tour_umbria.geojson', 
 				'TOUR DELL\'UMBRIA',
-				'[2015-09-20] - TOUR UMBRIA - Spoleto - S. Maria degli Angeli',
+				'[2015-09-20] - Spoleto - S. Maria degli Angeli',
 				"rgb(0, 255, 255)", true, null, null];
 
 // 	track_filename[22] = ['http://michelesanges.github.io/dataset/tracks/2017-08-07 - tour masochista.geojson', 
