@@ -80,12 +80,15 @@ subtitle: <div id="track_filename"> </div>
 
 	<body>
 
+	<div id="combo_div"></div>
+ 	<p margin-bottom: 3cm>	
 	<div id="map_div" style="width:100%;height:500px;"></div>
+  	<p margin-bottom: 3cm>
 	<div id="elevation_chart_div" style="width:100%;height:300px;"></div>
-	<p>
+ 	<p margin-bottom: 3cm>
 	<div id="imageHolder"></div>
- 	<p>
-   <div id="pointHolder"></div>	
+ 	<p margin-bottom: 3cm>
+ 	<div id="pointHolder"></div>
  	<p>
  	<p>
 
@@ -109,37 +112,38 @@ subtitle: <div id="track_filename"> </div>
 	var map_index;
 
 
-	function boxclick(box, category)
+	function boxclick(box, track_num)
 	{
-		console.log("categoria " + category);
+		console.log("categoria " + track_num);
 
 		if (box.checked)
 		{	
-			track_layer[category].setMap(map);
-			track_filename[category][3] = true;
-			
-			if (track_filename[category][4] != null)
+			track_layer[track_num].setMap(map);
+			track_filename[map_index][track_num][4] = true;
+
+			if (track_filename[map_index][track_num][5] != null)
 			{
-                        track_filename[category][4].setMap(map);
-                        track_filename[category][5].setMap(map);
-            }
+				track_filename[map_index][track_num][5].setMap(map);
+				track_filename[map_index][track_num][6].setMap(map);
+			}
 		} 
 		else
 		{
-			track_layer[category].setMap(null)
-			track_filename[category][3] = false;
-			if (track_filename[category][4] != null)
+			track_layer[track_num].setMap(null)
+			track_filename[map_index][track_num][4] = false;
+
+			if (track_filename[map_index][track_num][5] != null)
 			{
-                        track_filename[category][4].setMap(null);
-                        track_filename[category][5].setMap(null);
-            }
+				track_filename[map_index][track_num][5].setMap(null);
+				track_filename[map_index][track_num][6].setMap(null);
+			}
 		}
 
 		// compute the new bound
 		var single_bound = new google.maps.LatLngBounds();
-		for (var track_num = 0; track_num < track_filename.length; track_num++)
+		for (var track_num = 0; track_num < track_filename[map_index].length; track_num++)
 		{
-			if (track_filename[track_num][3] == true)
+			if (track_filename[map_index][track_num][4] == true)
 			{
 				track_layer[track_num].forEach(function(feature)
 				{
@@ -190,27 +194,24 @@ subtitle: <div id="track_filename"> </div>
 // console.log("basename" + basename);
 // @@@@@@@@@@@@@@@@@@@@@@@@@ 
 
-// document.getElementById('image_array').src= 'photo.js';
-// 	include('photo.js');
-
 		map_index = getParameter("map_index").replace(/^.*[\\\/]/, '');
 
 		if (map_index != "")
 		{
-			document.getElementById('track_filename').innerHTML = track_filename[map_index][1];
+			document.getElementById('track_filename').innerHTML = track_filename[map_index][0][1];
 
-			// reset the visibility flag
-			for (var track_num = 0; track_num < track_filename.length; track_num++)
-			{
-				if (track_num != map_index)
-				{
-					track_filename[track_num][3] = false;
-				}
-			}
-		}
-		else
-		{
-			document.getElementById('track_filename').innerHTML = "Tutte le tracce";
+// 			// reset the visibility flag
+// 			for (var track_num = 0; track_num < track_filename[map_index].length; track_num++)
+// 			{
+// 				if (track_num != map_index)
+// 				{
+// 					track_filename[map_index][track_num][3] = false;
+// 				}
+// 			}
+// 		}
+// 		else
+// 		{
+// 			document.getElementById('track_filename').innerHTML = "Tutte le tracce";
 			
 			// crea la combo box con i nomi delle mappe
 			var div = document.createElement('list');
@@ -221,21 +222,22 @@ subtitle: <div id="track_filename"> </div>
 			div.className = "dropdown-check-list";
 			div.id = 'list1';
 			var html_cmd = '<span class="anchor">Tracks</span> <ul class="items"> ';
-			for (i = 0; i < track_filename.length; i++)
+			for (var i = 0; i < track_filename[map_index].length; i++)
 			{
-				if (track_filename[i][3] == true)
+				if (track_filename[map_index][i][4] == true)
 				{
-					html_cmd = html_cmd + '<li><input type="checkbox" checked onclick="boxclick(this,' +  i + ')"/>' + track_filename[i][1] + '</li>';
+					html_cmd = html_cmd + '<li><input type="checkbox" checked onclick="boxclick(this,' +  i + ')"/>' + track_filename[map_index][i][2] + '</li>';
 				}
 				else	
 				{
-					html_cmd = html_cmd + '<li><input type="checkbox" unchecked onclick="boxclick(this,' +  i + ')"/>' + track_filename[i][1] + '</li>';
+					html_cmd = html_cmd + '<li><input type="checkbox" unchecked onclick="boxclick(this,' +  i + ')"/>' + track_filename[map_index][i][2] + '</li>';
 				}
 			}
 			html_cmd = html_cmd + '</ul>';
 			div.innerHTML = html_cmd;	
 
-			document.body.appendChild(div);	
+// 			document.body.appendChild(div);
+			document.getElementById('combo_div').appendChild(div)
 			
 			div.getElementsByClassName('anchor')[0].onclick = function (evt)
 			{
@@ -281,22 +283,22 @@ subtitle: <div id="track_filename"> </div>
 			titleY: 'Elevation [m]'
 		});
 
-		for (var track_num = 0; track_num < track_filename.length; track_num++)
+		for (var track_num = 0; track_num < track_filename[map_index].length; track_num++)
 		{
 			(
 			function(track_num)
 			{
 				track_layer[track_num] = new google.maps.Data();
 			
-				track_layer[track_num].loadGeoJson(track_filename[track_num][0]);
+				track_layer[track_num].loadGeoJson(track_filename[map_index][track_num][0]);
 
 				track_layer[track_num].setStyle({
 							      icon: " ",
-							      strokeColor: track_filename[track_num][2],
+							      strokeColor: track_filename[map_index][track_num][3],
 							      strokeWeight: 8
 							});
 
-				if (track_filename[track_num][3] == true)
+				if (track_filename[map_index][track_num][4] == true)
 				{
 					track_layer[track_num].setMap(map);
 					
@@ -339,7 +341,7 @@ subtitle: <div id="track_filename"> </div>
 								      var icona;
 								      if (string.includes(substring_start))
 								      {
-										 track_filename[track_num][4] = new google.maps.Marker({
+										 track_filename[map_index][track_num][5] = new google.maps.Marker({
 											  position: position,
 											  icon: 'http://michelesanges.github.io/img/bike_start.png',
 											  map: map
@@ -347,7 +349,7 @@ subtitle: <div id="track_filename"> </div>
 								      }
 								      else if (string.includes(substring_stop))
 								      {
-										track_filename[track_num][5] = new google.maps.Marker({
+										track_filename[map_index][track_num][6] = new google.maps.Marker({
 											  position: position,
 											  icon: 'http://michelesanges.github.io/img/bike_stop.png',
 											  map: map
@@ -360,11 +362,10 @@ subtitle: <div id="track_filename"> </div>
 						
 						// se è stato passato un indice ed è questo, plotta l'altimetria
 						if ((map_index != "") && (track_num == map_index) && event.feature.getGeometry().getType() == "LineString")
-                        {
-                        console.log("sono dentro track_num: " + track_num);
-					draw_path(event.feature.getGeometry().getArray(), track_num);  
-                        
-                        }
+						if (track_filename[map_index].length == 1)
+						{
+							draw_path(event.feature.getGeometry().getArray(), track_num);  
+						}
 					});
 				}
 				else
@@ -374,11 +375,11 @@ subtitle: <div id="track_filename"> </div>
 
 				track_layer[track_num].addListener('click', function(event)
 				{
-					for (var n = 0; n < track_filename.length; n++)
+					for (var n = 0; n < track_filename[map_index].length; n++)
 					{
 						track_layer[n].setStyle({
 									      icon: " ",
-									      strokeColor: (n==track_num) ? "rgb(0,0,255)" : track_filename[n][2],
+									      strokeColor: (n==track_num) ? "rgb(0,0,255)" : track_filename[map_index][n][3],
 									      strokeWeight: (n==track_num) ? 10 : 8
 									});
 					}
@@ -402,7 +403,7 @@ subtitle: <div id="track_filename"> </div>
 				      infowindow.setPosition(event.latLng);
 				      infowindow.setOptions({pixelOffset: new google.maps.Size(10, -15)});
 				      infowindow.open(map);
-				      document.getElementById('map_info_div'/*'iw_title'*/).innerHTML = track_filename[track_num][1];
+				      document.getElementById('map_info_div'/*'iw_title'*/).innerHTML = track_filename[map_index][track_num][2];
 				});
 				
 				track_layer[track_num].addListener('mouseout', function(event)
@@ -481,7 +482,7 @@ subtitle: <div id="track_filename"> </div>
 			height: 400,
 			legend: 'none',
 			fontSize: 20,
-			title:  track_filename[n][1] + ' --- Path lenght: ' + path_length + " [km]",
+			title:  track_filename[map_index][n][2] + ' --- Path lenght: ' + path_length + " [km]",
 			titleX: 'Distance [Km]',
 			titleY: 'Elevation [m]'
 		});
@@ -544,7 +545,27 @@ subtitle: <div id="track_filename"> </div>
 
 		if (image_array[map_index].length != 'undefined')
 		{
-                    document.getElementById("imageHolder").innerHTML="<center><img src='" + image_array[map_index][par] + "'/></center>";
+		    var prev, next;
+		    if (par == 0)
+		    {
+			prev = image_array[map_index].length - 1;
+			next = par + 1;
+		    }
+		    else if (par == (image_array[map_index].length - 1))
+		    {
+			prev = par - 1;
+			next = 0;		    
+		    }
+		    else
+		    {
+			prev = par - 1;
+			next = par + 1;
+		    }
+                    document.getElementById("imageHolder").innerHTML="<center><table><tr>\
+                    <td><font size=50><a href=javascript:set_image(" + prev + ") style=text-decoration:none>&#x2190;</a></font></td> \
+                    <td><img src='" + image_array[map_index][par] + "'/></td> \
+                    <td><font size=50><a href=javascript:set_image(" + next + ") style=text-decoration:none>&#x2192;</a></font></td> \
+                    </tr></table></center>";
 
                     var cmd = "<center>" ;
                     
@@ -560,14 +581,12 @@ subtitle: <div id="track_filename"> </div>
                                     bullet=9723;
                                 }
                                 
-                                    cmd += "<a href=javascript:set_image(" + n + ") style=text-decoration:none>&#" + bullet + "</a>"
+                                cmd += "&#" + bullet;
                     }
 
-                    cmd += "<center>" 
+                    cmd += "</center>" 
                     document.getElementById("pointHolder").innerHTML=cmd; 	
-        }
-
-
+		}
 }
 	
 	</script>
