@@ -80,20 +80,8 @@ subtitle: <div id="track_filename"> </div>
 
 	<body>
 
-<!--  	<p margin-bottom: 3cm> -->
-	<div id="imageHolder"></div>
- 	<p margin-bottom: 3cm>
- 	<div id="pointHolder"></div>
- 	<p margin-bottom: 3cm>
- 	<div id="combo_div"></div>
- 	<p margin-bottom: 3cm>	
-	<div id="map_div" style="width:100%;height:500px;"></div>
-  	<p margin-bottom: 3cm>
-	<div id="elevation_chart_div" style="width:100%;height:300px;"></div>
+
 	
-	
-	
-<!--	
 	<div id="combo_div"></div>
  	<p margin-bottom: 3cm>	
 	<div id="map_div" style="width:100%;height:500px;"></div>
@@ -101,10 +89,8 @@ subtitle: <div id="track_filename"> </div>
 	<div id="elevation_chart_div" style="width:100%;height:300px;"></div>
  	<p margin-bottom: 3cm>
 	<div id="imageHolder"></div>
- 	<p margin-bottom: 3cm>
+<!-- 	<p margin-bottom: 3cm>
  	<div id="pointHolder"></div>-->
- 	<p>
- 	<p>
 
 	</body>	
 	
@@ -546,63 +532,65 @@ subtitle: <div id="track_filename"> </div>
 	
 	function set_image(par)
 	{
-// 		if (image_array[map_index].length != 'undefined')
-// 		{
-// 			var html_cmd = "<center>";
-// 			for (var i = 0; i < image_array[map_index].length; i++)
-// 			{
-// 				html_cmd += "<img src='" + image_array[map_index][i] + "'/><p></<p>";
-// 			}
-// 			html_cmd += "/<center>";
-// 			document.getElementById("imageHolder").innerHTML = html_cmd;
-// 		}
-
 		if (image_array[map_index].length != 'undefined')
 		{
-		    var prev, next;
-		    if (par == 0)
-		    {
-			prev = image_array[map_index].length - 1;
-			next = par + 1;
-		    }
-		    else if (par == (image_array[map_index].length - 1))
-		    {
-			prev = par - 1;
-			next = 0;		    
-		    }
-		    else
-		    {
-			prev = par - 1;
-			next = par + 1;
-		    }
-                    document.getElementById("imageHolder").innerHTML="<center><table border=0><tr>\
-                    <td><font size=50><a href=javascript:set_image(" + prev + ") style=text-decoration:none>&#x2190;</a></font></td> \
-                    <td><img src='" + image_array[map_index][par] + "'/></td> \
-                    <td><font size=50><a href=javascript:set_image(" + next + ") style=text-decoration:none>&#x2192;</a></font></td> \
-                    </tr></table></center>";
-
-                    var cmd = "<center>" ;
+// 		    var prev, next;
+// 		    if (par == 0)
+// 		    {
+// 			prev = image_array[map_index].length - 1;
+// 			next = par + 1;
+// 		    }
+// 		    else if (par == (image_array[map_index].length - 1))
+// 		    {
+// 			prev = par - 1;
+// 			next = 0;		    
+// 		    }
+// 		    else
+// 		    {
+// 			prev = par - 1;
+// 			next = par + 1;
+// 		    }
+//                     document.getElementById("imageHolder").innerHTML="<center><table border=0><tr>\
+//                     <td><font size=50><a href=javascript:set_image(" + prev + ") style=text-decoration:none>&#x2190;</a></font></td> \
+//                     <td><img src='" + image_array[map_index][par] + "'/></td> \
+//                     <td><font size=50><a href=javascript:set_image(" + next + ") style=text-decoration:none>&#x2192;</a></font></td> \
+//                     </tr></table></center>";
+// 
+//                     var cmd = "<center>" ;
+//                     
+//                     for (var n = 0; n < image_array[map_index].length; n++)
+//                     {
+//                                 var bullet;
+//                                 if (par == n)
+//                                 {
+//                                     bullet=9724;
+//                                 }
+//                                 else
+//                                 {
+//                                     bullet=9723;
+//                                 }
+//                                 
+//                                 cmd += "&#" + bullet;
+//                     }
+// 
+//                     cmd += "</center>" 
+//                     document.getElementById("pointHolder").innerHTML=cmd; 
                     
+                    // @@@@@@@@@@@@@@@@@@@@@@@@
+                    var html_cmd;
+                    html_cmd = "<center>" ;
                     for (var n = 0; n < image_array[map_index].length; n++)
                     {
-                                var bullet;
-                                if (par == n)
-                                {
-                                    bullet=9724;
-                                }
-                                else
-                                {
-                                    bullet=9723;
-                                }
-                                
-                                cmd += "&#" + bullet;
+			  html_cmd += "<img src='" + image_array[map_index][n]  + "'/><p>";
                     }
-
-                    cmd += "</center>" 
-                    document.getElementById("pointHolder").innerHTML=cmd; 	
+                    html_cmd += "</center>" ;
+                    document.getElementById("imageHolder").innerHTML=html_cmd;
+                    // @@@@@@@@@@@@@@@@@@@@@@@@
 		}
 }
-	
+
+
+
 	</script>
 
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwR5MtCCmXualVOiq27XnxxosJhitng-k&callback=init_map&libraries=geometry"></script>
