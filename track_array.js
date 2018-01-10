@@ -77,9 +77,26 @@
 				'BOLOGNA - CASALBORSETTI UNDER THE MOONLIGHT',
 				'[2016-05-21] - Bologna - Campotto',
 				"rgb(2, 136, 209)", true, null, null];
-
 	track_filename[5][1] = ['https://michelesanges.github.io/dataset/tracks/2016-05-22 - bologna-casalborsetti.geojson',
 				'BOLOGNA - CASALBORSETTI UNDER THE MOONLIGHT',
 				'[2016-05-22] - Campotto - Casalborsetti',
 				"rgb(244, 180, 0)", true, null, null];
+
+	track_filename[6] = new Array();
+	track_filename[6][0] = ['https://michelesanges.github.io/dataset/tracks/2016-06-02 - la via del polleggio.geojson',
+				'LA VIA DEL POLLEGGIO',
+				'[2016-06-02] - Mestre - Treviso',
+				"rgb(2, 136, 209)", true, null, null];
+	track_filename[6][1] = ['https://michelesanges.github.io/dataset/tracks/2016-06-03 - la via del polleggio.geojson', 
+				'LA VIA DEL POLLEGGIO',
+				'[2016-06-03] - Treviso - Bassano del Grappa',
+				"rgb(244, 180, 0)", true, null, null];
+	track_filename[6][2] = ['https://michelesanges.github.io/dataset/tracks/2016-06-04 - la via del polleggio.geojson', 
+				'LA VIA DEL POLLEGGIO',
+				'[2016-06-04] - Bassano del Grappa - Padova',
+				"rgb(166, 27, 74)", true, null, null];
+	track_filename[6][3] = ['https://michelesanges.github.io/dataset/tracks/2016-06-05 - la via del polleggio.geojson', 
+				'LA VIA DEL POLLEGGIO',
+				'[2016-06-05] - Padova - Monselice',
+				"rgb(205, 220, 57)", true, null, null];
 				
