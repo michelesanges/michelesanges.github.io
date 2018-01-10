@@ -72,3 +72,14 @@
 				'[2016-04-16] - Valli di Comacchio',
 				"rgb(2, 136, 209)", true, null, null];
 	
+	track_filename[5] = new Array();
+	track_filename[5][0] = ['https://michelesanges.github.io/dataset/tracks/2016-05-21 - bologna-casalborsetti.geojson',
+				'BOLOGNA - CASALBORSETTI UNDER THE MOONLIGHT',
+				'[2016-05-21] - Bologna - Campotto',
+				"rgb(2, 136, 209)", true, null, null];
+
+	track_filename[5][1] = ['https://michelesanges.github.io/dataset/tracks/2016-05-22 - bologna-casalborsetti.geojson',
+				'BOLOGNA - CASALBORSETTI UNDER THE MOONLIGHT',
+				'[2016-05-22] - Campotto - Casalborsetti',
+				"rgb(244, 180, 0)", true, null, null];
+				
