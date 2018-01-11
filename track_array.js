@@ -99,4 +99,10 @@
 				'LA VIA DEL POLLEGGIO',
 				'[2016-06-05] - Padova - Monselice',
 				"rgb(205, 220, 57)", true, null, null];
+
+	track_filename[7] = new Array();
+	track_filename[7][0] = ['https://michelesanges.github.io/dataset/tracks/2016-08-08 - campocecina.geojson',
+				'CAMPOCECINA',
+				'[2016-08-08] - Campocecina',
+				"rgb(2, 136, 209)", true, null, null];
 				
