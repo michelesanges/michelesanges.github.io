@@ -105,4 +105,10 @@
 				'CAMPOCECINA',
 				'[2016-08-08] - Campocecina',
 				"rgb(2, 136, 209)", true, null, null];
+
+	track_filename[8] = new Array();
+	track_filename[8][0] = ['https://michelesanges.github.io/dataset/tracks/2016-08-15 - equi terme_completa.geojson',
+				'EQUI TERME',
+				'[2016-08-15] - Equi Terme',
+				"rgb(2, 136, 209)", true, null, null];
 				

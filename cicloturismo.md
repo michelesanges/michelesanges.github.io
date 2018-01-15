@@ -11,8 +11,8 @@ bigimg: https://goo.gl/WwtaW9
 - <a href="https://drive.google.com/open?id=1xGrzhtjdLYF_zswTsfnfGwlPyow&usp=sharing" target="_blank">[2017-04-17] - Aulla - Amola - Virgoletta - Villafranca - Castelnuovo Magra</a><hr>
 - <a href="https://drive.google.com/open?id=1KarbCXSjhfjT-JXdQlYG-2_-XGc&usp=sharing" target="_blank">[2017-04-08] - Viareggio - Lucca, lungo il fiume Serchio</a><hr>
 - <a href="https://drive.google.com/open?id=1wOLIDFFEBJZF10umCtSjSrZ1lq8&usp=sharing" target="_blank">[2017-04-01] - Pontremoli - Castelnuovo Magra</a><hr>
-- <a href="https://drive.google.com/open?id=1xvuLJJB35LNyThXZ-8sD9m0CpVE&usp=sharing" target="_blank">[2016-08-15] - Castelnuovo magra - Fosdinovo - Equi Terme - Aulla</a><hr>-->
-
+-->
+- <a href="https://michelesanges.github.io/tracks.html?map_index=8">[2016-08-15] - Castelnuovo magra - Fosdinovo - Equi Terme - Aulla</a><hr>
 - <a href="https://michelesanges.github.io/tracks.html?map_index=7">[2016-08-08] - Campocecina</a><hr>
 - <a href="https://michelesanges.github.io/tracks.html?map_index=6">[2016-06-02] - La via del polleggio</a><hr>
 - <a href="https://michelesanges.github.io/tracks.html?map_index=5">[2016-05-21] - Bologna - Casalborsetti under the moonlight</a><hr>
