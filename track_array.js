@@ -111,4 +111,10 @@
 				'EQUI TERME',
 				'[2016-08-15] - Equi Terme',
 				"rgb(2, 136, 209)", true, null, null];
+
+	track_filename[9] = new Array();
+	track_filename[9][0] = ['https://michelesanges.github.io/dataset/tracks/2017-04-01 - pontremoli_castelnuovomagra_ricostruita.geojson',
+				'PONTREMOLI - CASTELNUOVO MAGRA',
+				'[2017-04-01] - Pontremoli - Castelnuovo Magra',
+				"rgb(2, 136, 209)", true, null, null];
 				
