@@ -129,3 +129,10 @@
 				'AULLA - VIRGOLETTA - VILLAFRANCA - CASTELNUOVO MAGRA',
 				'[2017-04-17] - Aulla - Virgoletta - Villafranca - Castelnuovo Magra',
 				"rgb(2, 136, 209)", true, null, null];
+
+	track_filename[12] = new Array();
+	track_filename[12][0] = ['https://michelesanges.github.io/dataset/tracks/2017-05-27 - viareggio - livorno.geojson',
+				'VIAREGGIO - LIVORNO',
+				'[2017-05-27] - Viareggio - Livorno',
+				"rgb(2, 136, 209)", true, null, null];
+				
