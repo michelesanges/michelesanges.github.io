@@ -123,4 +123,9 @@
 				'VIAREGGIO - LUCCA LUNGO IL FIUME SERCHIO',
 				'[2017-04-08] - Viareggio - Lucca lungo il fiume Serchio',
 				"rgb(2, 136, 209)", true, null, null];
-				
+
+	track_filename[11] = new Array();
+	track_filename[11][0] = ['https://michelesanges.github.io/dataset/tracks/2017-04-17 - aulla - virgoletta - villafranca - castelnuovo magra - ricostruita.geojson',
+				'AULLA - VIRGOLETTA - VILLAFRANCA - CASTELNUOVO MAGRA',
+				'[2017-04-17] - Aulla - Virgoletta - Villafranca - Castelnuovo Magra',
+				"rgb(2, 136, 209)", true, null, null];
