@@ -117,4 +117,10 @@
 				'PONTREMOLI - CASTELNUOVO MAGRA',
 				'[2017-04-01] - Pontremoli - Castelnuovo Magra',
 				"rgb(2, 136, 209)", true, null, null];
+
+	track_filename[10] = new Array();
+	track_filename[10][0] = ['https://michelesanges.github.io/dataset/tracks/2017-04-08 - viareggio - lucca.geojson',
+				'VIAREGGIO - LUCCA LUNGO IL FIUME SERCHIO',
+				'[2017-04-08] - Viareggio - Lucca lungo il fiume Serchio',
+				"rgb(2, 136, 209)", true, null, null];
 				

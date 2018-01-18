@@ -362,7 +362,7 @@ subtitle: <div id="track_filename"> </div>
 						
 						// se è stato passato un indice ed è questo, plotta l'altimetria
 // 						if ((map_index != "") && (track_num == map_index) && event.feature.getGeometry().getType() == "LineString")
-						if (track_filename[map_index].length == 1)
+						if ((track_filename[map_index].length == 1) && (event.feature.getGeometry().getType() == "LineString"))
 						{
 							draw_path(event.feature.getGeometry().getArray(), track_num);  
 						}

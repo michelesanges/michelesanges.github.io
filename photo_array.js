@@ -40,3 +40,7 @@
 	image_array[8] = ['https://goo.gl/Lg8noM', 'https://goo.gl/KJSCJf', 'https://goo.gl/PcLMr3', 'https://goo.gl/wtr8gD'];
 	
 	image_array[9] = [];
+	
+	image_array[10] = ['https://goo.gl/Ye46cY', 'https://goo.gl/Mm67Wd', 'https://goo.gl/3k4wM5', 'https://goo.gl/dCPLRa', 
+	  'https://goo.gl/GMZ7oa', 'https://goo.gl/PAuNV8'];
+	
