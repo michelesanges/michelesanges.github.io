@@ -49,3 +49,10 @@
 	image_array[12] = ['https://goo.gl/rAQBbW', 'https://goo.gl/GQ7MRa', 'https://goo.gl/EDcK3B', 'https://goo.gl/dHhPUm', 'https://goo.gl/ZQL4GK', 
 	  'https://goo.gl/rF4sFD', 'https://goo.gl/6EoepX', 'https://goo.gl/yxLEFm', 'https://goo.gl/sUiBdS', 'https://goo.gl/xDZYzW', 
 	  'https://goo.gl/bxMT6m', 'https://goo.gl/SCH9Ap', 'https://goo.gl/4UY5Vu'];
+
+	image_array[13] = ['https://goo.gl/Pgp7eq', 'https://goo.gl/f8mxZq', 'https://goo.gl/SG4STW', 'https://goo.gl/86EBRp', 'https://goo.gl/oVHP8c',
+	  'https://goo.gl/xocvWW', 'https://goo.gl/6SJRpn', 'https://goo.gl/wuqijA', 'https://goo.gl/8nSD3c', 'https://goo.gl/YLhiuU', 'https://goo.gl/xtfJTW',
+	  'https://goo.gl/tqyvnU', 'https://goo.gl/tBYg7L', 'https://goo.gl/74JMdw', 'https://goo.gl/VxPpNg', 'https://goo.gl/GfJCiN', 'https://goo.gl/Unk3iy',
+	  'https://goo.gl/eeRxYx', 'https://goo.gl/88tai4', 'https://goo.gl/qbYySS', 'https://goo.gl/kXo8zn', 'https://goo.gl/Vg5JBh', 'https://goo.gl/G4vJy2',
+	  'https://goo.gl/Sw8g8C', 'https://goo.gl/Uxj5Rp', 'https://goo.gl/sXAaLT', 'https://goo.gl/Ejnf6o', 'https://goo.gl/VCNX7b', 'https://goo.gl/wxrqAe',
+	  'https://goo.gl/K7Yrwi', 'https://goo.gl/UfaSRa', 'https://goo.gl/DJtK9j', 'https://goo.gl/iUKfJD', 'https://goo.gl/AmGqPj',  'https://goo.gl/Vp3A7d'];

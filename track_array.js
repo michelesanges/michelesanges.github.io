@@ -135,4 +135,17 @@
 				'VIAREGGIO - LIVORNO',
 				'[2017-05-27] - Viareggio - Livorno',
 				"rgb(2, 136, 209)", true, null, null];
-				
+
+	track_filename[13] = new Array();
+	track_filename[13][0] = ['https://michelesanges.github.io/dataset/tracks/2017-06-02 - passo resia - merano - ricostruita.geojson',
+				'SULLE TRACCE DELLA VIA CLAUDIA AUGUSTA',
+				'[2017-06-02] - Passo Resia - Merano',
+				"rgb(2, 136, 209)", true, null, null];
+	track_filename[13][1] = ['https://michelesanges.github.io/dataset/tracks/2017-06-03 - merano - trento.geojson', 
+				'SULLE TRACCE DELLA VIA CLAUDIA AUGUSTA',
+				'[2017-06-03] - Merano - Trento',
+				"rgb(244, 180, 0)", true, null, null];
+	track_filename[13][2] = ['https://michelesanges.github.io/dataset/tracks/2017-06-04 - lago di caldonazzo - bassano del grappa - ricostruita.geojson', 
+				'SULLE TRACCE DELLA VIA CLAUDIA AUGUSTA',
+				'[2017-06-04] - Lago di Caldonazzo - Bassano del Grappa',
+				"rgb(166, 27, 74)", true, null, null];
