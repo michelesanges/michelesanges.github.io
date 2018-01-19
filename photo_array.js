@@ -55,4 +55,8 @@
 	  'https://goo.gl/tqyvnU', 'https://goo.gl/tBYg7L', 'https://goo.gl/74JMdw', 'https://goo.gl/VxPpNg', 'https://goo.gl/GfJCiN', 'https://goo.gl/Unk3iy',
 	  'https://goo.gl/eeRxYx', 'https://goo.gl/88tai4', 'https://goo.gl/qbYySS', 'https://goo.gl/kXo8zn', 'https://goo.gl/Vg5JBh', 'https://goo.gl/G4vJy2',
 	  'https://goo.gl/Sw8g8C', 'https://goo.gl/Uxj5Rp', 'https://goo.gl/sXAaLT', 'https://goo.gl/Ejnf6o', 'https://goo.gl/VCNX7b', 'https://goo.gl/wxrqAe',
-	  'https://goo.gl/K7Yrwi', 'https://goo.gl/UfaSRa', 'https://goo.gl/DJtK9j', 'https://goo.gl/iUKfJD', 'https://goo.gl/AmGqPj',  'https://goo.gl/Vp3A7d'];
+	  'https://goo.gl/LEBXZh', 'https://goo.gl/UfaSRa', 'https://goo.gl/DJtK9j', 'https://goo.gl/iUKfJD', 'https://goo.gl/AmGqPj',  'https://goo.gl/Vp3A7d'];
+  
+	image_array[14] = ['https://goo.gl/ktgq3Q', 'https://goo.gl/hPTxB1', 'https://goo.gl/ZYfb2r', 'https://goo.gl/wVtdyt', 'https://goo.gl/2RtC4b', 
+	  'https://goo.gl/m8hDz6', 'https://goo.gl/gqfCNh', 'https://goo.gl/cNvyEg', 'https://goo.gl/BB4qrG', 'https://goo.gl/jqDHTM', 'https://goo.gl/t9UsSX',
+	  'https://goo.gl/4Ecx8j', 'https://goo.gl/eAusF6', 'https://goo.gl/5YkGHs', 'https://goo.gl/61PTwY', 'https://goo.gl/DJqVHt', 'https://goo.gl/Efiuzf'];

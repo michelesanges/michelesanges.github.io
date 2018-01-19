@@ -149,3 +149,13 @@
 				'SULLE TRACCE DELLA VIA CLAUDIA AUGUSTA',
 				'[2017-06-04] - Lago di Caldonazzo - Bassano del Grappa',
 				"rgb(166, 27, 74)", true, null, null];
+
+	track_filename[14] = new Array();
+	track_filename[14][0] = ['https://michelesanges.github.io/dataset/tracks/2017-08-07 - castelnuovo magra - fosdinovo - fivizzano -passo del cerreto - collagna.geojson',
+				'DUE GIORNI SU E GIÙ PER L\'APPENNINO TOSCO EMILIANO',
+				'[2017-08-07] - Castelnuovo Magra - Fosdinovo - Fivizzano - Passo del Cerreto - Collagna',
+				"rgb(2, 136, 209)", true, null, null];
+	track_filename[14][1] = ['https://michelesanges.github.io/dataset/tracks/2017-08-08 - collagna - passo dello scalucchia - passo del lagastrello - comano - castelnuovo magra.geojson', 
+				'DUE GIORNI SU E GIÙ PER L\'APPENNINO TOSCO EMILIANO',
+				'[2017-08-08] - Collagna - Passo dello Scalucchia - Passo del Lagastrello - Comano - Castelnuovo Magra',
+				"rgb(244, 180, 0)", true, null, null];
