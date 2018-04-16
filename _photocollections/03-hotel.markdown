@@ -1,0 +1,19 @@
+---
+layout: page
+title:  "HOTEL"
+subtitle: Fotografia - Collezione
+thumbnail-path: https://goo.gl/VP5XEi
+short-description: this is the short description
+images:
+  - image_path: https://goo.gl/ZM8PWF
+  - image_path: https://goo.gl/VP5XEi
+  - image_path: https://goo.gl/YK2SBj
+---
+<center>
+{% for image in page.images %}
+  <div class="collection">
+	<img src="{{ image.image_path }}" alt="{{ image.title}}"/>
+	<p></p>
+  </div>
+{% endfor %}
+</center>
