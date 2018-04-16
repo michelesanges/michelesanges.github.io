@@ -2,7 +2,7 @@
 layout: page
 title:  "UNMANAGED NATURE"
 subtitle: Fotografia - Collezione
-thumbnail-path: https://goo.gl/VP5XEi
+thumbnail-path: https://goo.gl/A7YR4h
 short-description: this is the short description
 images:
   - image_path: https://goo.gl/A7YR4h
