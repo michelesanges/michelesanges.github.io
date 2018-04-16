@@ -8,9 +8,12 @@ bigimg: https://goo.gl/rPDrJQ
   <p>Porfolio sulla piattaforma fotografica di Vogue Italia</p>
   <hr>
 {% for photocollection in site.photocollections %}
+ <div class="copertina">
+    <img src="{{ photocollection.thumbnail-path}}" width="150"/>
+ </div> 
   <div class="photocollection">
     <h2><a href="{{ photocollection.url }}">{{ photocollection.title }}
-    <img src="{{ photocollection.thumbnail-path}}" width="150"/>
+<!--     <img src="{{ photocollection.thumbnail-path}}" width="150"/> -->
     </a></h2>
     <p>{{ photocollection.short-description }}</p>
     <hr>
