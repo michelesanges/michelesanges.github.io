@@ -9,16 +9,10 @@ bigimg: https://goo.gl/rPDrJQ
   <hr>
 {% for photocollection in site.photocollections %}
   <div class="photocollection">
-   <table>
-   <tr>
-   <td><img src="{{ photocollection.thumbnail-path}}" width="150"/></td>
-   <td>
     <h2><a href="{{ photocollection.url }}">{{ photocollection.title }}
-<!--     <img src="{{ photocollection.thumbnail-path}}" width="150"/> -->
+    <img src="{{ photocollection.thumbnail-path}}" width="150"/>
     </a></h2>
     <p>{{ photocollection.short-description }}</p>
     <hr>
-    </td>
-    </table>
   </div> 
 {% endfor %}
