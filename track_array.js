@@ -159,3 +159,10 @@
 				'DUE GIORNI SU E GIÙ PER L\'APPENNINO TOSCO EMILIANO',
 				'[2017-08-08] - Collagna - Passo dello Scalucchia - Passo del Lagastrello - Comano - Castelnuovo Magra',
 				"rgb(244, 180, 0)", true, null, null];
+
+	track_filename[15] = new Array();
+	track_filename[15][0] = ['https://michelesanges.github.io/dataset/tracks/2018-06-03 - colonnata.geojson',
+				'COLONNATA',
+				'[2018-06-03] - Colonnata',
+				"rgb(2, 136, 209)", true, null, null];
+				
