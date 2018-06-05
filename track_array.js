@@ -162,7 +162,7 @@
 
 	track_filename[15] = new Array();
 	track_filename[15][0] = ['https://michelesanges.github.io/dataset/tracks/2018-06-03 - colonnata.geojson',
-				'COLONNATA',
-				'[2018-06-03] - Colonnata',
+				'IL LARDOSO GIRO',
+				'[2018-06-03] - Il lardoso giro',
 				"rgb(2, 136, 209)", true, null, null];
 				
