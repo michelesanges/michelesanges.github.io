@@ -64,3 +64,5 @@
 	image_array[15] = ['https://goo.gl/tX4pvA', 'https://goo.gl/QdGFv1', 'https://goo.gl/EXzuuy', 'https://goo.gl/sp4zpL', 'https://goo.gl/gBGwKN', 
 	  'https://goo.gl/AuKXcq', 'https://goo.gl/boVvig', 'https://goo.gl/sJJZHg', 'https://goo.gl/h4oHjD', 'https://goo.gl/cWY2Ro', 'https://goo.gl/zQzBVj',
 	  'https://goo.gl/VuuNL6'];
+	  
+	image_array[16] = [];
