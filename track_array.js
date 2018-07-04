@@ -165,4 +165,19 @@
 				'IL LARDOSO GIRO',
 				'[2018-06-03] - Il lardoso giro',
 				"rgb(2, 136, 209)", true, null, null];
+
+
+
+
+
+
+	track_filename[16] = new Array();
+	track_filename[16][0] = ['https://michelesanges.github.io/dataset/tracks/todo - garfagnana - primo giorno.geojson',
+				'Garfagnana',
+				'Garfagnana - primo giorno',
+				"rgb(2, 136, 209)", true, null, null];
+	track_filename[16][1] = ['https://michelesanges.github.io/dataset/tracks/todo - garfagnana - secondo giorno.geojson',
+				'Garfagnana',
+				'Garfagnana - secondo giorno',
+				"rgb(244, 180, 0)", true, null, null];
 				
