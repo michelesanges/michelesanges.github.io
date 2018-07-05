@@ -180,4 +180,13 @@
 				'Garfagnana',
 				'Garfagnana - secondo giorno',
 				"rgb(244, 180, 0)", true, null, null];
+	track_filename[17] = new Array();
+	track_filename[17][0] = ['https://michelesanges.github.io/dataset/tracks/todo - seconda opzione - garfagnana - primo giorno.geojson',
+				'Garfagnana - seconda opzione',
+				'Garfagnana - primo giorno',
+				"rgb(2, 136, 209)", true, null, null];
+	track_filename[17][1] = ['https://michelesanges.github.io/dataset/tracks/todo - seconda opzione - garfagnana - secondo giorno.geojson',
+				'Garfagnana',
+				'Garfagnana - secondo giorno',
+				"rgb(244, 180, 0)", true, null, null];
 				

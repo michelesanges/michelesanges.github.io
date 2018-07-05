@@ -66,3 +66,4 @@
 	  'https://goo.gl/VuuNL6'];
 	  
 	image_array[16] = [];
+	image_array[17] = [];
