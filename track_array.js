@@ -166,27 +166,13 @@
 				'[2018-06-03] - Il lardoso giro',
 				"rgb(2, 136, 209)", true, null, null];
 
-
-
-
-
-
 	track_filename[16] = new Array();
-	track_filename[16][0] = ['https://michelesanges.github.io/dataset/tracks/todo - garfagnana - primo giorno.geojson',
-				'Garfagnana',
-				'Garfagnana - primo giorno',
+	track_filename[16][0] = ['https://michelesanges.github.io/dataset/tracks/2018-08-06 - castelnuovo magra-passo-del-vestito-castenuovo-garfagnana.geojson',
+				'GIRO DEI QUATTRO LAGHI',
+				'[2018-08-06] - Castelnuovo Magra - Passo del Vestito - Castelnuovo Garfagnana',
 				"rgb(2, 136, 209)", true, null, null];
-	track_filename[16][1] = ['https://michelesanges.github.io/dataset/tracks/todo - garfagnana - secondo giorno.geojson',
-				'Garfagnana',
-				'Garfagnana - secondo giorno',
-				"rgb(244, 180, 0)", true, null, null];
-	track_filename[17] = new Array();
-	track_filename[17][0] = ['https://michelesanges.github.io/dataset/tracks/todo - seconda opzione - garfagnana - primo giorno.geojson',
-				'Garfagnana - seconda opzione',
-				'Garfagnana - primo giorno',
-				"rgb(2, 136, 209)", true, null, null];
-	track_filename[17][1] = ['https://michelesanges.github.io/dataset/tracks/todo - seconda opzione - garfagnana - secondo giorno.geojson',
-				'Garfagnana',
-				'Garfagnana - secondo giorno',
+	track_filename[16][1] = ['https://michelesanges.github.io/dataset/tracks/2018-08-07 - castelnuovo garfagnana - vagli di sotto - gramolazzo - aulla - sarzana.geojson',
+				'GIRO DEI QUATTRO LAGHI',
+				'[2018-08-07] - Castelnuovo Garfagnana - Vagli di sotto - Gramolazzo - Aulla - Sarzana',
 				"rgb(244, 180, 0)", true, null, null];
 				
