@@ -176,3 +176,8 @@
 				'[2018-08-07] - Castelnuovo Garfagnana - Vagli di sotto - Gramolazzo - Aulla - Sarzana',
 				"rgb(244, 180, 0)", true, null, null];
 				
+	track_filename[17] = new Array();
+	track_filename[17][0] = ['https://michelesanges.github.io/dataset/tracks/2018-08-15 - ugliancaldo.geojson',
+				'UGLIANCALDO',
+				'[2018-08-15] - Ugliancaldo',
+				"rgb(2, 136, 209)", true, null, null];

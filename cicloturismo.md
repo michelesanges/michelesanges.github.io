@@ -6,6 +6,7 @@ bigimg: https://goo.gl/WwtaW9
 ---
 <h3>
 
+- <a href="https://michelesanges.github.io/tracks.html?map_index=17">[2018-08-15] - Ugliancaldo</a><hr>
 - <a href="https://michelesanges.github.io/tracks.html?map_index=16">[2018-08-06] - Giro dei quattro laghi</a><hr>
 - <a href="https://michelesanges.github.io/tracks.html?map_index=15">[2018-06-03] - Il lardoso giro</a><hr>
 - <a href="https://michelesanges.github.io/tracks.html?map_index=14">[2017-08-07] - Due giorni su e giù per l'Appennino tosco emiliano</a><hr>
