@@ -64,11 +64,11 @@
 	image_array[15] = ['https://goo.gl/tX4pvA', 'https://goo.gl/QdGFv1', 'https://goo.gl/EXzuuy', 'https://goo.gl/sp4zpL', 'https://goo.gl/gBGwKN', 
 	  'https://goo.gl/AuKXcq', 'https://goo.gl/boVvig', 'https://goo.gl/sJJZHg', 'https://goo.gl/h4oHjD', 'https://goo.gl/cWY2Ro', 'https://goo.gl/zQzBVj',
 	  'https://goo.gl/VuuNL6'];
-	  
-	image_array[16] = ['https://goo.gl/ZmVUym', 'https://goo.gl/C1iGwD', 'https://goo.gl/XkoJcx', 'https://goo.gl/QfYbzj', 'https://goo.gl/Uv4AVV', 'https://goo.gl/tbtZvP',
-        'https://goo.gl/g2PqgS', 'https://goo.gl/sbERCf', 'https://goo.gl/KV52pp', 'https://goo.gl/F6XfPf', 'https://goo.gl/Fuf57C', 'https://goo.gl/nXJEaZ', 'https://goo.gl/w6JVu6', 
-        'https://goo.gl/nKqEef', 'https://goo.gl/LiL5e2', 'https://goo.gl/ficPjw', 'https://goo.gl/vmchKx', 'https://www.youtube.com/embed/w1XULu9uCwM',
-	'https://www.youtube.com/embed/ifQF8XGVY6A', 'https://goo.gl/66Fu5h', 'https://goo.gl/dPWUhw'];
+  
+	image_array[16] = ['https://goo.gl/AGv6zU', 'https://goo.gl/AWKAgh', 'https://goo.gl/j2kvRE', 'https://goo.gl/8wP9TS', 'https://goo.gl/gTqe4e', 
+	'https://goo.gl/a3Raq6', 'https://goo.gl/i8aMeK', 'https://goo.gl/WRwG1T','https://goo.gl/kmgLBz', 'https://goo.gl/rxsPEy', 'https://goo.gl/vQ4EPp',
+	'https://goo.gl/QqtnRu', 'https://www.youtube.com/embed/w1XULu9uCwM', 'https://www.youtube.com/embed/ifQF8XGVY6A', 'https://goo.gl/eYdYk6', 
+	'https://goo.gl/b1Vayo', 'https://goo.gl/iAepPx', 'https://goo.gl/C4RrAJ', 'https://goo.gl/Gfb2nB', 'https://goo.gl/4wrwjh', 'https://goo.gl/4brv9r'];
 
 	image_array[17] = ['https://goo.gl/NhA5q9', 'https://goo.gl/kmgiin', 'https://goo.gl/qCz8gD', 'https://goo.gl/bvdp4U', 'https://goo.gl/Q8YDD8', 'https://goo.gl/GbkF2U', 
         'https://goo.gl/udwb2U', 'https://goo.gl/MWMfHd', 'https://goo.gl/PhiBjY', 'https://goo.gl/9GrY8F', 'https://goo.gl/WGmUnc'];
