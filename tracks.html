@@ -481,17 +481,14 @@ subtitle: <div id="track_filename"> </div>
 			if (i > 0)
 			{
 				elevazione_diff = elevations[i].elevation - elevations[i - 1].elevation;
-console.log("elevazione_diff: " + elevazione_diff);
 
 				if (elevazione_diff >= 0)
 				{
 					guadagno_elevazione += elevazione_diff;
-console.log("guadagno_elevazione: " + guadagno_elevazione);
 				}
 				else
 				{
 					perdita_elevazione += elevazione_diff;
-console.log("perdita_elevazione: " + perdita_elevazione);
 				}
 			}
 		}
