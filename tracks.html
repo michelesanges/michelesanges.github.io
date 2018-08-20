@@ -469,10 +469,28 @@ subtitle: <div id="track_filename"> </div>
 		data_table.removeRows(0, data_table.getNumberOfRows());
 		position_table.removeRows(0, position_table.getNumberOfRows());
 		
+		var guadagno_elevazione = 0;
+		var perdita_elevazione = 0;
+		var elevazione_diff;
+
 		for (var i = 0; i < results.length; i++)
 		{
 			data_table.addRow(['', elevations[i].elevation]);
 			position_table.addRow([elevations[i].location.lat(), elevations[i].location.lng()]);
+			
+			if (i > 0)
+			{
+				elevazione_diff = elevations[i].elevation - elevations[i - 1].elevation;
+				
+				if (elevazione_diff >= 0)
+				{
+					guadagno_elevazione += elevazione_diff;
+				}
+				else
+				{
+					perdita_elevazione += elevazione_diff;
+				}
+			}
 		}
 
 		var path_length = length/1000;	// in km
@@ -482,7 +500,9 @@ subtitle: <div id="track_filename"> </div>
 			height: 400,
 			legend: 'none',
 			fontSize: 20,
-			title:  track_filename[map_index][n][2] + '\nPath lenght: ' + path_length + " [km]",
+			title:  track_filename[map_index][n][2] + '\nPath lenght: ' + path_length + " [km]" + '\nElev. Gain: ' + guadagno_elevazione
+			+ " [m]" + '\nElev. Loss: ' + perdita_elevazione,
+			,
 			titleX: 'Distance [Km]',
 			titleY: 'Elevation [m]'
 		});
