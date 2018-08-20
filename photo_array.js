@@ -65,7 +65,7 @@
 	  'https://goo.gl/AuKXcq', 'https://goo.gl/boVvig', 'https://goo.gl/sJJZHg', 'https://goo.gl/h4oHjD', 'https://goo.gl/cWY2Ro', 'https://goo.gl/zQzBVj',
 	  'https://goo.gl/VuuNL6'];
   
-	image_array[16] = ['https://goo.gl/AGv6zU', 'https://goo.gl/AWKAgh', 'https://goo.gl/j2kvRE', 'https://goo.gl/8wP9TS', 'https://goo.gl/gTqe4e', 
+	image_array[16] = ['https://goo.gl/4UXECa', 'https://goo.gl/AWKAgh', 'https://goo.gl/j2kvRE', 'https://goo.gl/8wP9TS', 'https://goo.gl/gTqe4e', 
 	'https://goo.gl/a3Raq6', 'https://goo.gl/i8aMeK', 'https://goo.gl/WRwG1T','https://goo.gl/kmgLBz', 'https://goo.gl/rxsPEy', 'https://goo.gl/vQ4EPp',
 	'https://goo.gl/QqtnRu', 'https://www.youtube.com/embed/w1XULu9uCwM', 'https://www.youtube.com/embed/ifQF8XGVY6A', 'https://goo.gl/eYdYk6', 
 	'https://goo.gl/b1Vayo', 'https://goo.gl/iAepPx', 'https://goo.gl/C4RrAJ', 'https://goo.gl/Gfb2nB', 'https://goo.gl/4wrwjh', 'https://goo.gl/4brv9r'];
