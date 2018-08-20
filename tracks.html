@@ -481,14 +481,17 @@ subtitle: <div id="track_filename"> </div>
 			if (i > 0)
 			{
 				elevazione_diff = elevations[i].elevation - elevations[i - 1].elevation;
-				
+console.log("elevazione_diff: " + elevazione_diff);
+
 				if (elevazione_diff >= 0)
 				{
 					guadagno_elevazione += elevazione_diff;
+console.log("guadagno_elevazione: " + guadagno_elevazione);
 				}
 				else
 				{
 					perdita_elevazione += elevazione_diff;
+console.log("perdita_elevazione: " + perdita_elevazione);
 				}
 			}
 		}
@@ -501,7 +504,7 @@ subtitle: <div id="track_filename"> </div>
 			legend: 'none',
 			fontSize: 20,
 			title:  track_filename[map_index][n][2] + '\nPath lenght: ' + path_length + " [km]" + ' - Elev. Gain: ' + guadagno_elevazione.toFixed(0)
-			+ " [m]" + ' - Elev. Loss: ' + perdita_elevazione.toFixed(0),
+			+ " [m]" + ' - Elev. Loss: ' + perdita_elevazione.toFixed(0) + " [m]",
 			titleX: 'Distance [Km]',
 			titleY: 'Elevation [m]'
 		});
@@ -603,8 +606,6 @@ subtitle: <div id="track_filename"> </div>
 			  if (image_array[map_index][n].includes("youtube"))
 			  {
 				html_cmd += "<object width='1280' height='720' data='" + image_array[map_index][n] + "'></object><p>";
-				console.log("trovato video");
-				console.log(html_cmd);
 			  }
 			  else
 			  {
