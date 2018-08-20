@@ -581,7 +581,14 @@ subtitle: <div id="track_filename"> </div>
                     html_cmd = "<center>" ;
                     for (var n = 0; n < image_array[map_index].length; n++)
                     {
-			  html_cmd += "<img src='" + image_array[map_index][n]  + "'/><p>";
+			  if (image_array[map_index][n].includes("youtube")
+			  {
+				html_cmd += "<object width='1280' height='720' data='" + image_array[map_index][n] + "'></object><p>";
+			  }
+			  else
+			  {
+				html_cmd += "<img src='" + image_array[map_index][n] + "'/><p>";
+			  }
                     }
                     html_cmd += "</center>" ;
                     document.getElementById("imageHolder").innerHTML=html_cmd;
