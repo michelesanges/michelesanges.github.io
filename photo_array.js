@@ -30,6 +30,7 @@
 	image_array[6] = ['https://goo.gl/e1GKPf', 'https://goo.gl/WwLVBq', 'https://goo.gl/gjrsLH', 'https://goo.gl/EhuZqG', 
 	  'https://goo.gl/UkSfrn', 'https://goo.gl/BskPAf', 
 	  'https://goo.gl/MyfQY5', 'https://goo.gl/C7buVe', 'https://goo.gl/j76Lz3', 'https://goo.gl/jeUvWa', 'https://goo.gl/SB1YH4',
+	  'https://www.youtube.com/embed/j-v0kOzsrS4', 'https://www.youtube.com/embed/fCK0GBSFtgM',
 	  'https://goo.gl/yjdy5m', 'https://goo.gl/56Kwky', 'https://goo.gl/eu4cbm', 'https://goo.gl/AvCBqJ', 'https://goo.gl/DcBENE',
 	  'https://goo.gl/2jHLa7', 'https://goo.gl/H3o8AB', 'https://goo.gl/XQ1bRT', 'https://goo.gl/b3gaht', 'https://goo.gl/3nX28a',
 	  'https://goo.gl/Zeh1Zy', 'https://goo.gl/22udYX', 'https://goo.gl/YB4kmC', 'https://goo.gl/qp4dK1', 'https://goo.gl/4TFpid',
