@@ -283,7 +283,7 @@ subtitle: <div id="track_filename"> </div>
 		chart.draw(data_table, {
 			height: 400,
 			legend: 'none',
-			fontSize: 20,
+			fontSize: 16,
 			titleX: 'Distance [Km]',
 			titleY: 'Elevation [m]'
 		});
@@ -495,11 +495,11 @@ subtitle: <div id="track_filename"> </div>
 			}
 
 			data_table.addRow([i * length/(1000*256), elevations[i].elevation, 
-				  '<h2>Dist: '+ (i * length/(1000*256)).toFixed(1) + ' km<p>Elevation: ' + elevations[i].elevation.toFixed(1) +' m</h2>',
+				  '<h3>Dist: '+ (i * length/(1000*256)).toFixed(1) + ' km<p>Elevation: ' + elevations[i].elevation.toFixed(1) +' m</h3>',
 				  guadagno_elevazione, 
-				  '<h2>Dist: '+ (i * length/(1000*256)).toFixed(1) + ' km<p>Elevation Gain: ' + guadagno_elevazione.toFixed(0) +' m</h2>',			  
+				  '<h3>Dist: '+ (i * length/(1000*256)).toFixed(1) + ' km<p>Elevation Gain: ' + guadagno_elevazione.toFixed(0) +' m</h3>',			  
 				  -perdita_elevazione,			
-				  '<h2>Dist: '+ (i * length/(1000*256)).toFixed(1) + ' km<p>Elevation Loss: ' + -perdita_elevazione.toFixed(0) +' m</h2>'				  
+				  '<h3>Dist: '+ (i * length/(1000*256)).toFixed(1) + ' km<p>Elevation Loss: ' + -perdita_elevazione.toFixed(0) +' m</h3>'				  
 				  ]);
 				  
 			position_table.addRow([elevations[i].location.lat(), elevations[i].location.lng()]);
@@ -512,7 +512,7 @@ subtitle: <div id="track_filename"> </div>
 			height: 400,
 // 			legend: 'none',
 			tooltip: { isHtml: true }, // Use an HTML tooltip.
-			fontSize: 20,
+			fontSize: 16,
 			title:  track_filename[map_index][n][2] + '\nPath lenght: ' + path_length + " [km]" + ' - Elev. Gain: ' + guadagno_elevazione.toFixed(0)
 			+ " [m]" + ' - Elev. Loss: ' + -perdita_elevazione.toFixed(0) + " [m]",
 			titleX: 'Distance [Km]',
