@@ -348,7 +348,7 @@ subtitle: <div id="track_filename"> </div>
 								      {
 										 track_filename[map_index][track_num][5] = new google.maps.Marker({
 											  position: position,
-											  icon: 'http://michelesanges.github.io/img/bike_start.png',
+											  icon: 'https://michelesanges.github.io/img/bike_start.png',
 											  map: map
 										});
 								      }
@@ -356,7 +356,7 @@ subtitle: <div id="track_filename"> </div>
 								      {
 										track_filename[map_index][track_num][6] = new google.maps.Marker({
 											  position: position,
-											  icon: 'http://michelesanges.github.io/img/bike_stop.png',
+											  icon: 'https://michelesanges.github.io/img/bike_stop.png',
 											  map: map
 										});
 								      }
@@ -495,11 +495,11 @@ subtitle: <div id="track_filename"> </div>
 			}
 
 			data_table.addRow([i * length/(1000*256), elevations[i].elevation, 
-				  '<h3>Dist: '+ (i * length/(1000*256)).toFixed(1) + ' km<p>Elevation: ' + elevations[i].elevation.toFixed(1) +' m</h3>',
+				  '<b>Dist: '+ (i * length/(1000*256)).toFixed(1) + ' km<p>Elevation: ' + elevations[i].elevation.toFixed(1) +' m</b>',
 				  guadagno_elevazione, 
-				  '<h3>Dist: '+ (i * length/(1000*256)).toFixed(1) + ' km<p>Elevation Gain: ' + guadagno_elevazione.toFixed(0) +' m</h3>',			  
+				  '<b>Dist: '+ (i * length/(1000*256)).toFixed(1) + ' km<p>Elevation Gain: ' + guadagno_elevazione.toFixed(0) +' m</b>',			  
 				  -perdita_elevazione,			
-				  '<h3>Dist: '+ (i * length/(1000*256)).toFixed(1) + ' km<p>Elevation Loss: ' + -perdita_elevazione.toFixed(0) +' m</h3>'				  
+				  '<b>Dist: '+ (i * length/(1000*256)).toFixed(1) + ' km<p>Elevation Loss: ' + -perdita_elevazione.toFixed(0) +' m</b>'				  
 				  ]);
 				  
 			position_table.addRow([elevations[i].location.lat(), elevations[i].location.lng()]);
