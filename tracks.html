@@ -273,7 +273,7 @@ subtitle: <div id="track_filename"> </div>
 
 		infowindow = new google.maps.InfoWindow({
 		    content: '<div class = "corp" style="width:20px; height: 20px background-color: #00FF00; ">' + '<div id = "infowindow_div" >' + '</div>' + '</div>' + 
-		      '<h4 style="color: brown"><!--Map title--><div id="map_info_div"></div></h4><h4>Click to see the elevation profile</h4>'
+			'<h4 style="color: brown"><!--Map title--><div id="map_info_div"></div></h4><h4>Click to see the elevation profile</h4>'
 		})
 
 		// Create a new chart in the elevation_chart_div DIV.
@@ -343,12 +343,12 @@ subtitle: <div id="track_filename"> </div>
 								      substring_start = "Inizio";
 								      substring_stop = "Fine";
 
-								      var icona;
 								      if (string.includes(substring_start))
 								      {
 										 track_filename[map_index][track_num][5] = new google.maps.Marker({
 											  position: position,
 											  icon: 'https://michelesanges.github.io/img/bike_start.png',
+											  title: event.feature.getProperty("name"),
 											  map: map
 										});
 								      }
@@ -357,6 +357,7 @@ subtitle: <div id="track_filename"> </div>
 										track_filename[map_index][track_num][6] = new google.maps.Marker({
 											  position: position,
 											  icon: 'https://michelesanges.github.io/img/bike_stop.png',
+											  title: event.feature.getProperty("name"),
 											  map: map
 										});
 								      }
@@ -408,7 +409,9 @@ subtitle: <div id="track_filename"> </div>
 				      infowindow.setPosition(event.latLng);
 				      infowindow.setOptions({pixelOffset: new google.maps.Size(10, -15)});
 				      infowindow.open(map);
-				      document.getElementById('map_info_div'/*'iw_title'*/).innerHTML = track_filename[map_index][track_num][2];
+				      document.getElementById('map_info_div').innerHTML = track_filename[map_index][track_num][2]; // event.feature.getProperty("name") 
+				      
+// per mostrare immagine streetview   "<p><img src='https://maps.googleapis.com/maps/api/streetview?size=350x120&location=" + event.latLng.lat() + "," + event.latLng.lng() + "&key=AIzaSyCwR5MtCCmXualVOiq27XnxxosJhitng-k'></p>";
 				});
 				
 				track_layer[track_num].addListener('mouseout', function(event)
