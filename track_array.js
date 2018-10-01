@@ -184,11 +184,11 @@
 
 	track_filename[18] = new Array();
 	track_filename[18][0] = ['https://michelesanges.github.io/dataset/tracks/2018-09-29 - san-salvatore-monferrato-cella-monte - ricostruita.geojson',
-				'LA MONSTERRATO',
+				'LA MONSTERRATO - STRADE BIANCHE DEL MONFERRATO',
 				'[2018-09-29] - San Salvatore Monferrato - Cella Monte',
 				"rgb(2, 136, 209)", true, null, null];
 	track_filename[18][1] = ['https://michelesanges.github.io/dataset/tracks/2018-09-30 - cella monte-san-salvatore-monferrato - ricostruita.geojson',
-				'LA MONSTERRATO',
+				'LA MONSTERRATO - STRADE BIANCHE DEL MONFERRATO',
 				'[2018-09-30] - Cella Monte - San Salvatore Monferrato',
 				"rgb(244, 180, 0)", true, null, null];
 				
@@ -198,10 +198,4 @@
 				'FONTANE',
 				'Fontane',
 				"rgb(2, 136, 209)", true, null, null];
-				
-	track_filename[101] = new Array();
-	track_filename[101][0] = ['https://michelesanges.github.io/dataset/tracks/todo - percorso malabrocca.geojson',
-				'MONSTERRATO STRADE BIANCHE',
-				'Monsterrato strade bianche',
-				"rgb(2, 136, 209)", true, null, null];
-				
+								
