@@ -182,6 +182,15 @@
 				'[2018-08-15] - Ugliancaldo',
 				"rgb(2, 136, 209)", true, null, null];
 
+	track_filename[18] = new Array();
+	track_filename[18][0] = ['https://michelesanges.github.io/dataset/tracks/2018-09-29 - san-salvatore-monferrato-cella-monte - ricostruita.geojson',
+				'LA MONSTERRATO',
+				'[2018-09-29] - San Salvatore Monferrato - Cella Monte',
+				"rgb(2, 136, 209)", true, null, null];
+	track_filename[18][1] = ['https://michelesanges.github.io/dataset/tracks/2018-09-30 - cella monte-san-salvatore-monferrato - ricostruita.geojson',
+				'LA MONSTERRATO',
+				'[2018-09-30] - Cella Monte - San Salvatore Monferrato',
+				"rgb(244, 180, 0)", true, null, null];
 				
 				
 	track_filename[100] = new Array();

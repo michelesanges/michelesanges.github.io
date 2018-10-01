@@ -73,3 +73,5 @@
 
 	image_array[17] = ['https://goo.gl/NhA5q9', 'https://goo.gl/kmgiin', 'https://goo.gl/qCz8gD', 'https://goo.gl/bvdp4U', 'https://goo.gl/Q8YDD8', 'https://goo.gl/GbkF2U', 
         'https://goo.gl/udwb2U', 'https://goo.gl/MWMfHd', 'https://goo.gl/PhiBjY', 'https://goo.gl/9GrY8F', 'https://goo.gl/WGmUnc'];
+
+	image_array[18] = ['https://bit.ly/2RfvD8L'];
