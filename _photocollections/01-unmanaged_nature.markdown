@@ -5,6 +5,8 @@ subtitle: Fotografia - Collezione
 thumbnail-path: https://goo.gl/A7YR4h
 short-description: this is the short description
 images:
+  - image_path: https://goo.gl/jnyyQ2
+  - image_path: https://goo.gl/xPA6x5
   - image_path: https://goo.gl/A7YR4h
   - image_path: https://goo.gl/dPMd4J
   - image_path: https://goo.gl/4FG1PC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Fotografia
-subtitle: Collezioni
+subtitle: Album
 bigimg: https://goo.gl/rPDrJQ
 ---
 <h2><a href="http://www.vogue.it/photovogue/portfolio/?id=149678" target="_blank">PHOTOVOGUE</a></h2>
