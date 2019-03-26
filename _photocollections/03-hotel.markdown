@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "HOTEL"
-subtitle: Fotografia - Collezione
+subtitle: Photography - Series
 thumbnail-path: https://goo.gl/VP5XEi
 short-description: this is the short description
 images:

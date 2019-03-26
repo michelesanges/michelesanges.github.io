@@ -36,8 +36,8 @@ social:
 # List of links in the navigation bar
 navbar-links:
   Blog: "blog"
-  Fotografia: "fotografia"
-  Cicloturismo: "cicloturismo"
+  Photography: "fotografia"
+  Bike tours: "cicloturismo"
   Social:
     - Facebook: "https://www.facebook.com/sanges.michele"
     - Anobii: "http://www.anobii.com/michelesanges/profile"

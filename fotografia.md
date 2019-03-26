@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Fotografia
-subtitle: Album
+title: Photography 
+subtitle: Series
 bigimg: https://goo.gl/rPDrJQ
 ---
 <h2><a href="http://www.vogue.it/photovogue/portfolio/?id=149678" target="_blank">PHOTOVOGUE</a></h2>
-  <p>Porfolio sulla piattaforma fotografica di Vogue Italia</p>
+  <p>Portfolio on Vogue Italia photographic platform</p>
   <hr>
 {% for photocollection in site.photocollections %}
   <div class="photocollection">

@@ -1,17 +1,17 @@
 ---
 layout: page
 title:  "UNMANAGED NATURE"
-subtitle: Fotografia - Collezione
+subtitle: Photography - Series
 thumbnail-path: https://goo.gl/A7YR4h
 short-description: this is the short description
 images:
-  - image_path: https://goo.gl/chRk3H
+  - image_path: https://goo.gl/7JUybY
   - image_path: https://goo.gl/tXV6Uo
-  - image_path: https://goo.gl/LqWEyb
-  - image_path: https://goo.gl/KGMhNy
+  - image_path: https://goo.gl/FRASJA
+  - image_path: https://goo.gl/3XuraF
   - image_path: https://goo.gl/A7YR4h
-  - image_path: https://goo.gl/dPMd4J
-  - image_path: https://goo.gl/4FG1PC
+  - image_path: https://goo.gl/ADTAMW
+  - image_path: https://goo.gl/awi1Ki
 ---
 <center>
 {% for image in page.images %}
