@@ -7,7 +7,7 @@ short-description: this is the short description
 images:
   - image_path: https://goo.gl/7JUybY
   - image_path: https://goo.gl/tXV6Uo
-  - image_path: https://goo.gl/FRASJA
+  - image_path: https://goo.gl/xJCasb
   - image_path: https://goo.gl/3XuraF
   - image_path: https://goo.gl/A7YR4h
   - image_path: https://goo.gl/ADTAMW
