@@ -1,17 +1,16 @@
 ---
 layout: page
-title:  "UNMANAGED NATURE"
-subtitle: Photography - Series
+title:  "FLORA"
+subtitle: Fotografia - Serie
 thumbnail-path: https://goo.gl/A7YR4h
 short-description: this is the short description
 images:
   - image_path: https://goo.gl/7JUybY
   - image_path: https://goo.gl/tXV6Uo
-  - image_path: https://goo.gl/xJCasb
-  - image_path: https://goo.gl/3XuraF
-  - image_path: https://goo.gl/A7YR4h
-  - image_path: https://goo.gl/ADTAMW
-  - image_path: https://goo.gl/awi1Ki
+  - image_path: https://goo.gl/4SXEjH
+  - image_path: https://goo.gl/HwqRhu
+  - image_path: https://goo.gl/arjTKp
+  - image_path: https://goo.gl/kmzmdF
 ---
 <center>
 {% for image in page.images %}
