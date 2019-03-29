@@ -1,7 +1,6 @@
 ---
 layout: page
 title:  "WAITING FOR THE SUNLIGHT"
-<!-- Visioni al calar della sera -->
 subtitle: Fotografia - Collezioni
 thumbnail-path: https://goo.gl/34YcH2
 short-description: this is the short description
