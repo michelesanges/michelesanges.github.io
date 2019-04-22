@@ -6,6 +6,7 @@ bigimg: https://goo.gl/WwtaW9
 ---
 <h3>
 
+- <a href="https://michelesanges.github.io/tracks.html?map_index=19">[2019-04-20] - Pasqua con chi vuoi - Sentiero della Bonifica e ciclabile del lago Trasimeno </a><hr>
 - <a href="https://michelesanges.github.io/tracks.html?map_index=18">[2018-09-29] - La Monsterrato - Strade bianche del Monferrato</a><hr>
 - <a href="https://michelesanges.github.io/tracks.html?map_index=17">[2018-08-15] - Ugliancaldo</a><hr>
 - <a href="https://michelesanges.github.io/tracks.html?map_index=16">[2018-08-06] - Giro dei quattro laghi</a><hr>

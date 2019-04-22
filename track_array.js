@@ -191,8 +191,18 @@
 				'LA MONSTERRATO - STRADE BIANCHE DEL MONFERRATO',
 				'[2018-09-30] - Cella Monte - San Salvatore Monferrato',
 				"rgb(244, 180, 0)", true, null, null];
-				
-				
+
+	track_filename[19] = new Array();
+	track_filename[19][0] = ['https://michelesanges.github.io/dataset/tracks/2019-04-20 - pasqua con chi vuoi - sentiero della bonifica e ciclabile del lago trasimeno.geojson',
+				'PASQUA CON CHI VUOI - SENTIERO DELLA BONIFICA E CICLABILE DEL LAGO TRASIMENO',
+				'[2019-04-20] - Arezzo - Montebuono di Magione (PG)',
+				"rgb(2, 136, 209)", true, null, null];
+	track_filename[19][1] = ['https://michelesanges.github.io/dataset/tracks/2019-04-21 - pasqua con chi vuoi - sentiero della bonifica e ciclabile del lago trasimeno.geojson',
+				'PASQUA CON CHI VUOI - SENTIERO DELLA BONIFICA E CICLABILE DEL LAGO TRASIMENO',
+				'[2019-04-21] - Montebuono di Magione (PG) - Arezzo',
+				"rgb(244, 180, 0)", true, null, null];
+                
+
 	track_filename[100] = new Array();
 	track_filename[100][0] = ['https://michelesanges.github.io/dataset/poi/fontane.geojson',
 				'FONTANE',
