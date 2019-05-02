@@ -2,8 +2,8 @@
 layout: post
 title:  "La recensione"
 images:
-  - image_path: https://cutt.ly/or79KO
-  - image_path: https://cutt.ly/Yr79Mk
+  - image_path: https://cutt.ly/6tybX6
+  - image_path: https://cutt.ly/Ztyb9r
   - image_path: https://cutt.ly/4r799v
   - image_path: https://cutt.ly/xr795w
   - image_path: https://cutt.ly/Pr73u2
