@@ -201,8 +201,26 @@
 				'PASQUA CON CHI VUOI - SENTIERO DELLA BONIFICA E CICLABILE DEL LAGO TRASIMENO',
 				'[2019-04-21] - Montebuono di Magione (PG) - Arezzo',
 				"rgb(244, 180, 0)", true, null, null];
-                
 
+	track_filename[20] = new Array();
+	track_filename[20][0] = ['https://michelesanges.github.io/dataset/tracks/2019-06-27 - tour del casentino - camaldoli.geojson',
+				'TOUR DEL CASENTINO',
+				'[2019-06-27] - Camaldoli',
+				"rgb(2, 136, 209)", true, null, null];
+	track_filename[20][1] = ['https://michelesanges.github.io/dataset/tracks/2019-06-28 - tour del casentino - la verna.geojson',
+				'TOUR DEL CASENTINO',
+				'[2019-06-28] - La Verna',
+				"rgb(244, 180, 0)", true, null, null];
+	track_filename[20][2] = ['https://michelesanges.github.io/dataset/tracks/2019-06-29 - tour del casentino - passo della consuma - vallombrosa.geojson',
+				'TOUR DEL CASENTINO',
+				'[2019-06-29] - Passo della Consuma',
+				"rgb(166, 27, 74)", true, null, null];
+	track_filename[20][3] = ['https://michelesanges.github.io/dataset/tracks/2019-06-30 - tour del casentino - badia prataglia.geojson',
+				'TOUR DEL CASENTINO',
+				'[2019-06-30] - Badia Prataglia',
+				"rgb(205, 220, 57)", true, null, null];
+                
+                
 	track_filename[100] = new Array();
 	track_filename[100][0] = ['https://michelesanges.github.io/dataset/poi/fontane.geojson',
 				'FONTANE',
