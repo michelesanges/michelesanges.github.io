@@ -12,6 +12,7 @@ images:
   - image_path: https://goo.gl/4SXEjH
   - image_path: https://goo.gl/HwqRhu
   - image_path: https://goo.gl/kmzmdF
+  - image_path: https://cutt.ly/zwdxSL7
 ---
 <center>
 {% for image in page.images %}
