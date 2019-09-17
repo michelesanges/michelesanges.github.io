@@ -220,6 +220,16 @@
 				'[2019-06-30] - Badia Prataglia',
 				"rgb(205, 220, 57)", true, null, null];
                 
+	track_filename[21] = new Array();
+	track_filename[21][0] = ['https://michelesanges.github.io/dataset/tracks/2019-09-15 - zeri - levanto.geojson',
+				'ZERI - LEVANTO',
+				'[2019-09-15] - Castelnuovo Magra - Noce di Zeri',
+				"rgb(2, 136, 209)", true, null, null];
+	track_filename[21][1] = ['https://michelesanges.github.io/dataset/tracks/2019-09-16 - zeri - levanto ricostruita.geojson',
+				'ZERI - LEVANTO',
+				'[2019-09-16] - Noce di Zeri - Levanto',
+				"rgb(244, 180, 0)", true, null, null];
+                
                 
 	track_filename[100] = new Array();
 	track_filename[100][0] = ['https://michelesanges.github.io/dataset/poi/fontane.geojson',
@@ -233,10 +243,6 @@
 				'Lucca - Riserva orecchiella',
 				"rgb(2, 136, 209)", true, null, null];
 	
- 	track_filename[102] = new Array();
-	track_filename[102][0] = ['https://michelesanges.github.io/dataset/tracks/todo - zum zeri - moneglia.geojson',
-				'Zum Zeri - Moneglia',
-				'Zum Zeri - Moneglia',
-				"rgb(2, 136, 209)", true, null, null];
+
                
                 
