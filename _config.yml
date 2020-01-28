@@ -38,9 +38,9 @@ navbar-links:
   Blog: "blog"
   Fotografia: "fotografia"
   Cicloturismo: "cicloturismo"
-  Social:
-    - Facebook: "https://www.facebook.com/sanges.michele"
-    - Anobii: "http://www.anobii.com/michelesanges/profile"
+  #Social:
+    #- Facebook: "https://www.facebook.com/sanges.michele"
+    #- Anobii: "http://www.anobii.com/michelesanges/profile"
 #    - Instagram: "https://www.instagram.com/michele.sanges/"
     #- GitHub: "https://github.com/michelesanges/"
   #Photography:
@@ -123,7 +123,7 @@ social:
 footer-links-active:
   rss: false
   facebook: true
-  instagram: true
+  instagram: false
   google-photo: false
   anobii: true
   #google-maps: true

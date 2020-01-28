@@ -4,19 +4,19 @@
 	// file name, nome traccia, colore traccia, flag traccia visibile, marker start, marker stop	
 	track_filename[0] = new Array();
 	track_filename[0][0] = ['https://michelesanges.github.io/dataset/tracks/2013-09-05 - tour_eroica.geojson',
-				'TOUR SULLE STRADE BIANCHE DELL\'EROICA',
+				'SULLE STRADE BIANCHE DELL\'EROICA',
 				'[2013-09-05] - Siena - Montalcino', 
 				"rgb(2, 136, 209)", true, null, null];
  	track_filename[0][1] = ['https://michelesanges.github.io/dataset/tracks/2013-09-06 - tour_eroica.geojson',
-				'TOUR SULLE STRADE BIANCHE DELL\'EROICA',
+				'SULLE STRADE BIANCHE DELL\'EROICA',
 				'[2013-09-06] - Montalcino - Lucignano D\'Arbia', 
 				"rgb(244, 180, 0)", true, null, null];
  	track_filename[0][2] = ['https://michelesanges.github.io/dataset/tracks/2013-09-07 - tour_eroica.geojson',
-				'TOUR SULLE STRADE BIANCHE DELL\'EROICA',
+				'SULLE STRADE BIANCHE DELL\'EROICA',
 				'[2013-09-07] - Lucignano D\'Arbia - Radda in Chianti', 
 				"rgb(166, 27, 74)", true, null, null];
  	track_filename[0][3] = ['https://michelesanges.github.io/dataset/tracks/2013-09-08 - tour_eroica.geojson',
-				'TOUR SULLE STRADE BIANCHE DELL\'EROICA',
+				'SULLE STRADE BIANCHE DELL\'EROICA',
 				'[2013-09-08] - Radda in Chianti - Siena', 
 				"rgb(205, 220, 57)", true, null, null];
                 

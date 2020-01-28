@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "RAFFAELE"
+title:  "MEETING RAFFAELE"
 subtitle: Fotografia - Serie
 thumbnail-path: https://cutt.ly/kw7I4W1
 short-description: this is the short description
