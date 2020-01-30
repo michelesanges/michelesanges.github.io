@@ -29,7 +29,7 @@ social:
   links:
     #- https://github.com/BrianMitchL
     - https://www.facebook.com/sanges.michele
-    - http://www.anobii.com/michelesanges/profile
+    #- http://www.anobii.com/michelesanges/profile
 
 # --- Navigation bar options --- #
 
@@ -63,7 +63,7 @@ author:
   facebook: sanges.michele  # eg. daattali
   #instagram: https://www.instagram.com/michele.sanges/
   #google-photo: https://goo.gl/photos/J6n4SpRfPnE5ZsZh6
-  anobii: http://www.anobii.com/michelesanges/books
+  #anobii: http://www.anobii.com/michelesanges/books
   #google-maps: /bike_tracks/
   github: michelesanges    # eg. daattali
   twitter: yourname   # eg. daattali
@@ -125,7 +125,7 @@ footer-links-active:
   facebook: true
   instagram: false
   google-photo: false
-  anobii: true
+  anobii: false
   #google-maps: true
   email: false
   twitter: false

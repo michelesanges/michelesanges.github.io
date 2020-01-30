@@ -1,11 +1,12 @@
 	// elenco tracce
 	var image_array = new Array();
 	
-	image_array[0] = ['https://goo.gl/XeJumj', 'https://goo.gl/eLnsbF', 'https://goo.gl/VzM8Ge', 'https://goo.gl/To2T9k', 'https://goo.gl/hqaq9P', 'https://goo.gl/m6TCHh',            
-        'https://goo.gl/RnRTPf', 'https://cutt.ly/nrTpZPl', 'https://goo.gl/43BomX', 'https://goo.gl/eQvU5F', 'https://goo.gl/dKeMxe', 'https://goo.gl/2cnyaG', 
-        'https://goo.gl/F5RQmM', 'https://goo.gl/qZQGDx', 'https://cutt.ly/drTpC6M', 'https://goo.gl/dQSs7L', 'https://cutt.ly/BrTpV6a', 'https://goo.gl/NSfN2H', 
-        'https://goo.gl/ep2fVM', 'https://goo.gl/qv5Kw1', 'https://goo.gl/hmxnMs', 'https://goo.gl/7bw4pK', 'https://goo.gl/aP5ZoK','https://goo.gl/y9Nskt', 
-        'https://goo.gl/Vf16i3', 'https://goo.gl/ZYhmPn', 'https://goo.gl/aekTxR', 'https://goo.gl/TwYqtX',  'https://goo.gl/76saNX'];
+	image_array[0] = ['https://goo.gl/XeJumj', 'https://goo.gl/eLnsbF', 'https://goo.gl/VzM8Ge', 'https://goo.gl/To2T9k', 'https://goo.gl/hqaq9P', 
+        'https://goo.gl/m6TCHh', 'https://goo.gl/RnRTPf', 'https://cutt.ly/nrTpZPl', 'https://goo.gl/43BomX', 'https://goo.gl/eQvU5F', 
+        'https://goo.gl/dKeMxe', 'https://goo.gl/2cnyaG', 'https://goo.gl/F5RQmM', 'https://goo.gl/qZQGDx', 'https://cutt.ly/drTpC6M', 
+        'https://goo.gl/dQSs7L', 'https://cutt.ly/BrTpV6a', 'https://goo.gl/NSfN2H', 'https://goo.gl/ep2fVM', 'https://goo.gl/qv5Kw1', 
+        'https://goo.gl/hmxnMs', 'https://goo.gl/7bw4pK', 'https://goo.gl/aP5ZoK', 'https://goo.gl/y9Nskt', 'https://goo.gl/Vf16i3',
+        'https://goo.gl/ZYhmPn', 'https://goo.gl/aekTxR', 'https://goo.gl/TwYqtX', 'https://goo.gl/76saNX'];
 
 	image_array[1] = [];
 
