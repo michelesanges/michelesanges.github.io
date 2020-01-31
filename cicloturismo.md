@@ -2,7 +2,7 @@
 layout: page
 title: Cicloturismo
 subtitle: Il termine traccia denota solitamente un segno, un'orma o una scia, ma possiede diversi altri significati.
-bigimg: https://cutt.ly/erTpUM1
+bigimg: https://cutt.ly/KrYM914
 ---
 <h3>
 

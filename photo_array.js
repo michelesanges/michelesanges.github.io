@@ -42,10 +42,9 @@
 	image_array[8] = ['https://goo.gl/Lg8noM', 'https://goo.gl/KJSCJf', 'https://goo.gl/PcLMr3', 'https://goo.gl/wtr8gD'];
 	
 	image_array[9] = [];
-	
-	image_array[10] = ['https://goo.gl/Ye46cY', 'https://goo.gl/Mm67Wd', 'https://goo.gl/3k4wM5', 'https://goo.gl/dCPLRa', 
-	  'https://goo.gl/GMZ7oa', 'https://goo.gl/PAuNV8'];
 
+	image_array[10] = ['https://cutt.ly/vrYM6R3', 'https://cutt.ly/KrYM914', 'https://cutt.ly/KrYM3DD', 'https://cutt.ly/nrYM4yM', 'https://cutt.ly/frYM4AD', 'https://cutt.ly/6rYM8E9', 'https://cutt.ly/1rYM7UE', 'https://cutt.ly/ErY1qj2'];    
+      
 	image_array[11] = [];
 
 	image_array[12] = ['https://goo.gl/rAQBbW', 'https://goo.gl/GQ7MRa', 'https://goo.gl/EDcK3B', 'https://goo.gl/dHhPUm', 'https://goo.gl/ZQL4GK', 
