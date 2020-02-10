@@ -98,7 +98,6 @@ subtitle: <div id="track_filename"> </div>
 	// carica l'elenco delle tracce nell'array track_filename[]
 	include('photo_array.js');
 	include('track_array.js');
-console.log("image_array[22].length " + image_array[22].length);
 	
 	var track_layer = [];
 	var chart;
@@ -196,6 +195,8 @@ console.log("image_array[22].length " + image_array[22].length);
 // @@@@@@@@@@@@@@@@@@@@@@@@@ 
 
 		map_index = getParameter("map_index").replace(/^.*[\\\/]/, '');
+console.log("map_index" + map_index);
+console.log("image_array[map_index].length " + image_array[map_index].length);
 
 		if (map_index != "")
 		{
