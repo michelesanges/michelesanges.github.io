@@ -5,7 +5,7 @@ subtitle: Il termine traccia denota solitamente un segno, un'orma o una scia, ma
 bigimg: https://cutt.ly/KrYM914
 ---
 <h4>
-
+- <a href="https://michelesanges.github.io/tracks.html?map_index=22">[2020-02-09] - La Spezia - Volastra - Colle del Telegrafo - Campiglia</a><hr>
 - <a href="https://michelesanges.github.io/tracks.html?map_index=21">[2019-09-15] - Zeri - Levanto</a><hr>
 - <a href="https://michelesanges.github.io/tracks.html?map_index=20">[2019-06-27] - Tour del Casentino</a><hr>
 - <a href="https://michelesanges.github.io/tracks.html?map_index=19">[2019-04-20] - Pasqua con chi vuoi - Sentiero della Bonifica e ciclabile del lago Trasimeno </a><hr>
