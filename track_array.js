@@ -234,7 +234,7 @@
 	track_filename[22][0] = ['https://michelesanges.github.io/dataset/tracks/2020-02-09 - la-spezia-volastra-telegrafo-campiglia.geojson',
 				'LA SPEZIA - VOLASTRA - COLLE DEL TELEGRAFO - CAMPIGLIA',
 				'[2020-02-09] - La Spezia - Volastra - Colle del Telegrafo - Campiglia',
-				"rgb(2, 136, 209)", true, null, null];
+				"rgb(244, 180, 0)", true, null, null];
                 
        
 
