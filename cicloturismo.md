@@ -2,7 +2,7 @@
 layout: page
 title: Cicloturismo
 subtitle: Il termine traccia denota solitamente un segno, un'orma o una scia, ma possiede diversi altri significati.
-bigimg: https://cutt.ly/KrYM914
+bigimg: https://cutt.ly/rrGXvpI
 ---
 <h4>
 - <a href="https://michelesanges.github.io/tracks.html?map_index=22">[2020-02-09] - La Spezia - Volastra - Colle del Telegrafo - Campiglia</a><hr>
