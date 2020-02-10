@@ -79,8 +79,6 @@ subtitle: <div id="track_filename"> </div>
 	</head>
 
 	<body>
-	include('photo_array.js');
-	include('track_array.js');
 
 
 	
@@ -98,8 +96,8 @@ subtitle: <div id="track_filename"> </div>
 	
 	<script>
 	// carica l'elenco delle tracce nell'array track_filename[]
-// 	include('photo_array.js');
-// 	include('track_array.js');
+	include('photo_array.js');
+	include('track_array.js');
 	
 	var track_layer = [];
 	var chart;
@@ -430,10 +428,10 @@ subtitle: <div id="track_filename"> </div>
 			map.controls[google.maps.ControlPosition.TOP_CENTER].push(list1);
 		}
 		
-		if (map_index != "")
-		{
+// 		if (map_index != "")
+// 		{
 			set_image(0);
-		}
+// 		}
 	}
 
 	//Defining the path for which to plot the elevation
