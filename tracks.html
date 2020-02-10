@@ -571,51 +571,53 @@ subtitle: <div id="track_filename"> </div>
 	}	
 	
 	function set_image(par)
-	{
+	{/*
 		if (image_array[map_index].length != 'undefined')
 		{
-// 		    var prev, next;
-// 		    if (par == 0)
-// 		    {
-// 			prev = image_array[map_index].length - 1;
-// 			next = par + 1;
-// 		    }
-// 		    else if (par == (image_array[map_index].length - 1))
-// 		    {
-// 			prev = par - 1;
-// 			next = 0;		    
-// 		    }
-// 		    else
-// 		    {
-// 			prev = par - 1;
-// 			next = par + 1;
-// 		    }
-//                     document.getElementById("imageHolder").innerHTML="<center><table border=0><tr>\
-//                     <td><font size=50><a href=javascript:set_image(" + prev + ") style=text-decoration:none>&#x2190;</a></font></td> \
-//                     <td><img src='" + image_array[map_index][par] + "'/></td> \
-//                     <td><font size=50><a href=javascript:set_image(" + next + ") style=text-decoration:none>&#x2192;</a></font></td> \
-//                     </tr></table></center>";
-// 
-//                     var cmd = "<center>" ;
-//                     
-//                     for (var n = 0; n < image_array[map_index].length; n++)
-//                     {
-//                                 var bullet;
-//                                 if (par == n)
-//                                 {
-//                                     bullet=9724;
-//                                 }
-//                                 else
-//                                 {
-//                                     bullet=9723;
-//                                 }
-//                                 
-//                                 cmd += "&#" + bullet;
-//                     }
-// 
-//                     cmd += "</center>" 
-//                     document.getElementById("pointHolder").innerHTML=cmd; 
+		*/
+/*		
+		    var prev, next;
+		    if (par == 0)
+		    {
+			prev = image_array[map_index].length - 1;
+			next = par + 1;
+		    }
+		    else if (par == (image_array[map_index].length - 1))
+		    {
+			prev = par - 1;
+			next = 0;		    
+		    }
+		    else
+		    {
+			prev = par - 1;
+			next = par + 1;
+		    }
+                    document.getElementById("imageHolder").innerHTML="<center><table border=0><tr>\
+                    <td><font size=50><a href=javascript:set_image(" + prev + ") style=text-decoration:none>&#x2190;</a></font></td> \
+                    <td><img src='" + image_array[map_index][par] + "'/></td> \
+                    <td><font size=50><a href=javascript:set_image(" + next + ") style=text-decoration:none>&#x2192;</a></font></td> \
+                    </tr></table></center>";
+
+                    var cmd = "<center>" ;
                     
+                    for (var n = 0; n < image_array[map_index].length; n++)
+                    {
+                                var bullet;
+                                if (par == n)
+                                {
+                                    bullet=9724;
+                                }
+                                else
+                                {
+                                    bullet=9723;
+                                }
+                                
+                                cmd += "&#" + bullet;
+                    }
+
+                    cmd += "</center>" 
+                    document.getElementById("pointHolder").innerHTML=cmd; 
+                    */
                     // @@@@@@@@@@@@@@@@@@@@@@@@
                     var html_cmd;
                     html_cmd = "<center>" ;
@@ -633,7 +635,7 @@ subtitle: <div id="track_filename"> </div>
                     html_cmd += "</center>" ;
                     document.getElementById("imageHolder").innerHTML=html_cmd;
                     // @@@@@@@@@@@@@@@@@@@@@@@@
-		}
+// 		}
 }
 
 
