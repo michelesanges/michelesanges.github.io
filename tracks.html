@@ -97,7 +97,7 @@ subtitle: <div id="track_filename"> </div>
 	<script>
 	// carica l'elenco delle tracce nell'array track_filename[]
 	include('photo_array.js');
-// 	include('track_array.js');
+	include('track_array.js');
 console.log("image_array[22].length " + image_array[22].length);
 	
 	var track_layer = [];
@@ -199,7 +199,7 @@ console.log("image_array[22].length " + image_array[22].length);
 
 		if (map_index != "")
 		{
-			document.getElementById('track_filename').innerHTML = track_filename[map_index][0][1];
+			document.getElementById('track_filename').innerHTML = track_filename[map_index][0]/*[1]*/;
 
 // 			// reset the visibility flag
 // 			for (var track_num = 0; track_num < track_filename[map_index].length; track_num++)
