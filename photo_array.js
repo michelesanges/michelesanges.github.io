@@ -99,4 +99,3 @@
         'https://cutt.ly/VrGFZEu', 'https://cutt.ly/nrGFCxy', 'https://cutt.ly/ArGF9r9', 'https://cutt.ly/vrGF8s1'];
  
         
- export { image_array };       
