@@ -29,9 +29,6 @@ subtitle: <div id="track_filename"> </div>
 	
 	<script src="https://www.google.com/jsapi"></script>
 
-	<script type="text/javascript" src="photo_array.js"></script> 
-    <script type="text/javascript" src="track_array.js"></script>     
-    
 	<style type="text/css"> 
 	.dropdown-check-list {
 	  display: inline-block;
@@ -100,8 +97,8 @@ subtitle: <div id="track_filename"> </div>
 	<script>
 	// carica l'elenco delle tracce nell'array track_filename[]
 // 	include('photo_array.js');
-// 	include('track_array.js');
-
+	include('track_array.js');
+    import { image_array } from './photo_array.js'
 
 	var track_layer = [];
 	var chart;
