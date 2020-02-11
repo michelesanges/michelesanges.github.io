@@ -198,11 +198,11 @@ subtitle: <div id="track_filename"> </div>
 
 		map_index = getParameter("map_index").replace(/^.*[\\\/]/, '');
 console.log("map_index" + map_index);
-// console.log("image_array[map_index].length " + image_array[map_index].length);
+console.log("image_array[map_index].length " + image_array[map_index].length);
 
 		if (map_index != "")
 		{
-			document.getElementById('track_filename').innerHTML = track_filename[map_index][0]/*[1]*/;
+			document.getElementById('track_filename').innerHTML = track_filename[map_index][0][1];
 
 // 			// reset the visibility flag
 // 			for (var track_num = 0; track_num < track_filename[map_index].length; track_num++)
