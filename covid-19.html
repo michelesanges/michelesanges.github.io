@@ -1,0 +1,594 @@
+---
+layout: page
+title: Cicloturismo
+subtitle: <div id="track_filename"> </div>
+---
+<!DOCTYPE html>
+
+<html>
+	<head>
+	  <!-- This stylesheet contains specific styles for displaying the map
+		on this page. Replace it with your own styles as described in the
+		documentation:
+		https://developers.google.com/maps/documentation/javascript/tutorial -->
+	<!--     <link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css"> -->
+ <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }   
+      
+    </style>	
+	
+	<script src="https://www.google.com/jsapi"></script>
+<!-- 	<script src="photo_array.js" type="module"></script> -->
+
+	<style type="text/css"> 
+	.dropdown-check-list {
+	  display: inline-block;
+	}
+	.dropdown-check-list .anchor {
+	  position: relative;
+	  cursor: pointer;
+	  display: inline-block;
+	  padding: 5px 50px 5px 10px;
+	  border: 1px solid #ccc;
+	}
+	.dropdown-check-list .anchor:after {
+	  position: absolute;
+	  content: "";
+	  border-left: 2px solid black;
+	  border-top: 2px solid black;
+	  padding: 5px;
+	  right: 10px;
+	  top: 20%;
+	  -moz-transform: rotate(-135deg);
+	  -ms-transform: rotate(-135deg);
+	  -o-transform: rotate(-135deg);
+	  -webkit-transform: rotate(-135deg);
+	  transform: rotate(-135deg);
+	}
+	.dropdown-check-list .anchor:active:after {
+	  right: 8px;
+	  top: 21%;
+	}
+	.dropdown-check-list ul.items {
+	  padding: 2px;
+	  display: none;
+	  margin: 0;
+	  border: 1px solid #ccc;
+	  border-top: none;
+	}
+	.dropdown-check-list ul.items li {
+	  list-style: none;
+	}
+	.dropdown-check-list.visible .anchor {
+	  color: #0094ff;
+	}
+	.dropdown-check-list.visible .items {
+	  display: block;
+	}
+	</style>
+		
+	</head>
+
+	<body>
+
+
+	
+<!-- 	<div id="combo_div"></div> -->
+ 	<p margin-bottom: 3cm>	
+	<div id="map_div" style="width:100%;height:500px;"></div>
+  	<p margin-bottom: 3cm>
+<!-- 	<div id="elevation_chart_div" style="width:100%;"></div> -->
+ 	<p margin-bottom: 3cm>
+<!-- 	<div id="imageHolder"></div> -->
+<!-- 	<p margin-bottom: 3cm>
+ 	<div id="pointHolder"></div>-->
+
+	</body>	
+	
+	<script>
+	// carica l'elenco delle tracce nell'array track_filename[]
+// 	include('photo_array.js');
+// 	include('track_array.js');
+	var track_filename = new Array();
+	track_filename[0] = ['https://github.com/deldersveld/topojson/blob/master/countries/italy/italy-provinces.json'];
+	
+	track_filename[1] = ['https://github.com/pcm-dpc/COVID-19/blob/master/dati-json/dpc-covid19-ita-andamento-nazionale.json'];
+	track_filename[2] = ['https://github.com/pcm-dpc/COVID-19/blob/master/dati-json/dpc-covid19-ita-province.json'];
+	track_filename[3] = ['https://github.com/pcm-dpc/COVID-19/blob/master/dati-json/dpc-covid19-ita-regioni.json'];
+
+	var track_layer = [];
+	var chart;
+	var data_table;
+	var position_table;
+	var map;
+	var elevator_service;
+	var path;
+	var marker_position;
+	var called_num = 0;
+	var infowindow;
+	var map_index;
+
+
+// 	function boxclick(box, track_num)
+// 	{
+// 		console.log("categoria " + track_num);
+// 
+// 		if (box.checked)
+// 		{	
+// 			track_layer[track_num].setMap(map);
+// 			track_filename[map_index][track_num][4] = true;
+// 
+// 			if (track_filename[map_index][track_num][5] != null)
+// 			{
+// 				track_filename[map_index][track_num][5].setMap(map);
+// 				track_filename[map_index][track_num][6].setMap(map);
+// 			}
+// 		} 
+// 		else
+// 		{
+// 			track_layer[track_num].setMap(null)
+// 			track_filename[map_index][track_num][4] = false;
+// 
+// 			if (track_filename[map_index][track_num][5] != null)
+// 			{
+// 				track_filename[map_index][track_num][5].setMap(null);
+// 				track_filename[map_index][track_num][6].setMap(null);
+// 			}
+// 		}
+// 
+// 		// compute the new bound
+// 		var single_bound = new google.maps.LatLngBounds();
+// 		for (var track_num = 0; track_num < track_filename[map_index].length; track_num++)
+// 		{
+// 			if (track_filename[map_index][track_num][4] == true)
+// 			{
+// 				track_layer[track_num].forEach(function(feature)
+// 				{
+// 					// center the map
+// 					feature.getGeometry().forEachLatLng(
+// 						function(position)
+// 						{
+// 							single_bound.extend(position); //do this for each coordinate
+// 						});
+// 
+// 					map.fitBounds(single_bound);
+// 				});
+// 			}
+// 		}
+// 
+// 		map.setCenter(single_bound.getCenter());
+// 	}
+
+
+// 	function getParameter(whichOne)
+// 	{
+// 		var pairs = location.search.substring(1).split('&');
+// 		var r = "";
+// 		var tp = new Array();
+// 
+// 		for (var i = 0; i < pairs.length; i ++)
+// 		{
+// 			tp = pairs[i].split('=');
+// 
+// 			if (whichOne == tp[0])
+// 			{
+// 				r = unescape(tp[1].replace(/\+/g, " "));
+// 			}
+// 		}
+// 
+// 		return r;
+// 	}
+
+	// Load the Visualization API and the columnchart package.
+	google.load("visualization", "1", {packages:["corechart"]});
+ 
+	function init_map()
+	{
+// 		data_table = new google.visualization.DataTable();
+// 		data_table.addColumn('number', 'Sample');
+// 		data_table.addColumn('number', 'Elevation');
+// 		data_table.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
+// 		data_table.addColumn('number', 'Elevation Gain');
+// 		data_table.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
+// 		data_table.addColumn('number', 'Elevation Loss');
+// 		data_table.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
+// 
+// 		position_table = new google.visualization.DataTable();
+// 		position_table.addColumn('number', 'Latitude');
+// 		position_table.addColumn('number', 'Longitude');
+// 
+// 		elevator_service = new google.maps.ElevationService;
+
+		map = new google.maps.Map(document.getElementById("map_div"), {mapTypeId:google.maps.MapTypeId.HYBRID});
+
+// 		var bounds = new google.maps.LatLngBounds();
+
+		infowindow = new google.maps.InfoWindow({
+		    content: '<div class = "corp" style="width:20px; height: 20px background-color: #00FF00; ">' + '<div id = "infowindow_div" >' + '</div>' + '</div>' + 
+			'<h4 style="color: brown"><!--Map title--><div id="map_info_div"></div></h4><h4>Click to see the elevation profile</h4>'
+		})
+
+		// Create a new chart in the elevation_chart_div DIV.
+// 		chart = new google.visualization.AreaChart/*LineChart*//*ColumnChart*/(document.getElementById('elevation_chart_div'));
+// 		google.visualization.events.addListener(chart, 'onmouseover', chart_onmouseover_handler);
+// 		google.visualization.events.addListener(chart, 'onmouseout', chart_onmouseout_handler);
+// 		chart.draw(data_table, {
+// 			height: 400,
+// 			legend: 'none',
+// 			fontSize: 16,
+// 			titleX: 'Distance [Km]',
+// 			titleY: 'Elevation [m]'
+// 		});
+
+		for (var track_num = 0; track_num < track_filename.length; track_num++)
+		{
+// 			(
+// 			function(track_num)
+// 			{
+				track_layer[track_num] = new google.maps.Data();
+			
+				track_layer[track_num].loadGeoJson(track_filename[track_num]);
+
+// 				track_layer[track_num].setStyle({
+// 							      icon: " ",
+// 							      strokeColor: track_filename[map_index][track_num][3],
+// 							      strokeWeight: 8
+// 							});
+
+// 				if (track_filename[map_index][track_num][4] == true)
+// 				{
+					track_layer[track_num].setMap(map);
+					
+					track_layer[track_num].addListener('addfeature', function(event)
+					{
+						console.log("addfeature: " + event.feature.getGeometry().getType());
+/*						
+						if (event.feature.getGeometry().getType() == "Point")
+						{
+
+							console.log("FEATURE NAME:" + event.feature.getProperty("name"));
+							
+							var string = event.feature.getProperty("name");
+							substring_start = "Inizio";
+							substring_stop = "Fine";
+
+							if (string.includes(substring_start))
+							{
+								track_layer[track_num].setStyle({icon: 'http://michelesanges.github.io/img/bike_start.png'});
+							}
+							else if (string.includes(substring_stop))
+							{
+								track_layer[track_num].setStyle({icon: 'http://michelesanges.github.io/img/bike_stop.png'});
+							}						
+						}
+*/
+
+						// center the map
+						event.feature.getGeometry().forEachLatLng(
+							function(position)
+							{
+								bounds.extend(position); //do this for each coordinate
+
+// 								if (event.feature.getGeometry().getType() == "Point")
+// 								{
+// 								      var string = event.feature.getProperty("name");
+// 								      substring_start = "Inizio";
+// 								      substring_stop = "Fine";
+// 
+// 								      if (string.includes(substring_start))
+// 								      {
+// 										 track_filename[map_index][track_num][5] = new google.maps.Marker({
+// 											  position: position,
+// 											  icon: 'https://michelesanges.github.io/img/bike_start.png',
+// 											  title: event.feature.getProperty("name"),
+// 											  map: map
+// 										});
+// 								      }
+// 								      else if (string.includes(substring_stop))
+// 								      {
+// 										track_filename[map_index][track_num][6] = new google.maps.Marker({
+// 											  position: position,
+// 											  icon: 'https://michelesanges.github.io/img/bike_stop.png',
+// 											  title: event.feature.getProperty("name"),
+// 											  map: map
+// 										});
+// 								      }
+// 								}
+							});
+
+						map.fitBounds(bounds);
+						
+						// se è stato passato un indice ed è questo, plotta l'altimetria
+// 						if ((map_index != "") && (track_num == map_index) && event.feature.getGeometry().getType() == "LineString")
+// 						if ((track_filename[map_index].length == 1) && (event.feature.getGeometry().getType() == "LineString"))
+// 						{
+// 							draw_path(event.feature.getGeometry().getArray(), track_num);  
+// 						}
+					});
+// 				}
+// 				else
+// 				{
+// 					track_layer[track_num].setMap(null)
+// 				}
+
+// 				track_layer[track_num].addListener('click', function(event)
+// 				{
+// 					for (var n = 0; n < track_filename[map_index].length; n++)
+// 					{
+// 						track_layer[n].setStyle({
+// 									      icon: " ",
+// 									      strokeColor: (n==track_num) ? "rgb(255,0,0)" : track_filename[map_index][n][3],
+// 									      strokeWeight: (n==track_num) ? 10 : 8
+// 									});
+// 					}
+// 
+// 					// center the map
+// 					var single_bound = new google.maps.LatLngBounds();
+// 					event.feature.getGeometry().forEachLatLng(
+// 						function(position)
+// 						{
+// 							single_bound.extend(position); //do this for each coordinate
+// 						});
+// 
+// 					map.fitBounds(single_bound);
+// 					map.setCenter(single_bound.getCenter());
+// 
+// 					draw_path(event.feature.getGeometry().getArray(), track_num);  
+// 				});
+				
+// 				track_layer[track_num].addListener('mouseover', function(event)
+// 				{
+// 				      infowindow.setPosition(event.latLng);
+// 				      infowindow.setOptions({pixelOffset: new google.maps.Size(10, -15)});
+// 				      infowindow.open(map);
+// 				      document.getElementById('map_info_div').innerHTML = track_filename[map_index][track_num][2]; // event.feature.getProperty("name") 
+// 				      
+// // per mostrare immagine streetview   "<p><img src='https://maps.googleapis.com/maps/api/streetview?size=350x120&location=" + event.latLng.lat() + "," + event.latLng.lng() + "&key=AIzaSyCwR5MtCCmXualVOiq27XnxxosJhitng-k'></p>";
+// 				});
+// 				
+// 				track_layer[track_num].addListener('mouseout', function(event)
+// 				{
+// 				      infowindow.close();
+// 				});
+// 			}
+// 			)(track_num)
+// 		}
+		
+		map.setCenter(bounds.getCenter());
+// 		if (map_index == "")
+// 		{
+// 			map.controls[google.maps.ControlPosition.TOP_CENTER].push(list1);
+// 		}
+		
+// 		if (map_index != "")
+// 		{
+// 			set_image(0);
+// 		}
+	}
+
+	//Defining the path for which to plot the elevation
+// 	function draw_path(path, i)
+// 	{
+// 	       var subsampled_path = new Array();
+// 	       
+// 	       var max_sample_num = 1000;
+// 	       for (var sample = 0; sample < max_sample_num; sample++)
+// 	       {
+// 			subsampled_path[sample] = path[Math.trunc(sample * path.length / max_sample_num)];
+// 	       }
+// 
+// 		var pathRequest = {
+// 		    'path': subsampled_path,
+// 		    'samples': 256
+// 		};
+// 
+// 		var length = google.maps.geometry.spherical.computeLength(path);
+// 		
+// 		elevator_service.getElevationAlongPath(pathRequest, function(results, status)
+// 		{
+// 			  plotElevation(results, status, length, i);
+// 		});
+// 	}
+
+
+	function plotElevation(results, status, length, n)
+	{
+		if (status != google.maps.ElevationStatus.OK)
+		{
+			return;
+		}
+
+		var elevations = results;
+
+		var elevationPath = [];
+		for (var i = 0; i < results.length; i++)
+		{
+			elevationPath.push(elevations[i].location);
+		}
+
+		data_table.removeRows(0, data_table.getNumberOfRows());
+		position_table.removeRows(0, position_table.getNumberOfRows());
+		
+		var guadagno_elevazione = 0;
+		var perdita_elevazione = 0;
+		var elevazione_diff;
+
+		for (var i = 0; i < results.length; i++)
+		{		
+			if (i > 0)
+			{
+				elevazione_diff = elevations[i].elevation - elevations[i - 1].elevation;
+
+				if (elevazione_diff >= 0)
+				{
+					guadagno_elevazione += elevazione_diff;
+				}
+				else
+				{
+					perdita_elevazione += elevazione_diff;
+				}
+			}
+
+			data_table.addRow([i * length/(1000*256), elevations[i].elevation, 
+				  '<b>Dist: '+ (i * length/(1000*256)).toFixed(1) + ' km<p>Elevation: ' + elevations[i].elevation.toFixed(1) +' m</b>',
+				  guadagno_elevazione, 
+				  '<b>Dist: '+ (i * length/(1000*256)).toFixed(1) + ' km<p>Elevation Gain: ' + guadagno_elevazione.toFixed(0) +' m</b>',			  
+				  -perdita_elevazione,			
+				  '<b>Dist: '+ (i * length/(1000*256)).toFixed(1) + ' km<p>Elevation Loss: ' + -perdita_elevazione.toFixed(0) +' m</b>'				  
+				  ]);
+				  
+			position_table.addRow([elevations[i].location.lat(), elevations[i].location.lng()]);
+		}
+
+		var path_length = length/1000;	// in km
+		path_length = path_length.toFixed(1); // one decimal place
+
+		chart.draw(data_table, {
+			height: 400,
+// 			legend: 'none',
+			tooltip: { isHtml: true }, // Use an HTML tooltip.
+			fontSize: 16,
+			title:  track_filename[map_index][n][2] + '\nPath lenght: ' + path_length + " [km]" + ' - Elev. Gain: ' + guadagno_elevazione.toFixed(0)
+			+ " [m]" + ' - Elev. Loss: ' + -perdita_elevazione.toFixed(0) + " [m]",
+			titleX: 'Distance [Km]',
+			titleY: 'Elevation [m]',
+			series: {
+					0: { lineWidth: 5 },
+					1: { lineDashStyle: [20, 20] },
+					2: { lineDashStyle: [20, 20] },
+				},
+		});
+	}
+
+	function chart_onmouseover_handler(e)
+	{	
+		var lat = position_table.getValue(e.row, 0);
+		var lon = position_table.getValue(e.row, 1);
+
+		var position = new google.maps.LatLng(lat, lon);	
+
+		if (marker_position == undefined)
+		{
+			marker_position = new google.maps.Marker({
+				position: position,
+				map: map, 
+// 				animation: google.maps.Animation.DROP,
+// 				label:{text:lat + "," + lon , color:"white", fontSize:"20px"/*, fontWeight:"Bold" */}
+			});
+		}
+		else
+		{
+			marker_position.setMap(map);
+			marker_position.setPosition(position);
+// 			label = google.maps.MarkerLabel(label:{text:lat + "," + lon , color:"white", fontSize:"20px"/*, fontWeight:"Bold" */});
+// 			marker_position.setLabel(lat);
+		}
+	}
+
+	function chart_onmouseout_handler(e)
+	{	
+		marker_position.setMap(null);
+	}
+
+	function include(file)
+	{
+
+		var script  = document.createElement('script');
+		script.src  = file;
+		script.type = 'text/javascript';
+// 		script.defer = true;
+// 		script.sync = true;
+
+		document.getElementsByTagName('head').item(0).appendChild(script);	
+	}	
+	
+	function set_image(par)
+	{
+	/*
+		if (image_array[map_index].length != 'undefined')
+		{
+		*/
+/*		
+		    var prev, next;
+		    if (par == 0)
+		    {
+			prev = image_array[map_index].length - 1;
+			next = par + 1;
+		    }
+		    else if (par == (image_array[map_index].length - 1))
+		    {
+			prev = par - 1;
+			next = 0;		    
+		    }
+		    else
+		    {
+			prev = par - 1;
+			next = par + 1;
+		    }
+                    document.getElementById("imageHolder").innerHTML="<center><table border=0><tr>\
+                    <td><font size=50><a href=javascript:set_image(" + prev + ") style=text-decoration:none>&#x2190;</a></font></td> \
+                    <td><img src='" + image_array[map_index][par] + "'/></td> \
+                    <td><font size=50><a href=javascript:set_image(" + next + ") style=text-decoration:none>&#x2192;</a></font></td> \
+                    </tr></table></center>";
+
+                    var cmd = "<center>" ;
+                    
+                    for (var n = 0; n < image_array[map_index].length; n++)
+                    {
+                                var bullet;
+                                if (par == n)
+                                {
+                                    bullet=9724;
+                                }
+                                else
+                                {
+                                    bullet=9723;
+                                }
+                                
+                                cmd += "&#" + bullet;
+                    }
+
+                    cmd += "</center>" 
+                    document.getElementById("pointHolder").innerHTML=cmd; 
+                    */
+                    // @@@@@@@@@@@@@@@@@@@@@@@@
+                    var html_cmd;
+                    html_cmd = "<center>" ;
+                    for (var n = 0; n < image_array[map_index].length; n++)
+                    {
+			  if (image_array[map_index][n].includes("youtu"))
+			  {
+				html_cmd += "<object width='1280' height='720' data='" + image_array[map_index][n] + "'></object><p>";
+			  }
+			  else
+			  {
+				html_cmd += "<img src='" + image_array[map_index][n] + "'/><p>";
+			  }
+                    }
+                    html_cmd += "</center>" ;
+                    document.getElementById("imageHolder").innerHTML=html_cmd;
+                    // @@@@@@@@@@@@@@@@@@@@@@@@
+// 		}
+}
+
+
+
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwR5MtCCmXualVOiq27XnxxosJhitng-k&callback=init_map&libraries=geometry"></script>
+	<!--
+	To use this code on your website, get a free API key from Google.
+	Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+	-->	
+</html>
+<!-- </script> -->
