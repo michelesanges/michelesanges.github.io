@@ -218,23 +218,10 @@ subtitle: <div id="track_filename"> </div>
 			'<h4 style="color: brown"><!--Map title--><div id="map_info_div"></div></h4><h4>Click to see the elevation profile</h4>'
 		})
 
-		// Create a new chart in the elevation_chart_div DIV.
-// 		chart = new google.visualization.AreaChart/*LineChart*//*ColumnChart*/(document.getElementById('elevation_chart_div'));
-// 		google.visualization.events.addListener(chart, 'onmouseover', chart_onmouseover_handler);
-// 		google.visualization.events.addListener(chart, 'onmouseout', chart_onmouseout_handler);
-// 		chart.draw(data_table, {
-// 			height: 400,
-// 			legend: 'none',
-// 			fontSize: 16,
-// 			titleX: 'Distance [Km]',
-// 			titleY: 'Elevation [m]'
-// 		});
+
 
 		for (var track_num = 0; track_num < track_filename.length; track_num++)
 		{
-// 			(
-// 			function(track_num)
-// 			{
 				track_layer[track_num] = new google.maps.Data();
 			
 				track_layer[track_num].loadGeoJson(track_filename[track_num]);
@@ -252,154 +239,23 @@ subtitle: <div id="track_filename"> </div>
 					track_layer[track_num].addListener('addfeature', function(event)
 					{
 						console.log("addfeature: " + event.feature.getGeometry().getType());
-/*						
-						if (event.feature.getGeometry().getType() == "Point")
-						{
-
-							console.log("FEATURE NAME:" + event.feature.getProperty("name"));
-							
-							var string = event.feature.getProperty("name");
-							substring_start = "Inizio";
-							substring_stop = "Fine";
-
-							if (string.includes(substring_start))
-							{
-								track_layer[track_num].setStyle({icon: 'http://michelesanges.github.io/img/bike_start.png'});
-							}
-							else if (string.includes(substring_stop))
-							{
-								track_layer[track_num].setStyle({icon: 'http://michelesanges.github.io/img/bike_stop.png'});
-							}						
-						}
-*/
 
 						// center the map
 						event.feature.getGeometry().forEachLatLng(
 							function(position)
 							{
 								bounds.extend(position); //do this for each coordinate
-
-// 								if (event.feature.getGeometry().getType() == "Point")
-// 								{
-// 								      var string = event.feature.getProperty("name");
-// 								      substring_start = "Inizio";
-// 								      substring_stop = "Fine";
-// 
-// 								      if (string.includes(substring_start))
-// 								      {
-// 										 track_filename[map_index][track_num][5] = new google.maps.Marker({
-// 											  position: position,
-// 											  icon: 'https://michelesanges.github.io/img/bike_start.png',
-// 											  title: event.feature.getProperty("name"),
-// 											  map: map
-// 										});
-// 								      }
-// 								      else if (string.includes(substring_stop))
-// 								      {
-// 										track_filename[map_index][track_num][6] = new google.maps.Marker({
-// 											  position: position,
-// 											  icon: 'https://michelesanges.github.io/img/bike_stop.png',
-// 											  title: event.feature.getProperty("name"),
-// 											  map: map
-// 										});
-// 								      }
-// 								}
 							});
 
 						map.fitBounds(bounds);
 						
-						// se è stato passato un indice ed è questo, plotta l'altimetria
-// 						if ((map_index != "") && (track_num == map_index) && event.feature.getGeometry().getType() == "LineString")
-// 						if ((track_filename[map_index].length == 1) && (event.feature.getGeometry().getType() == "LineString"))
-// 						{
-// 							draw_path(event.feature.getGeometry().getArray(), track_num);  
-// 						}
-					});
-// 				}
-// 				else
-// 				{
-// 					track_layer[track_num].setMap(null)
-// 				}
 
-// 				track_layer[track_num].addListener('click', function(event)
-// 				{
-// 					for (var n = 0; n < track_filename[map_index].length; n++)
-// 					{
-// 						track_layer[n].setStyle({
-// 									      icon: " ",
-// 									      strokeColor: (n==track_num) ? "rgb(255,0,0)" : track_filename[map_index][n][3],
-// 									      strokeWeight: (n==track_num) ? 10 : 8
-// 									});
-// 					}
-// 
-// 					// center the map
-// 					var single_bound = new google.maps.LatLngBounds();
-// 					event.feature.getGeometry().forEachLatLng(
-// 						function(position)
-// 						{
-// 							single_bound.extend(position); //do this for each coordinate
-// 						});
-// 
-// 					map.fitBounds(single_bound);
-// 					map.setCenter(single_bound.getCenter());
-// 
-// 					draw_path(event.feature.getGeometry().getArray(), track_num);  
-// 				});
-				
-// 				track_layer[track_num].addListener('mouseover', function(event)
-// 				{
-// 				      infowindow.setPosition(event.latLng);
-// 				      infowindow.setOptions({pixelOffset: new google.maps.Size(10, -15)});
-// 				      infowindow.open(map);
-// 				      document.getElementById('map_info_div').innerHTML = track_filename[map_index][track_num][2]; // event.feature.getProperty("name") 
-// 				      
-// // per mostrare immagine streetview   "<p><img src='https://maps.googleapis.com/maps/api/streetview?size=350x120&location=" + event.latLng.lat() + "," + event.latLng.lng() + "&key=AIzaSyCwR5MtCCmXualVOiq27XnxxosJhitng-k'></p>";
-// 				});
-// 				
-// 				track_layer[track_num].addListener('mouseout', function(event)
-// 				{
-// 				      infowindow.close();
-// 				});
-// 			}
-// 			)(track_num)
-// 		}
 		
 		map.setCenter(bounds.getCenter());
-// 		if (map_index == "")
-// 		{
-// 			map.controls[google.maps.ControlPosition.TOP_CENTER].push(list1);
-// 		}
-		
-// 		if (map_index != "")
-// 		{
-// 			set_image(0);
-// 		}
-	}
 
-	//Defining the path for which to plot the elevation
-// 	function draw_path(path, i)
-// 	{
-// 	       var subsampled_path = new Array();
-// 	       
-// 	       var max_sample_num = 1000;
-// 	       for (var sample = 0; sample < max_sample_num; sample++)
-// 	       {
-// 			subsampled_path[sample] = path[Math.trunc(sample * path.length / max_sample_num)];
-// 	       }
-// 
-// 		var pathRequest = {
-// 		    'path': subsampled_path,
-// 		    'samples': 256
-// 		};
-// 
-// 		var length = google.maps.geometry.spherical.computeLength(path);
-// 		
-// 		elevator_service.getElevationAlongPath(pathRequest, function(results, status)
-// 		{
-// 			  plotElevation(results, status, length, i);
-// 		});
-// 	}
-
+                    }
+        }
+    }
 
 	function plotElevation(results, status, length, n)
 	{
