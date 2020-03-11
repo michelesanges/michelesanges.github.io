@@ -226,34 +226,27 @@ subtitle: <div id="track_filename"> </div>
 			
 				track_layer[track_num].loadGeoJson(track_filename[track_num]);
 
-// 				track_layer[track_num].setStyle({
-// 							      icon: " ",
-// 							      strokeColor: track_filename[map_index][track_num][3],
-// 							      strokeWeight: 8
-// 							});
 
-// 				if (track_filename[map_index][track_num][4] == true)
-// 				{
-					track_layer[track_num].setMap(map);
-					
-					track_layer[track_num].addListener('addfeature', function(event)
-					{
-						console.log("addfeature: " + event.feature.getGeometry().getType());
+                track_layer[track_num].setMap(map);
+                
+                track_layer[track_num].addListener('addfeature', function(event)
+                {
+                    console.log("addfeature: " + event.feature.getGeometry().getType());
 
-						// center the map
-						event.feature.getGeometry().forEachLatLng(
-							function(position)
-							{
-								bounds.extend(position); //do this for each coordinate
-							});
+                    // center the map
+                    event.feature.getGeometry().forEachLatLng(
+                        function(position)
+                        {
+                            bounds.extend(position); //do this for each coordinate
+                        });
 
-						map.fitBounds(bounds);
-						
+                    map.fitBounds(bounds);
+                    
 
-		
-		map.setCenter(bounds.getCenter());
+    
+    map.setCenter(bounds.getCenter());
 
-                    }
+                })
         }
     }
 
