@@ -98,8 +98,8 @@
     image_array[22] = ['https://www.youtube.com/embed/9XbbfOGx4zg', 'https://cutt.ly/3rHIb6g', 'https://cutt.ly/BrHIPNy', 'https://cutt.ly/arHIOWh',  'https://cutt.ly/HrHIJrM',
     'https://cutt.ly/xrHILQy', 'https://cutt.ly/NrHIX3j', 'https://cutt.ly/HrHIBMJ', 'https://cutt.ly/jrHIMbv'];
    
-        
-        
+ 	image_array[23] = ['https://cutt.ly/kyTvG4L', 'https://cutt.ly/0yTvJeV', 'https://cutt.ly/syTvJ6R', 'https://cutt.ly/8yTvK3P', 'https://cutt.ly/FyTvLS7', 'https://cutt.ly/jyTvZhb'];
+       
         
  
         

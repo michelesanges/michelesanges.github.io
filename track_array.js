@@ -231,11 +231,16 @@
 				"rgb(244, 180, 0)", true, null, null];
 
 	track_filename[22] = new Array();
-	track_filename[22][0] = ['https://michelesanges.github.io/dataset/tracks/2020-02-09 - la-spezia-volastra-telegrafo-campiglia.geojson',
+	track_filename[22][0] = ['./dataset/tracks/2020-02-09 - la-spezia-volastra-telegrafo-campiglia.geojson',
 				'LA SPEZIA - VOLASTRA - COLLE DEL TELEGRAFO - CAMPIGLIA',
 				'[2020-02-09] - La Spezia - Volastra - Colle del Telegrafo - Campiglia',
 				"rgb(244, 180, 0)", true, null, null];
                 
+	track_filename[23] = new Array();
+	track_filename[23][0] = ['./dataset/tracks/2020-05-17 - la spezia - caste - campiglia.geojson',
+				'LA SPEZIA - CASTE - COLLE DEL TELEGRAFO - CAMPIGLIA',
+				'[2020-05-17] - La Spezia - Casté - Colle del Telegrafo - Campiglia',
+				"rgb(244, 180, 0)", true, null, null];
        
 
 	track_filename[100] = new Array();
