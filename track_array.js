@@ -243,17 +243,17 @@
 				"rgb(244, 180, 0)", true, null, null];
        
 
-	track_filename[100] = new Array();
-	track_filename[100][0] = ['https://michelesanges.github.io/dataset/poi/fontane.geojson',
-				'FONTANE',
-				'Fontane',
-				"rgb(2, 136, 209)", true, null, null];
-                
-	track_filename[101] = new Array();
-	track_filename[101][0] = ['https://michelesanges.github.io/dataset/tracks/todo - orecchiella.geojson',
-				'Lucca - Riserva orecchiella',
-				'Lucca - Riserva orecchiella',
-				"rgb(2, 136, 209)", true, null, null];
+// 	track_filename[100] = new Array();
+// 	track_filename[100][0] = ['https://michelesanges.github.io/dataset/poi/fontane.geojson',
+// 				'FONTANE',
+// 				'Fontane',
+// 				"rgb(2, 136, 209)", true, null, null];
+//                 
+// 	track_filename[101] = new Array();
+// 	track_filename[101][0] = ['https://michelesanges.github.io/dataset/tracks/todo - orecchiella.geojson',
+// 				'Lucca - Riserva orecchiella',
+// 				'Lucca - Riserva orecchiella',
+// 				"rgb(2, 136, 209)", true, null, null];
 	
 
                

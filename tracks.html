@@ -112,7 +112,11 @@ subtitle: <div id="track_filename"> </div>
 	var map_index;
 
 
-	function boxclick(box, track_num)
+	// Load the Visualization API and the columnchart package.
+	google.load("visualization", "1", {packages:["corechart"]});
+    google.setOnLoadCallback(init_map);
+
+    function boxclick(box, track_num)
 	{
 		console.log("categoria " + track_num);
 
@@ -182,9 +186,7 @@ subtitle: <div id="track_filename"> </div>
 		return r;
 	}
 
-	// Load the Visualization API and the columnchart package.
-	google.load("visualization", "1", {packages:["corechart"]});
- 
+
 	function init_map()
 	{
  
@@ -632,7 +634,7 @@ console.log("map_index" + map_index);
 			  }
 			  else
 			  {
-				html_cmd += "<img src='" + image_array[map_index][n] + "'/><p>";
+				html_cmd += "<img src='" + image_array[map_index][n] + "'><p>";
 			  }
                     }
                     html_cmd += "</center>" ;

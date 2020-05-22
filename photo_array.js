@@ -95,10 +95,10 @@
     image_array[21] = ['https://cutt.ly/8wJHiUQ', 'https://cutt.ly/1wJHpjJ', 'https://cutt.ly/ywJHdma', 'https://cutt.ly/HwJHbnp', 
     'https://cutt.ly/twKD8R7', 'https://cutt.ly/wwJHm5w', 'https://cutt.ly/UwJHR4V', 'https://cutt.ly/PwJHYhK'];
 
-    image_array[22] = ['https://www.youtube.com/embed/9XbbfOGx4zg', 'https://cutt.ly/3rHIb6g', 'https://cutt.ly/BrHIPNy', 'https://cutt.ly/arHIOWh',  'https://cutt.ly/HrHIJrM',
-    'https://cutt.ly/xrHILQy', 'https://cutt.ly/NrHIX3j', 'https://cutt.ly/HrHIBMJ', 'https://cutt.ly/jrHIMbv'];
+    image_array[22] = ['https://cutt.ly/3rHIb6g', 'https://cutt.ly/BrHIPNy', 'https://cutt.ly/arHIOWh',  'https://cutt.ly/HrHIJrM',
+    'https://cutt.ly/xrHILQy', 'https://cutt.ly/NrHIX3j', 'https://cutt.ly/HrHIBMJ', 'https://cutt.ly/jrHIMbv', 'https://www.youtube.com/embed/9XbbfOGx4zg'];
    
- 	image_array[23] = ['https://cutt.ly/kyTvG4L', 'https://cutt.ly/0yTvJeV', 'https://cutt.ly/syTvJ6R', 'https://cutt.ly/8yTvK3P', 'https://cutt.ly/FyTvLS7', 'https://cutt.ly/jyTvZhb'];
+ 	image_array[23] = ['https://cutt.ly/iyTXdk7', 'https://cutt.ly/7yTXgdB', 'https://cutt.ly/6yTXjOR', 'https://cutt.ly/3yYHlcS', 'https://cutt.ly/CyYHlMD', 'https://cutt.ly/myYHzWK'];
        
         
  
