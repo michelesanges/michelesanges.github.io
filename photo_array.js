@@ -100,6 +100,7 @@
    
  	image_array[23] = ['https://cutt.ly/iyTXdk7', 'https://cutt.ly/7yTXgdB', 'https://cutt.ly/6yTXjOR', 'https://cutt.ly/3yYHlcS', 'https://cutt.ly/CyYHlMD', 'https://cutt.ly/myYHzWK'];
        
+	image_array[24] = [];
         
  
         

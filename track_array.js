@@ -243,11 +243,15 @@
 				"rgb(244, 180, 0)", true, null, null];
        
 
-// 	track_filename[100] = new Array();
-// 	track_filename[100][0] = ['https://michelesanges.github.io/dataset/poi/fontane.geojson',
-// 				'FONTANE',
-// 				'Fontane',
-// 				"rgb(2, 136, 209)", true, null, null];
+	track_filename[24] = new Array();
+	track_filename[24][0] = ['./dataset/tracks/todo - raspa 2018 def1.geojson',
+				'RASPAZOLLE',
+				'Raspazolle 1',
+				"rgb(2, 136, 209)", true, null, null];
+	track_filename[24][1] = ['./dataset/tracks/todo - raspa 2018 def2.geojson',
+				'RASPAZOLLE',
+				'Raspazolle 2',
+				"rgb(244, 180, 0)", true, null, null];                
 //                 
 // 	track_filename[101] = new Array();
 // 	track_filename[101][0] = ['https://michelesanges.github.io/dataset/tracks/todo - orecchiella.geojson',

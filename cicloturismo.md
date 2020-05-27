@@ -15,7 +15,7 @@ bigimg: https://cutt.ly/zyTv5qx
 
     var html_cmd;
     html_cmd= "";
-    for (var i = track_filename.length - 1; i >=0 ; i--)
+    for (var i = track_filename.length - 2; i >=0 ; i--)
     {
             html_cmd += "<td style='text-align:center'>"
             

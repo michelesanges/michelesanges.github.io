@@ -275,10 +275,7 @@ console.log("map_index" + map_index);
 
 		var bounds = new google.maps.LatLngBounds();
 
-		infowindow = new google.maps.InfoWindow({
-		    content: '<div class = "corp" style="width:20px; height: 20px background-color: #00FF00; ">' + '<div id = "infowindow_div" >' + '</div>' + '</div>' + 
-			'<h4 style="color: brown"><!--Map title--><div id="map_info_div"></div></h4><h4>Click to see the elevation profile</h4>'
-		})
+		infowindow = new google.maps.InfoWindow();
 
 		// Create a new chart in the elevation_chart_div DIV.
 		chart = new google.visualization.AreaChart/*LineChart*//*ColumnChart*/(document.getElementById('elevation_chart_div'));
@@ -412,8 +409,8 @@ console.log("map_index" + map_index);
 				{
 				      infowindow.setPosition(event.latLng);
 				      infowindow.setOptions({pixelOffset: new google.maps.Size(10, -15)});
+				      infowindow.setContent("<h4 style='color: brown'>" + track_filename[map_index][track_num][2] + "<h4>Click to see the elevation profile</h4>");
 				      infowindow.open(map);
-				      document.getElementById('map_info_div').innerHTML = track_filename[map_index][track_num][2]; // event.feature.getProperty("name") 
 				      
 // per mostrare immagine streetview   "<p><img src='https://maps.googleapis.com/maps/api/streetview?size=350x120&location=" + event.latLng.lat() + "," + event.latLng.lng() + "&key=AIzaSyCwR5MtCCmXualVOiq27XnxxosJhitng-k'></p>";
 				});
@@ -646,8 +643,9 @@ console.log("map_index" + map_index);
 
 
 	</script>
+<!-- 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwR5MtCCmXualVOiq27XnxxosJhitng-k&callback=init_map&libraries=geometry"></script> -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwR5MtCCmXualVOiq27XnxxosJhitng-k&libraries=geometry"></script>
 
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwR5MtCCmXualVOiq27XnxxosJhitng-k&callback=init_map&libraries=geometry"></script>
 	<!--
 	To use this code on your website, get a free API key from Google.
 	Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
