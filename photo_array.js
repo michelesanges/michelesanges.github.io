@@ -100,9 +100,9 @@
    
  	image_array[23] = ['https://cutt.ly/iyTXdk7', 'https://cutt.ly/7yTXgdB', 'https://cutt.ly/6yTXjOR', 'https://cutt.ly/3yYHlcS', 'https://cutt.ly/CyYHlMD', 'https://cutt.ly/myYHzWK'];
        
-	image_array[24] = ['https://cutt.ly/TyCKw4w', 'https://cutt.ly/ayCKrFe', 'https://cutt.ly/ryCKtpz', 'https://cutt.ly/4yCKyEp', 'https://cutt.ly/MyCKsNk', 'https://cutt.ly/qyCKitt', 
-    'https://cutt.ly/RyCKgOW', 'https://cutt.ly/DyCKpjd', 'https://cutt.ly/oyCKaGo'];
+	image_array[24] = ['https://cutt.ly/TyCKw4w', 'https://cutt.ly/ayCKrFe', 'https://cutt.ly/ryCKtpz', 'https://cutt.ly/4yCKyEp', 'https://cutt.ly/MyCKsNk', 'https://cutt.ly/qyCKitt',  'https://cutt.ly/RyCKgOW', 'https://cutt.ly/DyCKpjd', 'https://cutt.ly/oyCKaGo'];
         
  	image_array[25] = [];
 
-        
+  	image_array[26] = [];
+       

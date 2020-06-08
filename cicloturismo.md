@@ -1,12 +1,11 @@
 ---
 layout: page
 title: Cicloturismo
-subtitle: Il termine traccia denota solitamente un segno, un'orma o una scia, ma possiede diversi altri significati.
+subtitle: Look mum, no hands!
 bigimg: https://cutt.ly/zyTv5qx 
 ---
 <head>
-<style> table.example-table { border-spacing: 50px; border-collapse: separate; } </style>
-
+<!--  <style> table.example-table { border-spacing: 0px; border-collapse: separate; } </style>  -->
 
 <!--<style>
 table {
@@ -18,22 +17,43 @@ table, td, th {
   horizontal-align: middle;;
 }
 </style>-->
+<style>
+a:link {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
 </head>
 
 <body>
     <div id="miniature"></div>
-</body>
+
 <script type="text/javascript" src="photo_array.js">  </script>
 <script type="text/javascript" src="track_array.js">  </script>
-    
+<!--
+
 <script>
     var html_cmd;
     
     html_cmd= "<font size='2'><table class='example-table' style='width:100%' border=0>";
     for (var i = track_filename.length - 3; i >=0 ; i--)
-    {
-//         console.log("i % 3="+ i%3)
-        
+    {        
         if (i % 3 == 0)
         {
             html_cmd += "<tr>"
@@ -60,8 +80,34 @@ table, td, th {
         }           
     }
     html_cmd+="</table>"
-
+    
     document.getElementById("miniature").innerHTML=html_cmd;
 </script>
+-->
 
 
+<script>
+    var html_cmd = "";
+    
+    for (var i = track_filename.length - 3; i >=0 ; i--)
+    {   
+        html_cmd+="<div class='square bg' style='background-image: url(" + image_array[i][0] + "'>"
+        html_cmd+="<div class='content'>"
+        html_cmd+="<div class='table'>"
+        html_cmd+="<div class='table-cell'>"
+        html_cmd+= "<a href='./tracks.html?map_index=" + i + "'><font size='4'>" + track_filename[i][0][1] + "</font></a>";
+        html_cmd+="</div>"
+        html_cmd+="</div>"
+        html_cmd+="</div>"
+        html_cmd+="</div>"
+    }
+    
+    document.getElementById("miniature").innerHTML=html_cmd;
+    
+    console.log(i + html_cmd + "\n");
+</script>
+
+ 
+    
+
+<!-- END OF LAYOUT, following juts for the demo -->
