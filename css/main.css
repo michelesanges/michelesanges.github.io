@@ -232,6 +232,12 @@ img {
   }
 }
 
+@media only screen and (max-width: 730px) {
+
+    body {
+        font-size: 4.3vw;
+    }
+}
 /* --- Footer --- */
 
 footer {

@@ -5,18 +5,7 @@ subtitle: Look mum, no hands!
 bigimg: https://cutt.ly/zyTv5qx 
 ---
 <head>
-<!--  <style> table.example-table { border-spacing: 0px; border-collapse: separate; } </style>  -->
 
-<!--<style>
-table {
-  border-collapse: collapse;
-}
-
-table, td, th {
-  border: 3px solid black;
-  horizontal-align: middle;;
-}
-</style>-->
 <style>
 a:link {
   color: inherit;
@@ -95,7 +84,7 @@ a:active {
         html_cmd+="<div class='content'>"
         html_cmd+="<div class='table'>"
         html_cmd+="<div class='table-cell'>"
-        html_cmd+= "<a href='./tracks.html?map_index=" + i + "'><font size='4'>" + track_filename[i][0][1] + "</font></a>";
+        html_cmd+= "<a href='./tracks.html?map_index=" + i + "'>" + track_filename[i][0][1] + "</a>";
         html_cmd+="</div>"
         html_cmd+="</div>"
         html_cmd+="</div>"
