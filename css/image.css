@@ -33,7 +33,9 @@
 
 .table-cell {font-size: 20px;}
 
-
+@media all and (min-width: 480px) and (max-width: 1080px){
+  .table-cell {font-size: 15px;}
+}
 
 @media all and (min-width: 400px) and (max-width: 480px){
   .table-cell {font-size: 12px;}
