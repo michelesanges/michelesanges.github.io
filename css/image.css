@@ -31,11 +31,11 @@
 
 }
 
-/* .table-cell {font-size: 15px;} */
+ .table-cell {font-size: 18px;} 
 
-@media screen and (min-width: 480px) and (max-width: 4000px) and (orientation: portrait) 
+/*@media screen and (min-width: 480px) and (max-width: 4000px) and (orientation: portrait) 
 {
-  .table-cell {font-size: 12px;} 
+  .table-cell {font-size: 18px;} 
 
 }
 
@@ -47,9 +47,17 @@
 @media screen and (min-width: 0px) and (max-width: 375px) and (orientation: portrait) 
 {
  .table-cell {font-size: 12px;}
+}*/
+
+@media screen and (min-width: 1024px) and (max-width: 2048) and (orientation: portrait){ 
+.table-cell {font-size: 15px;}
 }
-
-
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){ 
+.table-cell {font-size: 12px;}
+}
+@media screen and (min-width: 0) and (max-width: 768px) and (orientation: portrait){ 
+.table-cell {font-size: 10px;}
+}
 /*  For list */
 /*ul {
   text-align: left;
