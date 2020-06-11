@@ -33,9 +33,10 @@
 
 /* .table-cell {font-size: 15px;} */
 
-@media screen and (min-width: 480px) and (max-width: 1280px) and (orientation: portrait) 
+@media screen and (min-width: 480px) and (max-width: 4000px) and (orientation: portrait) 
 {
-  .table-cell {font-size: 12px;}  
+  .table-cell {font-size: 12px;} 
+
 }
 
 @media screen and (min-width: 400px) and (max-width: 480px) and (orientation: portrait) 
