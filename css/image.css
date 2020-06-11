@@ -33,24 +33,20 @@
 
 .table-cell {font-size: 20px;}
 
-@media all and (min-width: 480px) and (max-width: 1280px){
-  .table-cell {font-size: 12px;}
-html {
-    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
-}  
+@media all and (min-width: 480px) and (max-width: 1280px) and (orientation: portrait) 
+{
+  .table-cell {font-size: 12px;}  
 }
 
-@media all and (min-width: 400px) and (max-width: 480px){
+@media all and (min-width: 400px) and (max-width: 480px) and (orientation: portrait) 
+{
   .table-cell {font-size: 12px;}
-html {
-    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
-}}
+}
 
-@media all and (min-width: 0px) and (max-width: 375px){
+@media all and (min-width: 0px) and (max-width: 375px) and (orientation: portrait) 
+{
  .table-cell {font-size: 12px;}
-html {
-    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
-}}
+}
 
 
 /*  For list */
