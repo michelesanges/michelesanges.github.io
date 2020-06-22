@@ -245,14 +245,14 @@
 	track_filename[24] = new Array();
 	track_filename[24][0] = ['./dataset/tracks/2020-06-02 - campocecina.geojson',
 				'02 GIUGNO 2020<br>CAMPOCECINA',
-				'[2020-06-02] - Campocecina',
+				'02-06-2020 - Campocecina',
 				"rgb(166, 27, 74)", true, null, null];
 
                 
 	track_filename[25] = new Array();
-	track_filename[25][0] = ['./dataset/tracks/todo - prati di logarghena.geojson',
-				'Prati di Logarghena',
-				'[TO DO] - Prati di Logarghena',
+	track_filename[25][0] = ['./dataset/tracks/2020-06-21 - prati di logarghena.geojson',
+				'21 GIUGNO 2020<br>PRATI DI LOGARGHENA',
+				'21-06-2020 - Prati di Logarghena',
 				"rgb(166, 27, 74)", true, null, null];
                 
                 

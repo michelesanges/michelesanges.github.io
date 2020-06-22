@@ -40,7 +40,7 @@ a:active {
 <script>
     var html_cmd = "";
     
-    for (var i = track_filename.length - 3; i >=0 ; i--)
+    for (var i = track_filename.length - 2; i >=0 ; i--)
     {   
         html_cmd+="<div class='square bg' style='background-image: url(" + image_array[i][0] + ")'>"
         html_cmd+="<div class='content'>"
