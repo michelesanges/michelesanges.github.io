@@ -250,7 +250,7 @@
 
                 
 	track_filename[25] = new Array();
-	track_filename[25][0] = ['./dataset/tracks/2020-06-21 - prati di logarghena.geojson',
+	track_filename[25][0] = ['./dataset/tracks/2020-06-21 - prati_di_logarghena.geojson',
 				'21 GIUGNO 2020<br>PRATI DI LOGARGHENA',
 				'21-06-2020 - Prati di Logarghena',
 				"rgb(166, 27, 74)", true, null, null];
