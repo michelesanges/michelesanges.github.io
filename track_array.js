@@ -255,13 +255,41 @@
 				'21-06-2020 - Prati di Logarghena',
 				"rgb(166, 27, 74)", true, null, null];
                 
-                
 	track_filename[26] = new Array();
-	track_filename[26][0] = ['./dataset/tracks/todo - raspa 2018 def1.geojson',
+	track_filename[26][0] = ['./dataset/tracks/2020-07-21 - quella volta che decisi di tornare a casa da bolzano in bicicletta - bolzano - rovereto.geojson',
+				'21-26 LUGLIO 2020 - QUELLA VOLTA CHE DECISI DI TORNARE A CASA DA BOLZANO IN BICICLETTA',
+				'21/07/2020 - Bolzano - Rovereto',
+				"rgb(2, 136, 209)", true, null, null];
+	track_filename[26][1] = ['./dataset/tracks/2020-07-22 - quella volta che decisi di tornare a casa da bolzano in bicicletta - rovereto - governolo.geojson',
+				'21-26 LUGLIO 2020 - QUELLA VOLTA CHE DECISI DI TORNARE A CASA DA BOLZANO IN BICICLETTA',
+				'22/07/2020 - Rovereto - Governolo (Mantova)',
+				"rgb(244, 180, 0)", true, null, null];                
+	track_filename[26][2] = ['./dataset/tracks/2020-07-23 - quella volta che decisi di tornare a casa da bolzano in bicicletta - governolo - ferrara.geojson',
+				'21-26 LUGLIO 2020 - QUELLA VOLTA CHE DECISI DI TORNARE A CASA DA BOLZANO IN BICICLETTA',
+				'23/07/2020 - Governolo (Mantova) - Ferrara',
+				"rgb(166, 27, 74)", true, null, null];                
+	track_filename[26][3] = ['./dataset/tracks/2020-07-24 - quella volta che decisi di tornare a casa da bolzano in bicicletta - ferrara - bologna.geojson',
+				'21-26 LUGLIO 2020 - QUELLA VOLTA CHE DECISI DI TORNARE A CASA DA BOLZANO IN BICICLETTA',
+				'24/07/2020 - Ferrara - Bologna',
+				"rgb(205, 220, 57)", true, null, null];                
+	track_filename[26][4] = ['./dataset/tracks/2020-07-25 - quella volta che decisi di tornare a casa da bolzano in bicicletta - bologna - castelnuovo ne monti.geojson',
+				'21-26 LUGLIO 2020 - QUELLA VOLTA CHE DECISI DI TORNARE A CASA DA BOLZANO IN BICICLETTA',
+				'25/07/2020 - Bologna - Castelnuovo ne Monti',
+				"rgb(0, 255, 255)", true, null, null];                
+	track_filename[26][5] = ['./dataset/tracks/2020-07-26 - quella volta che decisi di tornare a casa da bolzano in bicicletta - castelnuovo ne monti - castelnuovo magra.geojson',
+				'21-26 LUGLIO 2020 - QUELLA VOLTA CHE DECISI DI TORNARE A CASA DA BOLZANO IN BICICLETTA',
+				'26/07/2020 - Castelnuovo ne Monti - Castelnuovo Magra',
+				"rgb(44, 180, 44)", true, null, null];                
+
+
+
+                
+	track_filename[27] = new Array();
+	track_filename[27][0] = ['./dataset/tracks/todo - raspa 2018 def1.geojson',
 				'RASPAZOLLE',
 				'Raspazolle 1',
 				"rgb(2, 136, 209)", true, null, null];
-	track_filename[26][1] = ['./dataset/tracks/todo - raspa 2018 def2.geojson',
+	track_filename[27][1] = ['./dataset/tracks/todo - raspa 2018 def2.geojson',
 				'RASPAZOLLE',
 				'Raspazolle 2',
 				"rgb(244, 180, 0)", true, null, null];                
