@@ -104,6 +104,20 @@
         
  	image_array[25] = ['https://cutt.ly/au1w2nA', 'https://cutt.ly/ru1ebeh', 'https://cutt.ly/0u1rkQH', 'https://cutt.ly/Du1rRUg', 'https://cutt.ly/Tu1rJAl', 'https://cutt.ly/fu1r807', 'https://cutt.ly/lu1tpqw', 'https://cutt.ly/Xu1tcLP', 'https://cutt.ly/Du1t9rd', 'https://www.youtube.com/embed/05kGWEmdv30'];
 
-  	image_array[26] = ['https://cutt.ly/WsDr46k', 'https://cutt.ly/gsDtjq1', 'https://cutt.ly/asDt9jI', 'https://cutt.ly/KsDyfwu', 'https://cutt.ly/hsDueHW', 'https://cutt.ly/9sDuEal', 'https://cutt.ly/psDu72h', 'https://cutt.ly/fsDiasl', 'https://cutt.ly/WsDotEC', 'https://cutt.ly/NsDoUKP', 'https://cutt.ly/EsDgAgn', 'https://cutt.ly/EsDg7j9', 'https://cutt.ly/UsDhseh', 'https://cutt.ly/ZsDhQsR', 'https://cutt.ly/dsDhGK4', 'https://cutt.ly/KsDh9e2', 'https://cutt.ly/isDjh7p', 'https://cutt.ly/ZsDjbYb', 'https://cutt.ly/hsDjLDn', 'https://cutt.ly/OsDku9Y', 'https://cutt.ly/YsDkbTQ', 'https://cutt.ly/ssDkJjJ', 'https://cutt.ly/8sDlibs','https://cutt.ly/HsDlfM8', 'https://cutt.ly/bsDlbPE', 'https://cutt.ly/AsDlYw6', 'https://cutt.ly/jsDxTSW', 'https://cutt.ly/rsDxGxv', 'https://cutt.ly/FsDx9hg', 'https://cutt.ly/bsDcktL', 'https://cutt.ly/6sDcWFB', 'https://cutt.ly/msDc6C1', 'https://cutt.ly/xsDvhQR', 'https://cutt.ly/VsDvJar', 'https://cutt.ly/PsDv9ov', 'https://cutt.ly/4sDbZTF', 'https://cutt.ly/JsDnwo3', 'https://cutt.ly/HsDndsZ', 'https://cutt.ly/UsDn8yF', 'https://cutt.ly/ssDmce6', 'https://cutt.ly/jsDmUgj', 'https://cutt.ly/HsDmGdt', 'https://cutt.ly/fsDQqvc', 'https://cutt.ly/esDQgtI', 'https://cutt.ly/OsDQWhO', 'https://cutt.ly/psDQOZX', 'https://cutt.ly/1sDQX3g', 'https://cutt.ly/ysDQ0QL', 'https://cutt.ly/JsDWimj', 'https://cutt.ly/8sDWk8R', 'https://cutt.ly/SsDWJh0', 'https://cutt.ly/zsDEcOZ', 'https://cutt.ly/8sDTcls', 'https://cutt.ly/ssDTSHV', 'https://cutt.ly/6sDYubl', 'https://cutt.ly/lsDYzR8', 'https://cutt.ly/BsDYESl', 'https://cutt.ly/nsDYD4v'];
+  	image_array[26] = ['https://cutt.ly/WsDr46k', 'https://cutt.ly/gsDtjq1', 'https://cutt.ly/asDt9jI', 'https://cutt.ly/KsDyfwu', 'https://cutt.ly/hsDueHW', 'https://cutt.ly/9sDuEal', 'https://cutt.ly/psDu72h', 'https://cutt.ly/fsDiasl', 'https://cutt.ly/QsXbvJr',
+    'https://cutt.ly/NsXVXHp', 'https://cutt.ly/8sXBser', 'https://cutt.ly/rsXBmY1', 'https://cutt.ly/CsXBKb3', 'https://cutt.ly/3sXB8Ao', 
+    'https://cutt.ly/qsXNsgG', 'https://cutt.ly/PsXNv79', 'https://cutt.ly/zsXNIJF', 'https://www.youtube.com/embed/vYVB2MdTLPE',
+    'https://cutt.ly/ZsXMqOu', 'https://cutt.ly/fsXMazM', 'https://cutt.ly/vsXM02n', 
+    'https://cutt.ly/GsX1lWt', 'https://cutt.ly/CsX1Ftp', 'https://cutt.ly/XsX1XKo', 
+    'https://cutt.ly/5sX15vx', 'https://cutt.ly/6sX0ptD', 'https://cutt.ly/1sX0RpN', 'https://cutt.ly/qsXJ3bb', 
+    'https://www.youtube.com/embed/-Gex8ktxz-M', 'https://cutt.ly/jsDxTSW','https://cutt.ly/osXThNd','https://cutt.ly/FsDx9hg', 'https://cutt.ly/bsDcktL', 'https://cutt.ly/xsXYfTa', 'https://cutt.ly/msDc6C1', 'https://www.youtube.com/embed/5gsx1CFI4sA',
+     'https://cutt.ly/xsDvhQR', 'https://cutt.ly/VsDvJar', 'https://cutt.ly/PsDv9ov', 'https://cutt.ly/EsXIq2r', 'https://cutt.ly/JsDnwo3', 
+     'https://cutt.ly/HsDndsZ', 'https://cutt.ly/isXOtxA', 'https://cutt.ly/psXOAV9', 'https://cutt.ly/BsXONi4', 
+     'https://www.youtube.com/embed/MwH5ZtqYLrI', 'https://cutt.ly/ssDmce6', 'https://cutt.ly/jsDmUgj', 
+    'https://cutt.ly/WsXP32T', 'https://cutt.ly/jsXAyPR', 'https://cutt.ly/esDQgtI', 'https://cutt.ly/OsDQWhO', 'https://cutt.ly/psDQOZX', 
+    'https://cutt.ly/1sDQX3g', 'https://cutt.ly/ysDQ0QL', 'https://cutt.ly/JsDWimj',  'https://cutt.ly/OsXSzfZ', 
+    'https://cutt.ly/SsDWJh0', 'https://cutt.ly/zsDEcOZ', 'https://cutt.ly/8sDTcls', 'https://cutt.ly/ssDTSHV', 'https://cutt.ly/6sDYubl', 
+    'https://cutt.ly/IsX2Pk4', 'https://cutt.ly/rsX2E7z', 'https://cutt.ly/fsX2clc', 
+    'https://cutt.ly/0sXDK1F', 'https://cutt.ly/ysXD3ZC', 'https://cutt.ly/XsXFtKS', 'https://cutt.ly/csXFgEt', 'https://cutt.ly/ssXFQUq', 'https://cutt.ly/bsXFSw2', 'https://cutt.ly/hsXFBy8'];
        
 image_array[27] = [];
