@@ -215,18 +215,16 @@ subtitle: <div id="track_filename"> </div>
 			// @@@@@@@@@@@@@@@@@@@@@@@@@@
 // Get the content
 var descval = document.getElementById('track_filename').innerHTML;
-// Create the new meta-element
-var elm = document.createElement("meta");
-elm.setAttribute("property", "og:description") 
-elm.setAttribute("content", descval);
 
-elm.setAttribute("property", "og:image") 
-elm.setAttribute("content", image_array[map_index][0]);
+var link = document.createElement('meta');
+link.setAttribute('property', 'og:description');
+link.content = descval;
+document.getElementsByTagName('head')[0].appendChild(link);
 
-// Append the element to the HEAD
-document.getElementsByTagName("head")[0].appendChild(elm);
+link.setAttribute('property', 'og:image');
+link.content = image_array[map_index][0];
+document.getElementsByTagName('head')[0].appendChild(link);
 		
-			
 			// @@@@@@@@@@@@@@@@@@@@@@@@@
 
 // 			// reset the visibility flag
