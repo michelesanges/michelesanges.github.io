@@ -12,6 +12,13 @@ subtitle: <div id="track_filename"> </div>
 		documentation:
 		https://developers.google.com/maps/documentation/javascript/tutorial -->
 	<!--     <link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css"> -->
+<!--<meta property="og:title" content="Inserire gli open graph" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://michelesanges.github.io/" />
+<meta property="og:image" content="https://trucchifacebook.com/trucchifacebook.png" />-->
+...	
+	
+	
  <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -197,12 +204,30 @@ subtitle: <div id="track_filename"> </div>
 // @@@@@@@@@@@@@@@@@@@@@@@@@ 
 
 		map_index = getParameter("map_index").replace(/^.*[\\\/]/, '');
-console.log("map_index" + map_index);
+// console.log("map_index" + map_index);
 // console.log("image_array[map_index].length " + image_array[map_index].length);
+// document.getElementById("bigimg").innerHTML=image_array[map_index][0];
 
 		if (map_index != "")
 		{
 			document.getElementById('track_filename').innerHTML = track_filename[map_index][0][1];
+			
+			// @@@@@@@@@@@@@@@@@@@@@@@@@@
+// Get the content
+var descval = document.getElementById('track_filename').innerHTML;
+// Create the new meta-element
+var elm = document.createElement("meta");
+elm.setAttribute("property", "og:description") 
+elm.setAttribute("content", descval);
+
+elm.setAttribute("property", "og:image") 
+elm.setAttribute("content", image_array[map_index][0]);
+
+// Append the element to the HEAD
+document.getElementsByTagName("head")[0].appendChild(elm);
+		
+			
+			// @@@@@@@@@@@@@@@@@@@@@@@@@
 
 // 			// reset the visibility flag
 // 			for (var track_num = 0; track_num < track_filename[map_index].length; track_num++)
