@@ -2,6 +2,7 @@
 layout: page
 title: Cicloturismo
 subtitle: <div id="track_filename"> </div>
+<!-- fb-img: <div id="fb-img"></div> -->
 ---
 <!DOCTYPE html>
 
@@ -12,11 +13,8 @@ subtitle: <div id="track_filename"> </div>
 		documentation:
 		https://developers.google.com/maps/documentation/javascript/tutorial -->
 	<!--     <link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css"> -->
-<!--<meta property="og:title" content="Inserire gli open graph" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://michelesanges.github.io/" />
-<meta property="og:image" content="https://trucchifacebook.com/trucchifacebook.png" />-->
-...	
+<meta property="og:title" content="Inserire gli open graph" />
+<!-- <meta property="og:type" content="website" /> -->
 	
 	
  <style>
@@ -211,20 +209,16 @@ subtitle: <div id="track_filename"> </div>
 		if (map_index != "")
 		{
 			document.getElementById('track_filename').innerHTML = track_filename[map_index][0][1];
+// 			document.getElementById('fb-img').innerHTML = track_filename[map_index][0][1];
 			
 			// @@@@@@@@@@@@@@@@@@@@@@@@@@
-// Get the content
-var descval = document.getElementById('track_filename').innerHTML;
-
+			
+			// META TAG PER MOSTRARE ANTEPRIMA IMMAGINE SU LINK FACEBOOK
 var link = document.createElement('meta');
-link.setAttribute('property', 'og:description');
-link.content = descval;
-document.getElementsByTagName('head')[0].appendChild(link);
-
 link.setAttribute('property', 'og:image');
 link.content = image_array[map_index][0];
-document.getElementsByTagName('head')[0].appendChild(link);
-		
+document.getElementsByTagName('head')[0].appendChild(link)
+
 			// @@@@@@@@@@@@@@@@@@@@@@@@@
 
 // 			// reset the visibility flag
