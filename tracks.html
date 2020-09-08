@@ -2,9 +2,9 @@
 layout: page
 title: Cicloturismo
 subtitle: <div id="track_filename"> </div>
-fb-img: https://cutt.ly/FfxOvag
 ---
 
+<!doctype html>
 <html>
 	<head>
 	  <!-- This stylesheet contains specific styles for displaying the map
@@ -12,9 +12,6 @@ fb-img: https://cutt.ly/FfxOvag
 		documentation:
 		https://developers.google.com/maps/documentation/javascript/tutorial -->
 	<!--     <link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css"> -->
-<!-- <meta property="og:type" content="website" /> -->
-<!--<meta property="og:image" content="https://cutt.ly/au1w2nA">-->
-	
 	
     <style>
       /* Always set the map height explicitly to define the size of the div
@@ -82,7 +79,9 @@ fb-img: https://cutt.ly/FfxOvag
 	  display: block;
 	}
 	</style>
-		
+<meta name="metanome" content="prova" />			
+ <meta property="og:pippo" content="pluto"> 
+	
 </head>
 
 	<body>
@@ -96,6 +95,7 @@ fb-img: https://cutt.ly/FfxOvag
 	<div id="elevation_chart_div" style="width:100%;"></div>
  	<p margin-bottom: 3cm>
 	<div id="imageHolder"></div>
+
 
 
 	</body>	
@@ -316,7 +316,7 @@ fb-img: https://cutt.ly/FfxOvag
 				track_layer[track_num].setStyle({
 							      icon: " ",
 							      strokeColor: track_filename[map_index][track_num][3],
-							      strokeWeight: 8
+							      strokeWeight: 5
 							});
 
 				if (track_filename[map_index][track_num][4] == true)
@@ -402,7 +402,7 @@ fb-img: https://cutt.ly/FfxOvag
 						track_layer[n].setStyle({
 									      icon: " ",
 									      strokeColor: (n==track_num) ? "rgb(255,0,0)" : track_filename[map_index][n][3],
-									      strokeWeight: (n==track_num) ? 10 : 8
+									      strokeWeight: (n==track_num) ? 7 : 5
 									});
 					}
 
