@@ -1,8 +1,10 @@
 	// elenco tracce
 	var track_filename = new Array();
+    var track_description = new Array();
  	var index = 0;
 	
 	// file name, nome traccia, colore traccia, flag traccia visibile, marker start, marker stop	
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2013-09-05 - tour_eroica.geojson',
 				'05-08 SETTEMBRE 2013<br>SULLE STRADE BIANCHE DELL\'EROICA',
@@ -29,6 +31,7 @@
 
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2015-05-30 - tour_isola_delba.geojson',
 				'30 MAGGIO - 02 GIUGNO 2015<br>TOUR DELL\'ISOLA D\'ELBA',
@@ -49,6 +52,7 @@
 
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2015-09-16 - tour_umbria.geojson',
 				'16-20  SETTEMBRE 2015<br>TOUR DELL\'UMBRIA',
@@ -73,6 +77,7 @@
 
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2016-04-16 - tour_valli_comacchio.geojson',
 				'16 APRILE 2016<br>VALLI DI COMACCHIO',
@@ -81,6 +86,7 @@
 
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2016-05-21 - bologna-casalborsetti.geojson',
 				'21-22 MAGGIO 2016<br>BOLOGNA - CASALBORSETTI UNDER THE MOONLIGHT',
@@ -93,6 +99,7 @@
 
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2016-06-02 - la via del polleggio.geojson',
 				'02-05 GIUGNO 2016<br>LA VIA DEL POLLEGGIO',
@@ -113,6 +120,7 @@
 
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2016-08-08 - campocecina.geojson',
 				'08 AGOSTO 2016<br>CAMPOCECINA',
@@ -121,6 +129,7 @@
 
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2016-08-15 - equi terme_completa.geojson',
 				'15 AGOSTO 2016<br>EQUI TERME',
@@ -129,6 +138,7 @@
 
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2017-04-01 - pontremoli_castelnuovomagra_ricostruita.geojson',
 				'01 APRILE 2017<br>PONTREMOLI - CASTELNUOVO MAGRA',
@@ -137,6 +147,7 @@
 
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2017-04-08 - viareggio - lucca.geojson',
 				'08 APRILE 2017<br>VIAREGGIO - LUCCA LUNGO IL FIUME SERCHIO',
@@ -145,6 +156,7 @@
 
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2017-04-17 - aulla - virgoletta - villafranca - castelnuovo magra - ricostruita.geojson',
 				'17 APRILE 2017<br>AULLA - VIRGOLETTA - VILLAFRANCA - CASTELNUOVO MAGRA',
@@ -153,6 +165,7 @@
 
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2017-05-27 - viareggio - livorno.geojson',
 				'27 MAGGIO 2017<br>VIAREGGIO - LIVORNO',
@@ -161,6 +174,7 @@
 
  
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2017-06-02 - passo resia - merano - ricostruita.geojson',
 				'02-04 GIUGNO 2017<br>SULLE TRACCE DELLA VIA CLAUDIA AUGUSTA',
@@ -177,6 +191,7 @@
 
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2017-08-07 - castelnuovo magra - fosdinovo - fivizzano -passo del cerreto - collagna.geojson',
 				'07-08 AGOSTO 2017<br>DUE GIORNI SU E GIÙ PER L\'APPENNINO TOSCO EMILIANO',
@@ -189,6 +204,7 @@
 
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2018-06-03 - colonnata.geojson',
 				'03 GIUGNO 2018<br>COLONNATA',
@@ -197,6 +213,7 @@
 
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2018-08-06 - castelnuovo magra-passo-del-vestito-castenuovo-garfagnana.geojson',
 				'06-07 AGOSTO 2018<br>GIRO DEI QUATTRO LAGHI',
@@ -209,6 +226,7 @@
 				
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2018-08-15 - ugliancaldo.geojson',
 				'15 AGOSTO 2018<br>UGLIANCALDO',
@@ -217,6 +235,7 @@
 
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2018-09-29 - san-salvatore-monferrato-cella-monte - ricostruita.geojson',
 				'29 - 30 SETTEMBRE 2018<br>LA MONSTERRATO - STRADE BIANCHE DEL MONFERRATO',
@@ -229,6 +248,7 @@
 
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2019-04-20 - pasqua con chi vuoi - sentiero della bonifica e ciclabile del lago trasimeno.geojson',
 				'20 - 21 APRILE 2019<br>PASQUA CON CHI VUOI - SENTIERO DELLA BONIFICA E CICLABILE DEL LAGO TRASIMENO',
@@ -241,6 +261,7 @@
 
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2019-06-27 - tour del casentino - camaldoli.geojson',
 				'27 - 30 GIUGNO 2019<br>TOUR DEL CASENTINO',
@@ -261,6 +282,7 @@
                 
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2019-09-15 - zeri - levanto.geojson',
 				'15 - 16 SETTEMBRE 2019<br>ZERI - LEVANTO',
@@ -273,6 +295,7 @@
 
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2020-02-09 - la-spezia-volastra-telegrafo-campiglia.geojson',
 				'09 FEBBRAIO 2020<br>LA SPEZIA - VOLASTRA - COLLE DEL TELEGRAFO - CAMPIGLIA',
@@ -281,6 +304,7 @@
                 
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2020-05-17 - la spezia - caste - campiglia.geojson',
 				'17 MAGGIO 2020<br>LA SPEZIA - CASTE - COLLE DEL TELEGRAFO - CAMPIGLIA',
@@ -289,6 +313,7 @@
        
 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2020-06-02 - campocecina.geojson',
 				'02 GIUGNO 2020<br>CAMPOCECINA',
@@ -298,7 +323,8 @@
                 
 
     index += 1;
-	track_filename[index] = new Array();
+    track_description[index] = ""
+    track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2020-06-21 - prati_di_logarghena.geojson',
 				'21 GIUGNO 2020<br>PRATI DI LOGARGHENA',
 				'21-06-2020 - Prati di Logarghena',
@@ -306,21 +332,22 @@
                 
 
     index += 1;
-	track_filename[index] = new Array();
+    track_description[index] = ""
+    track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2020-07-21 - quella volta che decisi di tornare a casa da bolzano in bicicletta - bolzano - rovereto.geojson',
-				'21-26 LUGLIO 2020 - QUELLA VOLTA CHE DECISI DI TORNARE A CASA DA BOLZANO IN BICICLETTA',
+				'21-26 LUGLIO 2020<br>QUELLA VOLTA CHE DECISI DI TORNARE A CASA DA BOLZANO IN BICICLETTA',
 				'21/07/2020 - Bolzano - Rovereto',
 				"rgb(2, 136, 209)", true, null, null];
 	track_filename[index][1] = ['./dataset/tracks/2020-07-22 - quella volta che decisi di tornare a casa da bolzano in bicicletta - rovereto - governolo.geojson',
-				'21-26 LUGLIO 2020 - QUELLA VOLTA CHE DECISI DI TORNARE A CASA DA BOLZANO IN BICICLETTA',
+				'21-26 LUGLIO 2020<br>QUELLA VOLTA CHE DECISI DI TORNARE A CASA DA BOLZANO IN BICICLETTA',
 				'22/07/2020 - Rovereto - Governolo (Mantova)',
 				"rgb(244, 180, 0)", true, null, null];                
 	track_filename[index][2] = ['./dataset/tracks/2020-07-23 - quella volta che decisi di tornare a casa da bolzano in bicicletta - governolo - ferrara.geojson',
-				'21-26 LUGLIO 2020 - QUELLA VOLTA CHE DECISI DI TORNARE A CASA DA BOLZANO IN BICICLETTA',
+				'21-26 LUGLIO 2020<br>QUELLA VOLTA CHE DECISI DI TORNARE A CASA DA BOLZANO IN BICICLETTA',
 				'23/07/2020 - Governolo (Mantova) - Ferrara',
 				"rgb(166, 27, 74)", true, null, null];                
 	track_filename[index][3] = ['./dataset/tracks/2020-07-24 - quella volta che decisi di tornare a casa da bolzano in bicicletta - ferrara - bologna.geojson',
-				'21-26 LUGLIO 2020 - QUELLA VOLTA CHE DECISI DI TORNARE A CASA DA BOLZANO IN BICICLETTA',
+				'21-26 LUGLIO 2020<br>QUELLA VOLTA CHE DECISI DI TORNARE A CASA DA BOLZANO IN BICICLETTA',
 				'24/07/2020 - Ferrara - Bologna',
 				"rgb(205, 220, 57)", true, null, null];                
 	track_filename[index][4] = ['./dataset/tracks/2020-07-25 - quella volta che decisi di tornare a casa da bolzano in bicicletta - bologna - castelnuovo ne monti.geojson',
@@ -328,12 +355,31 @@
 				'25/07/2020 - Bologna - Castelnuovo ne Monti',
 				"rgb(0, 255, 255)", true, null, null];                
 	track_filename[index][5] = ['./dataset/tracks/2020-07-26 - quella volta che decisi di tornare a casa da bolzano in bicicletta - castelnuovo ne monti - castelnuovo magra.geojson',
-				'21-26 LUGLIO 2020 - QUELLA VOLTA CHE DECISI DI TORNARE A CASA DA BOLZANO IN BICICLETTA',
+				'21-26 LUGLIO 2020<br>QUELLA VOLTA CHE DECISI DI TORNARE A CASA DA BOLZANO IN BICICLETTA',
 				'26/07/2020 - Castelnuovo ne Monti - Castelnuovo Magra',
 				"rgb(44, 180, 44)", true, null, null];                
 
 
 
+    index += 1;
+    track_description[index] = "Il paesaggio vitivinicolo del Piemonte - dice Wikipedia - è un sito patrimonio dell'umanità che comprende una serie di località situate nelle aree del Basso Piemonte: le Langhe, il Roero e il Monferrato.<br>Sono andato a controllare.";
+	track_filename[index] = new Array();
+	track_filename[index][0] = ['./dataset/tracks/200913084325 - tour divino.geojson',
+				'13-16 SETTEMBRE 2020<br>TOUR diVino',
+				'13/09/2020 - San Salvatore Monferrato - Acqui Terme',
+				"rgb(2, 136, 209)", true, null, null];
+	track_filename[index][1] = ['./dataset/tracks/200914080311 - tour divino.geojson',
+				'13-16 SETTEMBRE 2020<br>TOUR diVino',
+				'14/09/2020 - Acqui Terme - Alba',
+				"rgb(244, 180, 0)", true, null, null];
+ 	track_filename[index][2] = ['./dataset/tracks/200915080248 - tour divino.geojson',
+				'13-16 SETTEMBRE 2020<br>TOUR diVino',
+				'15/09/2020 - Alba - Monesiglio',
+				"rgb(166, 27, 74)", true, null, null];
+ 	track_filename[index][3] = ['./dataset/tracks/200916083416 - tour divino.geojson',
+				'13-16 SETTEMBRE 2020<br>TOUR diVino',
+				'16/09/2020 - Monesiglio - San Salvatore Monferrato',
+				"rgb(205, 220, 57)", true, null, null];
                         
                 
     index += 1;
