@@ -82,7 +82,8 @@
   {% endif %}   
   
   <!-- Facebook OpenGraph tags -->
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+<!--   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" /> -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ page.subtitle }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:type" content="website" />
   
   {% if page.id %}

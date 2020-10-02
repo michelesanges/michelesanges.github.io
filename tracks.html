@@ -2,7 +2,6 @@
 layout: page
 title: Cicloturismo
 subtitle: <div id="track_filename"> </div>
-share-img: https://cutt.ly/cfG8F9K
 ---
 
 <!doctype html>
@@ -12,7 +11,12 @@ share-img: https://cutt.ly/cfG8F9K
 		on this page. Replace it with your own styles as described in the
 		documentation:
 		https://developers.google.com/maps/documentation/javascript/tutorial -->
-	<!--     <link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css"> -->
+	<!--     <link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css"> 
+	
+	// https://mmistakes.github.io/minimal-mistakes/docs/configuration/
+
+	-->
+
 	
     <style>
       /* Always set the map height explicitly to define the size of the div
@@ -80,9 +84,13 @@ share-img: https://cutt.ly/cfG8F9K
 	  display: block;
 	}
 	</style>
-<meta name="metanome" content="prova" />			
- <meta property="og:pippo" content="pluto"> 
-	
+
+	<meta property="og:image" content="http://ia.media-imdb.com/rock.jpg"/>
+    <meta property="og:description" content="A group of U.S. Marines, under command of
+                   a renegade general, take over Alcatraz and
+                   threaten San Francisco Bay with biological
+                   weapons."/>	
+    <meta name="robots" content="<%=GetMetaFromDatabase%" />
 </head>
 
 	<body>
@@ -103,7 +111,7 @@ share-img: https://cutt.ly/cfG8F9K
 
 
 	</body>	
-
+ 
 	<script>
 
 	var track_layer = [];
@@ -196,7 +204,6 @@ share-img: https://cutt.ly/cfG8F9K
 
 	function init_map()
 	{
- 
 // @@@@@@@@@@@@@@@@@@@@@@@@@
 // var filename = getParameter("mappa").replace(/^.*[\\\/]/, '')
 // var basename = filename.substring(0, filename.lastIndexOf("."));
@@ -215,15 +222,6 @@ share-img: https://cutt.ly/cfG8F9K
 			{
                 document.getElementById("track_description").innerHTML= track_description[map_index];
             }
-			// @@@@@@@@@@@@@@@@@@@@@@@@@@
-			
-			// META TAG PER MOSTRARE ANTEPRIMA IMMAGINE SU LINK FACEBOOK
-// var link = document.createElement('meta');
-// link.setAttribute('property', 'og:image');
-// link.content = image_array[map_index][0];
-// document.getElementsByTagName('head')[0].appendChild(link)
-
-			// @@@@@@@@@@@@@@@@@@@@@@@@@
 
 // 			// reset the visibility flag
 // 			for (var track_num = 0; track_num < track_filename[map_index].length; track_num++)
