@@ -2,7 +2,7 @@
 layout: page
 title: Fotografia 
 subtitle: Serie
-bigimg: https://goo.gl/rPDrJQ
+<!-- bigimg: https://images.vogue.it/Photovogue/0a38ac30-11d3-11eb-b581-2fe907d89330_large.jpg -->
 ---
 <!--
 <h2><a href="http://www.vogue.it/photovogue/portfolio/?id=149678" target="_blank">PHOTOVOGUE</a></h2>
@@ -52,7 +52,7 @@ a:active {
  <script>
     var html_cmd = "";
 
-        html_cmd+="<div class='square bg' style='background-image: url(" + "http://images.vogue.it/Photovogue/19706f40-8dd9-11ea-8982-fbd034ba4a44_large.jpg" + ")'>";
+        html_cmd+="<div class='square bg' style='background-image: url(" + "https://images.vogue.it/Photovogue/0a38ac30-11d3-11eb-b581-2fe907d89330_large.jpg" + ")'>";
         html_cmd+="<div class='content'>"
         html_cmd+="<div class='table'>"
         html_cmd+="<div class='table-cell'>"

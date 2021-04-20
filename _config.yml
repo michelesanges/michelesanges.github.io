@@ -18,7 +18,7 @@ title: Bit Error Rate
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
 #baseurl: "/projectname"# If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://michelesanges.github.io"
+url: "http://michelesanges.github.io/cicloturismo"
 baseurl: ""
 
 # Of course don't forget to change the username and projectname to YOUR username and project
@@ -36,8 +36,8 @@ social:
 # List of links in the navigation bar
 navbar-links:
   #Blog: "blog"
-  Fotografia: "fotografia"
   Cicloturismo: "cicloturismo"
+  Fotografia: "fotografia"
   #Social:
     #- Facebook: "https://www.facebook.com/sanges.michele"
     #- Anobii: "http://www.anobii.com/michelesanges/profile"

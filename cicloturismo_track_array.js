@@ -22,14 +22,8 @@
 				'05-08 SETTEMBRE 2013<br>SULLE STRADE BIANCHE DELL\'EROICA',
 				'08-09-2013 - Radda in Chianti - Siena', 
 				"rgb(205, 220, 57)", true, null, null];
+
                 
-// 	track_filename[1] = new Array();
-// 	track_filename[1][0] = ['./dataset/tracks/2013-10-26 - massaciuccoli_lucca.geojson',
-// 				'26 OTTOBRE 2013<br>LAGO MASSACIUCCOLI - LUCCA',
-// 				'26-10-2013 - Lago Massaciuccoli - Lucca',
-// 				"rgb(166, 27, 74)", true, null, null];
-
-
     index += 1;
     track_description[index] = ""
 	track_filename[index] = new Array();
@@ -75,7 +69,6 @@
 				'20-09-2015 - Spoleto - S. Maria degli Angeli',
 				"rgb(0, 255, 255)", true, null, null];
 
-
     index += 1;
     track_description[index] = ""
 	track_filename[index] = new Array();
@@ -83,8 +76,7 @@
 				'16 APRILE 2016<br>VALLI DI COMACCHIO',
 				'16-04-2016 - Valli di Comacchio',
 				"rgb(166, 27, 74)", true, null, null];
-
-
+                
     index += 1;
     track_description[index] = ""
 	track_filename[index] = new Array();
@@ -118,60 +110,6 @@
 				'05-06-2016 - Padova - Monselice',
 				"rgb(205, 220, 57)", true, null, null];
 
-
-    index += 1;
-    track_description[index] = ""
-	track_filename[index] = new Array();
-	track_filename[index][0] = ['./dataset/tracks/2016-08-08 - campocecina.geojson',
-				'08 AGOSTO 2016<br>CAMPOCECINA',
-				'08-08-2016 - Campocecina',
-				"rgb(166, 27, 74)", true, null, null];
-
-
-    index += 1;
-    track_description[index] = ""
-	track_filename[index] = new Array();
-	track_filename[index][0] = ['./dataset/tracks/2016-08-15 - equi terme_completa.geojson',
-				'15 AGOSTO 2016<br>EQUI TERME',
-				'15-08-2016 - Equi Terme',
-				"rgb(166, 27, 74)", true, null, null];
-
-
-    index += 1;
-    track_description[index] = ""
-	track_filename[index] = new Array();
-	track_filename[index][0] = ['./dataset/tracks/2017-04-01 - pontremoli_castelnuovomagra_ricostruita.geojson',
-				'01 APRILE 2017<br>PONTREMOLI - CASTELNUOVO MAGRA',
-				'01-04-2017 - Pontremoli - Castelnuovo Magra',
-				"rgb(166, 27, 74)", true, null, null];
-
-
-    index += 1;
-    track_description[index] = ""
-	track_filename[index] = new Array();
-	track_filename[index][0] = ['./dataset/tracks/2017-04-08 - viareggio - lucca.geojson',
-				'08 APRILE 2017<br>VIAREGGIO - LUCCA LUNGO IL FIUME SERCHIO',
-				'08-04-2017 - Viareggio - Lucca lungo il fiume Serchio',
-				"rgb(166, 27, 74)", true, null, null];
-
-
-    index += 1;
-    track_description[index] = ""
-	track_filename[index] = new Array();
-	track_filename[index][0] = ['./dataset/tracks/2017-04-17 - aulla - virgoletta - villafranca - castelnuovo magra - ricostruita.geojson',
-				'17 APRILE 2017<br>AULLA - VIRGOLETTA - VILLAFRANCA - CASTELNUOVO MAGRA',
-				'17-04-2017 - Aulla - Virgoletta - Villafranca - Castelnuovo Magra',
-				"rgb(166, 27, 74)", true, null, null];
-
-
-    index += 1;
-    track_description[index] = ""
-	track_filename[index] = new Array();
-	track_filename[index][0] = ['./dataset/tracks/2017-05-27 - viareggio - livorno.geojson',
-				'27 MAGGIO 2017<br>VIAREGGIO - LIVORNO',
-				'27-05-2017 - Viareggio - Livorno',
-				"rgb(166, 27, 74)", true, null, null];
-
  
     index += 1;
     track_description[index] = ""
@@ -202,7 +140,6 @@
 				'08-08-2017 - Collagna - Passo dello Scalucchia - Passo del Lagastrello - Comano - Castelnuovo Magra',
 				"rgb(244, 180, 0)", true, null, null];
 
-
     index += 1;
     track_description[index] = ""
 	track_filename[index] = new Array();
@@ -210,8 +147,7 @@
 				'03 GIUGNO 2018<br>COLONNATA',
 				'03-06-2018 - Colonnata',
 				"rgb(166, 27, 74)", true, null, null];
-
-
+                
     index += 1;
     track_description[index] = ""
 	track_filename[index] = new Array();
@@ -223,7 +159,6 @@
 				'06-07 AGOSTO 2018<br>GIRO DEI QUATTRO LAGHI',
 				'07-08-2018 - Castelnuovo Garfagnana - Vagli di sotto - Gramolazzo - Aulla - Sarzana',
 				"rgb(244, 180, 0)", true, null, null];
-				
 
     index += 1;
     track_description[index] = ""
@@ -232,8 +167,7 @@
 				'15 AGOSTO 2018<br>UGLIANCALDO',
 				'15-08-2018 - Ugliancaldo',
 				"rgb(166, 27, 74)", true, null, null];
-
-
+            
     index += 1;
     track_description[index] = ""
 	track_filename[index] = new Array();
@@ -293,7 +227,6 @@
 				'16-09-2019 - Noce di Zeri - Levanto',
 				"rgb(244, 180, 0)", true, null, null];
 
-
     index += 1;
     track_description[index] = ""
 	track_filename[index] = new Array();
@@ -301,16 +234,7 @@
 				'09 FEBBRAIO 2020<br>LA SPEZIA - VOLASTRA - COLLE DEL TELEGRAFO - CAMPIGLIA',
 				'09-02-2020 - La Spezia - Volastra - Colle del Telegrafo - Campiglia',
 				"rgb(166, 27, 74)", true, null, null];
-                
 
-    index += 1;
-    track_description[index] = ""
-	track_filename[index] = new Array();
-	track_filename[index][0] = ['./dataset/tracks/2020-05-17 - la spezia - caste - campiglia.geojson',
-				'17 MAGGIO 2020<br>LA SPEZIA - CASTE - COLLE DEL TELEGRAFO - CAMPIGLIA',
-				'17-05-2020 - La Spezia - Casté - Colle del Telegrafo - Campiglia',
-				"rgb(166, 27, 74)", true, null, null];
-       
 
     index += 1;
     track_description[index] = ""
@@ -320,7 +244,6 @@
 				'02-06-2020 - Campocecina',
 				"rgb(166, 27, 74)", true, null, null];
 
-                
 
     index += 1;
     track_description[index] = ""
@@ -330,7 +253,7 @@
 				'21-06-2020 - Prati di Logarghena',
 				"rgb(166, 27, 74)", true, null, null];
                 
-
+                                              
     index += 1;
     track_description[index] = ""
     track_filename[index] = new Array();
@@ -383,12 +306,17 @@
                         
                 
     index += 1;
+    track_description[index] = ""
 	track_filename[index] = new Array();
-	track_filename[index][0] = ['./dataset/tracks/todo - Lagastrello - Berceto - Passo cento croci.geojson',
+	track_filename[index][0] = ['./dataset/tracks/todo - passo cento laghi_1.geojson',
 				'Lagastrello - Berceto - Passo cento',
-				'Lagastrello - Berceto - Passo cento',
+				'Lagastrello - Berceto - Passo cento - primo giorno',
 				"rgb(2, 136, 209)", true, null, null];
-               
+ 	track_filename[index][1] = ['./dataset/tracks/todo - passo cento laghi_2.geojson',
+				'Lagastrello - Berceto - Passo cento',
+				'Lagastrello - Berceto - Passo cento - secondo giorno',
+				"rgb(2, 136, 209)", true, null, null];
+              
 
 
                
