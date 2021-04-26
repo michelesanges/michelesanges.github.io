@@ -2,7 +2,10 @@
 layout: page
 title: Cicloturismo
 subtitle: Look mum, no hands! 
-bigimg: https://cutt.ly/dvdGreo 
+bigimg: 
+- "https://cutt.ly/dvdGreo"  : "One"   
+- "https://cutt.ly/Fv7eMVM" : "Two"   
+- "https://cutt.ly/Rv7eDCK "  : "Three"  
 ---
 <head>
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no">
