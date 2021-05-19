@@ -152,4 +152,8 @@
     index += 1;
     image_array[index] = [];
     
+    index += 1;
+    image_array[index] = [];
     
+    index += 1;
+    image_array[index] = [];
