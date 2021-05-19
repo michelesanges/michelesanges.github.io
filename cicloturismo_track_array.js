@@ -304,20 +304,34 @@
 				'16/09/2020 - Monesiglio - San Salvatore Monferrato',
 				"rgb(205, 220, 57)", true, null, null];
                         
-                
+ // ######################## DA FARE #######################               
     index += 1;
     track_description[index] = ""
 	track_filename[index] = new Array();
-	track_filename[index][0] = ['./dataset/tracks/todo - passo cento laghi_1.geojson',
-				'Lagastrello - Berceto - Passo cento',
-				'Lagastrello - Berceto - Passo cento - primo giorno',
-				"rgb(2, 136, 209)", true, null, null];
- 	track_filename[index][1] = ['./dataset/tracks/todo - passo cento laghi_2.geojson',
-				'Lagastrello - Berceto - Passo cento',
-				'Lagastrello - Berceto - Passo cento - secondo giorno',
+	track_filename[index][0] = ['./dataset/tracks/tour 2021/Pisa - Bolgheri - Castagneto Carducci.geojson',
+				'Pisa - Bolgheri - Castagneto Carducci',
+				'Pisa - Bolgheri - Castagneto Carducci',
 				"rgb(2, 136, 209)", true, null, null];
               
+    index += 1;
+    track_description[index] = ""
+	track_filename[index] = new Array();
+	track_filename[index][0] = ['./dataset/tracks/tour 2021/La via degli acquedotti trail.geojson',
+				'La via degli acquedotti trail',
+				'La via degli acquedotti trail',
+				"rgb(2, 136, 209)", true, null, null];
 
 
-               
+    index += 1;
+    track_description[index] = ""
+	track_filename[index] = new Array();
+	track_filename[index][0] = ['./dataset/tracks/tour 2021/Parco cento laghi - primo giorno.geojson',
+				'Parco cento laghi',
+				'Parco cento laghi - primo giorno',
+				"rgb(2, 136, 209)", true, null, null];
+ 	track_filename[index][1] = ['./dataset/tracks/tour 2021/Parco cento laghi - secondo giorno.geojson',
+				'Parco cento laghi',
+				'Parco cento laghi - secondo giorno',
+				"rgb(244, 180, 0)", true, null, null];
+             
                 
