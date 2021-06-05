@@ -303,7 +303,22 @@
 				'13-16 SETTEMBRE 2020<br>TOUR diVino',
 				'16/09/2020 - Monesiglio - San Salvatore Monferrato',
 				"rgb(205, 220, 57)", true, null, null];
-                        
+
+
+
+    index += 1;
+    track_description[index] = "Tra le colline e la costa toscana: Lajatico, Bolgheri e costa degli etruschi";
+	track_filename[index] = new Array();
+	track_filename[index][0] = ['./dataset/tracks/2021-06-03 - bolgheri e costa degli etruschi.geojson',
+				'03-04 GIUGNO 2021<br>TRA LE COLLINE E LA COSTA TOSCANA: LAJATICO, BOLGHERI E COSTA DEGLI ETRUSCHI',
+				'03/06/2021 - Lajatico - Bolgheri',
+				"rgb(2, 136, 209)", true, null, null];
+	track_filename[index][1] = ['./dataset/tracks/2021-06-04 - bolgheri e costa degli etruschi.geojson',
+				'03-04 GIUGNO 2021<br>TRA LE COLLINE E LA COSTA TOSCANA: LAJATICO, BOLGHERI E COSTA DEGLI ETRUSCHI',
+				'04/06/2021 - Bolgheri - Costa  degli etruschi',
+				"rgb(244, 180, 0)", true, null, null];
+                
+                
  // ######################## DA FARE #######################               
     index += 1;
     track_description[index] = ""
