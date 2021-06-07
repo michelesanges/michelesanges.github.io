@@ -151,10 +151,13 @@
 
 
     index += 1; // TRA LE COLLINE E LA COSTA TOSCANA: LAJATICO, BOLGHERI E COSTA DEGLI ETRUSCHI
-  	image_array[index] = ['https://www.youtube.com/embed/xjDyC_fByds', 'https://cutt.ly/9nbzqkI', 'https://cutt.ly/onbzEFr',
-    'https://cutt.ly/jnbzO55', 'https://cutt.ly/XnbzFsO', 'https://cutt.ly/onbzJad', 'https://www.youtube.com/embed/d5gW4pXO4Ro',
-    'https://cutt.ly/Anbz2kv', 'https://cutt.ly/2nbz700', 'https://cutt.ly/Ynbxqpy', 'https://cutt.ly/enbxrOg', 'https://cutt.ly/Fnbxult', 'https://cutt.ly/Znbxphv', 'https://cutt.ly/1nbxdho', 'https://cutt.ly/MnbxgYn', 'https://cutt.ly/Rnbxk2x',
-    'https://cutt.ly/Qnbxmeu', 'https://cutt.ly/Cnbx0TZ', 'https://cutt.ly/Anbx3qf', 'https://cutt.ly/Qnbx4Vl', 'https://cutt.ly/Cnbx5Y2', 'https://cutt.ly/4nbciwO', 'https://cutt.ly/RnbcanU', 'https://cutt.ly/InbcdqC', 'https://cutt.ly/6nbcfvZ', 'https://cutt.ly/bnbcjku', 'https://cutt.ly/Hnbck5B', 'https://cutt.ly/5nbcznO'
+  	image_array[index] = ['https://www.youtube.com/embed/xjDyC_fByds', 'https://cutt.ly/RnWioTe', 'https://cutt.ly/inWih3H',
+    'https://cutt.ly/3nWixZf', 'https://cutt.ly/UnWin9q', 'https://cutt.ly/znWiRjF', 'https://www.youtube.com/embed/d5gW4pXO4Ro',
+    'https://cutt.ly/onWiDUl', 'https://cutt.ly/NnWiJPt', 'https://cutt.ly/MnWiNFu', 'https://cutt.ly/KnWi8Pj', 'https://cutt.ly/9nWi6B2',
+    'https://cutt.ly/ynWor5s', 'https://cutt.ly/qnWoonh', 'https://cutt.ly/ynWofZc', 'https://cutt.ly/SnWokl7', 'https://cutt.ly/5nWocrg',
+    'https://cutt.ly/znWonaI', 
+    
+    'https://cutt.ly/Anbx3qf', 'https://cutt.ly/Qnbx4Vl', 'https://cutt.ly/Cnbx5Y2', 'https://cutt.ly/4nbciwO', 'https://cutt.ly/RnbcanU', 'https://cutt.ly/InbcdqC', 'https://cutt.ly/6nbcfvZ', 'https://cutt.ly/bnbcjku', 'https://cutt.ly/Hnbck5B', 'https://cutt.ly/5nbcznO'
     ];
     
     

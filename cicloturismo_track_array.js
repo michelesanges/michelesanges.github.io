@@ -69,6 +69,7 @@
 				'20-09-2015 - Spoleto - S. Maria degli Angeli',
 				"rgb(0, 255, 255)", true, null, null];
 
+                
     index += 1;
     track_description[index] = ""
 	track_filename[index] = new Array();
@@ -76,6 +77,7 @@
 				'16 APRILE 2016<br>VALLI DI COMACCHIO',
 				'16-04-2016 - Valli di Comacchio',
 				"rgb(166, 27, 74)", true, null, null];
+
                 
     index += 1;
     track_description[index] = ""
@@ -140,6 +142,7 @@
 				'08-08-2017 - Collagna - Passo dello Scalucchia - Passo del Lagastrello - Comano - Castelnuovo Magra',
 				"rgb(244, 180, 0)", true, null, null];
 
+
     index += 1;
     track_description[index] = ""
 	track_filename[index] = new Array();
@@ -147,6 +150,7 @@
 				'03 GIUGNO 2018<br>COLONNATA',
 				'03-06-2018 - Colonnata',
 				"rgb(166, 27, 74)", true, null, null];
+
                 
     index += 1;
     track_description[index] = ""
@@ -160,6 +164,7 @@
 				'07-08-2018 - Castelnuovo Garfagnana - Vagli di sotto - Gramolazzo - Aulla - Sarzana',
 				"rgb(244, 180, 0)", true, null, null];
 
+
     index += 1;
     track_description[index] = ""
 	track_filename[index] = new Array();
@@ -167,7 +172,8 @@
 				'15 AGOSTO 2018<br>UGLIANCALDO',
 				'15-08-2018 - Ugliancaldo',
 				"rgb(166, 27, 74)", true, null, null];
-            
+
+
     index += 1;
     track_description[index] = ""
 	track_filename[index] = new Array();
@@ -227,6 +233,7 @@
 				'16-09-2019 - Noce di Zeri - Levanto',
 				"rgb(244, 180, 0)", true, null, null];
 
+
     index += 1;
     track_description[index] = ""
 	track_filename[index] = new Array();
@@ -283,7 +290,6 @@
 				"rgb(44, 180, 44)", true, null, null];                
 
 
-
     index += 1;
     track_description[index] = "Il paesaggio vitivinicolo del Piemonte - dice Wikipedia - è un sito patrimonio dell'umanità che comprende una serie di località situate nelle aree del Basso Piemonte: le Langhe, il Roero e il Monferrato.<br>Sono andato a controllare.";
 	track_filename[index] = new Array();
@@ -303,7 +309,6 @@
 				'13-16 SETTEMBRE 2020<br>TOUR diVino',
 				'16/09/2020 - Monesiglio - San Salvatore Monferrato',
 				"rgb(205, 220, 57)", true, null, null];
-
 
 
     index += 1;

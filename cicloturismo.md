@@ -20,9 +20,17 @@ bigimg:
 <script>
     var html_cmd = "";
 
+    
     for (var i = track_filename.length - 4; i >=0 ; i--)
     {   
-        html_cmd+="<div class='square bg' style='background-image: url(" + image_array[i][0] + ")'>"
+        // ricerca la prima immagine del tour, saltando i video
+        j=0;
+        while (image_array[i][j].includes("youtu"))
+        {
+            j++;
+        }
+    
+        html_cmd+="<div class='square bg' style='background-image: url(" + image_array[i][j] + ")'>"
         html_cmd+="<div class='content'>"
         html_cmd+="<div class='table'>"
         html_cmd+="<div class='table-cell'>"
