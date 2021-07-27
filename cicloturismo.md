@@ -21,7 +21,7 @@ bigimg:
     var html_cmd = "";
 
     
-    for (var i = track_filename.length - 4; i >=0 ; i--)
+    for (var i = track_filename.length - 1; i >=0 ; i--)
     {   
         // ricerca la prima immagine del tour, saltando i video
         j=0;

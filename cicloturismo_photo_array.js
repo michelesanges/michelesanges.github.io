@@ -137,6 +137,7 @@
         'https://cutt.ly/usCgqoL', 'https://cutt.ly/zsCgyWD', 'https://cutt.ly/DsCgfAq', 'https://cutt.ly/IsCglmr', 'https://cutt.ly/MsCgQ2F'
     ];
 
+    
     index += 1; // 13-16 SETTEMBRE 2020 - TOUR diVino
  	image_array[index] = ['https://cutt.ly/cfG8F9K', 'https://cutt.ly/tfG4wTQ', 'https://cutt.ly/nfG83c0', 'https://cutt.ly/NfG4yZ4', 'https://cutt.ly/cfG4x88', 
         'https://cutt.ly/kfG5Hdt', 'https://cutt.ly/zfG5JFD', 'https://cutt.ly/0fG5Xb3', 'https://cutt.ly/0fG5Blp', 'https://cutt.ly/3fG50qO', 'https://cutt.ly/rfG57Oe',
@@ -149,23 +150,21 @@
     ];
     
 
-
     index += 1; // TRA LE COLLINE E LA COSTA TOSCANA: LAJATICO, BOLGHERI E COSTA DEGLI ETRUSCHI
   	image_array[index] = ['https://www.youtube.com/embed/xjDyC_fByds', 'https://cutt.ly/RnWioTe', 'https://cutt.ly/inWih3H',
     'https://cutt.ly/3nWixZf', 'https://cutt.ly/UnWin9q', 'https://cutt.ly/znWiRjF', 'https://www.youtube.com/embed/d5gW4pXO4Ro',
     'https://cutt.ly/onWiDUl', 'https://cutt.ly/NnWiJPt', 'https://cutt.ly/MnWiNFu', 'https://cutt.ly/KnWi8Pj', 'https://cutt.ly/9nWi6B2',
     'https://cutt.ly/ynWor5s', 'https://cutt.ly/qnWoonh', 'https://cutt.ly/ynWofZc', 'https://cutt.ly/SnWokl7', 'https://cutt.ly/5nWocrg',
     'https://cutt.ly/znWonaI', 
-    
     'https://cutt.ly/Anbx3qf', 'https://cutt.ly/Qnbx4Vl', 'https://cutt.ly/Cnbx5Y2', 'https://cutt.ly/4nbciwO', 'https://cutt.ly/RnbcanU', 'https://cutt.ly/InbcdqC', 'https://cutt.ly/6nbcfvZ', 'https://cutt.ly/bnbcjku', 'https://cutt.ly/Hnbck5B', 'https://cutt.ly/5nbcznO'
     ];
     
-    
-    index += 1;
-    image_array[index] = [];
-    
-    index += 1;
-    image_array[index] = [];
-    
-    index += 1;
-    image_array[index] = [];
+ 
+    index += 1; // BIVACCO AL PARCO DEI CENTO LAGHI
+    image_array[index] = ['https://cutt.ly/pQemYxR', 'https://cutt.ly/GQemVCj', 'https://cutt.ly/UQeQg5e', 'https://cutt.ly/7QeQkGz', 'https://cutt.ly/6QeQxsg', 'https://cutt.ly/VQeQTDh',
+        'https://cutt.ly/UQeQY6z', 'https://cutt.ly/UQeQArw', 'https://cutt.ly/BQeQFc3', 'https://cutt.ly/fQeQ7Un', 'https://cutt.ly/ZQeWeiL', 'https://cutt.ly/nQeWiW1', 'https://cutt.ly/aQeWdA5',
+        'https://cutt.ly/TQeWgSE', 'https://cutt.ly/7QeWliI', 'https://cutt.ly/lQeWxka', 'https://cutt.ly/dQeEpJD', 'https://cutt.ly/cQeEdat', 'https://cutt.ly/LQeEgjp',  'https://cutt.ly/cQeEkQG'
+    ];
+
+ // ######################## DA FARE #######################   
+

@@ -118,6 +118,7 @@ subtitle: <div id="track_filename"> </div>
 	var called_num = 0;
 	var infowindow;
 	var map_index;
+    var max_sample_num = 512;
 
 
 	// Load the Visualization API and the columnchart package.
@@ -450,19 +451,18 @@ subtitle: <div id="track_filename"> </div>
 	//Defining the path for which to plot the elevation
 	function draw_path(path, i)
 	{
-	       var subsampled_path = new Array();
-	       
-	       var max_sample_num = 512;
-	       for (var sample = 0; sample < max_sample_num; sample++)
-	       {
-			subsampled_path[sample] = path[Math.trunc(sample * path.length / max_sample_num)];
-	       }
-		var pathRequest = {
-		    'path': subsampled_path,
-		    'samples': max_sample_num
+        var subsampled_path = new Array();
+        
+        for (var sample = 0; sample < max_sample_num; sample++)
+        {
+        subsampled_path[sample] = path[Math.trunc(sample * path.length / max_sample_num)];
+        }
+        var pathRequest = {
+        'path': subsampled_path,
+        'samples': max_sample_num
 		};
 
-		var length = google.maps.geometry.spherical.computeLength(subsampled_path);
+		var length = google.maps.geometry.spherical.computeLength(path);
 		
 		elevator_service.getElevationAlongPath(pathRequest, function(results, status)
 		{
@@ -498,7 +498,9 @@ subtitle: <div id="track_filename"> </div>
 			if (i > 0)
 			{
 				elevazione_diff = elevations[i].elevation - elevations[i - 1].elevation;
-
+console.log("elevations[" + i +"]: "+ elevations[i].elevation);
+// console.log("elevations_prev" + elevations[i - 1].elevation);
+console.log("elevazione_diff[" + i +"]: "+ elevazione_diff);
 				if (elevazione_diff >= 0)
 				{
 					guadagno_elevazione += elevazione_diff;
@@ -509,12 +511,12 @@ subtitle: <div id="track_filename"> </div>
 				}
 			}
 
-			data_table.addRow([i * length/(1000*256), elevations[i].elevation, 
-				  '<b>Dist: '+ (i * length/(1000*256)).toFixed(1) + ' km<p>Elevation: ' + elevations[i].elevation.toFixed(1) +' m</b>',
+			data_table.addRow([i * length/(1000*max_sample_num), elevations[i].elevation, 
+				  '<b>Dist: '+ (i * length/(1000*max_sample_num)).toFixed(1) + ' km<p>Elevation: ' + elevations[i].elevation.toFixed(1) +' m</b>',
 				  guadagno_elevazione, 
-				  '<b>Dist: '+ (i * length/(1000*256)).toFixed(1) + ' km<p>Elevation Gain: ' + guadagno_elevazione.toFixed(0) +' m</b>',			  
+				  '<b>Dist: '+ (i * length/(1000*max_sample_num)).toFixed(1) + ' km<p>Elevation Gain: ' + guadagno_elevazione.toFixed(0) +' m</b>',			  
 				  -perdita_elevazione,			
-				  '<b>Dist: '+ (i * length/(1000*256)).toFixed(1) + ' km<p>Elevation Loss: ' + -perdita_elevazione.toFixed(0) +' m</b>'				  
+				  '<b>Dist: '+ (i * length/(1000*max_sample_num)).toFixed(1) + ' km<p>Elevation Loss: ' + -perdita_elevazione.toFixed(0) +' m</b>'				  
 				  ]);
 				  
 			position_table.addRow([elevations[i].location.lat(), elevations[i].location.lng()]);

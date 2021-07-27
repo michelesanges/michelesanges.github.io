@@ -324,34 +324,22 @@
 				"rgb(244, 180, 0)", true, null, null];
                 
                 
- // ######################## DA FARE #######################               
     index += 1;
-    track_description[index] = ""
+    track_description[index] = "Bivacco al Parco dei Cento Laghi";
 	track_filename[index] = new Array();
-	track_filename[index][0] = ['./dataset/tracks/tour 2021/Pisa - Bolgheri - Castagneto Carducci.geojson',
-				'Pisa - Bolgheri - Castagneto Carducci',
-				'Pisa - Bolgheri - Castagneto Carducci',
+	track_filename[index][0] = ['./dataset/tracks/2021-07-23 - bivacco al parco dei cento laghi.geojson',
+				'23-24 LUGLIO 2021<br>BIVACCO AL PARCO DEI CENTO LAGHI',
+				'23/07/2021 - Casa - Passo del Lagastrello - Passo della Colla - Rifugio Lagoni',
 				"rgb(2, 136, 209)", true, null, null];
-              
-    index += 1;
-    track_description[index] = ""
-	track_filename[index] = new Array();
-	track_filename[index][0] = ['./dataset/tracks/tour 2021/La via degli acquedotti trail.geojson',
-				'La via degli acquedotti trail',
-				'La via degli acquedotti trail',
-				"rgb(2, 136, 209)", true, null, null];
-
-
-    index += 1;
-    track_description[index] = ""
-	track_filename[index] = new Array();
-	track_filename[index][0] = ['./dataset/tracks/tour 2021/Parco cento laghi - primo giorno.geojson',
-				'Parco cento laghi',
-				'Parco cento laghi - primo giorno',
-				"rgb(2, 136, 209)", true, null, null];
- 	track_filename[index][1] = ['./dataset/tracks/tour 2021/Parco cento laghi - secondo giorno.geojson',
-				'Parco cento laghi',
-				'Parco cento laghi - secondo giorno',
+	track_filename[index][1] = ['./dataset/tracks/2021-07-24 - bivacco al parco dei cento laghi.geojson',
+				'23-24 LUGLIO 2021<br>BIVACCO AL PARCO DEI CENTO LAGHI',
+				'24/07/2021 - Lagdei - Passo del Silara - Berceto - Passo della Cisa - Casa',
 				"rgb(244, 180, 0)", true, null, null];
+               
+              
+ // ######################## DA FARE #######################               
+
+
+
              
                 
