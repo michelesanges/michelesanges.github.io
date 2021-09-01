@@ -644,7 +644,16 @@ console.log("elevazione_diff[" + i +"]: "+ elevazione_diff);
 			  }
 			  else
 			  {
-				html_cmd += "<img src='" + image_array[map_index][n] + "'><p>";
+				html_cmd += "<img src='" + image_array[map_index][n] + "' valign = top>";
+				if (image_caption[map_index][n])
+				{
+                    html_cmd += "<figcaption>" + image_caption[map_index][n] + "</figcaption>";
+				}
+				else
+				{
+                   html_cmd += "<p>"
+				}
+				html_cmd += "<br>";
 			  }
                     }
                     html_cmd += "</center>" ;

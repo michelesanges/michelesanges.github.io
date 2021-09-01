@@ -337,7 +337,39 @@
 				"rgb(244, 180, 0)", true, null, null];
                
               
- // ######################## DA FARE #######################               
+    index += 1;
+    track_description[index] = "Viaggio alla ricerca della Ciclovia adriatica";
+	track_filename[index] = new Array();
+	track_filename[index][0] = ['./dataset/tracks/2021-08-23 - ciclovia adriatica.geojson',
+				'23-29 AGOSTO 2021<br>VIAGGIO ALLA RICERCA DELLA CICLOVIA ADRIATICA',
+				'23/08/2021 - San Cataldo - Monopoli',
+				"rgb(2, 136, 209)", true, null, null];
+	track_filename[index][1] = ['./dataset/tracks/2021-08-24 - ciclovia adriatica.geojson',
+				'23-29 AGOSTO 2021<br>VIAGGIO ALLA RICERCA DELLA CICLOVIA ADRIATICA',
+				'24/08/2021 - Monopoli - Manfredonia',
+				"rgb(244, 180, 0)", true, null, null];
+	track_filename[index][2] = ['./dataset/tracks/2021-08-25 - ciclovia adriatica.geojson',
+				'23-29 AGOSTO 2021<br>VIAGGIO ALLA RICERCA DELLA CICLOVIA ADRIATICA',
+				'25/08/2021 - Manfredonia - Vasto',
+				"rgb(166, 27, 74)", true, null, null];                
+	track_filename[index][3] = ['./dataset/tracks/2021-08-26 - ciclovia adriatica.geojson',
+				'23-29 AGOSTO 2021<br>VIAGGIO ALLA RICERCA DELLA CICLOVIA ADRIATICA',
+				'26/08/2021 - Vasto - Alba adriatica',
+				"rgb(205, 220, 57)", true, null, null];                
+	track_filename[index][4] = ['./dataset/tracks/2021-08-27 - ciclovia adriatica.geojson',
+				'23-29 AGOSTO 2021<br>VIAGGIO ALLA RICERCA DELLA CICLOVIA ADRIATICA',
+				'27/08/2021 - Alba adriatica - Filottrano',
+				"rgb(0, 255, 255)", true, null, null];                
+	track_filename[index][5] = ['./dataset/tracks/2021-08-28 - ciclovia adriatica.geojson',
+				'23-29 AGOSTO 2021<br>VIAGGIO ALLA RICERCA DELLA CICLOVIA ADRIATICA',
+				'28/08/2021 - Filottrano - Spindoli',
+				"rgb(44, 180, 44)", true, null, null];                
+	track_filename[index][6] = ['./dataset/tracks/2021-08-29 - ciclovia adriatica.geojson',
+				'23-29 AGOSTO 2021<br>VIAGGIO ALLA RICERCA DELLA CICLOVIA ADRIATICA',
+				'29/08/2021 - Spindoli - Perugia',
+				"rgb(255, 33, 180)", true, null, null];                
+
+    // ######################## DA FARE #######################               
 
 
 
