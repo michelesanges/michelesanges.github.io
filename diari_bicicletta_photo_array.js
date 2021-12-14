@@ -187,7 +187,9 @@
         'https://cutt.ly/UQeQY6z', 'https://cutt.ly/UQeQArw', 'https://cutt.ly/BQeQFc3', 'https://cutt.ly/fQeQ7Un', 'https://cutt.ly/ZQeWeiL', 'https://cutt.ly/nQeWiW1', 'https://cutt.ly/aQeWdA5',
         'https://cutt.ly/TQeWgSE', 'https://cutt.ly/7QeWliI', 'https://cutt.ly/lQeWxka', 'https://cutt.ly/dQeEpJD', 'https://cutt.ly/cQeEdat', 'https://cutt.ly/LQeEgjp',  'https://cutt.ly/cQeEkQG'
     ];
-    image_caption[index] =['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''
+    image_caption[index] =['<a href = "https://www.google.com/maps?q=loc:44.284176005889236, 10.073612944310051" target="_blank" rel="noopener noreferrer">Bivio per Comano</a>', 
+    '<a href = "https://www.google.com/maps?q=loc:44.339571,10.126998" target="_blank" rel="noopener noreferrer">84QG+RQ Comano, Provincia di Massa e Carrara</a>',
+        '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''
     ];
 
     
@@ -209,4 +211,6 @@
     ];
     
  // ######################## DA FARE #######################   
-
+    index += 1; // WINTER TOUR
+  	image_array[index] = [''];
+    image_caption[index] ="";

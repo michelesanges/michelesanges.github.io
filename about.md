@@ -2,7 +2,7 @@
 layout: page
 title: About
 subtitle: Andrà a finire che, prima o poi, vi racconterò troppo di me.
-bigimg: https://goo.gl/aoKRE9
+<!-- bigimg: https://goo.gl/aoKRE9 -->
 ---
 Mi chiamo Michele Sanges e non sono mai di buon umore.
 
@@ -12,5 +12,5 @@ Se vuoi scrivermi, l'indirizzo è michele.sanges at gmail.com. Se vuoi scrivermi
 
 oppure  
 
-```gpg --keyserver pgp.mit.edu --search-keys michele.sanges@gmail.com```
+```gpg --keyserver pgp.mit.edu --search-keys michele.sanges AT gmail.com```
 

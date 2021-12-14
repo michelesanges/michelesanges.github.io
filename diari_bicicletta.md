@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Cicloturismo
+title: I diari della bicicletta
 subtitle: Look mum, no hands! 
 bigimg: 
 - "https://cutt.ly/dvdGreo"  : "Montemarcello"   
@@ -14,14 +14,14 @@ bigimg:
 <body>
     <div id="miniature"></div>
 
-<script type="text/javascript" src="cicloturismo_photo_array.js"></script>
-<script type="text/javascript" src="cicloturismo_track_array.js"></script>
+<script type="text/javascript" src="diari_bicicletta_photo_array.js"></script>
+<script type="text/javascript" src="diari_bicicletta_track_array.js"></script>
 
 <script>
     var html_cmd = "";
 
     
-    for (var i = track_filename.length - 1; i >=0 ; i--)
+    for (var i = track_filename.length - 2; i >=0 ; i--)
     {   
         // ricerca la prima immagine del tour, saltando i video
         j=0;

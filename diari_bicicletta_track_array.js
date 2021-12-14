@@ -293,19 +293,19 @@
     index += 1;
     track_description[index] = "Il paesaggio vitivinicolo del Piemonte - dice Wikipedia - è un sito patrimonio dell'umanità che comprende una serie di località situate nelle aree del Basso Piemonte: le Langhe, il Roero e il Monferrato.<br>Sono andato a controllare.";
 	track_filename[index] = new Array();
-	track_filename[index][0] = ['./dataset/tracks/200913084325 - tour divino.geojson',
+	track_filename[index][0] = ['./dataset/tracks/2020-09-13 - tour divino.geojson',
 				'13-16 SETTEMBRE 2020<br>TOUR diVino',
 				'13/09/2020 - San Salvatore Monferrato - Acqui Terme',
 				"rgb(2, 136, 209)", true, null, null];
-	track_filename[index][1] = ['./dataset/tracks/200914080311 - tour divino.geojson',
+	track_filename[index][1] = ['./dataset/tracks/2020-09-14 - tour divino.geojson',
 				'13-16 SETTEMBRE 2020<br>TOUR diVino',
 				'14/09/2020 - Acqui Terme - Alba',
 				"rgb(244, 180, 0)", true, null, null];
- 	track_filename[index][2] = ['./dataset/tracks/200915080248 - tour divino.geojson',
+ 	track_filename[index][2] = ['./dataset/tracks/2020-09-15 - tour divino.geojson',
 				'13-16 SETTEMBRE 2020<br>TOUR diVino',
 				'15/09/2020 - Alba - Monesiglio',
 				"rgb(166, 27, 74)", true, null, null];
- 	track_filename[index][3] = ['./dataset/tracks/200916083416 - tour divino.geojson',
+ 	track_filename[index][3] = ['./dataset/tracks/2020-09-16 - tour divino.geojson',
 				'13-16 SETTEMBRE 2020<br>TOUR diVino',
 				'16/09/2020 - Monesiglio - San Salvatore Monferrato',
 				"rgb(205, 220, 57)", true, null, null];
@@ -325,7 +325,7 @@
                 
                 
     index += 1;
-    track_description[index] = "Bivacco al Parco dei Cento Laghi";
+    track_description[index] = "Bivacco al Parco dei Cento Laghi, nell'Appennino parmense, per provare la tenda.";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2021-07-23 - bivacco al parco dei cento laghi.geojson',
 				'23-24 LUGLIO 2021<br>BIVACCO AL PARCO DEI CENTO LAGHI',
@@ -338,7 +338,7 @@
                
               
     index += 1;
-    track_description[index] = "Viaggio alla ricerca della Ciclovia adriatica";
+    track_description[index] = "Da Lecce a Perugia, seguendo prima la costa adriatica e poi il percorso dell'Italy Coast to Coast.";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2021-08-23 - ciclovia adriatica.geojson',
 				'23-29 AGOSTO 2021<br>VIAGGIO ALLA RICERCA DELLA CICLOVIA ADRIATICA',
@@ -370,6 +370,21 @@
 				"rgb(255, 33, 180)", true, null, null];                
 
     // ######################## DA FARE #######################               
+    index += 1;
+    track_description[index] = "Winter Tour";
+	track_filename[index] = new Array();
+	track_filename[index][0] = ['./dataset/tracks/Winter Tour - prima tappa.geojson',
+				'WINTER TOUR',
+				'Prima tappa',
+				"rgb(2, 136, 209)", true, null, null];
+	track_filename[index][1] = ['./dataset/tracks/Winter Tour - seconda tappa.geojson',
+				'WINTER TOUR',
+				'Seconda tappa',
+				"rgb(244, 180, 0)", true, null, null];
+	track_filename[index][2] = ['./dataset/tracks/Winter Tour - terza tappa.geojson',
+				'WINTER TOUR',
+				'Terza tappa',
+				"rgb(166, 27, 74)", true, null, null];                
 
 
 

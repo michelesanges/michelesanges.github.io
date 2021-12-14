@@ -3,11 +3,12 @@
 /* --- General --- */
 
 body {
-   font-family: 'Lora', 'Times New Roman', serif; 
+/*    font-family: 'Lora', 'Times New Roman', serif;  */
+  font-family: Courier;
    font-size: 15px; 
   color: #404040;
-  position: relative;
-  background: #FFF;
+/*   position: relative; */
+   background: #FFF; 
 }
 p {
   line-height: 1.5;
@@ -94,9 +95,11 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-  background: #F5F5F5;
-  border-bottom: 1px solid #EAEAEA;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+/*   background: #F5F5F5; */
+    background: #EAEAEA;
+/*   border-bottom: 1px solid #EAEAEA; */
+    border-bottom: 1px solid #9A9A9A;
+     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;  
 }
 
 .navbar-custom .nav li a {
@@ -242,8 +245,10 @@ img {
 
 footer {
   padding: 30px 0;
-  background: #F5F5F5;
-  border-top: 1px #EAEAEA solid;
+/*   background: #F5F5F5; */
+  background: #EAEAEA;
+/*   border-top: 1px #EAEAEA solid; */
+  border-top: 1px #9A9A9A solid;
   margin-top: 50px;
   font-size: 14px;
 }
