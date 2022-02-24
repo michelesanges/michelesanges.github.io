@@ -127,6 +127,10 @@ p {
   font-size: 100px;
 }
 
+.aligncenter {
+    text-align: center;
+}
+
 #bottom {
   clear: both;
   margin: 0 1.66%;

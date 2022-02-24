@@ -4,9 +4,12 @@
 
 body {
 /*    font-family: 'Lora', 'Times New Roman', serif;  */
-  font-family: Courier;
-   font-size: 15px; 
-  color: #404040;
+/*   font-family: Courier; */
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   font-size: 18px; 
+  font-weight: 200;
+/*    color: #404040;  */
+   color: #606060; 
 /*   position: relative; */
    background: #FFF; 
 }
@@ -95,7 +98,7 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-/*   background: #F5F5F5; */
+/*   background: #EAEAEA; */
     background: #EAEAEA;
 /*   border-bottom: 1px solid #EAEAEA; */
     border-bottom: 1px solid #9A9A9A;
@@ -104,15 +107,15 @@ img {
 
 .navbar-custom .nav li a {
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: 1px;
 }
 
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
-  font-weight: 800;
-  color: #404040;
-/*   color: #408040; */
+  font-weight: 600;
+  color: #d0b69f;
+/*   color: #404040; */
 }
 
 .navbar-custom .navbar-brand:hover,
@@ -371,6 +374,8 @@ footer .theme-by {
 }
 .intro-header .page-heading {
   text-align: center;
+  font-size: 27px;
+/*   font-weight: 100; */
 }
 .intro-header.big-img .page-heading,
 .intro-header.big-img .post-heading {
@@ -379,10 +384,13 @@ footer .theme-by {
   text-shadow: 1px 1px 3px #000;
 }
 .intro-header .page-heading h1 {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-top: 0;
-  font-size: 50px;
+  font-size: 35px;
+h1    
 }
 .intro-header .post-heading h1 {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-top: 0;
   font-size: 35px;
 }
@@ -400,7 +408,7 @@ footer .theme-by {
 }
 .intro-header.big-img .page-heading .page-subheading,
 .intro-header.big-img .post-heading .post-subheading {
-  font-weight: 400;
+  font-weight: 200;
 }
 .intro-header.big-img .page-heading hr {
   box-shadow: 1px 1px 3px #000;
@@ -434,10 +442,10 @@ footer .theme-by {
       padding: 350px 0; 
  }  
   .intro-header .page-heading h1 {
-    font-size: 80px;
+    font-size: 30px;
   }
   .intro-header .post-heading h1 {
-    font-size: 50px;
+    font-size: 30px;
   }
   .intro-header.big-img .img-desc {
     font-size: 14px;

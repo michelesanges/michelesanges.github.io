@@ -1,6 +1,6 @@
 ---
 layout: page
-title: I diari della bicicletta
+title: LOOK MUM, NO HANDS!
 subtitle: <div id="track_filename"> </div>
 ---
 
@@ -34,8 +34,48 @@ subtitle: <div id="track_filename"> </div>
     </style>	
 	
 	<script src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="diari_bicicletta_photo_array.js">  </script>
-    <script type="text/javascript" src="diari_bicicletta_track_array.js">  </script>
+	
+<script>
+	function getParameter(whichOne)
+	{
+		var pairs = location.search.substring(1).split('&');
+		var r = "";
+		var tp = new Array();
+
+		for (var i = 0; i < pairs.length; i ++)
+		{
+			tp = pairs[i].split('=');
+
+			if (whichOne == tp[0])
+			{
+				r = unescape(tp[1].replace(/\+/g, " "));
+			}
+		}
+
+		return r;
+	};
+	
+    type = getParameter("type").replace(/^.*[\\\/]/, ''); 
+    console.log("type " + type);
+
+    if (type=='singleday')
+    {
+        document.write('<script type="text/javascript" src="look_mum_singledays_photo_array.js"><\/script>');
+        document.write('<script type="text/javascript" src="look_mum_singledays_track_array.js"><\/script>');
+        console.log("aaa");
+    }
+    else if (type=='multiday') 
+    {   
+        document.write('<script type="text/javascript" src="look_mum_multidays_photo_array.js"><\/script>');
+        document.write('<script type="text/javascript" src="look_mum_multidays_track_array.js"><\/script>');
+        console.log("bbb");
+    }
+</script>
+	
+	
+	
+<!--    <script type="text/javascript" src="diari_bicicletta_photo_array.js">  </script>
+    <script type="text/javascript" src="diari_bicicletta_track_array.js">  </script>-->
     
 
 	<style type="text/css"> 
@@ -177,24 +217,7 @@ subtitle: <div id="track_filename"> </div>
 	}
 
 
-	function getParameter(whichOne)
-	{
-		var pairs = location.search.substring(1).split('&');
-		var r = "";
-		var tp = new Array();
 
-		for (var i = 0; i < pairs.length; i ++)
-		{
-			tp = pairs[i].split('=');
-
-			if (whichOne == tp[0])
-			{
-				r = unescape(tp[1].replace(/\+/g, " "));
-			}
-		}
-
-		return r;
-	}
 
 
 	function init_map()
@@ -467,11 +490,11 @@ subtitle: <div id="track_filename"> </div>
 		
 		elevator_service.getElevationAlongPath(pathRequest, function(results, status)
 		{
+		console.log("status=" + status);
 			  plotElevation(results, status, length, i);
 		});
 	}
-
-
+	
 	function plotElevation(results, status, length, n)
 	{
 		if (status != google.maps.ElevationStatus.OK)
@@ -492,25 +515,27 @@ subtitle: <div id="track_filename"> </div>
 		
 		var guadagno_elevazione = 0;
 		var perdita_elevazione = 0;
-		var elevazione_diff;
+		var elevazione_diff = 0;
 
-		for (var i = 0; i < results.length; i++)
+		for (var i = 1; i < results.length; i++)
 		{		
-			if (i > 0)
-			{
-				elevazione_diff = elevations[i].elevation - elevations[i - 1].elevation;
-console.log("elevations[" + i +"]: "+ elevations[i].elevation);
-// console.log("elevations_prev" + elevations[i - 1].elevation);
-console.log("elevazione_diff[" + i +"]: "+ elevazione_diff);
-				if (elevazione_diff >= 0)
-				{
-					guadagno_elevazione += elevazione_diff;
-				}
-				else
-				{
-					perdita_elevazione += elevazione_diff;
-				}
-			}
+            elevazione_diff += elevations[i].elevation - elevations[i - 1].elevation;
+// console.log("elevations[" + i +"]: "+ elevations[i].elevation);
+// console.log("elevations_prev:" + elevations[i - 1].elevation);
+// console.log("elevazione_diff[" + i +"]: "+ elevazione_diff);
+            if (elevazione_diff >= 10)
+            {
+                guadagno_elevazione += elevazione_diff;
+                
+                elevazione_diff = 0;
+            }
+            else if (elevazione_diff <= -10)
+            {
+                perdita_elevazione += elevazione_diff;
+                 
+                elevazione_diff = 0;
+           }
+// console.log("guadagno_elevazione[" + i +"]: "+ guadagno_elevazione);
 
 			data_table.addRow([i * length/(1000*max_sample_num), elevations[i].elevation, 
 				  '<b>Dist: '+ (i * length/(1000*max_sample_num)).toFixed(1) + ' km<p>Elevation: ' + elevations[i].elevation.toFixed(1) +' m</b>',
@@ -635,29 +660,34 @@ console.log("elevazione_diff[" + i +"]: "+ elevazione_diff);
                     document.getElementById("pointHolder").innerHTML=cmd; 
                     */
                     // @@@@@@@@@@@@@@@@@@@@@@@@
-                    var html_cmd;
-                    html_cmd = "<center>" ;
+                    var html_cmd="";
+//                     html_cmd = "<center>" ;
                     for (var n = 0; n < image_array[map_index].length; n++)
                     {
-			  if (image_array[map_index][n].includes("youtu"))
-			  {
-				html_cmd += "<object width='1280' height='720' data='" + image_array[map_index][n] + "'></object><p>";
-			  }
-			  else
-			  {
-				html_cmd += "<img src='" + image_array[map_index][n] + "' valign = top>";
-				if (image_caption[map_index][n])
-				{
-                    html_cmd += "<figcaption>" + image_caption[map_index][n] + "</figcaption>";
-				}
-				else
-				{
-                   html_cmd += "<p>"
-				}
-				html_cmd += "<br>";
-			  }
+                        html_cmd += "<p class='aligncenter'>"
+                        if (image_array[map_index][n].includes("youtu"))
+                        {
+                            html_cmd += "<object width='1280' height='720' data='" + image_array[map_index][n] + "'></object><p>";
+                        }
+                        else
+                        {
+                html_cmd +="<figure>"
+                            html_cmd += "<img src='" + image_array[map_index][n] + "' valign = top>";
+                            if (image_caption[map_index][n])
+                            {
+                                html_cmd += "<figcaption>" + image_caption[map_index][n] + "</figcaption>";
+                            }
+            // 				else
+            // 				{
+            //                    html_cmd += "<br>"
+            // 				}
+            // 				html_cmd += "</p>";
+               html_cmd +="</figure>"
+                        }
+//                             html_cmd += "</p>";
                     }
-                    html_cmd += "</center>" ;
+//                     html_cmd += "</center>" ;
+// html_cmd += "<p>";
                     document.getElementById("imageHolder").innerHTML=html_cmd;
                     // @@@@@@@@@@@@@@@@@@@@@@@@
 // 		}

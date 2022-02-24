@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: ABOUT
 subtitle: Andrà a finire che, prima o poi, vi racconterò troppo di me.
 <!-- bigimg: https://goo.gl/aoKRE9 -->
 ---

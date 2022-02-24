@@ -7,7 +7,7 @@ gems:
 
 # SEO
 # Name of website
-title: Bit Error Rate
+title: BIT ERROR RATE
 
 # Short description of your site
 #description: Michele Sanges's awesome site: bike trips, photo and blog post!
@@ -36,8 +36,10 @@ social:
 # List of links in the navigation bar
 navbar-links:
   #Blog: "blog"
-  I diari della bicicletta: "diari_bicicletta"
-  Fotografia: "fotografia"
+  Look mum, no hands!: 
+    - Multi-day tours: "look_mum?type=multiday"
+    - Single-day tours: "look_mum?type=singleday"
+  Photography: "fotografia"
   #Social:
     #- Facebook: "https://www.facebook.com/sanges.michele"
     #- Anobii: "http://www.anobii.com/michelesanges/profile"
