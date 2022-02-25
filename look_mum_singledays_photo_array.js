@@ -62,3 +62,21 @@
     '<a href = "https://www.google.com/maps?q=loc:43.839278,10.504397" target="_blank" rel="noopener noreferrer">Lucca</a>',   
      '<a href = "https://www.google.com/maps?q=loc:43.957274,10.231999" target="_blank" rel="noopener noreferrer">Pietrasanta</a>'   
     ];
+
+    index += 1; // 30 GENNAIO 2022 - PORTOFINO
+ 	image_array[index] = ['https://cutt.ly/ZPB2azK', 'https://cutt.ly/WPB3YRM', 'https://cutt.ly/rPB35UV', 'https://cutt.ly/VPB8JsJ', 'https://cutt.ly/pPB4tLy',
+    'https://cutt.ly/JPB4nmO', 'https://cutt.ly/ePB4C14', 'https://cutt.ly/wPB48jT', 'https://cutt.ly/FPB7nQo'
+    ];
+    image_caption[index] =[
+     '<a href = "https://www.google.com/maps?q=loc:44.248086,9.58757" target="_blank" rel="noopener noreferrer">Deiva Marina - Fontana Coppi</a>', 
+     '<a href = "https://www.google.com/maps?q=loc:44.249628,9.568867" target="_blank" rel="noopener noreferrer">Passo del Bracco</a>',   
+     '<a href = "https://www.google.com/maps?q=loc:44.253582,9.536364" target="_blank" rel="noopener noreferrer">Deiva Marina</a>',   
+     '<a href = "https://www.google.com/maps?q=loc:44.268743,9.392096" target="_blank" rel="noopener noreferrer">Sestri Levante - Baia del Silenzio</a>',   
+     '<a href = "https://www.google.com/maps?q=loc:44.268743,9.392096" target="_blank" rel="noopener noreferrer">Sestri Levante - Baia del Silenzio</a>',   
+     '<a href = "https://www.google.com/maps?q=loc:44.302404,9.210427" target="_blank" rel="noopener noreferrer">Portofino</a>',   
+     '<a href = "https://www.google.com/maps?q=loc:44.302404,9.210427" target="_blank" rel="noopener noreferrer">Portofino</a>',   
+     '<a href = "https://www.google.com/maps?q=loc:44.336699,9.216704" target="_blank" rel="noopener noreferrer">S. Margherita Ligure</a>',
+     'Somewhere over the Rainbow'
+    ];
+
+    

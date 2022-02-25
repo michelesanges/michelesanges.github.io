@@ -523,13 +523,13 @@ subtitle: <div id="track_filename"> </div>
 // console.log("elevations[" + i +"]: "+ elevations[i].elevation);
 // console.log("elevations_prev:" + elevations[i - 1].elevation);
 // console.log("elevazione_diff[" + i +"]: "+ elevazione_diff);
-            if (elevazione_diff >= 10)
+            if (elevazione_diff >= 30)
             {
                 guadagno_elevazione += elevazione_diff;
                 
                 elevazione_diff = 0;
             }
-            else if (elevazione_diff <= -10)
+            else if (elevazione_diff <= -30)
             {
                 perdita_elevazione += elevazione_diff;
                  
