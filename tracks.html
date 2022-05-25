@@ -34,7 +34,7 @@ subtitle: <div id="track_filename"> </div>
     </style>	
 	
 	<script src="https://www.google.com/jsapi"></script>
-	
+
 <script>
 	function getParameter(whichOne)
 	{
@@ -368,7 +368,6 @@ subtitle: <div id="track_filename"> </div>
 							}						
 						}
 */
-
 						// center the map
 						event.feature.getGeometry().forEachLatLng(
 							function(position)
@@ -495,6 +494,23 @@ subtitle: <div id="track_filename"> </div>
 		});
 	}
 	
+
+function smooth(data, alpha)
+{
+		var data_smoothed = [0];
+		for (var i = 1; i < data.length; i++)
+		{
+			data_smoothed[i] = alpha * data_smoothed[i - 1] + (1 - alpha) * data[i].elevation;
+
+// Y[n] = dY[n-1] + (1-d)X[n]
+		}
+
+// console.log("GG:" + data_smoothed);
+
+
+    return data_smoothed;
+}
+
 	function plotElevation(results, status, length, n)
 	{
 		if (status != google.maps.ElevationStatus.OK)
@@ -502,7 +518,8 @@ subtitle: <div id="track_filename"> </div>
 			return;
 		}
 
-		var elevations = results;
+// 		var elevations = results;
+		var elevations = smooth(results, 0.7);
 
 // 		var elevationPath = [];
 //         for (var i = 0; i < results.length; i++)
@@ -519,33 +536,29 @@ subtitle: <div id="track_filename"> </div>
 
 		for (var i = 1; i < results.length; i++)
 		{		
-            elevazione_diff += elevations[i].elevation - elevations[i - 1].elevation;
+            elevazione_diff = elevations[i] - elevations[i - 1];
 // console.log("elevations[" + i +"]: "+ elevations[i].elevation);
 // console.log("elevations_prev:" + elevations[i - 1].elevation);
 // console.log("elevazione_diff[" + i +"]: "+ elevazione_diff);
-            if (elevazione_diff >= 30)
+            if (elevazione_diff > 0)
             {
                 guadagno_elevazione += elevazione_diff;
-                
-                elevazione_diff = 0;
-            }
-            else if (elevazione_diff <= -30)
+             }
+            else if (elevazione_diff < 0)
             {
                 perdita_elevazione += elevazione_diff;
-                 
-                elevazione_diff = 0;
            }
 // console.log("guadagno_elevazione[" + i +"]: "+ guadagno_elevazione);
 
-			data_table.addRow([i * length/(1000*max_sample_num), elevations[i].elevation, 
-				  '<b>Dist: '+ (i * length/(1000*max_sample_num)).toFixed(1) + ' km<p>Elevation: ' + elevations[i].elevation.toFixed(1) +' m</b>',
+			data_table.addRow([i * length/(1000*max_sample_num), elevations[i],
+				  '<b>Dist: '+ (i * length/(1000*max_sample_num)).toFixed(1) + ' km<p>Elevation: ' + elevations[i].toFixed(1) +' m</b>',
 				  guadagno_elevazione, 
 				  '<b>Dist: '+ (i * length/(1000*max_sample_num)).toFixed(1) + ' km<p>Elevation Gain: ' + guadagno_elevazione.toFixed(0) +' m</b>',			  
 				  -perdita_elevazione,			
 				  '<b>Dist: '+ (i * length/(1000*max_sample_num)).toFixed(1) + ' km<p>Elevation Loss: ' + -perdita_elevazione.toFixed(0) +' m</b>'				  
 				  ]);
 				  
-			position_table.addRow([elevations[i].location.lat(), elevations[i].location.lng()]);
+			position_table.addRow([results[i].location.lat(), results[i].location.lng()]);
 		}
 
 		var path_length = length/1000;	// in km
@@ -667,8 +680,12 @@ subtitle: <div id="track_filename"> </div>
                         html_cmd += "<p class='aligncenter'>"
                         if (image_array[map_index][n].includes("youtu"))
                         {
-                            html_cmd += "<object width='1280' height='720' data='" + image_array[map_index][n] + "'></object><p>";
-                        }
+                            html_cmd += "<object align=middle width='1280' height='720' data='" + image_array[map_index][n] + "'></object><p>";
+                            if (image_caption[map_index][n])
+                            {
+                                html_cmd += "<figcaption>" + image_caption[map_index][n] + "</figcaption>";
+                            }
+						}
                         else
                         {
                 html_cmd +="<figure>"

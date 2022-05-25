@@ -2,7 +2,7 @@
 layout: page
 title: LOOK MUM, NO HANDS!
 subtitle: <div id="subtitle"></div>
-//bigimg: 
+//bigimg:
 //- "https://cutt.ly/dvdGreo"  : "Montemarcello"   
 //- "https://cutt.ly/Fv7eMVM" : "Bonassola"   
 //- "https://cutt.ly/Rv7eDCK"  : "Bonassola"  

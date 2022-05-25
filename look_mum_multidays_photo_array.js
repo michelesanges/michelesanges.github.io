@@ -151,7 +151,7 @@
         'https://cutt.ly/UQeQY6z', 'https://cutt.ly/UQeQArw', 'https://cutt.ly/BQeQFc3', 'https://cutt.ly/fQeQ7Un', 'https://cutt.ly/ZQeWeiL', 'https://cutt.ly/nQeWiW1', 'https://cutt.ly/aQeWdA5',
         'https://cutt.ly/TQeWgSE', 'https://cutt.ly/7QeWliI', 'https://cutt.ly/lQeWxka', 'https://cutt.ly/dQeEpJD', 'https://cutt.ly/cQeEdat', 'https://cutt.ly/LQeEgjp',  'https://cutt.ly/cQeEkQG'
     ];
-    image_caption[index] =['<a href = "https://www.google.com/maps?q=loc:44.284176005889236, 10.073612944310051" target="_blank" rel="noopener noreferrer">Bivio per Comano</a>', 
+    image_caption[index] =['<a href = "https://www.google.com/maps?q=loc:44.284176005889236, 10.073612944310051" target="_blank" rel="noopener noreferrer">Bivio per Comano</a>',
     '<a href = "https://www.google.com/maps?q=loc:44.339571,10.126998" target="_blank" rel="noopener noreferrer">84QG+RQ Comano, Provincia di Massa e Carrara</a>',
         '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''
     ];
@@ -174,3 +174,57 @@
         'San Severino Marche (MC)', 'Nocera Umbra (PG)', 'Nocera Umbra (PG)', 'Perugia (PG)'
     ];
     
+    index += 1; // TORINO
+    image_array[index] = ['https://cutt.ly/bHNbZo6', 'https://cutt.ly/jHNRVGY', 'https://cutt.ly/fHNTgU1',
+        'https://www.youtube.com/embed/7aIxGVSotJ8',
+        'https://cutt.ly/EHNTMLQ', 'https://cutt.ly/XHNGCr5',
+        'https://cutt.ly/mHNHG2n', 'https://cutt.ly/KHNH47f', 'https://cutt.ly/9H0k1Oe', 'https://cutt.ly/wH0lgWO', 'https://www.youtube.com/embed/-89Iu31WW48',
+        'https://cutt.ly/vH0lnJF', 'https://cutt.ly/yH0l3Er','https://cutt.ly/zH0zqmD', 'https://cutt.ly/BH0zR3W', 'https://cutt.ly/HH0zOSW', 'https://cutt.ly/8H0x8gR', 'https://cutt.ly/2H0ceGV', 'https://cutt.ly/3H0ciGK',
+        'https://cutt.ly/TH0cdkY', 'https://cutt.ly/NH0ckjO', 'https://cutt.ly/aH0bUWz', 'https://cutt.ly/7H0vAMh', 'https://cutt.ly/tH0bJpF', 'https://cutt.ly/uH0bX5I', 'https://cutt.ly/UH0bNGM', 'https://cutt.ly/gH0b3pd',
+        'https://cutt.ly/iH0QFh2', 'https://cutt.ly/SH0QZ7t', 'https://cutt.ly/bH0QNR1', 'https://cutt.ly/YH0Q6z2', 'https://cutt.ly/yH0WARN', 'https://cutt.ly/6H0WJ0G', 'https://cutt.ly/iH0W4A6', 'https://cutt.ly/7H0EeW3',
+        'https://cutt.ly/8H0Ey1j', 'https://cutt.ly/yH0EpJq', 'https://cutt.ly/9H0EkbR', 'https://cutt.ly/nH0ETsh', 'https://cutt.ly/7H0EOek'
+                         ];
+    image_caption[index] =['<a href = "https://goo.gl/maps/uZyNsB7Rs4fUndqx9" target="_blank">Passo del Bracco</a>',
+                '<a href = "https://goo.gl/maps/Wpqny6C3RXVjod137" target="_blank">Baia del Silenzio - Sestri Levante (GE)</a>',
+               '<a href = "https://goo.gl/maps/qyJpqB5zARUJPgpcA" target="_blank">Baia del Silenzio - Sestri Levante (GE)</a>',
+               'Somewhere, over the rainbow',
+               '<a href = "https://goo.gl/maps/zKeDpS7dYJ4jrHue8" target="_blank">Passo della Scoffera (GE)</a>',
+               '<a href = "https://goo.gl/maps/hFgXTwUwHZPQvVT79" target="_blank">Agriturismo La Sereta - Fraconalto (AL)</a>',
+                'Castellazzo Bormida',
+               '<a href = "https://goo.gl/maps/N3wUQSLJjAHzGoR46" target="_blank">Baldichieri d`Asti (AT)</a>',
+              '<a href = "https://goo.gl/maps/TGBvTmA72AF1BpSs5" target="_blank">Via Cavour - Moncalieri (TO)</a>',
+               '<a href = "https://goo.gl/maps/fbJ36hXEjKZoqd8x8" target="_blank">Campeggio Grinto - Moncalieri (TO)</a>',
+               '<a href = "https://goo.gl/maps/fbJ36hXEjKZoqd8x8" target="_blank">Campeggio Grinto - Moncalieri (TO)</a>',
+               '<a href = "https://goo.gl/maps/aBdMcoMpthX8Chq38" target="_blank">Parco del Valentino - Torino (TO)</a>',
+               '<a href = "https://goo.gl/maps/mtohZZgLY8SD5jU68" target="_blank">Piazza S. Carlo - Torino (TO)</a>',
+              '<a href = "https://goo.gl/maps/nNNV9t7hDuzhp3jd9" target="_blank">Piazza S. Carlo - Torino (TO)</a>',
+              '<a href = "https://goo.gl/maps/fbJ36hXEjKZoqd8x8" target="_blank">Risveglio in tenda - Campeggio Grinto - Moncalieri (TO)</a>',
+              '<a href = "https://goo.gl/maps/Gob46rzpHKteefbRA" target="_blank">Corso Eusebio Giambone - Torino (TO)</a>',
+              '<a href = "https://goo.gl/maps/iMTUwGjFCrPVo5DL9" target="_blank">Corso Unione Sovietica - Torino (TO)</a>',
+               '<a href = "https://goo.gl/maps/keHvdneDrrUXsQAg6" target="_blank">Corso Unione Sovietica - Torino (TO)</a>',
+               '<a href = "https://goo.gl/maps/ZU4wncg7YY1fPXnR8" target="_blank">Corso Unione Sovietica - Torino (TO)</a>',
+               '<a href = "https://goo.gl/maps/sadDRNmEj7NxN9ak8" target="_blank">Corso Unione Sovietica - Torino (TO)</a>',
+               '<a href = "https://goo.gl/maps/1MG1cjcc1qV4DS1V6" target="_blank">Corso Unione Sovietica - Torino (TO)</a>',
+               '<a href = "https://goo.gl/maps/1MG1cjcc1qV4DS1V6" target="_blank">Corso Unione Sovietica - Torino (TO)</a>',
+               '<a href = "https://goo.gl/maps/nwUXc1CegHejhHLM9" target="_blank">Via Rosario di Santa Fè - Torino (TO)</a>',
+               '<a href = "https://goo.gl/maps/uCeiokAsLLSsgCyg6" target="_blank">Via Montevideo, 10-20 - Torino (TO)</a>',
+               '<a href = "https://goo.gl/maps/GNiBXCxSKkH7Z6ZT9" target="_blank">FCA Italy - Corso Giovanni Agnelli - Torino (TO)</a>',
+               '<a href = "https://goo.gl/maps/TnabwBRjTf3FCicM8" target="_blank">Parco della Tesoriera - Torino (TO)</a>',
+               '<a href = "https://goo.gl/maps/2hQxtWraKnk5obgE9" target="_blank">San Donato - Torino (TO)</a>',
+               '<a href = "https://goo.gl/maps/zXQU1Aat9sTeXiS89" target="_blank">Skatepark Parco Dora - Torino (TO)</a>',
+               '<a href = "https://goo.gl/maps/NZXgZsz8mkmfhTHa6" target="_blank">Skatepark Parco Dora - Torino (TO)</a>',
+               '<a href = "https://goo.gl/maps/QkEYTFht8GtNz6F7A" target="_blank">Mole Antonelliana - Via Giuseppe Verdi, 31 - Torino (TO)</a>',
+               '<a href = "https://goo.gl/maps/67QCM3uGTukXwJVr5" target="_blank">Murazzi del Po Ferdinando Buscaglione, 26 - Torino (TO)</a>',
+               '<a href = "https://goo.gl/maps/bPTe7JHKrMjz4FDh6" target="_blank">Colle della Maddalena - Torino (TO)</a>',
+               '<a href = "https://goo.gl/maps/kC3PmPw2mN6Xatri6" target="_blank">Basilica di Superga - Torino (TO)</a>',
+               '<a href = "https://goo.gl/maps/juz1dHR74UuBWb3Q9" target="_blank">Vista su Torino dalla Basilica di Superga - Torino (TO)</a>',
+               '<a href = "https://goo.gl/maps/Fs6EArodxUY54Q4Q6" target="_blank">Borgo Po - Torino (TO)</a>',
+               '<a href = "https://goo.gl/maps/UwrWRiawLGXRoXRb7" target="_blank">Borgo Po - Torino (TO)</a>',
+               '<a href = "https://goo.gl/maps/XGkXaWumDZ6YwcGN7" target="_blank">Ponte Vittorio Emanuele I - Torino (TO)</a>',
+              '<a href = "https://goo.gl/maps/r92pVHrMKL5nHFpp6" target="_blank">Piazza Vittorio Veneto - Torino (TO)</a>',
+              '<a href = "https://goo.gl/maps/VrKyV7SjYfyHHpAZ6" target="_blank">Stazione di Torino Porta Nuova - Torino (TO)</a>',
+              '<a href = "https://goo.gl/maps/VrKyV7SjYfyHHpAZ6" target="_blank">Stazione di Torino Porta Nuova - Torino (TO)</a>',
+ ];
+
+
+

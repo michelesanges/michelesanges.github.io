@@ -284,7 +284,7 @@
                
               
     index += 1;
-    track_description[index] = "Da Lecce a Perugia, seguendo prima la costa adriatica e poi il percorso dell'Italy Coast to Coast.";
+    track_description[index] = "<B>Da Lecce a Perugia, seguendo prima la costa adriatica e poi il percorso dell'Italy Coast to Coast.</B>";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2021-08-23 - ciclovia adriatica.geojson',
 				'23-29 AGOSTO 2021<br>VIAGGIO ALLA RICERCA DELLA CICLOVIA ADRIATICA',
@@ -316,6 +316,25 @@
 				"rgb(255, 33, 180)", true, null, null];                
 
 
+    index += 1;
+    track_description[index] = "<B>Corso Giambone, angolo Corso Unione Sovietica: è qui che ho vissuto i primi dieci anni della mia vita. Sbircio attraverso i vetri del portone del condominio in cui ho abitato. Mi piacerebbe entrare, attraversare l'androne per uscire dalla parte opposta, nel cortile interno in cui giocavo. Vorrei salire al primo piano e visitare l'appartamento. Ricordo esattamente il motivo della carta da parati di camera mia e di mia sorella. Chissà come sarà adesso. Svolto l'angolo. Percorro questo corridoio che conduce al portone del condominio in cui abitarono i miei nonni. Anche qui vorrei suonare il campanello, chiedere di entrare e affacciarmi dal balcone per guardare il viale dall'alto. Vorrei entrare nella pasticceria di mio nonno, di cui è rimasta solo l'insegna. E poi, la chiesa in cui ho fatto la prima comunione - credo pure l''ultima - e la mia scuola elementare. Sono trascorsi quarantadue anni.</B>";
+	track_filename[index] = new Array();
+	track_filename[index][0] = ['./dataset/tracks/2022-05-18 - torino - primo giorno.geojson',
+				'18-21 MAGGIO 2022<br>VIAGGIO ALLA RICERCA DEL TEMPO PERDUTO',
+				'18/05/2022 - Castelnuovo Magra (Sp) - Fraconalto (AL)',
+				"rgb(2, 136, 209)", true, null, null];
+	track_filename[index][1] = ['./dataset/tracks/2022-05-19 - torino - secondo giorno.geojson',
+				'18-21 MAGGIO 2022<br>VIAGGIO ALLA RICERCA DEL TEMPO PERDUTO',
+				'19/05/2022 - Fraconalto (AL) - Torino (TO)',
+				"rgb(244, 180, 0)", true, null, null];
+	track_filename[index][2] = ['./dataset/tracks/2022-05-20 - torino - terzo giorno.geojson',
+				'18-21 MAGGIO 2022<br>VIAGGIO ALLA RICERCA DEL TEMPO PERDUTO',
+				'20/05/2022 - Visita alla città sul percorso AbbracciaTO, la circle line ciclistica di Torino',
+				"rgb(166, 27, 74)", true, null, null];
+	track_filename[index][3] = ['./dataset/tracks/2022-05-21 - torino - quarto giorno.geojson',
+				'18-21 MAGGIO 2022<br>VIAGGIO ALLA RICERCA DEL TEMPO PERDUTO',
+				'21/05/2022 - Colle della Maddalena - Basilica di Superga',
+				"rgb(205, 220, 57)", true, null, null];
 
 
              
