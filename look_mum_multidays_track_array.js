@@ -320,22 +320,31 @@
     track_description[index] = "<B>Corso Giambone, angolo Corso Unione Sovietica: è qui che ho vissuto i primi dieci anni della mia vita. Sbircio attraverso i vetri del portone del condominio in cui ho abitato. Mi piacerebbe entrare, attraversare l'androne per uscire dalla parte opposta, nel cortile interno in cui giocavo. Vorrei salire al primo piano e visitare l'appartamento. Ricordo esattamente il motivo della carta da parati di camera mia e di mia sorella. Chissà come sarà adesso. Svolto l'angolo. Percorro questo corridoio che conduce al portone del condominio in cui abitarono i miei nonni. Anche qui vorrei suonare il campanello, chiedere di entrare e affacciarmi dal balcone per osservare il viale dall'alto. Vorrei entrare nella pasticceria di mio nonno, di cui è rimasta solo l'insegna. E poi, la chiesa in cui ho fatto la prima comunione - credo pure l'ultima - e la mia scuola elementare. Sono trascorsi quarantadue anni.</B>";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2022-05-18 - torino - primo giorno.geojson',
-				'18-21 MAGGIO 2022<br>VIAGGIO ATTRAVERSO IL TEMPO',
-				'18/05/2022 - Castelnuovo Magra (Sp) - Fraconalto (AL)',
+				'18-21 MAGGIO 2022<br>VIAGGIO NEL TEMPO',
+				'18/05/2022 - Castelnuovo Magra (SP) - Fraconalto (AL)',
 				"rgb(2, 136, 209)", true, null, null];
 	track_filename[index][1] = ['./dataset/tracks/2022-05-19 - torino - secondo giorno.geojson',
-				'18-21 MAGGIO 2022<br>VIAGGIO ATTRAVERSO IL TEMPO',
+				'18-21 MAGGIO 2022<br>VIAGGIO NEL TEMPO',
 				'19/05/2022 - Fraconalto (AL) - Torino (TO)',
 				"rgb(244, 180, 0)", true, null, null];
 	track_filename[index][2] = ['./dataset/tracks/2022-05-20 - torino - terzo giorno.geojson',
-				'18-21 MAGGIO 2022<br>VIAGGIO ATTRAVERSO IL TEMPO',
+				'18-21 MAGGIO 2022<br>VIAGGIO NEL TEMPO',
 				'20/05/2022 - Visita alla città sul percorso AbbracciaTO, la circle line ciclistica di Torino',
 				"rgb(166, 27, 74)", true, null, null];
 	track_filename[index][3] = ['./dataset/tracks/2022-05-21 - torino - quarto giorno.geojson',
-				'18-21 MAGGIO 2022<br>VIAGGIO ATTRAVERSO IL TEMPO',
+				'18-21 MAGGIO 2022<br>VIAGGIO NEL TEMPO',
 				'21/05/2022 - Colle della Maddalena - Basilica di Superga',
 				"rgb(205, 220, 57)", true, null, null];
 
 
-             
-                
+    index += 1;
+    track_description[index] = ""
+    track_filename[index] = new Array();
+	track_filename[index][0] = ['./dataset/tracks/2022-06-04 - parma - bologna.geojson',
+				'04-05 GIUGNO 2022<br>UNA COSA DIVERTENTE CHE NON FARÒ MAI PIÙ (MA POSSO RIPENSARCI)',
+				'04/06/2022 - Castelnuovo Magra (SP) - Parma (PR)',
+				"rgb(2, 136, 209)", true, null, null];
+	track_filename[index][1] = ['./dataset/tracks/2022-06-05 - parma - bologna.geojson',
+				'04-05 GIUGNO 2022<br>UNA COSA DIVERTENTE CHE NON FARÒ MAI PIÙ (MA POSSO RIPENSARCI)',
+				'05/06/2022 - Bologna (BO) - Castelnuovo Magra (SP)',
+				"rgb(244, 180, 0)", true, null, null];

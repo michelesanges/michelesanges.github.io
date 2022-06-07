@@ -227,4 +227,33 @@
  ];
 
 
+    index += 1; // UNA COSA DIVERTENTE CHE NON FARO' MAI PIU'
+    image_array[index] = ['https://cutt.ly/qJAGxjz', 'https://cutt.ly/tJAJawm', 'https://cutt.ly/qJAKdCD', 'https://cutt.ly/OJAK2mm', 'https://cutt.ly/NJALpTf',
+                          'https://cutt.ly/qJALFag', 'https://cutt.ly/uJAZqwA', 'https://cutt.ly/yJAZXkY', 'https://cutt.ly/iJA3zmb', 'https://cutt.ly/dJA8Z1F',
+                          'https://cutt.ly/PJA4Jq9', 'https://cutt.ly/0JA49tD', 'https://cutt.ly/3JA66YJ', 'https://cutt.ly/zJSqktS', 'https://cutt.ly/AJSq8lX',
+                          'https://cutt.ly/FJSwA57', 'https://cutt.ly/rJSeTbA', 'https://cutt.ly/HJSeJKE', 'https://cutt.ly/nJSrUoq', 'https://cutt.ly/3JStjL8',
+                          'https://cutt.ly/OJStDLH', 'https://cutt.ly/yJSt4FI'
+                         ];
+    image_caption[index] =['<a href = "https://goo.gl/maps/A6Lx9X6jmGT13WBC6" target="_blank">Gravagna (MS)</a>',
+                  '<a href = "https://goo.gl/maps/W86yBRfQgkE2GQsh8" target="_blank">Passo della Cisa - Pontremoli (MS)</a>',
+                  '<a href = "https://goo.gl/maps/W86yBRfQgkE2GQsh8" target="_blank">Chiesetta della Cisa - Pontremoli (MS)</a>',
+                  '<a href = "https://goo.gl/maps/9o14UMrqmJNJkjnz7" target="_blank">Bar Passo Cisa - Pontremoli (MS)</a>',
+                  '<a href = "https://goo.gl/maps/VQSqdhCWHWPFTV9J7" target="_blank">Passo della Cisa - Pontremoli (MS)</a>',
+                  '<a href = "https://goo.gl/maps/vFTA5vp5bSmHW1QH7" target="_blank">Stazione di Parma (PR)</a>',
+                  '<a href = "https://goo.gl/maps/Ap3FKdEKU4ZkoK2XA" target="_blank">Stazione di Parma (PR)</a>',
+                  '<a href = "https://goo.gl/maps/omy8Tah9CMoKdk4TA" target="_blank">Stazione di Parma (PR)</a>', 'Trasferimento a Bologna',
+                  '<a href = "https://goo.gl/maps/zTgDKeV5sdvEmHE8A" target="_blank">Camping Città di Bologna (BO)</a>',
+                  '<a href = "https://goo.gl/maps/jwfcnvT9gWo9CJFp9" target="_blank">Torre degli Asinelli - Bologna (BO)</a>',
+                  '<a href = "https://goo.gl/maps/eaZCLXVBc4ssfDir8" target="_blank">Piazza Maggiore - Bologna (BO)</a>',
+                  '<a href = "https://goo.gl/maps/TjsWjrdXix7Q7C9e6" target="_blank">Piazza Maggiore - Bologna (BO)</a>',
+                  '<a href = "https://goo.gl/maps/zTktvSo4H29DtkMj8" target="_blank">Piazza Maggiore - Bologna (BO)</a>',
+                  '<a href = "https://goo.gl/maps/sMwirtuhh3E8hFng7" target="_blank">Marzabotto (BO)</a>',
+                  '<a href = "https://goo.gl/maps/oHqoJwGtcEeZ6DwY6" target="_blank">Percorso Ciclopedonale Parco Fiume Reno - Marzabotto (BO)</a>',
+                  '<a href = "https://goo.gl/maps/xJcTUncyqn27Czjb6" target="_blank">Porretta Terme (BO)</a>',
+                  '<a href = "https://goo.gl/maps/7ndAKgnVHSdeUT2v8" target="_blank">Strada Statale Porrettana - Pistoia (PT)</a>',
+                  '<a href = "https://goo.gl/maps/PyVdTmzc1Q4XHZ3f7" target="_blank">Via Pistoiese - Montecatini Terme (PT)</a>',
+                  '<a href = "https://goo.gl/maps/vTyMWemsork4fJgx9" target="_blank">Piazza del Popolo - Montecatini Terme (PT)</a>',
+                  '<a href = "https://goo.gl/maps/ySxQGAdEQC78EMyJ9" target="_blank">Via per Camaiore - San Martino In Freddana (LU)</a>',
+                  '<a href = "https://goo.gl/maps/i8jyUifQ7HbcdXxP8" target="_blank">Viareggio (LU)</a>'
+  ];
 
