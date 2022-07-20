@@ -506,7 +506,11 @@ function smooth(data, alpha)
 		}
 
 // console.log("GG:" + data_smoothed);
-
+	// sostituisce i primi campioni filtrati, per i quali il filtro non si è ancora regimato, con quelli originali
+		for (var i = 0; i < 10; i++)
+		{
+			data_smoothed[i] = data[i].elevation;
+		}
 
     return data_smoothed;
 }
@@ -519,7 +523,7 @@ function smooth(data, alpha)
 		}
 
 // 		var elevations = results;
-		var elevations = smooth(results, 0.7);
+		var elevations = smooth(results, 0.5);
 
 // 		var elevationPath = [];
 //         for (var i = 0; i < results.length; i++)

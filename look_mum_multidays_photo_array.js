@@ -224,7 +224,7 @@
               '<a href = "https://goo.gl/maps/r92pVHrMKL5nHFpp6" target="_blank">Piazza Vittorio Veneto - Torino (TO)</a>',
               '<a href = "https://goo.gl/maps/VrKyV7SjYfyHHpAZ6" target="_blank">Stazione di Torino Porta Nuova - Torino (TO)</a>',
               '<a href = "https://goo.gl/maps/VrKyV7SjYfyHHpAZ6" target="_blank">Stazione di Torino Porta Nuova - Torino (TO)</a>',
- ];
+    ];
 
 
     index += 1; // UNA COSA DIVERTENTE CHE NON FARO' MAI PIU'
@@ -255,5 +255,73 @@
                   '<a href = "https://goo.gl/maps/vTyMWemsork4fJgx9" target="_blank">Piazza del Popolo - Montecatini Terme (PT)</a>',
                   '<a href = "https://goo.gl/maps/ySxQGAdEQC78EMyJ9" target="_blank">Via per Camaiore - San Martino In Freddana (LU)</a>',
                   '<a href = "https://goo.gl/maps/i8jyUifQ7HbcdXxP8" target="_blank">Viareggio (LU)</a>'
-  ];
+    ];
 
+
+    index += 1; // BOLZANO - VENEZIA
+    image_array[index] = ['https://cutt.ly/NLXqdzU', 'https://cutt.ly/ZLXqG66', 'https://cutt.ly/zLXerrW', 'https://cutt.ly/pLXpenb', 'https://cutt.ly/7LXawUc', 'https://cutt.ly/sLXamiH', 'https://cutt.ly/eLXa7TB',
+        'https://cutt.ly/DLXszof', 'https://cutt.ly/eLXsYUI', 'https://cutt.ly/ELXs9V2', 'https://cutt.ly/YLXdhG2', 'https://cutt.ly/tLXjdFO', 'https://cutt.ly/0LXErRy', 'https://cutt.ly/kLXEFrB', 'https://cutt.ly/yLXRuy9',
+        'https://cutt.ly/TLXRH8L', 'https://cutt.ly/FLXTy0C', 'https://cutt.ly/oLByA6u', 'https://cutt.ly/9LBy7QT', 'https://cutt.ly/aLBup7Z', 'https://cutt.ly/ULBuAaa', 'https://cutt.ly/kLBuc8g', 'https://cutt.ly/6LBuNr1',
+        'https://cutt.ly/HLBpMIE', 'https://cutt.ly/OLBp5YD', 'https://cutt.ly/5LBalQ0', 'https://cutt.ly/ZLBf9kp', 'https://cutt.ly/nLBghmf', 'https://cutt.ly/BLBgKaj', 'https://cutt.ly/jLBhqZb', 'https://cutt.ly/ULBhj63',
+        'https://cutt.ly/hLBhvOP', 'https://cutt.ly/TLBhKtf', 'https://cutt.ly/ILBl82Q', 'https://cutt.ly/RLBx4Md', 'https://cutt.ly/6LBbrIK', 'https://cutt.ly/nLBbPrz', 'https://cutt.ly/1LBb8t9', 'https://cutt.ly/JLBn0V6',
+        'https://cutt.ly/lLBm8wy', 'https://cutt.ly/BLBQnwK', 'https://cutt.ly/qLBWoLD', 'https://cutt.ly/XLBR3gi', 'https://cutt.ly/dLBTzjy', 'https://cutt.ly/ZLBYMCk', 'https://cutt.ly/uLBUIDY', 'https://cutt.ly/JLBU4bI',
+        'https://cutt.ly/aLBIJh9', 'https://cutt.ly/GLBPdWe', 'https://cutt.ly/MLBPxLy', 'https://cutt.ly/KLBPE5p', 'https://www.youtube.com/embed/32yMTWyM2b0',
+        'https://cutt.ly/LLBSHdk', 'https://cutt.ly/NLBD3QJ', 'https://cutt.ly/fLBFE0G', 'https://cutt.ly/5LNqobK'
+    ];
+    image_caption[index] =['<a href = "https://goo.gl/maps/V2RqnwTRHGcFjp9x9" target="_blank">Piazza Walther (BZ)</a>',
+        '<a href = "https://goo.gl/maps/YffentM5GjVyUcPn8" target="_blank">Camping Steiner (BZ)</a>',
+        '<a href = "https://goo.gl/maps/WNv682K9uUS8XbYk6" target="_blank">Ciclabile della Valle d`Isarco - Cornedo all`Isarco (BZ)</a>',
+        '<a href = "https://goo.gl/maps/oKUeZwuof3W9wz1s8" target="_blank">Ciclabile della Valle d`Isarco - Cornedo all`Isarco (BZ)</a>',
+        '<a href = "https://goo.gl/maps/yWRj2VZMA2ZpLWqd6" target="_blank">Bressanone (BZ)</a>',
+        '<a href = "https://goo.gl/maps/7Cap432j35sxkg6q9" target="_blank">Bressanone (BZ)</a>',
+        '<a href = "https://goo.gl/maps/vG3pjbeLuHzkwNxQA" target="_blank">Bressanone (BZ)</a>',
+        '<a href = "https://goo.gl/maps/i4Y9EeyvA1tnRguS6" target="_blank">Bressanone (BZ)</a>',
+        '<a href = "https://goo.gl/maps/7on9tU1CwHhyQM679" target="_blank">Bressanone (BZ)</a>',
+        '<a href = "https://goo.gl/maps/t42uMLTypy5D5icg7" target="_blank">Bressanone (BZ)</a>',
+        '<a href = "https://goo.gl/maps/gMiMi9UCm6Pucq8GA" target="_blank">Ciclabile della Val Pusteria - Rio di Pusteria (BZ)</a>',
+        '<a href = "https://goo.gl/maps/3VMh7w69zHx5qPen8" target="_blank">Ciclabile della Val Pusteria - Chiusa di Rio Pusteria (BZ)</a>',
+        '<a href = "https://goo.gl/maps/GFfHv1uJiWagEJe27" target="_blank">Ciclabile della Val Pusteria - Casteldarne (BZ)</a>',
+        '<a href = "https://goo.gl/maps/YsUmSwYnPjm3RV4F6" target="_blank">Ciclabile della Val Pusteria - Brunico (BZ)</a>',
+        '<a href = "https://goo.gl/maps/qVhNnbzSEnbsgCrP7" target="_blank">Ciclabile della Val Pusteria - Monguelfo (BZ)</a>',
+        '<a href = "https://goo.gl/maps/kAJxNkVfzwuR8wfq7" target="_blank">Ciclabile della Val Pusteria - Braies (BZ)</a>',
+        '<a href = "https://goo.gl/maps/amuszYTGNZt6RHKo7" target="_blank">Ciclabile della Val Pusteria - Villabassa (BZ)</a>',
+        '<a href = "https://goo.gl/maps/AjyxRdauJUFuT2Dp7" target="_blank">Ciclabile della Val Pusteria - Villabassa (BZ)</a>',
+        '<a href = "https://goo.gl/maps/mQj3qDckBQ6AeDSs7" target="_blank">Ciclabile della Val Pusteria - Villabassa (BZ)</a>',
+        '<a href = "https://goo.gl/maps/rwz7rY5H79VSywe18" target="_blank">Ciclabile della Val Pusteria - Villabassa (BZ)</a>',
+        '<a href = "https://goo.gl/maps/vGS24LHHffiCB2f76" target="_blank">Lago di Dobbiaco (BZ)</a>',
+        '<a href = "https://goo.gl/maps/c3yxQLtGMMg4ssUV7" target="_blank">Lago di Dobbiaco (BZ)</a>',
+        '<a href = "https://goo.gl/maps/gGU632VeSY7DNtyz9" target="_blank">Camping Tobblacher See - Dobbiaco (BZ)</a>',
+        '<a href = "https://goo.gl/maps/imrVYCwX2MRb8yyXA" target="_blank">San Candido (BZ)</a>',
+        '<a href = "https://goo.gl/maps/HrezpaoCeiMYQW8w7" target="_blank">San Candido (BZ)</a>',
+        '<a href = "https://goo.gl/maps/YyWofvATjJbJL3Rs7" target="_blank">Frontiera Italia- Austria - San Candido (BZ)</a>',
+        '<a href = "https://goo.gl/maps/1mZcHafaBSKNZgww8" target="_blank">Fabbrica della Loacker, lungo la Ciclabile dellla Drava - Rabland - Austria</a>',
+        '<a href = "https://goo.gl/maps/6efHjAfnF9qXDbuY8" target="_blank">Ciclabile dellla Drava - Strassen - Austria</a>',
+        '<a href = "https://goo.gl/maps/ht2djLm7CFgzDEow7" target="_blank">Ciclabile dellla Drava - Strassen - Austria</a>',
+        '<a href = "https://goo.gl/maps/kZy6Y42PcHUzpk2dA" target="_blank">Ciclabile dellla Drava - Herol - Austria</a>',
+        '<a href = "https://goo.gl/maps/kZy6Y42PcHUzpk2dA" target="_blank">Ciclabile dellla Drava - Herol - Austria</a>',
+        '<a href = "https://goo.gl/maps/ZiahkBgZrvG2APaj9" target="_blank">Ciclabile dellla Drava - Lienz - Austria</a>',
+        '<a href = "https://goo.gl/maps/XWuJRDZeJfMy3SkZ9" target="_blank">Ciclabile dellla Drava - Nörsach - Austria</a>',
+        '<a href = "https://goo.gl/maps/C4kkw1LfcUUYEXag8" target="_blank">Ciclabile dellla Drava - Feffernitz, Austria</a>',
+        '<a href = "https://goo.gl/maps/kNSdJ7REfrpgjJF79" target="_blank">Ciclabile dellla Drava - Stadelbach - Austria</a>',
+        '<a href = "https://goo.gl/maps/6o3MzCsE2csNFEBZA" target="_blank">Hohenthurn - Austria</a>',
+        '<a href = "https://goo.gl/maps/nYruRC66GkKUrur96" target="_blank">Frontiera Austria - Italia - Coccau Valico - Ente di decentramento regionale di Udine</a>',
+        '<a href = "https://goo.gl/maps/nCMDBJQihTxwNqLS9" target="_blank">Frontiera Austria - Italia - Coccau Valico - Ente di decentramento regionale di Udine</a>',
+        '<a href = "https://goo.gl/maps/uG2bdrhSCEq1siAH8" target="_blank">Ciclovia Alpe Adria - Malborghetto Valbruna - Ente di decentramento regionale di Udine</a>',
+        '<a href = "https://goo.gl/maps/iZqWqKnzft2QthU38" target="_blank">Ciclovia Alpe Adria - Dogna - Ente di decentramento regionale di Udine</a>',
+        '<a href = "https://goo.gl/maps/3Y5v1SoaoQr4bUXKA" target="_blank">Ciclovia Alpe Adria - Pontebba - Ente di decentramento regionale di Udine</a>',
+        '<a href = "https://goo.gl/maps/p2TwMoGWXCz6TRNh7" target="_blank">Via Mercatovecchio - Udine</a>',
+        '<a href = "https://goo.gl/maps/YbD6xBXNQ4G2oUtw5" target="_blank">Via Mercatovecchio - Udine</a>',
+        '<a href = "https://goo.gl/maps/czBXrm9GDt3YeYXn8" target="_blank">Piazza della Libertà - Udine</a>',
+        '<a href = "https://goo.gl/maps/xfKbR9615MKvhkZu5" target="_blank">Ciclovia Alpe Adria - Palmanova - Ente di decentramento regionale di Udine</a>',
+        '<a href = "https://goo.gl/maps/rvPDZHUvyEHBMXFy9" target="_blank">Ciclovia Alpe Adria - Bagnaria Arsa - Ente di decentramento regionale di Udine</a>',
+        '<a href = "https://goo.gl/maps/DgY6BwWy4A7kDSYc8" target="_blank">Ciclovia Alpe Adria - Grado - Gorizia</a>',
+        '<a href = "https://g.page/camping-isola-del-paradiso?share" target="_blank">Campeggio Isola del Paradiso - Isola Volpera - Grado - Ente di decentramento regionale di Gorizia</a>',
+        '<a href = "https://g.page/camping-isola-del-paradiso?share" target="_blank">Campeggio Isola del Paradiso - Isola Volpera - Grado - Ente di decentramento regionale di Gorizia</a>',
+        '<a href = "https://g.page/camping-isola-del-paradiso?share" target="_blank">Campeggio Isola del Paradiso - Isola Volpera - Grado - Ente di decentramento regionale di Gorizia</a>',
+        '<a href = "https://g.page/camping-isola-del-paradiso?share" target="_blank">Campeggio Isola del Paradiso - Isola Volpera - Grado - Ente di decentramento regionale di Gorizia</a>',
+        '<a href = "https://goo.gl/maps/DgY6BwWy4A7kDSYc8" target="_blank">Ciclovia Alpe Adria - Grado - Gorizia</a>',
+        '<a href = "https://goo.gl/maps/nQWFSjYEAz9grCkx7" target="_blank">Portogruaro - Venezia</a>',
+        '<a href = "https://goo.gl/maps/2Ti66MzNSQwtKDWu9" target="_blank">San Donà di Piave - Venezia</a>',
+        '<a href = "https://goo.gl/maps/fyA52woGdwEDvV5r6" target="_blank">Musile di Piave - Venezia</a>',
+        '<a href = "https://goo.gl/maps/vvfvUnhbtYGxBDkg7" target="_blank">Stazione di Venezia Mestre - Venezia</a>',
+    ];

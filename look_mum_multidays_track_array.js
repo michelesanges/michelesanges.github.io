@@ -348,3 +348,24 @@
 				'04-05 GIUGNO 2022<br>UNA COSA DIVERTENTE CHE NON FARÒ MAI PIÙ (MA POSSO RIPENSARCI)',
 				'05/06/2022 - Bologna (BO) - Castelnuovo Magra (SP)',
 				"rgb(244, 180, 0)", true, null, null];
+
+
+    index += 1;
+    track_description[index] = ""
+    track_filename[index] = new Array();
+	track_filename[index][0] = ['./dataset/tracks/2022-07-10 - bolzano - venezia.geojson',
+				'10-13 LUGLIO 2022<br>BOLZANO - VENEZIA',
+				'10/07/2022 - Bolzano (BZ) - Dobbiaco (BZ)',
+				"rgb(2, 136, 209)", true, null, null];
+	track_filename[index][1] = ['./dataset/tracks/2022-07-11 - bolzano - venezia.geojson',
+				'10-13 LUGLIO 2022<br>BOLZANO - VENEZIA',
+				'11/07/2022 - Dobbiaco (BZ) - Villach (CARINZIA)',
+				"rgb(244, 180, 0)", true, null, null];
+	track_filename[index][2] = ['./dataset/tracks/2022-07-12 - bolzano - venezia.geojson',
+				'10-13 LUGLIO 2022<br>BOLZANO - VENEZIA',
+				'12/07/2022 - Villach (CARINZIA) - Grado (GO)',
+				"rgb(166, 27, 74)", true, null, null];
+	track_filename[index][3] = ['./dataset/tracks/2022-07-13 - bolzano - venezia.geojson',
+				'10-13 LUGLIO 2022<br>BOLZANO - VENEZIA',
+				'13/07/2022 - Grado (GO) - Venezia (VE)',
+				"rgb(205, 220, 57)", true, null, null];
