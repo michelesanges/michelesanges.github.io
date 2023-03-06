@@ -83,3 +83,16 @@
  	image_array[index] = ['https://cutt.ly/wNAFRmM', 'https://cutt.ly/RNAFNO8', 'https://cutt.ly/zNAGg4v', 'https://cutt.ly/lNAGSI0', 'https://cutt.ly/lNAG0OP', 'https://cutt.ly/mNAHoof', 'https://cutt.ly/iNAHWHa', 'https://cutt.ly/4NAHOQN', 'https://cutt.ly/bNAHLl1', 'https://cutt.ly/SNAH2t5', 'https://cutt.ly/uNAJqqi'];
     image_caption[index] =['Piazza Bad Kissingen - Marina di Massa', 'Viale dei Tigli - Viareggio', 'Piazza dei Miracoli - Pisa', 'Indicazioni per Fucecchio', 'Lungo la ciclopista dell`Arno', 'Ponte Vecchio - Firenze', 'Ponte Vecchio - Firenze', 'Ponte Vecchio - Firenze', 'Ponte Vecchio - Firenze', 'Montecatini Terme', 'Lucca'];
 
+    index += 1; // 04 MARZO 2023 - PONTE DEL DIAVOLO - BORGO A MOZZANO
+    image_array[index] = ['https://cutt.ly/28PpTAX', 'https://cutt.ly/P8PpLkc', 'https://cutt.ly/f8PTyL7', 'https://cutt.ly/m8PHfbt', 'https://cutt.ly/K8PHE4L', 'https://cutt.ly/b8PJtv6',
+    'https://cutt.ly/u8PJ1Iz', 'https://www.youtube.com/embed/jFco2Gpwr0U'];
+    image_caption[index] =[
+     '<a href = "https://www.google.com/maps?q=loc:44.147083026093696, 10.024737733940285" target="_blank" rel="noopener noreferrer">Fosdinovo</a>',
+     '<a href = "https://www.google.com/maps?q=loc:44.19151200545809, 10.053493942288885" target="_blank" rel="noopener noreferrer">Ceserano</a>',
+     '<a href = "https://www.google.com/maps?q=loc:44.192099, 10.2262583" target="_blank" rel="noopener noreferrer">Sermezzana (LU)</a>',
+     '<a href = "https://www.google.com/maps?q=loc:44.200319905617164, 10.23167179318026" target="_blank" rel="noopener noreferrer">Passo dei Carpinelli - Minucciano (LU)</a>',
+     '<a href = "https://www.google.com/maps?q=loc:44.186646046494076, 10.29298655391009" target="_blank" rel="noopener noreferrer">Piazza al Serchio (LU)</a>',
+     '<a href = "https://www.google.com/maps?q=loc:43.98579338938619, 10.551717398084278" target="_blank" rel="noopener noreferrer">Ponte del Diavolo - Borgo a Mozzano (LU)</a>',
+     '<a href = "https://www.google.com/maps?q=loc:43.98532443787785, 10.552531410352657" target="_blank" rel="noopener noreferrer">Ponte del Diavolo - Borgo a Mozzano (LU)</a>',
+     'Clip'
+];

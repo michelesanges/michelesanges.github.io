@@ -118,3 +118,12 @@ L'effetto sul corpo è di avere raggiunto una condizione limite di estrema stanc
 				'31 OTTOBRE 2022<br>QUELLA VOLTA CHE MISI A DURA PROVA I MIEI CINQUANTADUE ANNI',
 				'31-10-2022 - Quella volta che misi a dura prova i miei cinquantadue anni',
 				"rgb(166, 27, 74)", true, null, null];
+
+
+    index += 1;
+    track_description[index] = "... Allora il diavolo disse al capomastro che avrebbe completato lui stesso l'opera in una sola notte in cambio della prima anima che avesse attraversato il ponte... <a href = 'https://it.wikipedia.org/wiki/Ponte_della_Maddalena_(Borgo_a_Mozzano)' target='_blank' rel='noopener noreferrer'>Wikipedia</a>"
+    track_filename[index] = new Array();
+	track_filename[index][0] = ['./dataset/tracks/2023-03-04 - ponte del diavolo.geojson',
+				'04 MARZO 2023<br>PONTE DEL DIAVOLO - BORGO A MOZZANO',
+				'04-03-2023 - Ponte del Diavolo - Borgo a Mozzano',
+				"rgb(166, 27, 74)", true, null, null];
