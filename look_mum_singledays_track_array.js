@@ -1,6 +1,7 @@
 	// elenco tracce
 	var track_filename = new Array();
     var track_description = new Array();
+// 	var track_download_path = new Array();
  	var index = 0;
 	
 	// file name, nome traccia, colore traccia, flag traccia visibile, marker start, marker stop	
@@ -85,8 +86,7 @@
 
 
     index += 1;
-    track_description[index] = "<B>\
-Ore 5:45. Buio. Da lì a poco, i colori dell'alba. Un noiosissimo rettilineo fino a Viareggio. Viale dei Tigli chiuso al traffico automobilistico. Lo sterrato della riserva della Lecciona. Pisa. \
+    track_description[index] = "Ore 5:45. Buio. Da lì a poco, i colori dell'alba. Un noiosissimo rettilineo fino a Viareggio. Viale dei Tigli chiuso al traffico automobilistico. Lo sterrato della riserva della Lecciona. Pisa. \
 <p>\
 Analisi di algoritmi di stima del Doppler-Shift e del Doppler-Rate nelle comunicazioni numeriche, recita la tesi.<br>\
 Venticinque anni fa uscivo da Pisa pieno di speranze. Oggi trascorro le mie giornate rinchiuso tra mura sormontate da filo spinato.\
@@ -111,8 +111,7 @@ Arrivo in cima alla salita, non so bene come. Una lunga discesa ed eccomi a Viar
 Davanti a me, di nuovo quel noiosissimo rettilineo. Fuori da tutti i locali della Versilia, gruppi di giovani mascherati in attesa di festeggiare Halloween.\
 <p>\
 Ore 02:15. Apro il cancello di casa e appoggio la bicicletta. Entro in bagno, mi spoglio dei vestiti buttandoli per terra, mi siedo sfinito sul piatto doccia e mi faccio scorrere l'acqua bollente addosso. Rifletto così sulle ultime venti ore. <br>\
-L'effetto sul corpo è di avere raggiunto una condizione limite di estrema stanchezza. L'effetto sulla mente è di esaltazione totale, quasi come avere partecipato ad un rave party con più di cinquanta persone.\
-    </B>"
+L'effetto sul corpo è di avere raggiunto una condizione limite di estrema stanchezza. L'effetto sulla mente è di esaltazione totale, quasi come avere partecipato ad un rave party con più di cinquanta persone."
     track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2022-10-31 - quella volta che misi a dura prova i miei cinquantadue anni.geojson',
 				'31 OTTOBRE 2022<br>QUELLA VOLTA CHE MISI A DURA PROVA I MIEI CINQUANTADUE ANNI',
@@ -126,4 +125,6 @@ L'effetto sul corpo è di avere raggiunto una condizione limite di estrema stanc
 	track_filename[index][0] = ['./dataset/tracks/2023-03-04 - ponte del diavolo.geojson',
 				'04 MARZO 2023<br>PONTE DEL DIAVOLO - BORGO A MOZZANO',
 				'04-03-2023 - Ponte del Diavolo - Borgo a Mozzano',
-				"rgb(166, 27, 74)", true, null, null];
+				"rgb(166, 27, 74)", true, null, null, "https://drive.google.com/file/d/1nW35gIfV0m7ICsvrsl9qp7hEaedKmG-M/view?usp=share_link"];
+
+

@@ -136,9 +136,10 @@ subtitle: <div id="track_filename"> </div>
   	<p margin-bottom: 3cm>
 	<div id="elevation_chart_div" style="width:100%;"></div>
 <p margin-bottom: 3cm>
-<!-- <div id="track_description" style="font-family='Arial,sans-serif';font-size:22px; text-align:left"></div> -->
+<!-- <div id="track_description" style="font-family='Arial,sans-serif';font-size:24px; color:rgb(135,0,0); text-align:left"></div> -->
+<div id="track_download_path" style="text-align:left; color:#cf8a0c;"></div>
 <div id="track_description" style="text-align:left"></div>
- 
+
     <p margin-bottom: 3cm>
 	<div id="imageHolder"></div>
 
@@ -240,6 +241,24 @@ subtitle: <div id="track_filename"> </div>
 			{
                 document.getElementById("track_description").innerHTML= track_description[map_index];
             }
+
+            // download della traccia
+			for (var track_num = 0; track_num < track_filename[map_index].length; track_num++)
+			{
+				if (track_filename[map_index][track_num][7] != null)
+				{
+					if (document.getElementById("track_download_path").innerHTML =="")
+					{
+						document.getElementById("track_download_path").innerHTML = "SCARICA LA TRACCIA:<br>";
+					}
+					document.getElementById("track_download_path").innerHTML += "<a href='" + track_filename[map_index][track_num][7] + "'>* " + track_filename[map_index][track_num][2] + "</a><br>";
+				}
+
+				if(track_num == track_filename[map_index].length - 1)
+				{
+					document.getElementById("track_download_path").innerHTML += "<p>";
+				}
+			}
 
 // 			// reset the visibility flag
 // 			for (var track_num = 0; track_num < track_filename[map_index].length; track_num++)

@@ -5,13 +5,13 @@
 body {
 /*    font-family: 'Lora', 'Times New Roman', serif;  */
 /*   font-family: Courier; */
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-   font-size: 18px; 
+  font-family: Helvetica, 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   font-size: 20px; 
   font-weight: 200;
 /*    color: #404040;  */
-   color: #606060; 
+   color: #000; 
 /*   position: relative; */
-   background: #FFF; 
+   background: #FFF;
 }
 p {
   line-height: 1.5;
@@ -114,7 +114,8 @@ img {
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
   font-weight: 600;
-  color: #d0b69f;
+ /* color: #d0b69f;*/
+	color: #cf8a0c;
 /*   color: #404040; */
 }
 
