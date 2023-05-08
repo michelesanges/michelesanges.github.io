@@ -325,3 +325,29 @@
         '<a href = "https://goo.gl/maps/fyA52woGdwEDvV5r6" target="_blank">Musile di Piave - Venezia</a>',
         '<a href = "https://goo.gl/maps/vvfvUnhbtYGxBDkg7" target="_blank">Stazione di Venezia Mestre - Venezia</a>',
     ];
+
+
+    index += 1; // POPULONIA - SIENA
+    image_array[index] = ['https://cutt.ly/P6uhjPE', 'https://cutt.ly/E6uh67p', 'https://cutt.ly/H6ujGeh', 'https://cutt.ly/k6ukgY4',
+        'https://cutt.ly/M6ulp0R', 'https://cutt.ly/U6ulGfO', 'https://cutt.ly/U6uz57F', 'https://cutt.ly/p6ux3wJ', 'https://cutt.ly/L6ucIAw',
+        'https://cutt.ly/Q6ubyOX', 'https://cutt.ly/W6ubUKh', 'https://cutt.ly/S6uM0jq', 'https://cutt.ly/M6u1PAw', 'https://cutt.ly/I6u0k5e',
+        'https://cutt.ly/R6u0LMz', 'https://cutt.ly/G6u24yO', 'https://cutt.ly/A6u90PY'
+                         ];
+    image_caption[index] =['<a href = "https://goo.gl/maps/LPntHfpuhX5G3Pn59" target="_blank">Terrazza Mascagni - (LI)</a>',
+        '<a href = "https://goo.gl/maps/dAhgw65ZF6er3LWK6" target="_blank">Cecina - (LI)</a>',
+        '<a href = "https://goo.gl/maps/RvY7g1KK2SDFVoeo9" target="_blank">San Vincenzo - (LI)</a>',
+        '<a href = "https://goo.gl/maps/CD6gp5SePbZjkJUEA" target="_blank">Strada Provinciale della Principessa, San Vincenzo - (LI)</a>',
+        '<a href = "https://goo.gl/maps/66RbpoBHo4k1vFym9" target="_blank">Populonia - (LI)</a>',
+        '<a href = "https://goo.gl/maps/nk32bQGrk9hp4UVg7" target="_blank">Populonia - (LI)</a>',
+        '<a href = "https://goo.gl/maps/wNmKctc8WFK5TxHZ9" target="_blank">Populonia - (LI)</a>',
+        '<a href = "https://goo.gl/maps/Jnw4ze8KisghCCPq7" target="_blank">Piazza Curzo Desideri - Populonia - (LI)</a>',
+        '<a href = "https://goo.gl/maps/RuEZt6gSui1jBNNf6" target="_blank">Chiesa di Santa Croce - Populonia - (LI)</a>',
+        '<a href = "https://goo.gl/maps/LmHTZnQQuDC2RURBA" target="_blank">Piazza Curzo Desideri - Populonia - (LI)</a>',
+        '<a href = "https://goo.gl/maps/vHEB6SM3fpw6EvyC6" target="_blank">Ristorante la Taverna di Populonia - Populonia - (LI)</a>',
+        '<a href = "https://goo.gl/maps/cnpnJFd6jmwLzRVXA" target="_blank">Tramonto sull`Isola d`Elba - Populonia - (LI)</a>',
+        '<a href = "https://goo.gl/maps/nBT9nFcwB9T43SQu8" target="_blank">Abbazia di San Galgano - Chiusdino - (SI)</a>',
+        '<a href = "https://goo.gl/maps/nnCiTKVsH4BL33bb7" target="_blank">Abbazia di San Galgano - Chiusdino - (SI)</a>',
+        '<a href = "https://goo.gl/maps/yyv9goqS8Y8YxmZc9" target="_blank">Abbazia di San Galgano - Chiusdino - (SI)</a>',
+        '<a href = "https://goo.gl/maps/5x4sKNULdLpdbPL79" target="_blank">Piazza del Campo - Siena (SI)</a>',
+        'Rientro a casa in treno'
+    ];

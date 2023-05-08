@@ -369,3 +369,20 @@
 				'10-13 LUGLIO 2022<br>BOLZANO - VENEZIA',
 				'13/07/2022 - Grado (GO) - Venezia (VE)',
 				"rgb(205, 220, 57)", true, null, null];
+
+
+    index += 1;
+    track_description[index] = "Lungo la costa che fu abitata dagli etruschi, tra terrazze con pavimenti a scacchiera, passando per chiese sconsacrate prive del tetto in cui giovani americani convolano a nozze, fino alla piazza in cui si confrontano diciassette storiche contrade."
+    track_filename[index] = new Array();
+	track_filename[index][0] = ['./dataset/tracks/2023-05-05 - populonia - siena.geojson',
+				'05-06 MAGGIO 2023<br>COSTA DEGLI ETRUSCHI - SIENA',
+				'05/05/2023 - Castelnuovo Magra (SP) - Populonia (LI)',
+				"rgb(2, 136, 209)", true, null, null];
+	track_filename[index][1] = ['./dataset/tracks/2023-05-06 - populonia - siena.geojson',
+				'05-06 MAGGIO 2023<br>COSTA DEGLI ETRUSCHI - SIENA',
+				'06/05/2023 - Populonia (LI) - Siena (SI)',
+				"rgb(244, 180, 0)", true, null, null];
+
+
+
+
