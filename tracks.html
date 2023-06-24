@@ -243,22 +243,27 @@ subtitle: <div id="track_filename"> </div>
             }
 
             // download della traccia
-			for (var track_num = 0; track_num < track_filename[map_index].length; track_num++)
-			{
-				if (track_filename[map_index][track_num][7] != null)
-				{
-					if (document.getElementById("track_download_path").innerHTML =="")
-					{
-						document.getElementById("track_download_path").innerHTML = "SCARICA LA TRACCIA:<br>";
-					}
-					document.getElementById("track_download_path").innerHTML += "<a href='" + track_filename[map_index][track_num][7] + "'>* " + track_filename[map_index][track_num][2] + "</a><br>";
-				}
+            if (track_file_gpx[map_index] != null)
+            {
+				document.getElementById("track_download_path").innerHTML += "<a href='" + track_file_gpx[map_index] + "'>" + "SCARICA LA TRACCIA GPS" + "</a><p>";
+            }
 
-				if(track_num == track_filename[map_index].length - 1)
-				{
-					document.getElementById("track_download_path").innerHTML += "<p>";
-				}
-			}
+// 			for (var track_num = 0; track_num < track_filename[map_index].length; track_num++)
+// 			{
+// 				if (track_filename[map_index][track_num][7] != null)
+// 				{
+// 					if (document.getElementById("track_download_path").innerHTML =="")
+// 					{
+// 						document.getElementById("track_download_path").innerHTML = "SCARICA LA TRACCIA:<br>";
+// 					}
+// 					document.getElementById("track_download_path").innerHTML += "<a href='" + track_filename[map_index][track_num][7] + "'>* " + track_filename[map_index][track_num][2] + "</a><br>";
+// 				}
+//
+// 				if(track_num == track_filename[map_index].length - 1)
+// 				{
+// 					document.getElementById("track_download_path").innerHTML += "<p>";
+// 				}
+// 			}
 
 // 			// reset the visibility flag
 // 			for (var track_num = 0; track_num < track_filename[map_index].length; track_num++)
@@ -703,7 +708,18 @@ function smooth(data, alpha)
                         html_cmd += "<p class='aligncenter'>"
                         if (image_array[map_index][n].includes("youtu"))
                         {
-                            html_cmd += "<object align=middle width='1280' height='720' data='" + image_array[map_index][n] + "'></object><p>";
+							pos = image_array[map_index][n].lastIndexOf('/');
+							videoname = image_array[map_index][n].substring(pos+1);
+
+							if (image_array[map_index][n].includes("shorts"))
+							{
+ 								html_cmd += "<object align=middle width='720' height='1280' data='" + 'https://www.youtube.com/embed/' + videoname + "'></object><p>";
+							}
+							else
+							{
+								html_cmd += "<object align=middle width='1280' height='720' data='" + image_array[map_index][n] + "'></object><p>";
+							}
+
                             if (image_caption[map_index][n])
                             {
                                 html_cmd += "<figcaption>" + image_caption[map_index][n] + "</figcaption>";
@@ -738,7 +754,6 @@ function smooth(data, alpha)
 	</script>
 <!-- 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwR5MtCCmXualVOiq27XnxxosJhitng-k&callback=init_map&libraries=geometry"></script> -->
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwR5MtCCmXualVOiq27XnxxosJhitng-k&libraries=geometry"></script>
-
 	<!--
 	To use this code on your website, get a free API key from Google.
 	Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp

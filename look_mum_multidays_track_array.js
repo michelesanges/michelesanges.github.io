@@ -1,10 +1,12 @@
 	// elenco tracce
 	var track_filename = new Array();
     var track_description = new Array();
+	var track_file_gpx = new Array();
  	var index = 0;
 	
 	// file name, nome traccia, colore traccia, flag traccia visibile, marker start, marker stop	
-    track_description[index] = ""
+    track_description[index] = "";
+    track_file_gpx[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2013-09-05 - tour_eroica.geojson',
 				'05-08 SETTEMBRE 2013<br>SULLE STRADE BIANCHE DELL\'EROICA',
@@ -25,7 +27,8 @@
 
                 
     index += 1;
-    track_description[index] = ""
+    track_description[index] = "";
+    track_file_gpx[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2015-05-30 - tour_isola_delba.geojson',
 				'30 MAGGIO - 02 GIUGNO 2015<br>TOUR DELL\'ISOLA D\'ELBA',
@@ -46,7 +49,8 @@
 
 
     index += 1;
-    track_description[index] = ""
+    track_description[index] = "";
+    track_file_gpx[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2015-09-16 - tour_umbria.geojson',
 				'16-20  SETTEMBRE 2015<br>TOUR DELL\'UMBRIA',
@@ -71,7 +75,8 @@
 
                 
     index += 1;
-    track_description[index] = ""
+    track_description[index] = "";
+    track_file_gpx[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2016-05-21 - bologna-casalborsetti.geojson',
 				'21-22 MAGGIO 2016<br>BOLOGNA - CASALBORSETTI UNDER THE MOONLIGHT',
@@ -84,7 +89,8 @@
 
 
     index += 1;
-    track_description[index] = ""
+    track_description[index] = "";
+    track_file_gpx[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2016-06-02 - la via del polleggio.geojson',
 				'02-05 GIUGNO 2016<br>LA VIA DEL POLLEGGIO',
@@ -105,7 +111,8 @@
 
  
     index += 1;
-    track_description[index] = ""
+    track_description[index] = "";
+    track_file_gpx[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2017-06-02 - passo resia - merano - ricostruita.geojson',
 				'02-04 GIUGNO 2017<br>SULLE TRACCE DELLA VIA CLAUDIA AUGUSTA',
@@ -122,7 +129,8 @@
 
 
     index += 1;
-    track_description[index] = ""
+    track_description[index] = "";
+    track_file_gpx[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2017-08-07 - castelnuovo magra - fosdinovo - fivizzano -passo del cerreto - collagna.geojson',
 				'07-08 AGOSTO 2017<br>DUE GIORNI SU E GIÙ PER L\'APPENNINO TOSCO EMILIANO',
@@ -135,7 +143,8 @@
 
 
     index += 1;
-    track_description[index] = ""
+    track_description[index] = "";
+    track_file_gpx[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2018-08-06 - castelnuovo magra-passo-del-vestito-castenuovo-garfagnana.geojson',
 				'06-07 AGOSTO 2018<br>GIRO DEI QUATTRO LAGHI',
@@ -148,7 +157,8 @@
 
 
     index += 1;
-    track_description[index] = ""
+    track_description[index] = "";
+    track_file_gpx[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2018-09-29 - san-salvatore-monferrato-cella-monte - ricostruita.geojson',
 				'29 - 30 SETTEMBRE 2018<br>LA MONSTERRATO - STRADE BIANCHE DEL MONFERRATO',
@@ -161,7 +171,8 @@
 
 
     index += 1;
-    track_description[index] = ""
+    track_description[index] = "";
+    track_file_gpx[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2019-04-20 - pasqua con chi vuoi - sentiero della bonifica e ciclabile del lago trasimeno.geojson',
 				'20 - 21 APRILE 2019<br>PASQUA CON CHI VUOI - SENTIERO DELLA BONIFICA E CICLABILE DEL LAGO TRASIMENO',
@@ -174,7 +185,8 @@
 
 
     index += 1;
-    track_description[index] = ""
+    track_description[index] = "";
+    track_file_gpx[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2019-06-27 - tour del casentino - camaldoli.geojson',
 				'27 - 30 GIUGNO 2019<br>TOUR DEL CASENTINO',
@@ -195,7 +207,8 @@
                 
 
     index += 1;
-    track_description[index] = ""
+    track_description[index] = "";
+    track_file_gpx[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2019-09-15 - zeri - levanto.geojson',
 				'15 - 16 SETTEMBRE 2019<br>ZERI - LEVANTO',
@@ -208,7 +221,8 @@
 
 
     index += 1;
-    track_description[index] = ""
+    track_description[index] = "";
+    track_file_gpx[index] = "";
     track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2020-07-21 - quella volta che decisi di tornare a casa da bolzano in bicicletta - bolzano - rovereto.geojson',
 				'21-26 LUGLIO 2020<br>QUELLA VOLTA CHE DECISI DI TORNARE A CASA DA BOLZANO IN BICICLETTA',
@@ -238,6 +252,7 @@
 
     index += 1;
     track_description[index] = "Il paesaggio vitivinicolo del Piemonte - dice Wikipedia - è un sito patrimonio dell'umanità che comprende una serie di località situate nelle aree del Basso Piemonte: le Langhe, il Roero e il Monferrato.<br>Sono andato a controllare.";
+    track_file_gpx[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2020-09-13 - tour divino.geojson',
 				'13-16 SETTEMBRE 2020<br>TOUR diVino',
@@ -259,6 +274,7 @@
 
     index += 1;
     track_description[index] = "Tra le colline e la costa toscana: Lajatico, Bolgheri e costa degli etruschi";
+    track_file_gpx[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2021-06-03 - bolgheri e costa degli etruschi.geojson',
 				'03-04 GIUGNO 2021<br>TRA LE COLLINE E LA COSTA TOSCANA: LAJATICO, BOLGHERI E COSTA DEGLI ETRUSCHI',
@@ -272,6 +288,7 @@
                 
     index += 1;
     track_description[index] = "Bivacco al Parco dei Cento Laghi, nell'Appennino parmense, per provare la tenda.";
+    track_file_gpx[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2021-07-23 - bivacco al parco dei cento laghi.geojson',
 				'23-24 LUGLIO 2021<br>BIVACCO AL PARCO DEI CENTO LAGHI',
@@ -285,6 +302,7 @@
               
     index += 1;
     track_description[index] = "<B>Da Lecce a Perugia, seguendo prima la costa adriatica e poi il percorso dell'Italy Coast to Coast.</B>";
+    track_file_gpx[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2021-08-23 - ciclovia adriatica.geojson',
 				'23-29 AGOSTO 2021<br>VIAGGIO ALLA RICERCA DELLA CICLOVIA ADRIATICA',
@@ -318,6 +336,7 @@
 
     index += 1;
     track_description[index] = "<B>Corso Giambone, angolo Corso Unione Sovietica: è qui che ho vissuto i primi dieci anni della mia vita. Sbircio attraverso i vetri del portone del condominio in cui ho abitato. Mi piacerebbe entrare, attraversare l'androne per uscire dalla parte opposta, nel cortile interno in cui giocavo. Vorrei salire al primo piano e visitare l'appartamento. Ricordo esattamente il motivo della carta da parati di camera mia e di mia sorella. Chissà come sarà adesso. Svolto l'angolo. Percorro questo corridoio che conduce al portone del condominio in cui abitarono i miei nonni. Anche qui vorrei suonare il campanello, chiedere di entrare e affacciarmi dal balcone per osservare il viale dall'alto. Vorrei entrare nella pasticceria di mio nonno, di cui è rimasta solo l'insegna. E poi, la chiesa in cui ho fatto la prima comunione - credo pure l'ultima - e la mia scuola elementare. Sono trascorsi quarantadue anni.</B>";
+    track_file_gpx[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2022-05-18 - torino - primo giorno.geojson',
 				'18-21 MAGGIO 2022<br>VIAGGIO NEL TEMPO',
@@ -339,6 +358,7 @@
 
     index += 1;
     track_description[index] = ""
+    track_file_gpx[index] = "";
     track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2022-06-04 - parma - bologna.geojson',
 				'04-05 GIUGNO 2022<br>UNA COSA DIVERTENTE CHE NON FARÒ MAI PIÙ (MA POSSO RIPENSARCI)',
@@ -352,6 +372,7 @@
 
     index += 1;
     track_description[index] = ""
+    track_file_gpx[index] = "";
     track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2022-07-10 - bolzano - venezia.geojson',
 				'10-13 LUGLIO 2022<br>BOLZANO - VENEZIA',
@@ -373,6 +394,7 @@
 
     index += 1;
     track_description[index] = "Lungo la costa che fu abitata dagli etruschi, tra terrazze con pavimenti a scacchiera, passando per chiese sconsacrate prive del tetto in cui giovani americani convolano a nozze, fino alla piazza in cui si confrontano diciassette storiche contrade."
+    track_file_gpx[index] = "";
     track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2023-05-05 - populonia - siena.geojson',
 				'05-06 MAGGIO 2023<br>COSTA DEGLI ETRUSCHI - SIENA',
@@ -384,5 +406,32 @@
 				"rgb(244, 180, 0)", true, null, null];
 
 
+    index += 1;
+    track_description[index] = "Lunedì sera. Mi trovo a Norcia e decido di riavviare il telefono. Nella storia dell'umanità, mai sbaglio più grosso fu commesso. Il telefono non riparte e non dà segni di vita.<br>\
+	Un forte vento di tempesta si alza dalle montagne circostanti e un fragore di tuoni rimbomba nella vallata.	<p> \
+	Martedì mattina. Chiedo in prestito un telefono e, come un carcerato, effettuo l'unica chiamata a mia disposizione. Sconfortato, proseguo il viaggio secondo i piani, seguendo la terza e ultima traccia preventivamente caricata sul GPS della bicicletta. <br>\
+	Lascio Norcia e salgo lentamente verso Castelluccio. Incontro un solo altro ciclista, cicloviaggiatore, con il quale scambio due parole. Raggiunto il punto più elevato, a circa millecinquecento metri di altitudine, mi fermo. Duecento metri sotto di me, alla mia destra, si mostra in tutta la sua maestosità il Pian Grande di Castelluccio, una enorme distesa di vegetazione e fiori, dalle tonalità pastello, immersa nel parco dei Monti Sibillini. Uno spettacolo emozionante, amplificato dall'avere raggiunto questo luogo in bicicletta. <br>\
+	Mi ricordo che non potrò fare neppure una fotografia di quello che sto vedendo.<br>\
+	Un forte vento di tempesta si alza dalle montagne circostanti e un fragore di tuoni rimbomba nella vallata.	<p> \
+	La strada inizia a scendere. La percorro a velocità bassissima, con i freni tirati, continuando ad osservare il paesaggio sotto di me. Giunto all'altezza dell'altopiano, mi si presenta davanti un lungo rettilineo. A circa metà rettilineo, sulla destra, un ranch con gruppi di cavalli al pascolo. Sulla sinistra, una rappresentazione dell'Italia realizzata con soli alberi. <br>\
+	Mentre mangio un panino al chiosco, osservo sopra di me Castelluccio di Norcia o quello che ne rimane. Ancora un tratto in salita e lo raggiungo. E' un paese completamente devastato dal terremoto. La zona interna del paese, protetta da transenne, non è raggiungibile. Non riesco neppure ad immaginare cosa possano avere provato gli abitanti il giorno del terremoto. Pochi i turisti presenti nella piazzetta di accesso al paese, dove i commercianti hanno spostato le loro attività.<p> \
+	Riparto. Tutto intorno, i campi fioriti di Pian Perduto, di una bellezza che toglie il fiato. Entro nelle Marche e giungo molto velocemente a Visso, anch'esso ancora con evidenti danni del terremoto.<br>\
+Il resto della giornata sarà un saliscendi di strade che mi porteranno fino a Foligno, città dal traffico sostenuto e che mi è parsa avere solo strade a senso unico. Grazie alle preziose indicazioni dei passanti, raggiungo la stazione percorrendo tutta la città in contromano.<p> \
+Castelluccio di Norcia è probabilmente il più bel posto che io abbia raggiunto in bicicletta e certamente l'unico di cui non disponga di neppure una fotografia.<br>\
+Un forte vento di tempesta si alza dalle montagne circostanti, eccetera, eccetera."
+    track_file_gpx[index] = "https://drive.google.com/file/d/11JkdDraVfDzJ0KPEzLj8keDVa7L0Zw19/view?usp=sharing";
+    track_filename[index] = new Array();
+	track_filename[index][0] = ['./dataset/tracks/2023-06-18 - capalbio - norcia - foligno.geojson',
+				'18-20 GIUGNO 2023<br>VADO A VEDERE LA FIORITURA A CASTELLUCCIO DI NORCIA',
+				'18/06/2023 - Capalbio (GR) - Narni (TR)',
+				"rgb(2, 136, 209)", true, null, null];
+	track_filename[index][1] = ['./dataset/tracks/2023-06-19 - capalbio - norcia - foligno.geojson',
+				'18-20 GIUGNO 2023<br>VADO A VEDERE LA FIORITURA A CASTELLUCCIO DI NORCIA',
+				'19/06/2023 - Narni (TR) - Norcia (PG)',
+				"rgb(44, 180, 0)", true, null, null];
+	track_filename[index][2] = ['./dataset/tracks/2023-06-20 - capalbio - norcia - foligno.geojson',
+				'18-20 GIUGNO 2023<br>VADO A VEDERE LA FIORITURA A CASTELLUCCIO DI NORCIA',
+				'20/06/2023 - Norcia (PG) - Castelluccio di Norcia (PG) - Foligno (PG)',
+				"rgb(166, 27, 74)", true, null, null];
 
 

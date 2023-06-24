@@ -351,3 +351,12 @@
         '<a href = "https://goo.gl/maps/5x4sKNULdLpdbPL79" target="_blank">Piazza del Campo - Siena (SI)</a>',
         'Rientro a casa in treno'
     ];
+
+
+    index += 1; // VADO A VEDERE LA FIORITURA A CASTELLUCCIO DI NORCIA
+  	image_array[index] = ['https://cutt.ly/3wt6Zc5J', 'https://cutt.ly/Uwt6VqMJ', 'https://cutt.ly/Rwt6VTcb', 'https://cutt.ly/Gwt6BuQC',
+    'https://cutt.ly/Swt6BYWH', 'https://cutt.ly/mwt6NQpd', 'https://cutt.ly/bwt6N8Ot', 'https://cutt.ly/bwt6MaYQ', 'https://cutt.ly/hwt6MmSi',
+    'https://cutt.ly/fwt6MCHT', 'https://cutt.ly/cwt61nRI', 'https://cutt.ly/Pwt61J72', 'https://cutt.ly/9wt60dzp', 'https://cutt.ly/hwt60Zjl',
+    'https://cutt.ly/Owt62o7S', 'https://cutt.ly/Dwt62TFt',
+    'https://youtube.com/shorts/i05kXMA4aS0', 'https://youtube.com/shorts/NAAy98vdSm4' ];
+    image_caption[index] ="";
