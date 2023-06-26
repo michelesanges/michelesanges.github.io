@@ -372,7 +372,7 @@
 
     index += 1;
     track_description[index] = ""
-    track_file_gpx[index] = "";
+    track_file_gpx[index] = "https://drive.google.com/file/d/1K6nsCtodgvvTYe213yIdI0WlrY0gb7Af/view?usp=sharing";
     track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2022-07-10 - bolzano - venezia.geojson',
 				'10-13 LUGLIO 2022<br>BOLZANO - VENEZIA',
@@ -394,7 +394,7 @@
 
     index += 1;
     track_description[index] = "Lungo la costa che fu abitata dagli etruschi, tra terrazze con pavimenti a scacchiera, passando per chiese sconsacrate prive del tetto in cui giovani americani convolano a nozze, fino alla piazza in cui si confrontano diciassette storiche contrade."
-    track_file_gpx[index] = "";
+    track_file_gpx[index] = "https://drive.google.com/file/d/1avWkOVYdTAFxXA1gkWd2eUzhyNrgEJpp/view?usp=sharing";
     track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2023-05-05 - populonia - siena.geojson',
 				'05-06 MAGGIO 2023<br>COSTA DEGLI ETRUSCHI - SIENA',
