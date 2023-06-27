@@ -66,7 +66,7 @@
 
     index += 1;
     track_description[index] = "";
-    track_file_gpx[index] = "";
+    track_file_gpx[index] = "https://drive.google.com/file/d/1CVa3xJ2hVkSPe9hi_QSlp1jQE74nhHUV/view?usp=sharing";
     track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2022-01-07 - santanna di stazzema.geojson',
 				'07 GENNAIO 2022<br>S. ANNA DI STAZZEMA',
@@ -76,7 +76,7 @@
 
     index += 1;
     track_description[index] = "";
-    track_file_gpx[index] = "";
+    track_file_gpx[index] = "https://drive.google.com/file/d/1yDNvo2Rq4qHMCZcUcmp4fTYx4twudqQ4/view?usp=sharing";
     track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2022-01-16 - pisa - calci - lucca.geojson',
 				'16 GENNAIO 2022<br>PISA - CALCI - LUCCA',
@@ -86,7 +86,7 @@
              
     index += 1;
     track_description[index] = "";
-    track_file_gpx[index] = "";
+    track_file_gpx[index] = "https://drive.google.com/file/d/1My2ONEvl5WMXgDkXvHbQydvq9w_s36PQ/view?usp=sharing";
     track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2022-01-30 - portofino.geojson',
 				'30 GENNAIO 2022<br>PORTOFINO',
