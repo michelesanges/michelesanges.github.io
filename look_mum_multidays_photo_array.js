@@ -373,7 +373,7 @@
                           'https://cutt.ly/cwpWexIU', 'https://cutt.ly/nwpWyc12', 'https://cutt.ly/MwpWhBt0',
                           'https://cutt.ly/7wpWludR', 'https://cutt.ly/SwpOEFJN', 'https://cutt.ly/IwpOY4E9', 'https://cutt.ly/5wpOHEWj', 'https://cutt.ly/MwpOLuHQ', 'https://cutt.ly/GwpOL9Zk',
                           'https://cutt.ly/KwpOBttQ', 'https://cutt.ly/WwpONQzH', 'https://cutt.ly/XwpO08gp', 'https://cutt.ly/4wpO3UOS', 'https://cutt.ly/SwpO9gNE', 'https://cutt.ly/hwpO9JqX',
-                          'https://cutt.ly/DwpO8gJE'
+                          'https://cutt.ly/DwpO8gJE', 'https://www.youtube.com/embed/7JdF_mV2RMc'
                          ];
     image_caption[index] =['<a href = "https://goo.gl/maps/LVr8YWXtVhMCTgAq6" target="_blank">SS26 - Caluso - (TO)</a>',
         '<a href = "https://goo.gl/maps/JGVnoHNJWFkikkoj7" target="_blank">Strada Statale 26 della Valle d`Aosta, 104-82, 11026 Pont-Saint-Martin (AO)</a>',
@@ -414,7 +414,6 @@
         '<a href = "https://goo.gl/maps/2wGQUeKhd1g9QokX7" target="_blank">Montereau-Fault-Yonne, Francia</a>',
         '<a href = "https://goo.gl/maps/K8TrYSTHpF8MeYD5A" target="_blank">Camping Paris Est, Champigny-sur-Marne, Francia</a>',
         '<a href = "https://goo.gl/maps/DzJHpdhEdAqJuYsd7" target="_blank">Pont au Double, Parigi, Francia</a>',
-
         '<a href = "https://goo.gl/maps/dUJvtymunSFu6cio7" target="_blank">Champ de Mars, Parigi, Francia</a>',
         '<a href = "https://goo.gl/maps/WWTzsP7CBdahuU6t7" target="_blank">Pont Royal, Parigi, Francia</a>',
         '<a href = "https://goo.gl/maps/vAgYaQcZnzueVfy28" target="_blank">Voie Georges Pompidou, Parigi, Francia</a>',
