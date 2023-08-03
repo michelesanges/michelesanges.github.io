@@ -116,7 +116,6 @@ img {
   font-weight: 600;
  /* color: #d0b69f;*/
 	color: #cf8a0c;
-/*   color: #404040; */
 }
 
 .navbar-custom .navbar-brand:hover,
@@ -269,10 +268,12 @@ footer .copyright {
   font-family: Open Sans;
   text-align: center;
   margin-bottom: 0;
+  color: #404040; 
 }
 footer .theme-by {
   text-align: center;
   margin: 10px 0 0;
+  color: #404040;
 }
 
 @media only screen and (min-width: 768px) {
