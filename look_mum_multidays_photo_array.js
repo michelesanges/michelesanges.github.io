@@ -33,7 +33,7 @@
 	image_array[index] = ['https://cutt.ly/kvsSdXI', 'https://cutt.ly/ovsSRT6', 'https://cutt.ly/lvsDwWc', 'https://cutt.ly/mvsDEC6', 'https://cutt.ly/avsDBGc', 
       'https://cutt.ly/jvsFrgj', 'https://cutt.ly/HvsFlh1', 'https://cutt.ly/0vsF3jv', 'https://cutt.ly/ivsGyOG', 'https://cutt.ly/OvsGEcB', 
       'https://cutt.ly/3vsJ6tx', 'https://cutt.ly/OvsKgZw', 'https://cutt.ly/3vsKW6u', 'https://cutt.ly/uvsKK7D',
-	  'https://www.youtube.com/embed/j-v0kOzsrS4', 'https://www.youtube.com/embed/fCK0GBSFtgM', 'https://cutt.ly/rvsLI97', 'https://cutt.ly/2vsLB9Y', 
+	  'https://www.youtube.com/embed/j-v0kOzsrS4', 'https://www.youtube.com/embed/fCK0GBSFtgM', 'https://cutt.ly/rvsLI97', 'https://cutt.ly/2vsLB9Y',
       'https://cutt.ly/cvsZL6h', 'https://cutt.ly/SvsZ4vF', 'https://cutt.ly/8vsXucP', 'https://cutt.ly/jvsMeiu', 'https://cutt.ly/6vsXzFd', 'https://cutt.ly/cvsXYjs', 'https://cutt.ly/jvsXXOi', 
       'https://cutt.ly/AvsX4gl', 'https://cutt.ly/bvsCykg', 'https://cutt.ly/WvsCzlN', 'https://cutt.ly/5vsCMU8', 'https://cutt.ly/LvsC6SC', 'https://cutt.ly/jvsVdCp', 
       'https://cutt.ly/0vsVXJ5', 'https://cutt.ly/0vsV2Ii', 'https://cutt.ly/gvsBjtJ', 'https://cutt.ly/pvsBHjN', 'https://cutt.ly/lvsB46w', 'https://cutt.ly/KvsNuvb', 
@@ -107,15 +107,14 @@
  	image_array[index] = ['https://cutt.ly/AsX6lyR', 'https://cutt.ly/VsX6QoX','https://cutt.ly/0sX6Lym','https://cutt.ly/OsX6Mrh', 'https://cutt.ly/ZsCqbQs', 
         'https://cutt.ly/tsCqFGo', 'https://cutt.ly/YsCq0vX', 'https://cutt.ly/qsCwwEx', 'https://cutt.ly/YsCwx3m','https://cutt.ly/asCw3WS', 'https://cutt.ly/dsCee3G', 
         'https://cutt.ly/gsCebPn',   'https://cutt.ly/asCeALQ', 'https://cutt.ly/bsCruSr', 'https://cutt.ly/bsCrgEO', 'https://cutt.ly/CsCrTha', 'https://cutt.ly/4sCrSOk',  
-        'https://www.youtube.com/embed/vYVB2MdTLPE', 'https://cutt.ly/MsCtrNr', 'https://cutt.ly/hsCtszz', 'https://cutt.ly/WsCtGkW', 'https://cutt.ly/HsCtMk2',  'https://cutt.ly/usCt5ka', 
-        'https://cutt.ly/YsCyfT1','https://cutt.ly/fsCyc78','https://cutt.ly/bsCyPCJ', 'https://cutt.ly/gsCyXoC', 'https://cutt.ly/rsCusrw', 'https://www.youtube.com/embed/-Gex8ktxz-M', 
+        'https://cutt.ly/MsCtrNr', 'https://cutt.ly/hsCtszz', 'https://cutt.ly/WsCtGkW', 'https://cutt.ly/HsCtMk2',  'https://cutt.ly/usCt5ka',
+        'https://cutt.ly/YsCyfT1','https://cutt.ly/fsCyc78','https://cutt.ly/bsCyPCJ', 'https://cutt.ly/gsCyXoC', 'https://cutt.ly/rsCusrw',
         'https://cutt.ly/dsCuM1F', 'https://cutt.ly/QsCiqOm', 'https://cutt.ly/0sCiTRe', 'https://cutt.ly/ssCiDzI', 'https://cutt.ly/KsCi2mO', 'https://cutt.ly/jsCowrm',
-        'https://www.youtube.com/embed/5gsx1CFI4sA','https://cutt.ly/lsConCI', 'https://cutt.ly/esCoYFg', 'https://cutt.ly/zsCoC8P', 'https://cutt.ly/asCo17w', 
-        'https://cutt.ly/nsCpinn', 'https://cutt.ly/8sCpjWC', 'https://cutt.ly/msCpYWR', 'https://cutt.ly/psCpS04', 'https://cutt.ly/4sCpJhN', 'https://www.youtube.com/embed/MwH5ZtqYLrI', 
+        'https://cutt.ly/lsConCI', 'https://cutt.ly/esCoYFg', 'https://cutt.ly/zsCoC8P', 'https://cutt.ly/asCo17w',
+        'https://cutt.ly/nsCpinn', 'https://cutt.ly/8sCpjWC', 'https://cutt.ly/msCpYWR', 'https://cutt.ly/psCpS04', 'https://cutt.ly/4sCpJhN',
         'https://cutt.ly/XsCarEi', 'https://cutt.ly/9sCapeV', 'https://cutt.ly/ZsCahlI', 'https://cutt.ly/5sCacRI',
-        'https://cutt.ly/zsCaJUn', 'https://cutt.ly/TsCaVTq', 'https://cutt.ly/XsCa2yh',  'https://cutt.ly/usCsdH9', 'https://cutt.ly/ssCscYe', 
-        'https://cutt.ly/ksCsPDJ',  'https://cutt.ly/TsCsZvN', 'https://cutt.ly/xsCs20x',  
-        'https://www.youtube.com/embed/27nxQVAqsFw', 'https://cutt.ly/6sCdu52', 'https://cutt.ly/XsCdWob', 'https://cutt.ly/VsCdAKp', 
+        'https://cutt.ly/zsCaJUn', 'https://cutt.ly/TsCaVTq', 'https://cutt.ly/XsCa2yh', 'https://cutt.ly/usCsdH9', 'https://cutt.ly/ssCscYe',
+        'https://cutt.ly/ksCsPDJ',  'https://cutt.ly/TsCsZvN', 'https://cutt.ly/xsCs20x', 'https://cutt.ly/6sCdu52', 'https://cutt.ly/XsCdWob', 'https://cutt.ly/VsCdAKp',
         'https://cutt.ly/UsCdMiK',  'https://cutt.ly/RsCd5uk', 'https://cutt.ly/dsCfpkM', 'https://cutt.ly/6sCfh3i',  'https://cutt.ly/0sCfDLn', 'https://cutt.ly/LsCfV4n', 
         'https://cutt.ly/usCgqoL', 'https://cutt.ly/zsCgyWD', 'https://cutt.ly/DsCgfAq', 'https://cutt.ly/IsCglmr', 'https://cutt.ly/MsCgQ2F'
     ];
@@ -136,11 +135,9 @@
     
 
     index += 1; // TRA LE COLLINE E LA COSTA TOSCANA: LAJATICO, BOLGHERI E COSTA DEGLI ETRUSCHI
-  	image_array[index] = ['https://www.youtube.com/embed/xjDyC_fByds', 'https://cutt.ly/RnWioTe', 'https://cutt.ly/inWih3H',
-    'https://cutt.ly/3nWixZf', 'https://cutt.ly/UnWin9q', 'https://cutt.ly/znWiRjF', 'https://www.youtube.com/embed/d5gW4pXO4Ro',
+  	image_array[index] = ['https://cutt.ly/RnWioTe', 'https://cutt.ly/inWih3H', 'https://cutt.ly/3nWixZf', 'https://cutt.ly/UnWin9q', 'https://cutt.ly/znWiRjF',
     'https://cutt.ly/onWiDUl', 'https://cutt.ly/NnWiJPt', 'https://cutt.ly/MnWiNFu', 'https://cutt.ly/KnWi8Pj', 'https://cutt.ly/9nWi6B2',
-    'https://cutt.ly/ynWor5s', 'https://cutt.ly/qnWoonh', 'https://cutt.ly/ynWofZc', 'https://cutt.ly/SnWokl7', 'https://cutt.ly/5nWocrg',
-    'https://cutt.ly/znWonaI', 
+    'https://cutt.ly/ynWor5s', 'https://cutt.ly/qnWoonh', 'https://cutt.ly/ynWofZc', 'https://cutt.ly/SnWokl7', 'https://cutt.ly/5nWocrg', 'https://cutt.ly/znWonaI',
     'https://cutt.ly/Anbx3qf', 'https://cutt.ly/Qnbx4Vl', 'https://cutt.ly/Cnbx5Y2', 'https://cutt.ly/4nbciwO', 'https://cutt.ly/RnbcanU', 'https://cutt.ly/InbcdqC', 'https://cutt.ly/6nbcfvZ', 'https://cutt.ly/bnbcjku', 'https://cutt.ly/Hnbck5B', 'https://cutt.ly/5nbcznO'
     ];
     image_caption[index] ="";
@@ -174,9 +171,9 @@
         'San Severino Marche (MC)', 'Nocera Umbra (PG)', 'Nocera Umbra (PG)', 'Perugia (PG)'
     ];
     
+
     index += 1; // TORINO
     image_array[index] = ['https://cutt.ly/bHNbZo6', 'https://cutt.ly/jHNRVGY', 'https://cutt.ly/fHNTgU1',
-        'https://www.youtube.com/embed/7aIxGVSotJ8',
         'https://cutt.ly/EHNTMLQ', 'https://cutt.ly/XHNGCr5',
         'https://cutt.ly/mHNHG2n', 'https://cutt.ly/KHNH47f', 'https://cutt.ly/9H0k1Oe', 'https://cutt.ly/wH0lgWO', 'https://www.youtube.com/embed/-89Iu31WW48',
         'https://cutt.ly/vH0lnJF', 'https://cutt.ly/yH0l3Er','https://cutt.ly/zH0zqmD', 'https://cutt.ly/BH0zR3W', 'https://cutt.ly/HH0zOSW', 'https://cutt.ly/8H0x8gR', 'https://cutt.ly/2H0ceGV', 'https://cutt.ly/3H0ciGK',
@@ -187,7 +184,6 @@
     image_caption[index] =['<a href = "https://goo.gl/maps/uZyNsB7Rs4fUndqx9" target="_blank">Passo del Bracco</a>',
                 '<a href = "https://goo.gl/maps/Wpqny6C3RXVjod137" target="_blank">Baia del Silenzio - Sestri Levante (GE)</a>',
                '<a href = "https://goo.gl/maps/qyJpqB5zARUJPgpcA" target="_blank">Baia del Silenzio - Sestri Levante (GE)</a>',
-               'Somewhere, over the rainbow',
                '<a href = "https://goo.gl/maps/zKeDpS7dYJ4jrHue8" target="_blank">Passo della Scoffera (GE)</a>',
                '<a href = "https://goo.gl/maps/hFgXTwUwHZPQvVT79" target="_blank">Agriturismo La Sereta - Fraconalto (AL)</a>',
                 'Castellazzo Bormida',
