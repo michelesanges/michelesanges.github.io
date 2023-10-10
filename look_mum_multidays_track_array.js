@@ -491,3 +491,35 @@ Un forte vento di tempesta si alza dalle montagne circostanti, eccetera, ecceter
 				'07-13 LUGLIO 2023<br>LE VENT NOUS PORTERA - TORINO - PARIGI',
 				'13/07/2023 - Giro a Parigi (Île-de-France - Francia)',
 				"rgb(255, 33, 180)", true, null, null];
+
+
+	index += 1;
+    track_description[index] = ""
+    track_file_gpx[index] = "https://drive.google.com/file/d/13UODG4fZoq8g4ajh5YkPxfNQz7TIIAXq/view?usp=sharing";
+    track_spotify_playlist[index] = "";
+    track_filename[index] = new Array();
+	track_filename[index][0] = ['./dataset/tracks/2023-09-24 - sardegna.geojson',
+				'24-29 SETTEMBRE 2023<br>ALL`INCROCIO DEI VENTI: DA OLBIA A CAGLIARI LUNGO LA COSTA OCCIDENTALE DELLA SARDEGNA',
+				'24/09/2023 - Olbia (SS) - Vignola Mare (SS)',
+				"rgb(2, 136, 209)", true, null, null];
+	track_filename[index][1] = ['./dataset/tracks/2023-09-25 - sardegna.geojson',
+				'24-29 SETTEMBRE 2023<br>ALL`INCROCIO DEI VENTI: DA OLBIA A CAGLIARI LUNGO LA COSTA OCCIDENTALE DELLA SARDEGNA',
+				'25/09/2023 - Vignola Mare (SS) - Alghero (SS)',
+				"rgb(44, 180, 0)", true, null, null];
+	track_filename[index][2] = ['./dataset/tracks/2023-09-26 - sardegna.geojson',
+				'24-29 SETTEMBRE 2023<br>ALL`INCROCIO DEI VENTI: DA OLBIA A CAGLIARI LUNGO LA COSTA OCCIDENTALE DELLA SARDEGNA',
+				'26/09/2023 - Alghero (SS) - Is Arenas (OR)',
+				"rgb(166, 27, 74)", true, null, null];
+	track_filename[index][3] = ['./dataset/tracks/2023-09-27 - sardegna.geojson',
+				'24-29 SETTEMBRE 2023<br>ALL`INCROCIO DEI VENTI: DA OLBIA A CAGLIARI LUNGO LA COSTA OCCIDENTALE DELLA SARDEGNA',
+				'27/09/2023 - Is Arenas (OR) - Portixeddu (SU)',
+				"rgb(205, 220, 57)", true, null, null];
+	track_filename[index][4] = ['./dataset/tracks/2023-09-28 - sardegna.geojson',
+				'24-29 SETTEMBRE 2023<br>ALL`INCROCIO DEI VENTI: DA OLBIA A CAGLIARI LUNGO LA COSTA OCCIDENTALE DELLA SARDEGNA',
+				'28/09/2023 - Portixeddu (SU) - Sant`Antico (SU)',
+				"rgb(0, 255, 255)", true, null, null];
+	track_filename[index][5] = ['./dataset/tracks/2023-09-29 - sardegna.geojson',
+				'24-29 SETTEMBRE 2023<br>ALL`INCROCIO DEI VENTI: DA OLBIA A CAGLIARI LUNGO LA COSTA OCCIDENTALE DELLA SARDEGNA',
+				'29/09/2023 - Sant`Antico (SU) - Cagliari (CA)',
+				"rgb(255, 33, 180)", true, null, null];
+

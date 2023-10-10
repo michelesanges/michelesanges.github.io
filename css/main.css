@@ -98,11 +98,10 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-/*   background: #EAEAEA; */
-    background: #747f5a;
-/*   border-bottom: 1px solid #EAEAEA; */
-    border-bottom: 3px solid #cf8a0c;
-     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;  
+   background: #747f5a; 	/* 1 - verde */ 
+#	background: #b8a052;	/* 2 - giallo */
+	border-bottom: 3px solid #cf8a0c;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;  
 }
 
 .navbar-custom .nav li a {
@@ -113,9 +112,10 @@ img {
 
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
-  font-weight: 600;
- /* color: #d0b69f;*/
-	color: #cf8a0c;
+  font-weight: 800;
+  	color: #cf8a0c; /* originale */ 
+#	color: #a46052; /* 1 - arancione*/
+#	color: #40568b; /* 2 - blu*/
 }
 
 .navbar-custom .navbar-brand:hover,
