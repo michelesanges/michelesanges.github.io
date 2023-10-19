@@ -1,7 +1,8 @@
 	// elenco tracce
 	var image_array = new Array();
 	var image_caption = new Array();
- 	var index = 0;
+	var tour_cover = new Array();
+    var index = 0;
     
     // 05-08 SETTEMBRE 2013 - SULLE STRADE BIANCHE DELL'EROICA
 	image_array[index] = ['https://cutt.ly/FfxOvag', 'https://cutt.ly/AfxOPAO', 'https://cutt.ly/QfxOMyZ', 'https://cutt.ly/kfxO9Rj', 'https://cutt.ly/CfxPeWm', 
@@ -11,10 +12,12 @@
         'https://cutt.ly/cfxAO4I', 'https://cutt.ly/6fxAFG9', 'https://cutt.ly/lfxALPf', 'https://cutt.ly/QfxAC4M', 'https://cutt.ly/7fxAMaW',
         'https://cutt.ly/ffxA9Ai', 'https://cutt.ly/DfxA5aF', 'https://cutt.ly/8fxSwQg', 'https://cutt.ly/PfxStE2'];
     image_caption[index] ="";
+    tour_cover[index] ="";
 
     index += 1; // 30 MAGGIO - 02 GIUGNO 2015 - TOUR DELL'ISOLA D'ELBA
 	image_array[index] = ['https://cutt.ly/rfWHDFt', 'https://cutt.ly/qfWN7qz', 'https://cutt.ly/mfWN6mI', 'https://cutt.ly/4fWMi38', 'https://cutt.ly/ZfWMp69', 'https://cutt.ly/AfWMs3X', 'https://cutt.ly/NfWMgYR', 'https://cutt.ly/GfWMjIs', 'https://cutt.ly/5fWMk9D', 'https://cutt.ly/mfWMl4H', 'https://cutt.ly/WfWMxjg'];
     image_caption[index] ="";
+    tour_cover[index] ="";
 
     index += 1; // 16-20 SETTEMBRE 2015 - TOUR DELL'UMBRIA
 	image_array[index] = ['https://cutt.ly/GfWMXd9', 'https://cutt.ly/kfWMBGq', 'https://cutt.ly/WfWMMfm', 'https://cutt.ly/FfWM1dh', 'https://cutt.ly/PfWM0Fu', 
@@ -22,13 +25,15 @@
         'https://cutt.ly/nfW1e86', 'https://cutt.ly/xfW1tGZ', 'https://cutt.ly/2fW1yWw', 'https://cutt.ly/8fW1uck', 'https://cutt.ly/OfW1ilS', 'https://cutt.ly/HfW1oi1',
         'https://cutt.ly/QfW1pKn', 'https://cutt.ly/WfW1sQ8', 'https://cutt.ly/pfW1dOT', 'https://cutt.ly/TfW1f46'];
     image_caption[index] ="";
-        
+    tour_cover[index] ="";
+
     index += 1; // 21-22 MAGGIO 2016 - BOLOGNA - CASALBORSETTI UNDER THE MOONLIGHT
 	image_array[index] = ['https://cutt.ly/5vdmJN6', 'https://cutt.ly/ovdm5h5', 'https://cutt.ly/svdQyTe', 'https://cutt.ly/QvdQARg', 'https://cutt.ly/6vdQZL8', 'https://cutt.ly/TvdWqZR', 
       'https://cutt.ly/lvdEwIm', 'https://cutt.ly/9vdEjYS', 'https://cutt.ly/DvdEKwU', 'https://cutt.ly/RvdE27O', 
 	  'https://cutt.ly/lvdRw9n', 'https://cutt.ly/WvdRxOn', 'https://cutt.ly/ivdRUl5', 'https://cutt.ly/evdRChj', 'https://cutt.ly/IvdR2do'];
     image_caption[index] ="";
-	  
+    tour_cover[index] ="";
+
     index += 1; // 02-05 GIUGNO 2016 - LA VIA DEL POLLEGGIO
 	image_array[index] = ['https://cutt.ly/kvsSdXI', 'https://cutt.ly/ovsSRT6', 'https://cutt.ly/lvsDwWc', 'https://cutt.ly/mvsDEC6', 'https://cutt.ly/avsDBGc', 
       'https://cutt.ly/jvsFrgj', 'https://cutt.ly/HvsFlh1', 'https://cutt.ly/0vsF3jv', 'https://cutt.ly/ivsGyOG', 'https://cutt.ly/OvsGEcB', 
@@ -40,6 +45,7 @@
       'https://cutt.ly/0vsNdFj'
     ];
     image_caption[index] ="";
+    tour_cover[index] ="";
 
     index += 1; // 02-04 GIUGNO 2017 - SULLE TRACCE DELLA VIA CLAUDIA AUGUSTA
 	image_array[index] = ['https://cutt.ly/8cV6PTN', 'https://cutt.ly/NcV6Vxw', 'https://cutt.ly/9cV68Y7', 'https://cutt.ly/YcBqe9C', 'https://cutt.ly/hcBqhaK',
@@ -51,7 +57,8 @@
         'https://cutt.ly/rcBupPZ', 'https://cutt.ly/ecBumfW', 'https://cutt.ly/JcBuABd', 'https://cutt.ly/7cBuHar'
     ];
     image_caption[index] ="";
-  
+    tour_cover[index] ="";
+
     index += 1; // 07-08 AGOSTO 2017 - DUE GIORNI SU E GIÙ PER L'APPENNINO TOSCO EMILIANO
 	image_array[index] = ['https://cutt.ly/1cLe4pT', 'https://cutt.ly/8cLrfap', 'https://cutt.ly/4cLrTnb', 'https://cutt.ly/CcLrSy1', 'https://cutt.ly/JcLrCn4', 
         'https://cutt.ly/acLr3y6', 'https://cutt.ly/dcLtqrm', 'https://cutt.ly/PcLtyr8', 'https://cutt.ly/icLtli7', 'https://cutt.ly/8cLtmVm', 'https://cutt.ly/zcLtRC6',
@@ -59,7 +66,8 @@
         'https://cutt.ly/PcLydX5', 'https://cutt.ly/WcLyb5Z', 'https://cutt.ly/8cLyY4a', 'https://cutt.ly/WcLyS1J'
     ];
     image_caption[index] ="";
-    
+    tour_cover[index] ="";
+
     index += 1; // 06-07 AGOSTO 2018 - GIRO DEI QUATTRO LAGHI
 	image_array[index] = ['https://cutt.ly/zcKVMMA', 'https://cutt.ly/lcKBiFc', 'https://cutt.ly/scKBjse', 'https://cutt.ly/kcKBx70', 'https://cutt.ly/EcKBQ22',  
         'https://cutt.ly/kcKBD1k', 'https://cutt.ly/acKBXX5', 'https://cutt.ly/ycKB3So', 'https://cutt.ly/McKNry0', 'https://cutt.ly/LcKNpJX', 
@@ -69,6 +77,7 @@
         'https://cutt.ly/ZcKN6cQ', 'https://cutt.ly/AcKMy9q', 'https://cutt.ly/vcKMhdh', 'https://cutt.ly/DcKMzfM', 'https://cutt.ly/scKMmHD', 'https://cutt.ly/NcKMPnw'
     ];
     image_caption[index] ="";
+    tour_cover[index] ="";
 
     index += 1; // 29 - 30 SETTEMBRE 2018 - LA MONSTERRATO - STRADE BIANCHE DEL MONFERRATO
 	image_array[index] = ['https://cutt.ly/VcIbmsF', 'https://cutt.ly/RcInzB8', 'https://cutt.ly/5cInDxE', 'https://cutt.ly/YcIn4wg', 
@@ -76,7 +85,8 @@
             'https://cutt.ly/UcIQMKB', 'https://cutt.ly/8cIWtde', 'https://cutt.ly/LcIWfmz', 'https://cutt.ly/7cIWvUN', 'https://cutt.ly/CcIWTW2', 'https://cutt.ly/jcIWGSl'
     ];
     image_caption[index] ="";
-	
+    tour_cover[index] ="";
+
     index += 1; // 20 - 21 APRILE 2019 - PASQUA CON CHI VUOI - SENTIERO DELLA BONIFICA E CICLABILE DEL LAGO TRASIMENO
 	image_array[index] = ['https://cutt.ly/4vkpv8G', 'https://cutt.ly/tvkdk6s', 'https://cutt.ly/RvkaJra', 'https://cutt.ly/yvkdMn5', 
         'https://cutt.ly/HvkfxP9', 'https://cutt.ly/AvkfDDc', 'https://cutt.ly/Dvkf9P5', 'https://cutt.ly/5vkgiMd', 
@@ -86,6 +96,7 @@
         'https://cutt.ly/ivkll74'
     ];
     image_caption[index] ="";
+    tour_cover[index] ="";
 
     index += 1; // 27 - 30 GIUGNO 2019 - TOUR DEL CASENTINO
     image_array[index] = ['https://cutt.ly/Ik75vp', 'https://cutt.ly/rk5thL', 'https://cutt.ly/lk5pO8', 'https://cutt.ly/Hk5fbt',
@@ -95,13 +106,14 @@
         'https://cutt.ly/wrY1nio', 'https://cutt.ly/5lqxwI', 'https://cutt.ly/SlqTdv', 'https://cutt.ly/rletdW', 'https://cutt.ly/blqSM6', 'https://cutt.ly/glqBOD', 'https://cutt.ly/Wlq4lv', 'https://cutt.ly/MlwdFD', 'https://cutt.ly/vleRly'
     ]; 
     image_caption[index] ="";
-    
+    tour_cover[index] ="";
+
     index += 1; // 15 - 16 SETTEMBRE 2019 - ZERI - LEVANTO
     image_array[index] = ['https://cutt.ly/jcIrcom', 'https://cutt.ly/bvdAMZn', 'https://cutt.ly/zcIokOe', 'https://cutt.ly/RcIoEWq', 'https://cutt.ly/ccIoFqL', 
         'https://cutt.ly/ccIpRAz', 'https://cutt.ly/ScIoVkX', 'https://cutt.ly/IcIo3mY', 'https://cutt.ly/ScIpsc2'
     ];
     image_caption[index] ="";
-                   
+    tour_cover[index] ="";
 
     index += 1; // 21-26 LUGLIO 2020- QUELLA VOLTA CHE DECISI DI TORNARE A CASA DA BOLZANO IN BICICLETTA
  	image_array[index] = ['https://cutt.ly/AsX6lyR', 'https://cutt.ly/VsX6QoX','https://cutt.ly/0sX6Lym','https://cutt.ly/OsX6Mrh', 'https://cutt.ly/ZsCqbQs', 
@@ -119,6 +131,7 @@
         'https://cutt.ly/usCgqoL', 'https://cutt.ly/zsCgyWD', 'https://cutt.ly/DsCgfAq', 'https://cutt.ly/IsCglmr', 'https://cutt.ly/MsCgQ2F'
     ];
     image_caption[index] ="";
+    tour_cover[index] ="";
 
     
     index += 1; // 13-16 SETTEMBRE 2020 - TOUR diVino
@@ -132,7 +145,8 @@
         'https://cutt.ly/ZfHwmV5', 'https://cutt.ly/JfHwTNu'
     ];
     image_caption[index] ="";
-    
+    tour_cover[index] ="";
+
 
     index += 1; // TRA LE COLLINE E LA COSTA TOSCANA: LAJATICO, BOLGHERI E COSTA DEGLI ETRUSCHI
   	image_array[index] = ['https://cutt.ly/RnWioTe', 'https://cutt.ly/inWih3H', 'https://cutt.ly/3nWixZf', 'https://cutt.ly/UnWin9q', 'https://cutt.ly/znWiRjF',
@@ -141,7 +155,8 @@
     'https://cutt.ly/Anbx3qf', 'https://cutt.ly/Qnbx4Vl', 'https://cutt.ly/Cnbx5Y2', 'https://cutt.ly/4nbciwO', 'https://cutt.ly/RnbcanU', 'https://cutt.ly/InbcdqC', 'https://cutt.ly/6nbcfvZ', 'https://cutt.ly/bnbcjku', 'https://cutt.ly/Hnbck5B', 'https://cutt.ly/5nbcznO'
     ];
     image_caption[index] ="";
-    
+    tour_cover[index] ="";
+
  
     index += 1; // BIVACCO AL PARCO DEI CENTO LAGHI
     image_array[index] = ['https://cutt.ly/pQemYxR', 'https://cutt.ly/GQemVCj', 'https://cutt.ly/UQeQg5e', 'https://cutt.ly/7QeQkGz', 'https://cutt.ly/6QeQxsg', 'https://cutt.ly/VQeQTDh',
@@ -152,6 +167,7 @@
     '<a href = "https://www.google.com/maps?q=loc:44.339571,10.126998" target="_blank" rel="noopener noreferrer">84QG+RQ Comano, Provincia di Massa e Carrara</a>',
         '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''
     ];
+    tour_cover[index] ="";
 
     
     index += 1; // CICLOVIA ADRIATICA
@@ -170,7 +186,8 @@
         'Sul percorso dell Italia Coast to coast - Filottrano (AN)', 'Appignano (MC)', 'Appignano (MC)', 'Cingoli (MC)', 'Contrada Schito, Treia (MC)', 'Treia (MC)', 
         'San Severino Marche (MC)', 'Nocera Umbra (PG)', 'Nocera Umbra (PG)', 'Perugia (PG)'
     ];
-    
+    tour_cover[index] ="";
+
 
     index += 1; // TORINO
     image_array[index] = ['https://cutt.ly/bHNbZo6', 'https://cutt.ly/jHNRVGY', 'https://cutt.ly/fHNTgU1',
@@ -221,6 +238,7 @@
               '<a href = "https://goo.gl/maps/VrKyV7SjYfyHHpAZ6" target="_blank">Stazione di Torino Porta Nuova - Torino (TO)</a>',
               '<a href = "https://goo.gl/maps/VrKyV7SjYfyHHpAZ6" target="_blank">Stazione di Torino Porta Nuova - Torino (TO)</a>',
     ];
+    tour_cover[index] ='https://cutt.ly/SH0QZ7t';
 
 
     index += 1; // UNA COSA DIVERTENTE CHE NON FARO' MAI PIU'
@@ -252,6 +270,7 @@
                   '<a href = "https://goo.gl/maps/ySxQGAdEQC78EMyJ9" target="_blank">Via per Camaiore - San Martino In Freddana (LU)</a>',
                   '<a href = "https://goo.gl/maps/i8jyUifQ7HbcdXxP8" target="_blank">Viareggio (LU)</a>'
     ];
+    tour_cover[index] ='https://cutt.ly/0JA49tD';
 
 
     index += 1; // BOLZANO - VENEZIA
@@ -321,9 +340,10 @@
         '<a href = "https://goo.gl/maps/fyA52woGdwEDvV5r6" target="_blank">Musile di Piave - Venezia</a>',
         '<a href = "https://goo.gl/maps/vvfvUnhbtYGxBDkg7" target="_blank">Stazione di Venezia Mestre - Venezia</a>',
     ];
+    tour_cover[index] ='https://cutt.ly/KwQ9Ywxr';
 
 
-    index += 1; // POPULONIA - SIENA
+    index += 1; // COSTA DEGLI ETRUSCHI - SIENA
     image_array[index] = ['https://cutt.ly/P6uhjPE', 'https://cutt.ly/E6uh67p', 'https://cutt.ly/H6ujGeh', 'https://cutt.ly/k6ukgY4',
         'https://cutt.ly/M6ulp0R', 'https://cutt.ly/U6ulGfO', 'https://cutt.ly/U6uz57F', 'https://cutt.ly/p6ux3wJ', 'https://cutt.ly/L6ucIAw',
         'https://cutt.ly/Q6ubyOX', 'https://cutt.ly/W6ubUKh', 'https://cutt.ly/S6uM0jq', 'https://cutt.ly/M6u1PAw', 'https://cutt.ly/I6u0k5e',
@@ -347,6 +367,7 @@
         '<a href = "https://goo.gl/maps/5x4sKNULdLpdbPL79" target="_blank">Piazza del Campo - Siena (SI)</a>',
         'Rientro a casa in treno'
     ];
+    tour_cover[index] ='https://cutt.ly/M6u1PAw';
 
 
     index += 1; // VADO A VEDERE LA FIORITURA A CASTELLUCCIO DI NORCIA
@@ -356,6 +377,7 @@
     'https://cutt.ly/Owt62o7S', 'https://cutt.ly/Dwt62TFt',
     'https://youtube.com/shorts/i05kXMA4aS0', 'https://youtube.com/shorts/NAAy98vdSm4' ];
     image_caption[index] ="";
+    tour_cover[index] ='https://cutt.ly/Owt62o7S';
 
 
     index += 1; // LE VENT NOUS PORTERA - TORINO - PARIGI
@@ -433,12 +455,14 @@
         '<a href = "https://goo.gl/maps/iMyCq9hpzB9WeB8j6" target="_blank">Gare de Lyon, Parigi, Francia</a>',
         'Frecciarossa Parigi - Milano'
     ];
+    tour_cover[index] ='https://cutt.ly/uwpvs7vO';
 
 
     index += 1; // SARDEGNA
     image_array[index] = ['https://cutt.ly/qwbMrolP', 'https://cutt.ly/7wbMueMa', 'https://cutt.ly/PwnvldS4', 'https://cutt.ly/RwnvzygU', 'https://cutt.ly/3wnvz3Hw', 'https://cutt.ly/Iwnvcrfo',
-    'https://cutt.ly/6wnvcGHH', 'https://cutt.ly/SwnvvurU', 'https://cutt.ly/GwnvvB1m', 'https://cutt.ly/dwnvbxau', 'https://cutt.ly/zwnw4T2f', 'https://cutt.ly/pwnvb7mO', 'https://cutt.ly/pwnvQu7W', 'https://cutt.ly/NwnvW1xr', 'https://cutt.ly/ownbhBTl', 'https://cutt.ly/HwnbEdaf', 'https://cutt.ly/2wnbYeAS', 'https://cutt.ly/iwnn4t53', 'https://cutt.ly/IwnmwBO3', 'https://cutt.ly/NwnmyEVZ', 'https://cutt.ly/Lwnmllih', 'https://cutt.ly/Swnmmito', 'https://cutt.ly/Uwnmz9je', 'https://cutt.ly/VwnWmloK', 'https://cutt.ly/3wnWJf6m', 'https://cutt.ly/JwnWZAqa', 'https://cutt.ly/RwnW5tOp', 'https://cutt.ly/WwnEtZlm', 'https://cutt.ly/6wnEZUlN', 'https://cutt.ly/QwnEMI1D', 'https://cutt.ly/ZwnDXAEQ', 'https://cutt.ly/jwnGZ5jP', 'https://cutt.ly/uwnGBm4L', 'https://cutt.ly/lwmoQKlV', 'https://cutt.ly/KwnKknHV', 'https://cutt.ly/5wmoRNvC', 'https://cutt.ly/IwmoJDVY', 'https://cutt.ly/YwmoCQtc', 'https://cutt.ly/Fwmapvwb', 'https://cutt.ly/0wmaaEVU', 'https://cutt.ly/gwmajoOE', 'https://cutt.ly/xwmjWGS6', 'https://cutt.ly/bwmjEDjL', 'https://www.youtube.com/embed/bf98ElVmXXM'
-                         ];
+    'https://cutt.ly/6wnvcGHH', 'https://cutt.ly/SwnvvurU', 'https://cutt.ly/GwnvvB1m', 'https://cutt.ly/dwnvbxau', 'https://cutt.ly/zwnw4T2f', 'https://cutt.ly/pwnvb7mO', 'https://cutt.ly/pwnvQu7W', 'https://cutt.ly/NwnvW1xr', 'https://cutt.ly/ownbhBTl', 'https://cutt.ly/HwnbEdaf', 'https://cutt.ly/2wnbYeAS', 'https://cutt.ly/iwnn4t53', 'https://cutt.ly/IwnmwBO3', 'https://cutt.ly/NwnmyEVZ', 'https://cutt.ly/Lwnmllih', 'https://cutt.ly/Swnmmito', 'https://cutt.ly/Uwnmz9je', 'https://cutt.ly/VwnWmloK', 'https://cutt.ly/3wnWJf6m', 'https://cutt.ly/JwnWZAqa', 'https://cutt.ly/RwnW5tOp', 'https://cutt.ly/WwnEtZlm', 'https://cutt.ly/6wnEZUlN', 'https://cutt.ly/QwnEMI1D', 'https://cutt.ly/ZwnDXAEQ', 'https://cutt.ly/jwnGZ5jP', 'https://cutt.ly/uwnGBm4L', 'https://cutt.ly/cwQKFXZl', 'https://cutt.ly/KwnKknHV',
+    'https://cutt.ly/5wmoRNvC', 'https://cutt.ly/IwmoJDVY', 'https://cutt.ly/YwmoCQtc', 'https://cutt.ly/Fwmapvwb', 'https://cutt.ly/0wmaaEVU', 'https://cutt.ly/gwmajoOE', 'https://cutt.ly/xwmjWGS6', 'https://cutt.ly/bwmjEDjL', 'https://www.youtube.com/embed/bf98ElVmXXM'
+    ];
     image_caption[index] =['<a href = "https://maps.app.goo.gl/MLFzC81qbvDYfmyg9" target="_blank">Imbarco Grimaldi Lines - Livorno</a>',
         'Sul traghetto',
         '<a href = "https://maps.app.goo.gl/YocUEzDCDxpP8HZy5" target="_blank">Roccia Ingresso Costa Smeralda</a>',
@@ -449,8 +473,8 @@
         '<a href = "https://maps.app.goo.gl/qDWn9G87Z9cCHrkZA" target="_blank">Camping Village Saragosa - Vignola Mare</a>',
         '<a href = "https://maps.app.goo.gl/qDWn9G87Z9cCHrkZA" target="_blank">Camping Village Saragosa - Vignola Mare</a>',
         '<a href = "https://maps.app.goo.gl/FHUMupwhCAYzgMFM9" target="_blank">Roccia dell`elefante - Strada Statale 134 Km 19.3, Castelsardo</a>',
-        '<a href = "https://maps.app.goo.gl/xUgvFLpDrLWSRFxEA" target="_blank">Strada Statale 134 di Castel Sardo, Castelsardo</a>',
-        '<a href = "https://maps.app.goo.gl/ZULbvWTryaZGLZKi6" target="_blank">Strada Statale 134 di Castel Sardo, Castelsardo</a>',
+        '<a href = "https://maps.app.goo.gl/xUgvFLpDrLWSRFxEA" target="_blank">Strada Statale 134 di Castelsardo, Castelsardo</a>',
+        '<a href = "https://maps.app.goo.gl/ZULbvWTryaZGLZKi6" target="_blank">Strada Statale 134 di Castelsardo, Castelsardo</a>',
         '<a href = "https://maps.app.goo.gl/C33qsRgCMYWnDNaN8" target="_blank">Alghero</a>',
         '<a href = "https://maps.app.goo.gl/RuCM2cnCMVyDjdZp6" target="_blank">Camping La Mariposa - Alghero</a>',
         '<a href = "https://maps.app.goo.gl/iGxhZTymVPcmsJ8S7" target="_blank">Strada provinciale 105 - Alghero - Bosa</a>',
@@ -482,4 +506,5 @@
         '<a href = "https://maps.app.goo.gl/NuR9zgAFhAqJRbdPA" target="_blank">Cagliari</a>',
         'Somewhere, over the rainbow',
         '<a href = "https://maps.app.goo.gl/3G42gHofTkWoQZgCA" target="_blank">Stazione di Civitavecchia</a>',
-                          ];
+    ];
+    tour_cover[index] ='https://cutt.ly/cwQKFXZl';

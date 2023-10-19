@@ -59,23 +59,31 @@ subtitle: <div id="subtitle"></div>
 
     for (var i = track_filename.length - 1; i >=0 ; i--)
     {   
-        // ricerca la prima immagine del tour, saltando i video
-        j=0;
-        while (image_array[i][j].includes("youtu"))
+        if (tour_cover[i] != "")
         {
-            j++;
+            html_cmd+="<div class='square bg' style='background-image: url(" + tour_cover[i] + ")'>"
         }
-    
-        html_cmd+="<div class='square bg' style='background-image: url(" + image_array[i][j] + ")'>"
+        else
+        {
+            // ricerca la prima immagine del tour, saltando i video
+            j=0;
+            while (image_array[i][j].includes("youtu"))
+            {
+                j++;
+            }
+
+            html_cmd+="<div class='square bg' style='background-image: url(" + image_array[i][j] + ")'>"
+        }
+
         html_cmd+="<div class='content'>"
         html_cmd+="<div class='table'>"
         html_cmd+="<div class='table-cell'>"
-//         html_cmd+= "<a href='./tracks.html?map_index=" + i + "' style='color:white; background-color:black'>" + track_filename[i][0][1] + "</a>";
         html_cmd+= "<a href='./tracks.html?type=" + type +"&map_index=" + i + "' style='color:white; background-color:black'>" + track_filename[i][0][1] + "</a>";
         html_cmd+="</div>"
         html_cmd+="</div>"
         html_cmd+="</div>"
         html_cmd+="</div>"
+
     }
     
     document.getElementById("miniature").innerHTML=html_cmd;
