@@ -1,7 +1,7 @@
 ---
 layout: page
 title: PHOTOGRAPHY 
-subtitle: Series
+subtitle: Projects
 <!-- bigimg: https://images.vogue.it/Photovogue/0a38ac30-11d3-11eb-b581-2fe907d89330_large.jpg -->
 ---
 <!--

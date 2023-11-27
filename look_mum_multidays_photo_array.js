@@ -173,20 +173,50 @@
     index += 1; // CICLOVIA ADRIATICA
     image_array[index] = ['https://cutt.ly/AWkRAic', 'https://cutt.ly/RWkRMil', 'https://cutt.ly/YWkTrtu', 'https://cutt.ly/6WkTQjg', 'https://cutt.ly/EWkYAgy', 'https://cutt.ly/CWkY8Yw',
         'https://cutt.ly/sWkUrdL', 'https://cutt.ly/QWkI4Ax', 'https://cutt.ly/7WkOdWw', 'https://cutt.ly/ZWkOTOI', 'https://cutt.ly/sWkO9GS', 'https://cutt.ly/vWkPPnX', 'https://cutt.ly/rWkPBlV',
-        'https://cutt.ly/JWkAATn', 'https://cutt.ly/ZWkA0Ee', 'https://cutt.ly/OWkA5aC', 'https://cutt.ly/qWkSiNc', 'https://cutt.ly/pWkS3Mq', 'https://cutt.ly/BWkDjG3', 'https://cutt.ly/dWkDYMP',
-        'https://cutt.ly/wWkFeHj', 'https://cutt.ly/5WkFnt6', 'https://cutt.ly/CWkFR9Z', 'https://cutt.ly/WWkF8Rj', 'https://cutt.ly/QWkGGoi', 'https://cutt.ly/XWkGVrp', 'https://cutt.ly/mWkHp6Y',
+        'https://cutt.ly/JWkAATn', 'https://cutt.ly/ZWkA0Ee', 'https://cutt.ly/OWkA5aC', 'https://cutt.ly/qWkSiNc', 'https://cutt.ly/pWkS3Mq', 'https://cutt.ly/BWkDjG3',
+        'https://cutt.ly/vwWyFezg', 'https://cutt.ly/wWkFeHj', 'https://cutt.ly/5WkFnt6', 'https://cutt.ly/CWkFR9Z', 'https://cutt.ly/WWkF8Rj', 'https://cutt.ly/QWkGGoi', 'https://cutt.ly/XWkGVrp', 'https://cutt.ly/mWkHp6Y',
         'https://cutt.ly/jWkHDqQ', 'https://cutt.ly/EWkHKoZ', 'https://cutt.ly/qWkH3Pd', 'https://cutt.ly/vWkJo4h', 'https://cutt.ly/MWkJgCj', 'https://cutt.ly/aWkKSHO', 'https://cutt.ly/zWkK7v7', 'https://cutt.ly/SWkLaD9', 'https://cutt.ly/7WkLU3N', 'https://cutt.ly/DWkLVQ8', 'https://cutt.ly/OWkL0eN'
     ];
-    image_caption[index] = ['San Cataldo (LE)', 'San Cataldo (LE)', 'Casalabate (LE)', 'Monopoli (BA)', 'Camping Santo Stefano - Monopoli', 'Polignano a mare (BA)', 
-        'Polignano a mare (BA)', 'Basilica San Nicola - Bari', 'Lungomare di Bari', 'Basilica Cattedrale San Nicola Pellegrino - Trani', 'Camping Lido Salpi - Manfredonia',
-        'SS16, Campomarino CB', 'Camping Il Pioppeto - Marina di Vasto (CH)', 'Riserva Naturale Regionale Punta Aderci - Vasto (CH)', 'Riserva Naturale Regionale Punta Aderci - Vasto (CH)',
-        'Riserva Naturale Regionale Punta Aderci - Vasto (CH)', 'Riserva Naturale Regionale Punta Aderci - Vasto (CH)', 'Via Verde della Costa dei Trabocchi - Fossacesia (CH)',
-        'Via Verde della Costa dei Trabocchi - Rocca San Giovanni (CH)', 'Via Verde della Costa dei Trabocchi - Rocca San Giovanni (CH)', 'Ortona (CH)', 'Ortona (CH)', 'Ortona (CH)',
-        'Ponte del Mare - Pescara (PE)', 'Area Marina Protetta Torre del Cerrano (TE)', 'San Benedetto del Tronto (AP)', 'Filottrano (AN)', 'Filottrano (AN)',
-        'Sul percorso dell Italia Coast to coast - Filottrano (AN)', 'Appignano (MC)', 'Appignano (MC)', 'Cingoli (MC)', 'Contrada Schito, Treia (MC)', 'Treia (MC)', 
-        'San Severino Marche (MC)', 'Nocera Umbra (PG)', 'Nocera Umbra (PG)', 'Perugia (PG)'
+    image_caption[index] = ['<a href = "https://maps.app.goo.gl/sWVUvA21iDNtfsmm6" target="_blank">San Cataldo (LE)</a>',
+                            '<a href = "https://maps.app.goo.gl/MNtDgMB8hweTFWe1A" target="_blank">San Cataldo (LE)</a>',
+                            '<a href = "https://maps.app.goo.gl/qyjF3e3LKui13Boe7" target="_blank">Casalabate (LE)</a>',
+                            '<a href = "https://maps.app.goo.gl/xbA8XiHR1qdLmRgA8" target="_blank">Monopoli (BA)</a>',
+                            '<a href = "https://maps.app.goo.gl/vJ4bEEZysXoCVayR7" target="_blank">Camping Santo Stefano - Monopoli</a>',
+                            '<a href = "https://maps.app.goo.gl/3a5sC9zEBVz1Yo7R6" target="_blank">Polignano a mare (BA)</a>',
+                            '<a href = "https://maps.app.goo.gl/3a5sC9zEBVz1Yo7R6" target="_blank">Polignano a mare (BA)</a>',
+                            '<a href = "https://maps.app.goo.gl/3f6bAkF5mj18kXga6" target="_blank">Basilica San Nicola - Bari</a>',
+                            '<a href = "https://maps.app.goo.gl/YrQ3yBnXoGTY6nCS9" target="_blank">Lungomare di Bari</a>',
+                            '<a href = "https://maps.app.goo.gl/gRpcTPDonKY6fKo86" target="_blank">Basilica Cattedrale San Nicola Pellegrino - Trani</a>',
+                            '<a href = "https://maps.app.goo.gl/zmXjXuHAicHK9x2n9" target="_blank">Camping Lido Salpi - Manfredonia</a>',
+                            '<a href = "https://maps.app.goo.gl/Dif5ABnTnLsaR1P1A" target="_blank">SS16, Campomarino CB</a>',
+                            '<a href = "https://maps.app.goo.gl/KqZ2y45D2x4YDeii9" target="_blank">Camping Il Pioppeto - Marina di Vasto (CH)</a>',
+                            '<a href = "https://maps.app.goo.gl/fgMm12WALNrLkzBp8" target="_blank">Riserva Naturale Regionale Punta Aderci - Vasto (CH)</a>',
+                            '<a href = "https://maps.app.goo.gl/tt7a6GAT7MLzMBzz9" target="_blank">Riserva Naturale Regionale Punta Aderci - Vasto (CH)</a>',
+                            '<a href = "https://maps.app.goo.gl/Wpezb4HLtZd3DByz7" target="_blank">Riserva Naturale Regionale Punta Aderci - Vasto (CH)</a>',
+                            '<a href = "https://maps.app.goo.gl/dPzqEZ1VoATRxHxX9" target="_blank">Riserva Naturale Regionale Punta Aderci - Vasto (CH)</a>',
+                            '<a href = "https://maps.app.goo.gl/DkFmXtTR1Z4Q6Sm17" target="_blank">Via Verde della Costa dei Trabocchi - Fossacesia (CH)</a>',
+                            '<a href = "https://maps.app.goo.gl/BCB2mqjivixq5zot8" target="_blank">Via Verde della Costa dei Trabocchi - Rocca San Giovanni (CH)</a>',
+                            '<a href = "https://maps.app.goo.gl/VSJVZLGrH3nFjQMV7" target="_blank">Via Verde della Costa dei Trabocchi - Rocca San Giovanni (CH)</a>',
+                            '<a href = "https://maps.app.goo.gl/riPkzDyt2RnRAAcg8" target="_blank">Ortona (CH)</a>',
+                            '<a href = "https://maps.app.goo.gl/eEQohko94WXc9S2L6" target="_blank">Ortona (CH)</a>',
+                            '<a href = "https://maps.app.goo.gl/MfVhfEwMCt7JRBev9" target="_blank">Ortona (CH)</a>',
+                            '<a href = "https://maps.app.goo.gl/b3Defhc8KaXs3Qcf6" target="_blank">Ponte del Mare - Pescara (PE)</a>',
+                            '<a href = "https://maps.app.goo.gl/zdAKoG4c2wn4ytUKA" target="_blank">Area Marina Protetta Torre del Cerrano (TE)</a>',
+                            '<a href = "https://maps.app.goo.gl/o3LZvQu4kBghr5S6A" target="_blank">San Benedetto del Tronto (AP)</a>',
+                            '<a href = "https://maps.app.goo.gl/EXmL2JQ6inrvtvxG9" target="_blank">Filottrano (AN)</a>',
+                            'B&B a Filottrano (AN)',
+                            '<a href = "https://maps.app.goo.gl/VC3S5kF1CaAdY4iw7" target="_blank">Sul percorso dell Italia Coast to coast - Filottrano (AN)</a>',
+                            '<a href = "https://maps.app.goo.gl/tUao7RGBUbDsgzXYA" target="_blank">Appignano (MC)</a>',
+                            '<a href = "https://maps.app.goo.gl/5szyZAp3DcFLuSFm7" target="_blank">Appignano (MC)</a>',
+                            '<a href = "https://maps.app.goo.gl/Hcu4zvZLZ4yGrFit8" target="_blank">Cingoli (MC)</a>',
+                            '<a href = "https://maps.app.goo.gl/tTqruapksWJcw11J9" target="_blank">Contrada Schito, Treia (MC)</a>',
+                            '<a href = "https://maps.app.goo.gl/WpwTFUvP2q6ksErTA" target="_blank">Treia (MC)</a>',
+                            '<a href = "https://maps.app.goo.gl/QZFjYc6dGJ8kjbvZ7" target="_blank">San Severino Marche (MC)</a>',
+                            '<a href = "https://maps.app.goo.gl/3mxy6RcGEUtuWBQDA" target="_blank">Nocera Umbra (PG)</a>',
+                            '<a href = "https://maps.app.goo.gl/AGoKHCmv1Tasa9H86" target="_blank">Nocera Umbra (PG)</a>',
+                            '<a href = "https://maps.app.goo.gl/6U7YZENotmfGtNeg6" target="_blank">Perugia (PG)</a>'
     ];
-    tour_cover[index] ="";
+    tour_cover[index] ='https://cutt.ly/CWkY8Yw';
 
 
     index += 1; // TORINO

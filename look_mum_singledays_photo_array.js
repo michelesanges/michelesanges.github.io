@@ -92,6 +92,7 @@
     index += 1; // 31 OTTOBRE GIUGNO 2022 - QUELLA VOLTA CHE MISI A DURA PROVA I MIEI CINQUANTADUE ANNI
  	image_array[index] = ['https://cutt.ly/wNAFRmM', 'https://cutt.ly/RNAFNO8', 'https://cutt.ly/zNAGg4v', 'https://cutt.ly/lNAGSI0', 'https://cutt.ly/lNAG0OP', 'https://cutt.ly/mNAHoof', 'https://cutt.ly/iNAHWHa', 'https://cutt.ly/4NAHOQN', 'https://cutt.ly/bNAHLl1', 'https://cutt.ly/SNAH2t5', 'https://cutt.ly/uNAJqqi'];
     image_caption[index] =['Piazza Bad Kissingen - Marina di Massa', 'Viale dei Tigli - Viareggio', 'Piazza dei Miracoli - Pisa', 'Indicazioni per Fucecchio', 'Lungo la ciclopista dell`Arno', 'Ponte Vecchio - Firenze', 'Ponte Vecchio - Firenze', 'Ponte Vecchio - Firenze', 'Ponte Vecchio - Firenze', 'Montecatini Terme', 'Lucca'];
+    tour_cover[index] ="";
 
     index += 1; // 04 MARZO 2023 - PONTE DEL DIAVOLO - BORGO A MOZZANO
     image_array[index] = ['https://cutt.ly/28PpTAX', 'https://cutt.ly/P8PpLkc', 'https://cutt.ly/f8PTyL7', 'https://cutt.ly/m8PHfbt', 'https://cutt.ly/K8PHE4L', 'https://cutt.ly/b8PJtv6',
