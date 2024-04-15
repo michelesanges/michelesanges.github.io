@@ -107,3 +107,18 @@
      '<a href = "https://www.google.com/maps?q=loc:43.98532443787785, 10.552531410352657" target="_blank" rel="noopener noreferrer">Ponte del Diavolo - Borgo a Mozzano (LU)</a>'
     ];
     tour_cover[index] ="";
+
+    index += 1; // 06 APRILE 2024 - TELEFONO DEL VENTO
+    image_array[index] = ['https://cutt.ly/Mw7yncQH', 'https://cutt.ly/pw7yEf7M', 'https://cutt.ly/Mw7TXdNu', 'https://cutt.ly/tw7TV2MY', 'https://cutt.ly/aw7TMPU6', 'https://cutt.ly/Fw7T2X9y',
+    'https://cutt.ly/Cw7T7YNc', 'https://cutt.ly/3w7YmegA'];
+    image_caption[index] =[
+    '<a href = "https://maps.app.goo.gl/YG9ZRTgjaNgeTco9A" target="_blank" rel="noopener noreferrer">Ponte ciclopedonale Fausto Coppi - Viareggio</a>',
+    '<a href = "https://maps.app.goo.gl/B1jmPTcN1dwuQTRu9" target="_blank" rel="noopener noreferrer">Piazza dei Cavalieri - Pisa</a>',
+    '<a href = "https://maps.app.goo.gl/QW5tugiFeTMqZu516" target="_blank" rel="noopener noreferrer">Via Brigate Partigiane, Pontedera (PI)</a>',
+    '<a href = "https://maps.app.goo.gl/6gLAXU8HcHRr81t56" target="_blank" rel="noopener noreferrer">Piazza Eroi di Fiesole, 71, Pontedera (PI)</a>',
+    '<a href = "https://maps.app.goo.gl/rpbxGpQDYYWYeRjt9" target="_blank" rel="noopener noreferrer">Località Tegolaia, Capannoli (PI)</a>',
+    '<a href = "https://maps.app.goo.gl/oBfoDYDWbh2EfWiG8" target="_blank" rel="noopener noreferrer">Telefono Del Vento, Località Tegolaia, Capannoli (PI)</a>',
+    '<a href = "https://maps.app.goo.gl/oBfoDYDWbh2EfWiG8" target="_blank" rel="noopener noreferrer">Telefono Del Vento, Località Tegolaia, Capannoli (PI)</a>',
+    '<a href = "https://maps.app.goo.gl/oBfoDYDWbh2EfWiG8" target="_blank" rel="noopener noreferrer">Telefono Del Vento, Località Tegolaia, Capannoli (PI)</a>',
+    ];
+    tour_cover[index] ="https://cutt.ly/Fw7T2X9y";

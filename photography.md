@@ -52,16 +52,6 @@ a:active {
  <script>
     var html_cmd = "";
 
-        html_cmd+="<div class='square bg' style='background-image: url(" + "https://images.vogue.it/Photovogue/0a38ac30-11d3-11eb-b581-2fe907d89330_large.jpg" + ")'>";
-        html_cmd+="<div class='content'>"
-        html_cmd+="<div class='table'>"
-        html_cmd+="<div class='table-cell'>"
-        html_cmd+= "<a href='https://www.vogue.it/photovogue/portfolio/?id=149678' target='_blank' style='color:white; background-color:black'>" + "PORTFOLIO SULLA PIATTAFORMA VOGUE ITALIA" + "</a>";
-        html_cmd+="</div>"
-        html_cmd+="</div>"
-        html_cmd+="</div>"
-        html_cmd+="</div>"    
-    
     {% for photocollection in site.photocollections %}
         html_cmd+="<div class='square bg' style='background-image: url(" + "{{ photocollection.images[0].image_path }}" + ")'>";
         html_cmd+="<div class='content'>"
@@ -75,6 +65,15 @@ a:active {
 //         console.log(html_cmd);
     {% endfor %}
 
+        html_cmd+="<div class='square bg' style='background-image: url(" + "https://images.vogue.it/Photovogue/0a38ac30-11d3-11eb-b581-2fe907d89330_large.jpg" + ")'>";
+        html_cmd+="<div class='content'>"
+        html_cmd+="<div class='table'>"
+        html_cmd+="<div class='table-cell'>"
+        html_cmd+= "<a href='https://www.vogue.it/photovogue/portfolio/?id=149678' target='_blank' style='color:white; background-color:black'>" + "PORTFOLIO SULLA PIATTAFORMA VOGUE ITALIA" + "</a>";
+        html_cmd+="</div>"
+        html_cmd+="</div>"
+        html_cmd+="</div>"
+        html_cmd+="</div>"
     document.getElementById("photocollection").innerHTML=html_cmd;
 </script>
 </body>

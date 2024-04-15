@@ -151,3 +151,14 @@ L'effetto sul corpo è di avere raggiunto una condizione limite di estrema stanc
 				"rgb(166, 27, 74)", true, null, null]
 
 
+    index += 1;
+    track_description[index] = "Oggi sono andato a fare una telefonata. Sarà un'interurbana - ho pensato - così ho portato con me tanti gettoni. Poi però ho poggiato lo sguardo su un quaderno, mi si sono inumiditi gli occhi e non sono riuscito a comporre quel numero. Ma non erano lacrime, no, credo piuttosto l'effetto del polline. <P> \
+    <A HREF=https://www.greenme.it/lifestyle/costume-e-societa/italia-telefono-del-vento/> https://www.greenme.it/lifestyle/costume-e-societa/italia-telefono-del-vento/</A>";
+    track_file_gpx[index] = "https://drive.google.com/file/d/1u1mgMUF_NTo3-O1cehoz_2nY3vjvC4-I/view?usp=drive_link";
+    track_spotify_playlist[index] = "";
+    track_filename[index] = new Array();
+	track_filename[index][0] = ['./dataset/tracks/2024-04-06 - telefono del vento.geojson',
+				'06 APRILE 2024<br>TELEFONO DEL VENTO',
+				'06-04-2024 - Telefono del vento',
+				"rgb(166, 27, 74)", true, null, null]
+
