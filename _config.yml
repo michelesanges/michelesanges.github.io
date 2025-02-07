@@ -39,7 +39,8 @@ navbar-links:
   Look mum, no hands!: 
     - Multi-day tours: "look_mum?type=multiday"
     - Single-day tours: "look_mum?type=singleday"
-  Photography: "photography"
+  Drawings: "drawings"
+  Photos: "photos"
   #Social:
     #- Facebook: "https://www.facebook.com/sanges.michele"
     #- Anobii: "http://www.anobii.com/michelesanges/profile"
@@ -156,6 +157,8 @@ footer-links-active:
 #permalink: /:year-:month-:day-:title/
 collections:
   photocollections:
+    output: true
+  drawings:
     output: true
     
 paginate: 5

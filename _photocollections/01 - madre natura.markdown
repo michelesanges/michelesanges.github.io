@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "MADRE NATURA"
-subtitle: Photography - Projects
+subtitle: Photos - Projects
 thumbnail-path: https://cutt.ly/kw7I4W1
 short-description: this is the short description
 images:

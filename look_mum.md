@@ -2,10 +2,6 @@
 layout: page
 title: LOOK MUM, NO HANDS!
 subtitle: <div id="subtitle"></div>
-//bigimg:
-//- "https://cutt.ly/dvdGreo"  : "Montemarcello"   
-//- "https://cutt.ly/Fv7eMVM" : "Bonassola"   
-//- "https://cutt.ly/Rv7eDCK"  : "Bonassola"  
 ---
 <head>
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no">

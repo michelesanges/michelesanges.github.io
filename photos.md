@@ -1,11 +1,11 @@
 ---
 layout: page
-title: PHOTOGRAPHY 
+title: PHOTOS
 subtitle: Projects
 <!-- bigimg: https://images.vogue.it/Photovogue/0a38ac30-11d3-11eb-b581-2fe907d89330_large.jpg -->
 ---
 <!--
-<h2><a href="http://www.vogue.it/photovogue/portfolio/?id=149678" target="_blank">PHOTOVOGUE</a></h2>
+<h2><a href="https://www.vogue.com/photovogue/photographers/149678 target="_blank">PHOTOVOGUE</a></h2>
   <p>Portfolio sulla piattaforma Vogue Italia</p>
   <hr>
 {% for photocollection in site.photocollections %}
@@ -69,7 +69,7 @@ a:active {
         html_cmd+="<div class='content'>"
         html_cmd+="<div class='table'>"
         html_cmd+="<div class='table-cell'>"
-        html_cmd+= "<a href='https://www.vogue.it/photovogue/portfolio/?id=149678' target='_blank' style='color:white; background-color:black'>" + "PORTFOLIO SULLA PIATTAFORMA VOGUE ITALIA" + "</a>";
+        html_cmd+= "<a href='https://www.vogue.com/photovogue/photographers/149678' target='_blank' style='color:white; background-color:black'>" + "PORTFOLIO SULLA PIATTAFORMA VOGUE ITALIA" + "</a>";
         html_cmd+="</div>"
         html_cmd+="</div>"
         html_cmd+="</div>"
