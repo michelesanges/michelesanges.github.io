@@ -53,7 +53,8 @@ a:active {
    var html_cmd = "";
 
     {% for drawingcollection in site.drawings %}
-        html_cmd+="<div class='square bg' style='background-image: url(" + "{{ drawingcollection.images[0].image_path }}" + ")'>";
+//         html_cmd+="<div class='square bg' style='background-image: url(" + "{{ drawingcollection.images[0].image_path }}" + ")'>";
+        html_cmd+="<div class='square bg' style='background-image: url(drawings/{{ drawingcollection.images[0].image_path }} " + ")'>";
         html_cmd+="<div class='content'>"
         html_cmd+="<div class='table'>"
         html_cmd+="<div class='table-cell'>"
