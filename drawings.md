@@ -47,24 +47,24 @@ a:active {
 </head>
 
 <body>
- <div id="photocollection"></div>
+ <div id="drawingcollection"></div>
  
  <script>
    var html_cmd = "";
 
-    {% for photocollection in site.drawings %}
-        html_cmd+="<div class='square bg' style='background-image: url(" + "{{ photocollection.images[0].image_path }}" + ")'>";
+    {% for drawingcollection in site.drawings %}
+        html_cmd+="<div class='square bg' style='background-image: url(" + "{{ drawingcollection.images[0].image_path }}" + ")'>";
         html_cmd+="<div class='content'>"
         html_cmd+="<div class='table'>"
         html_cmd+="<div class='table-cell'>"
-        html_cmd+= "<a href='{{ photocollection.url }}' style='color:white; background-color:black'>" + "{{ photocollection.title }}" + "</a>";
+        html_cmd+= "<a href='{{ drawingcollection.url }}' style='color:white; background-color:black'>" + "{{ drawingcollection.title }}" + "</a>";
         html_cmd+="</div>"
         html_cmd+="</div>"
         html_cmd+="</div>"
         html_cmd+="</div>"
-//         console.log(html_cmd);
+  console.log(html_cmd);
     {% endfor %}
 
-    document.getElementById("photocollection").innerHTML=html_cmd;
+    document.getElementById("drawingcollection").innerHTML=html_cmd;
 </script>
 </body>
