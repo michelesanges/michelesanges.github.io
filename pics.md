@@ -1,6 +1,6 @@
 ---
 layout: page
-title: PHOTOS
+title: PICS
 subtitle: Projects
 <!-- bigimg: https://images.vogue.it/Photovogue/0a38ac30-11d3-11eb-b581-2fe907d89330_large.jpg -->
 ---
@@ -8,11 +8,11 @@ subtitle: Projects
 <h2><a href="https://www.vogue.com/photovogue/photographers/149678 target="_blank">PHOTOVOGUE</a></h2>
   <p>Portfolio sulla piattaforma Vogue Italia</p>
   <hr>
-{% for photocollection in site.photocollections %}
-  <div class="photocollection">
-    <h2><a href="{{ photocollection.url }}">{{ photocollection.title }}
+{% for picscollection in site.picscollections %}
+  <div class="picscollection">
+    <h2><a href="{{ picscollection.url }}">{{ picscollection.title }}
     </a></h2>
-    <p>{{ photocollection.short-description }} {{ photocollection.images[0].image_path }}</p>
+    <p>{{ picscollection.short-description }} {{ picscollection.images[0].image_path }}</p>
     <hr>
   </div> 
 {% endfor %}
@@ -47,17 +47,17 @@ a:active {
 </head>
 
 <body>
- <div id="photocollection"></div>
+ <div id="picscollection"></div>
  
  <script>
     var html_cmd = "";
 
-    {% for photocollection in site.photocollections %}
-        html_cmd+="<div class='square bg' style='background-image: url(" + "{{ photocollection.images[0].image_path }}" + ")'>";
+    {% for picscollection in site.pics %}
+        html_cmd+="<div class='square bg' style='background-image: url(" + "{{ picscollection.images[0].image_path }}" + ")'>";
         html_cmd+="<div class='content'>"
         html_cmd+="<div class='table'>"
         html_cmd+="<div class='table-cell'>"
-        html_cmd+= "<a href='{{ photocollection.url }}' style='color:white; background-color:black'>" + "{{ photocollection.title }}" + "</a>";
+        html_cmd+= "<a href='{{ picscollection.url }}' style='color:white; background-color:black'>" + "{{ picscollection.title }}" + "</a>";
         html_cmd+="</div>"
         html_cmd+="</div>"
         html_cmd+="</div>"
@@ -74,6 +74,6 @@ a:active {
         html_cmd+="</div>"
         html_cmd+="</div>"
         html_cmd+="</div>"
-    document.getElementById("photocollection").innerHTML=html_cmd;
+    document.getElementById("picscollection").innerHTML=html_cmd;
 </script>
 </body>

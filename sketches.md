@@ -1,7 +1,7 @@
 ---
 layout: page
-title: DRAWINGS
-subtitle: Projects
+title: SKETCHES
+subtitle: Years
 <!-- bigimg: https://images.vogue.it/Photovogue/0a38ac30-11d3-11eb-b581-2fe907d89330_large.jpg -->
 ---
 <!--
@@ -47,18 +47,18 @@ a:active {
 </head>
 
 <body>
- <div id="drawingcollection"></div>
+ <div id="sketchescollection"></div>
  
  <script>
    var html_cmd = "";
 
-    {% for drawingcollection in site.drawings %}
-//         html_cmd+="<div class='square bg' style='background-image: url(" + "{{ drawingcollection.images[0].image_path }}" + ")'>";
-        html_cmd+="<div class='square bg' style='background-image: url(drawings/{{ drawingcollection.images[0].image_path }} " + ")'>";
+    {% for sketchescollection in site.sketches %}
+//         html_cmd+="<div class='square bg' style='background-image: url(" + "{{ sketchescollection.images[0].image_path }}" + ")'>";
+        html_cmd+="<div class='square bg' style='background-image: url(sketches/{{ sketchescollection.images[0].image_path }} " + ")'>";
         html_cmd+="<div class='content'>"
         html_cmd+="<div class='table'>"
         html_cmd+="<div class='table-cell'>"
-        html_cmd+= "<a href='{{ drawingcollection.url }}' style='color:white; background-color:black'>" + "{{ drawingcollection.title }}" + "</a>";
+        html_cmd+= "<a href='{{ sketchescollection.url }}' style='color:white; background-color:black'>" + "{{ sketchescollection.title }}" + "</a>";
         html_cmd+="</div>"
         html_cmd+="</div>"
         html_cmd+="</div>"
@@ -66,6 +66,6 @@ a:active {
   console.log(html_cmd);
     {% endfor %}
 
-    document.getElementById("drawingcollection").innerHTML=html_cmd;
+    document.getElementById("sketchescollection").innerHTML=html_cmd;
 </script>
 </body>
