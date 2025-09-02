@@ -29,7 +29,7 @@ social:
   links:
     #- https://github.com/BrianMitchL
     - https://www.facebook.com/sanges.michele
-    - https://www.instagram.com/michele.sanges/
+    - https://www.instagram.com/bit_error_rate/
 
 # --- Navigation bar options --- #
 
@@ -64,7 +64,7 @@ author:
   name: Michele Sanges
   email: "michele.sanges AT gmail.com"
   facebook: sanges.michele  # eg. daattali
-  instagram: michele.sanges
+  instagram: bit_error_rate
   #google-photo: https://goo.gl/photos/J6n4SpRfPnE5ZsZh6
   #anobii: http://www.anobii.com/michelesanges/books
   #google-maps: /bike_tracks/
@@ -87,9 +87,9 @@ social:
   - icon:	instagram
     image:       "/img/instagram.png"
     target:      "_blank"
-    url:	https://www.instagram.com/michele.sanges/
+    url:	https://www.instagram.com/bit_error_rate/
     desc: Follow me on Instagram
-    share_url: https://www.instagram.com/michele.sanges/
+    share_url: https://www.instagram.com/bit_error_rate/
     share_title: ?text=
     share_link: "&amp;url="
 
