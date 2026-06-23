@@ -629,13 +629,12 @@ footer .copyright {
   border-radius: 12px 12px 0 0 !important; /* Smussa solo gli angoli superiori */
 
 /* FILTRO CALDO CINEMATOGRAFICO */
-/*  filter: sepia(0.18) saturate(1.05) contrast(1.02) brightness(0.98);
-  transition: filter 0.3s ease;*/
+  filter: sepia(0.18) saturate(1.05) contrast(1.02) brightness(0.98);
+  transition: filter 0.3s ease;
 }
 
 /* OPZIONALE: Quando l'utente passa il mouse sopra la foto, il filtro si attenua leggermente per mostrare i colori originali */
-/*
-#imageHolder img:hover,
+/*#imageHolder img:hover,
 .collection img:hover {
   filter: sepia(0.05) saturate(1.02) contrast(1.0) brightness(1.0);
 }*/

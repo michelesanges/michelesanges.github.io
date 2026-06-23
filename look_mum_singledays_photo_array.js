@@ -121,20 +121,42 @@
     ];
     tour_cover[index] ="";
 
+
+
     index += 1; // 06 APRILE 2024 - TELEFONO DEL VENTO
-    image_array[index] = ['https://cutt.ly/Mw7yncQH', 'https://cutt.ly/pw7yEf7M', 'https://cutt.ly/Mw7TXdNu', 'https://cutt.ly/tw7TV2MY', 'https://cutt.ly/aw7TMPU6', 'https://cutt.ly/Fw7T2X9y',
-    'https://cutt.ly/Cw7T7YNc', 'https://cutt.ly/3w7YmegA'];
-    image_caption[index] =[
-    '<a href = "https://maps.app.goo.gl/YG9ZRTgjaNgeTco9A" target="_blank" rel="noopener noreferrer">Ponte ciclopedonale Fausto Coppi - Viareggio</a>',
-    '<a href = "https://maps.app.goo.gl/B1jmPTcN1dwuQTRu9" target="_blank" rel="noopener noreferrer">Piazza dei Cavalieri - Pisa</a>',
-    '<a href = "https://maps.app.goo.gl/QW5tugiFeTMqZu516" target="_blank" rel="noopener noreferrer">Via Brigate Partigiane, Pontedera (PI)</a>',
-    '<a href = "https://maps.app.goo.gl/6gLAXU8HcHRr81t56" target="_blank" rel="noopener noreferrer">Piazza Eroi di Fiesole, 71, Pontedera (PI)</a>',
-    '<a href = "https://maps.app.goo.gl/rpbxGpQDYYWYeRjt9" target="_blank" rel="noopener noreferrer">Località Tegolaia, Capannoli (PI)</a>',
-    '<a href = "https://maps.app.goo.gl/oBfoDYDWbh2EfWiG8" target="_blank" rel="noopener noreferrer">Telefono Del Vento, Località Tegolaia, Capannoli (PI)</a>',
-    '<a href = "https://maps.app.goo.gl/oBfoDYDWbh2EfWiG8" target="_blank" rel="noopener noreferrer">Telefono Del Vento, Località Tegolaia, Capannoli (PI)</a>',
-    '<a href = "https://maps.app.goo.gl/oBfoDYDWbh2EfWiG8" target="_blank" rel="noopener noreferrer">Telefono Del Vento, Località Tegolaia, Capannoli (PI)</a>',
+    image_array[index] = [
+	  '/images/tours/single_day/20240406_telefono_del_vento/telefono_01.jpg',
+	  '/images/tours/single_day/20240406_telefono_del_vento/telefono_02.jpg',
+	  '/images/tours/single_day/20240406_telefono_del_vento/telefono_03.jpg',
+	  '/images/tours/single_day/20240406_telefono_del_vento/telefono_04.jpg',
+	  '/images/tours/single_day/20240406_telefono_del_vento/telefono_05.jpg',
+	  '/images/tours/single_day/20240406_telefono_del_vento/telefono_06.jpg',
+	  '/images/tours/single_day/20240406_telefono_del_vento/telefono_07.jpg',
+	  '/images/tours/single_day/20240406_telefono_del_vento/telefono_08.jpg',
+	  '/images/tours/single_day/20240406_telefono_del_vento/telefono_09.jpg'
     ];
-    tour_cover[index] ="https://cutt.ly/Fw7T2X9y";
+    image_caption[index] =[
+        "Ponte ciclopedonale Fausto Coppi - Viareggio", 
+        "Piazza del Duomo - Pisa", "Piazza dei Cavalieri - Pisa",
+        "Via Brigate Partigiane, Pontedera (,PI)",
+        "Piazza Eroi di Fiesole, 71, Pontedera (PI)",
+        "Località Tegolaia, Capannoli (PI)",
+        "Telefono Del Vento, Località Tegolaia, Capannoli (PI)",
+        "Telefono Del Vento, Località Tegolaia, Capannoli (PI)",
+        "Telefono Del Vento, Località Tegolaia, Capannoli (PI)"
+    ];
+    image_coords[index] = [
+        [43.864879229117314, 10.244645179346696],
+        [43.72296276689535, 10.396257592044172],
+        [43.7193775774404, 10.400051576686499],
+        [43.663648823159996, 10.625166132434993],
+        [43.66380356595093, 10.625669528423359],
+        [43.57417332447891, 10.670305126380315],
+        [43.57316012649347, 10.67090776662172],
+        [43.57316012649347, 10.67090776662172],
+        [43.57316012649347, 10.67090776662172]
+    ];
+    tour_cover[index] = "/images/tours/single_day/20240406_telefono_del_vento/telefono_09.jpg";
 
 
 
@@ -152,9 +174,21 @@
 	  '/images/tours/single_day/20260619_san_pellegrino_in_alpe/san_pellegrino_10.jpg',
 	  '/images/tours/single_day/20260619_san_pellegrino_in_alpe/san_pellegrino_11.jpg',
 	  '/images/tours/single_day/20260619_san_pellegrino_in_alpe/san_pellegrino_12.jpg'
-	 ];
-    image_caption[index] =["Pian della Fioba", "Passo del vestito", "Cava Henraux", "Isola Santa", "Chiozza", "San Pellegrino in Alpe", "San Pellegrino in Alpe",
-                            "Passo del Lagadello", "Passo delle radici", "Passo delle radici", "Piazza al Serchio - Locomotiva FS 940.002", "Passo dei Carpinelli"];
+	];
+    image_caption[index] =[
+        "Pian della Fioba",
+        "Passo del vestito",
+        "Cava Henraux",
+        "Isola Santa",
+        "Chiozza",
+        "San Pellegrino in Alpe",
+        "San Pellegrino in Alpe",
+        "Passo del Lagadello",
+        "Passo delle radici",
+        "Passo delle radici",
+        "Piazza al Serchio - Locomotiva FS 940.002",
+        "Passo dei Carpinelli"
+    ];
     image_coords[index] = [
         [44.05760364931382, 10.206306829189105],
         [44.063915015678525, 10.222224033032306],
