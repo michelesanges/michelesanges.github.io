@@ -162,3 +162,13 @@ L'effetto sul corpo è di avere raggiunto una condizione limite di estrema stanc
 				'06-04-2024 - Telefono del vento',
 				"rgb(166, 27, 74)", true, null, null]
 
+
+    index += 1;
+    track_description[index] = "";
+    track_spotify_playlist[index] = "";
+    track_filename[index] = new Array();
+	track_filename[index][0] = ['./dataset/tracks/20260619_san_pellegrino_in_alpe.geojson',
+				'19 GIUGNO 2026<br>SAN PELLEGRINO IN ALPE',
+				'19-06-2026 - San Pellegrino in Alpe',
+				"rgb(166, 27, 74)", true, null, null]
+

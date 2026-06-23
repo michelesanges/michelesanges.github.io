@@ -2,13 +2,26 @@
 	var image_array = new Array();
 	var image_caption = new Array();
 	var tour_cover = new Array();
+    var image_coords = new Array();
     var index = 0;
     
     // 16 APRILE 2016 - VALLI DI COMACCHIO
-	image_array[index] = ['https://cutt.ly/sfYVrdu', 'https://cutt.ly/qfYVyKG', 'https://cutt.ly/0fYVotk', 'https://cutt.ly/YfYVpM4', 'https://cutt.ly/IfYVhUp', 'https://cutt.ly/tfYVjS3', 'https://cutt.ly/xfYVlYt',
-	  'https://cutt.ly/4fYVzyW', 'https://cutt.ly/EfYVxfu', 'https://cutt.ly/afYVxVR', 'https://cutt.ly/jfYVvwF', 
-      'https://cutt.ly/1vdPiCh', 'https://cutt.ly/RvdPh8j', 'https://cutt.ly/LvdPvNt', 'https://cutt.ly/SvdPU5S', 'https://cutt.ly/QvdPGuE', 
-	 ];       
+    image_array[index] = [
+	  '/images/tours/single_day/20160416_comacchio/comacchio_01.jpg',
+	  '/images/tours/single_day/20160416_comacchio/comacchio_02.jpg',
+	  '/images/tours/single_day/20160416_comacchio/comacchio_03.jpg',
+	  '/images/tours/single_day/20160416_comacchio/comacchio_04.jpg',
+	  '/images/tours/single_day/20160416_comacchio/comacchio_05.jpg',
+	  '/images/tours/single_day/20160416_comacchio/comacchio_06.jpg',
+	  '/images/tours/single_day/20160416_comacchio/comacchio_07.jpg',
+	  '/images/tours/single_day/20160416_comacchio/comacchio_08.jpg',
+	  '/images/tours/single_day/20160416_comacchio/comacchio_09.jpg',
+	  '/images/tours/single_day/20160416_comacchio/comacchio_10.jpg',
+	  '/images/tours/single_day/20160416_comacchio/comacchio_11.jpg',
+	  '/images/tours/single_day/20160416_comacchio/comacchio_12.jpg',
+	  '/images/tours/single_day/20160416_comacchio/comacchio_13.jpg',
+	  '/images/tours/single_day/20160416_comacchio/comacchio_14.jpg'
+	 ];
     image_caption[index] ="";
     tour_cover[index] ="";
 
@@ -122,3 +135,39 @@
     '<a href = "https://maps.app.goo.gl/oBfoDYDWbh2EfWiG8" target="_blank" rel="noopener noreferrer">Telefono Del Vento, Località Tegolaia, Capannoli (PI)</a>',
     ];
     tour_cover[index] ="https://cutt.ly/Fw7T2X9y";
+
+
+
+    index += 1; // 19 GIUGNO 2026 - SAN PELLEGRINO IN ALPE
+    image_array[index] = [
+	  '/images/tours/single_day/20260619_san_pellegrino_in_alpe/san_pellegrino_01.jpg',
+	  '/images/tours/single_day/20260619_san_pellegrino_in_alpe/san_pellegrino_02.jpg',
+	  '/images/tours/single_day/20260619_san_pellegrino_in_alpe/san_pellegrino_03.jpg',
+	  '/images/tours/single_day/20260619_san_pellegrino_in_alpe/san_pellegrino_04.jpg',
+	  '/images/tours/single_day/20260619_san_pellegrino_in_alpe/san_pellegrino_05.jpg',
+	  '/images/tours/single_day/20260619_san_pellegrino_in_alpe/san_pellegrino_06.jpg',
+	  '/images/tours/single_day/20260619_san_pellegrino_in_alpe/san_pellegrino_07.jpg',
+	  '/images/tours/single_day/20260619_san_pellegrino_in_alpe/san_pellegrino_08.jpg',
+	  '/images/tours/single_day/20260619_san_pellegrino_in_alpe/san_pellegrino_09.jpg',
+	  '/images/tours/single_day/20260619_san_pellegrino_in_alpe/san_pellegrino_10.jpg',
+	  '/images/tours/single_day/20260619_san_pellegrino_in_alpe/san_pellegrino_11.jpg',
+	  '/images/tours/single_day/20260619_san_pellegrino_in_alpe/san_pellegrino_12.jpg'
+	 ];
+    image_caption[index] =["Pian della Fioba", "Passo del vestito", "Cava Henraux", "Isola Santa", "Chiozza", "San Pellegrino in Alpe", "San Pellegrino in Alpe",
+                            "Passo del Lagadello", "Passo delle radici", "Passo delle radici", "Piazza al Serchio - Locomotiva FS 940.002", "Passo dei Carpinelli"];
+    image_coords[index] = [
+        [44.05760364931382, 10.206306829189105],
+        [44.063915015678525, 10.222224033032306],
+        [44.05772232349954, 10.272603249902556],
+        [44.064461425035574, 10.311872983870161],
+        [44.15567444863206, 10.437833973348011],
+        [44.18818939186277, 10.479624448233444],
+        [44.19011463448841, 10.48059173556767],
+        [44.200561311273184, 10.48805551809518],
+        [44.209060093315486, 10.48852473740518],
+        [44.20939607017541, 10.488695001955037],
+        [44.18352742273603, 10.30309821448653],
+        [44.20030419304525, 10.231582502782867]
+    ];
+    tour_cover[index] ="/images/tours/single_day/20260619_san_pellegrino_in_alpe/san_pellegrino_10.jpg";
+

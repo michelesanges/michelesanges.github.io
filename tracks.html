@@ -630,59 +630,11 @@ function smooth(data, alpha)
 
 		document.getElementsByTagName('head').item(0).appendChild(script);	
 	}	
-	
+/*	
 	function set_image(par)
 	{
-	/*
-		if (image_array[map_index].length != 'undefined')
-		{
-		*/
-/*		
-		    var prev, next;
-		    if (par == 0)
-		    {
-			prev = image_array[map_index].length - 1;
-			next = par + 1;
-		    }
-		    else if (par == (image_array[map_index].length - 1))
-		    {
-			prev = par - 1;
-			next = 0;		    
-		    }
-		    else
-		    {
-			prev = par - 1;
-			next = par + 1;
-		    }
-                    document.getElementById("imageHolder").innerHTML="<center><table border=0><tr>\
-                    <td><font size=50><a href=javascript:set_image(" + prev + ") style=text-decoration:none>&#x2190;</a></font></td> \
-                    <td><img src='" + image_array[map_index][par] + "'/></td> \
-                    <td><font size=50><a href=javascript:set_image(" + next + ") style=text-decoration:none>&#x2192;</a></font></td> \
-                    </tr></table></center>";
-
-                    var cmd = "<center>" ;
-                    
-                    for (var n = 0; n < image_array[map_index].length; n++)
-                    {
-                                var bullet;
-                                if (par == n)
-                                {
-                                    bullet=9724;
-                                }
-                                else
-                                {
-                                    bullet=9723;
-                                }
-                                
-                                cmd += "&#" + bullet;
-                    }
-
-                    cmd += "</center>" 
-                    document.getElementById("pointHolder").innerHTML=cmd; 
-                    */
                     // @@@@@@@@@@@@@@@@@@@@@@@@
                     var html_cmd="";
-//                     html_cmd = "<center>" ;
                     for (var n = 0; n < image_array[map_index].length; n++)
                     {
                         html_cmd += "<p class='aligncenter'>"
@@ -713,23 +665,67 @@ function smooth(data, alpha)
                             {
                                 html_cmd += "<figcaption>" + image_caption[map_index][n] + "</figcaption>";
                             }
-            // 				else
-            // 				{
-            //                    html_cmd += "<br>"
-            // 				}
-            // 				html_cmd += "</p>";
                html_cmd +="</figure>"
                         }
-//                             html_cmd += "</p>";
                     }
-//                     html_cmd += "</center>" ;
-// html_cmd += "<p>";
                     document.getElementById("imageHolder").innerHTML=html_cmd;
                     // @@@@@@@@@@@@@@@@@@@@@@@@
-// 		}
 }
+*/
+function set_image(par)
+	{
+        var html_cmd="";
+        for (var n = 0; n < image_array[map_index].length; n++)
+        {
+            html_cmd += "<p class='aligncenter'>"
+            if (image_array[map_index][n].includes("youtu"))
+            {
+                pos = image_array[map_index][n].lastIndexOf('/');
+                videoname = image_array[map_index][n].substring(pos+1);
 
+                if (image_array[map_index][n].includes("shorts"))
+                {
+                    html_cmd += "<object align=middle width='720' height='1280' data='" + 'https://www.youtube.com/embed/' + videoname + "'></object><p>";
+                }
+                else
+                {
+                    html_cmd += "<object align=middle width='1280' height='720' data='" + image_array[map_index][n] + "'></object><p>";
+                }
 
+                if (image_caption[map_index][n])
+                {
+                    // Controllo se ci sono coordinate per questo video
+                    if (typeof image_coords !== 'undefined' && image_coords[map_index] && image_coords[map_index][n]) {
+                        var lat = image_coords[map_index][n][0];
+                        var lng = image_coords[map_index][n][1];
+                        html_cmd += "<figcaption><a href='https://www.google.com/maps?q=loc:" + lat + "," + lng + "' target='_blank' rel='noopener noreferrer'>" + image_caption[map_index][n] + "</a></figcaption>";
+                    } else {
+                        html_cmd += "<figcaption>" + image_caption[map_index][n] + "</figcaption>";
+                    }
+                }
+            }
+            else
+            {
+                html_cmd +="<figure>"
+                html_cmd += "<img src='" + image_array[map_index][n] + "' valign = top>";
+                
+                if (image_caption[map_index][n])
+                {
+                    // AUTOMAZIONE: Se esistono le coordinate per questa foto, imposta il link automaticamente
+                    if (typeof image_coords !== 'undefined' && image_coords[map_index] && image_coords[map_index][n]) {
+                        var lat = image_coords[map_index][n][0];
+                        var lng = image_coords[map_index][n][1];
+                        html_cmd += "<figcaption><a href='https://www.google.com/maps?q=loc:" + lat + "," + lng + "' target='_blank' rel='noopener noreferrer'>" + image_caption[map_index][n] + "</a></figcaption>";
+                    } else {
+                        // Altrimenti stampa solo il testo normale senza link
+                        html_cmd += "<figcaption>" + image_caption[map_index][n] + "</figcaption>";
+                    }
+                }
+                html_cmd +="</figure>"
+            }
+        }
+        document.getElementById("imageHolder").innerHTML=html_cmd;
+    }
 
 	</script>
 <!-- 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwR5MtCCmXualVOiq27XnxxosJhitng-k&callback=init_map&libraries=geometry"></script> -->

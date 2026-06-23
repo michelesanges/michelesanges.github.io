@@ -54,7 +54,7 @@ a:active {
 
     {% for sketchescollection in site.sketches %}
 //         html_cmd+="<div class='square bg' style='background-image: url(" + "{{ sketchescollection.images[0].image_path }}" + ")'>";
-        html_cmd+="<div class='square bg' style='background-image: url(sketches/{{ sketchescollection.images[0].image_path }} " + ")'>";
+        html_cmd+="<div class='square bg' style='background-image: url(/sketches/{{ sketchescollection.images[0].image_path }})'>";
         html_cmd+="<div class='content'>"
         html_cmd+="<div class='table'>"
         html_cmd+="<div class='table-cell'>"
