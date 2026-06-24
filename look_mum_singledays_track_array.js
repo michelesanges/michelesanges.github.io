@@ -2,12 +2,14 @@
 	var track_filename = new Array();
     var track_description = new Array();
 	var track_file_gpx = new Array();
+    var track_file_fit = new Array(); 
 	var track_spotify_playlist = new Array();
 	var index = 0;
 	
 	// file name, nome traccia, colore traccia, flag traccia visibile, marker start, marker stop	
     track_description[index] = "";
     track_file_gpx[index] = "";
+    track_file_fit[index] = "";
     track_spotify_playlist[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2016-04-16 - tour_valli_comacchio.geojson',
@@ -19,6 +21,7 @@
     index += 1;
     track_description[index] = "";
     track_file_gpx[index] = "";
+    track_file_fit[index] = "";
     track_spotify_playlist[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2018-06-03 - colonnata.geojson',
@@ -30,6 +33,7 @@
     index += 1;
     track_description[index] = "";
     track_file_gpx[index] = "";
+    track_file_fit[index] = "";
     track_spotify_playlist[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2018-08-15 - ugliancaldo.geojson',
@@ -41,6 +45,7 @@
     index += 1;
     track_description[index] = "";
     track_file_gpx[index] = "";
+    track_file_fit[index] = "";
     track_spotify_playlist[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2020-02-09 - la-spezia-volastra-telegrafo-campiglia.geojson',
@@ -52,6 +57,7 @@
     index += 1;
     track_description[index] = "";
     track_file_gpx[index] = "";
+    track_file_fit[index] = "";
     track_spotify_playlist[index] = "";
 	track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2020-06-02 - campocecina.geojson',
@@ -63,6 +69,7 @@
     index += 1;
     track_description[index] = "";
     track_file_gpx[index] = "";
+    track_file_fit[index] = "";
     track_spotify_playlist[index] = "";
     track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2020-06-21 - prati_di_logarghena.geojson',
@@ -74,6 +81,7 @@
     index += 1;
     track_description[index] = "";
     track_file_gpx[index] = "https://drive.google.com/file/d/1CVa3xJ2hVkSPe9hi_QSlp1jQE74nhHUV/view?usp=sharing";
+    track_file_fit[index] = "";
     track_spotify_playlist[index] = "";
     track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2022-01-07 - santanna di stazzema.geojson',
@@ -85,6 +93,7 @@
     index += 1;
     track_description[index] = "";
     track_file_gpx[index] = "https://drive.google.com/file/d/1yDNvo2Rq4qHMCZcUcmp4fTYx4twudqQ4/view?usp=sharing";
+    track_file_fit[index] = "";
     track_spotify_playlist[index] = "";
     track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2022-01-16 - pisa - calci - lucca.geojson',
@@ -96,6 +105,7 @@
     index += 1;
     track_description[index] = "";
     track_file_gpx[index] = "https://drive.google.com/file/d/1My2ONEvl5WMXgDkXvHbQydvq9w_s36PQ/view?usp=sharing";
+    track_file_fit[index] = "";
     track_spotify_playlist[index] = "";
     track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2022-01-30 - portofino.geojson',
@@ -132,6 +142,7 @@ Davanti a me, di nuovo quel noiosissimo rettilineo. Fuori da tutti i locali dell
 Ore 02:15. Apro il cancello di casa e appoggio la bicicletta. Entro in bagno, mi spoglio dei vestiti buttandoli per terra, mi siedo sfinito sul piatto doccia e mi faccio scorrere l'acqua bollente addosso. Rifletto così sulle ultime venti ore. <br>\
 L'effetto sul corpo è di avere raggiunto una condizione limite di estrema stanchezza. L'effetto sulla mente è di esaltazione totale, quasi come avere partecipato ad un rave party con più di cinquanta persone.";
     track_file_gpx[index] = "";
+    track_file_fit[index] = "";
     track_spotify_playlist[index] = "";
     track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2022-10-31 - quella volta che misi a dura prova i miei cinquantadue anni.geojson',
@@ -143,6 +154,7 @@ L'effetto sul corpo è di avere raggiunto una condizione limite di estrema stanc
     index += 1;
     track_description[index] = "... Allora il diavolo disse al capomastro che avrebbe completato lui stesso l'opera in una sola notte in cambio della prima anima che avesse attraversato il ponte... <a href = 'https://it.wikipedia.org/wiki/Ponte_della_Maddalena_(Borgo_a_Mozzano)' target='_blank' rel='noopener noreferrer'>Wikipedia</a>";
     track_file_gpx[index] = "https://drive.google.com/file/d/1nW35gIfV0m7ICsvrsl9qp7hEaedKmG-M/view?usp=share_link";
+    track_file_fit[index] = "";
     track_spotify_playlist[index] = "";
     track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2023-03-04 - ponte del diavolo.geojson',
@@ -155,6 +167,7 @@ L'effetto sul corpo è di avere raggiunto una condizione limite di estrema stanc
     track_description[index] = "Oggi sono andato a fare una telefonata. Sarà un'interurbana - ho pensato - così ho portato con me tanti gettoni. Poi però ho poggiato lo sguardo su un quaderno, mi si sono inumiditi gli occhi e non sono riuscito a comporre quel numero. Ma non erano lacrime, no, credo piuttosto l'effetto del polline. <P> \
     <A HREF=https://www.greenme.it/lifestyle/costume-e-societa/italia-telefono-del-vento/> https://www.greenme.it/lifestyle/costume-e-societa/italia-telefono-del-vento/</A>";
     track_file_gpx[index] = "https://drive.google.com/file/d/1u1mgMUF_NTo3-O1cehoz_2nY3vjvC4-I/view?usp=drive_link";
+    track_file_fit[index] = "";
     track_spotify_playlist[index] = "";
     track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/2024-04-06 - telefono del vento.geojson',
@@ -164,7 +177,9 @@ L'effetto sul corpo è di avere raggiunto una condizione limite di estrema stanc
 
 
     index += 1;
-    track_description[index] = "";
+    track_description[index] = "Fatica e devastazione fisica come terapia al cattivo umore, senza nessun allenamento e con una temperatura di picco di 36° C, come consigliato dai migliori medici.";
+    track_file_gpx[index] = "./dataset/tracks/20260619_san_pellegrino_in_alpe.gpx";
+    track_file_fit[index] = "";
     track_spotify_playlist[index] = "";
     track_filename[index] = new Array();
 	track_filename[index][0] = ['./dataset/tracks/20260619_san_pellegrino_in_alpe.geojson',

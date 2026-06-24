@@ -577,7 +577,7 @@ footer .copyright {
   width: auto !important;          /* Permette il ridimensionamento orizzontale automatico */
 
 /* FILTRO CALDO CINEMATOGRAFICO */
-  filter: sepia(0.18) saturate(1.05) contrast(1.02) brightness(0.98);
+/*  filter: sepia(0.18) saturate(1.05) contrast(1.02) brightness(0.98);
   transition: filter 0.3s ease; /* Effetto morbido se si passa sopra con il mouse */
 }
 
@@ -629,8 +629,8 @@ footer .copyright {
   border-radius: 12px 12px 0 0 !important; /* Smussa solo gli angoli superiori */
 
 /* FILTRO CALDO CINEMATOGRAFICO */
-  filter: sepia(0.18) saturate(1.05) contrast(1.02) brightness(0.98);
-  transition: filter 0.3s ease;
+/*  filter: sepia(0.18) saturate(1.05) contrast(1.02) brightness(0.98);
+  transition: filter 0.3s ease;*/
 }
 
 /* OPZIONALE: Quando l'utente passa il mouse sopra la foto, il filtro si attenua leggermente per mostrare i colori originali */

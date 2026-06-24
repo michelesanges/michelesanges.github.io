@@ -241,7 +241,7 @@ subtitle: <div id="track_filename"> </div>
 		if (map_index != "")
 		{
 			document.getElementById('track_filename').innerHTML = track_filename[map_index][0][1];
-			
+/*			
 			if (track_description[map_index] != "")
 			{
                 document.getElementById("track_description").innerHTML= track_description[map_index];
@@ -252,6 +252,37 @@ subtitle: <div id="track_filename"> </div>
             {
 				document.getElementById("track_download_path").innerHTML += "<a href='" + track_file_gpx[map_index] + "'>" + "SCARICA LA TRACCIA GPS" + "</a><p>";
             }
+*/
+
+		
+			// 1. Recupera la descrizione testuale (se c'è, la avvolgiamo per darle spazio in basso)
+			var descrizione_html = track_description[map_index] ? track_description[map_index] : "";
+			if (descrizione_html !== "") {
+				descrizione_html = "<div style='margin-bottom: 25px;'>" + descrizione_html + "</div>";
+			}
+
+			// 2. Genera i pulsanti controllando la presenza negli array del file dati
+			var download_buttons = "";
+			var btn_style = "display: inline-block; padding: 6px 14px; margin-right: 12px; margin-bottom: 10px; background-color: transparent; color: #a61b4a; border: 2px solid #a61b4a; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 13px; transition: all 0.2s ease-in-out;";
+
+			// Pulsante GPX: compare solo se valorizzato nell'array
+			if (typeof track_file_gpx !== 'undefined' && track_file_gpx[map_index] && track_file_gpx[map_index] !== "") {
+				download_buttons += "<a href='" + track_file_gpx[map_index] + "' download style='" + btn_style + "' onmouseover='this.style.backgroundColor=\"#a61b4a\"; this.style.color=\"white\";' onmouseout='this.style.backgroundColor=\"transparent\"; this.style.color=\"#a61b4a\";'><span class='glyphicon glyphicon-download-alt'></span> Scarica GPX</a>";
+			}
+
+			// Pulsante FIT: compare solo se l'array track_file_fit esiste ed è valorizzato
+			if (typeof track_file_fit !== 'undefined' && track_file_fit[map_index] && track_file_fit[map_index] !== "") {
+				download_buttons += "<a href='" + track_file_fit[map_index] + "' download style='" + btn_style + "' onmouseover='this.style.backgroundColor=\"#a61b4a\"; this.style.color=\"white\";' onmouseout='this.style.backgroundColor=\"transparent\"; this.style.color=\"#a61b4a\";'><span class='glyphicon glyphicon-download-alt'></span> Scarica FIT</a>";
+			}
+
+			// 3. Se ci sono pulsanti, li inseriamo con un ampio margine superiore protettivo
+			if (download_buttons !== "") {
+				descrizione_html += "<div style='margin-top: 35px; clear: both;'>" + download_buttons + "</div>";
+			}
+
+			// 4. Stampa finale nel contenitore
+			document.getElementById("track_description").innerHTML = descrizione_html;
+
 
             if (track_spotify_playlist[map_index] != "")
             {
