@@ -107,19 +107,42 @@
     image_caption[index] =['Piazza Bad Kissingen - Marina di Massa', 'Viale dei Tigli - Viareggio', 'Piazza dei Miracoli - Pisa', 'Indicazioni per Fucecchio', 'Lungo la ciclopista dell`Arno', 'Ponte Vecchio - Firenze', 'Ponte Vecchio - Firenze', 'Ponte Vecchio - Firenze', 'Ponte Vecchio - Firenze', 'Montecatini Terme', 'Lucca'];
     tour_cover[index] ="";
 
+    // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
     index += 1; // 04 MARZO 2023 - PONTE DEL DIAVOLO - BORGO A MOZZANO
-    image_array[index] = ['https://cutt.ly/28PpTAX', 'https://cutt.ly/P8PpLkc', 'https://cutt.ly/f8PTyL7', 'https://cutt.ly/m8PHfbt', 'https://cutt.ly/K8PHE4L', 'https://cutt.ly/b8PJtv6',
-    'https://cutt.ly/u8PJ1Iz'];
-    image_caption[index] =[
-     '<a href = "https://www.google.com/maps?q=loc:44.147083026093696, 10.024737733940285" target="_blank" rel="noopener noreferrer">Fosdinovo</a>',
-     '<a href = "https://www.google.com/maps?q=loc:44.19151200545809, 10.053493942288885" target="_blank" rel="noopener noreferrer">Ceserano</a>',
-     '<a href = "https://www.google.com/maps?q=loc:44.192099, 10.2262583" target="_blank" rel="noopener noreferrer">Sermezzana (LU)</a>',
-     '<a href = "https://www.google.com/maps?q=loc:44.200319905617164, 10.23167179318026" target="_blank" rel="noopener noreferrer">Passo dei Carpinelli - Minucciano (LU)</a>',
-     '<a href = "https://www.google.com/maps?q=loc:44.186646046494076, 10.29298655391009" target="_blank" rel="noopener noreferrer">Piazza al Serchio (LU)</a>',
-     '<a href = "https://www.google.com/maps?q=loc:43.98579338938619, 10.551717398084278" target="_blank" rel="noopener noreferrer">Ponte del Diavolo - Borgo a Mozzano (LU)</a>',
-     '<a href = "https://www.google.com/maps?q=loc:43.98532443787785, 10.552531410352657" target="_blank" rel="noopener noreferrer">Ponte del Diavolo - Borgo a Mozzano (LU)</a>'
+    image_array[index] = [
+	  '/images/tours/single_day/20230304_ponte_del_diavolo/ponte_del_diavolo_01.jpg',
+	  '/images/tours/single_day/20230304_ponte_del_diavolo/ponte_del_diavolo_02.jpg',
+	  '/images/tours/single_day/20230304_ponte_del_diavolo/ponte_del_diavolo_03.jpg',
+	  '/images/tours/single_day/20230304_ponte_del_diavolo/ponte_del_diavolo_04.jpg',
+	  '/images/tours/single_day/20230304_ponte_del_diavolo/ponte_del_diavolo_05.jpg',
+	  '/images/tours/single_day/20230304_ponte_del_diavolo/ponte_del_diavolo_06.jpg',
+	  '/images/tours/single_day/20230304_ponte_del_diavolo/ponte_del_diavolo_07.jpg',
+	  '/images/tours/single_day/20230304_ponte_del_diavolo/ponte_del_diavolo_08.jpg'
     ];
-    tour_cover[index] ="";
+    image_caption[index] = [
+        "Fosdinovo",
+        "Ceserano",
+        "Sermezzana (LU)",
+        "Passo dei Carpinelli",
+        "Piazza al Serchio (LU)",
+        "Ponte del Diavolo - Borgo a Mozzano (LU)",
+        "Ponte del Diavolo - Borgo a Mozzano (LU)",
+        "Ponte del Diavolo - Borgo a Mozzano (LU)"
+    ];
+    image_coords[index] = [
+        [44.147083026093696, 10.024737733940285],
+        [44.19151200545809, 10.053493942288885],
+        [44.192099, 10.2262583],
+        [44.20030419304525, 10.231582502782867],
+        [44.186646046494076, 10.29298655391009],
+        [43.985723895310336, 10.551902469168793],
+        [43.985723895310336, 10.551902469168793],
+        [43.985723895310336, 10.551902469168793]
+    ];
+    tour_cover[index] = "/images/tours/single_day/20230304_ponte_del_diavolo/ponte_del_diavolo_08.jpg";
 
 
 
@@ -135,7 +158,7 @@
 	  '/images/tours/single_day/20240406_telefono_del_vento/telefono_08.jpg',
 	  '/images/tours/single_day/20240406_telefono_del_vento/telefono_09.jpg'
     ];
-    image_caption[index] =[
+    image_caption[index] = [
         "Ponte ciclopedonale Fausto Coppi - Viareggio", 
         "Piazza del Duomo - Pisa", "Piazza dei Cavalieri - Pisa",
         "Via Brigate Partigiane, Pontedera (,PI)",
@@ -175,7 +198,7 @@
 	  '/images/tours/single_day/20260619_san_pellegrino_in_alpe/san_pellegrino_11.jpg',
 	  '/images/tours/single_day/20260619_san_pellegrino_in_alpe/san_pellegrino_12.jpg'
 	];
-    image_caption[index] =[
+    image_caption[index] = [
         "Pian della Fioba",
         "Passo del vestito",
         "Cava Henraux",

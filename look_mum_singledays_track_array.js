@@ -151,13 +151,14 @@ L'effetto sul corpo è di avere raggiunto una condizione limite di estrema stanc
 				"rgb(166, 27, 74)", true, null, null];
 
 
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     index += 1;
-    track_description[index] = "... Allora il diavolo disse al capomastro che avrebbe completato lui stesso l'opera in una sola notte in cambio della prima anima che avesse attraversato il ponte... <a href = 'https://it.wikipedia.org/wiki/Ponte_della_Maddalena_(Borgo_a_Mozzano)' target='_blank' rel='noopener noreferrer'>Wikipedia</a>";
-    track_file_gpx[index] = "https://drive.google.com/file/d/1nW35gIfV0m7ICsvrsl9qp7hEaedKmG-M/view?usp=share_link";
-    track_file_fit[index] = "";
+    track_description[index] = "... Allora il diavolo disse al capomastro che avrebbe completato lui stesso l'opera in una sola notte, in cambio della prima anima che avesse attraversato il ponte... <a href = 'https://it.wikipedia.org/wiki/Ponte_della_Maddalena_(Borgo_a_Mozzano)' target='_blank' rel='noopener noreferrer'>Wikipedia</a>";
+    track_file_gpx[index] = "/dataset/tracks/20230304_ponte_del_diavolo.gpx";
+    track_file_fit[index] = "/dataset/tracks/20230304_ponte_del_diavolo.fit";
     track_spotify_playlist[index] = "";
     track_filename[index] = new Array();
-	track_filename[index][0] = ['./dataset/tracks/2023-03-04 - ponte del diavolo.geojson',
+	track_filename[index][0] = ['/dataset/tracks/20230304_ponte_del_diavolo.geojson',
 				'04 MARZO 2023<br>PONTE DEL DIAVOLO - BORGO A MOZZANO',
 				'04-03-2023 - Ponte del Diavolo - Borgo a Mozzano',
 				"rgb(166, 27, 74)", true, null, null]
@@ -166,11 +167,11 @@ L'effetto sul corpo è di avere raggiunto una condizione limite di estrema stanc
     index += 1;
     track_description[index] = "Oggi sono andato a fare una telefonata. Sarà un'interurbana - ho pensato - così ho portato con me tanti gettoni. Poi però ho poggiato lo sguardo su un quaderno, mi si sono inumiditi gli occhi e non sono riuscito a comporre quel numero. Ma non erano lacrime, no, credo piuttosto l'effetto del polline. <P> \
     <A HREF=https://www.greenme.it/lifestyle/costume-e-societa/italia-telefono-del-vento/> https://www.greenme.it/lifestyle/costume-e-societa/italia-telefono-del-vento/</A>";
-    track_file_gpx[index] = "https://drive.google.com/file/d/1u1mgMUF_NTo3-O1cehoz_2nY3vjvC4-I/view?usp=drive_link";
-    track_file_fit[index] = "";
+    track_file_gpx[index] = "/dataset/tracks/20240406_telefono_del_vento.gpx";
+    track_file_fit[index] = "/dataset/tracks/20240406_telefono_del_vento.fit";
     track_spotify_playlist[index] = "";
     track_filename[index] = new Array();
-	track_filename[index][0] = ['./dataset/tracks/2024-04-06 - telefono del vento.geojson',
+	track_filename[index][0] = ['/dataset/tracks/20240406_telefono_del_vento.geojson',
 				'06 APRILE 2024<br>TELEFONO DEL VENTO',
 				'06-04-2024 - Telefono del vento',
 				"rgb(166, 27, 74)", true, null, null]
@@ -178,11 +179,11 @@ L'effetto sul corpo è di avere raggiunto una condizione limite di estrema stanc
 
     index += 1;
     track_description[index] = "Fatica e devastazione fisica come terapia al cattivo umore, senza nessun allenamento e con una temperatura di picco di 36° C, come consigliato dai migliori medici.";
-    track_file_gpx[index] = "./dataset/tracks/20260619_san_pellegrino_in_alpe.gpx";
+    track_file_gpx[index] = "/dataset/tracks/20260619_san_pellegrino_in_alpe.gpx";
     track_file_fit[index] = "";
     track_spotify_playlist[index] = "";
     track_filename[index] = new Array();
-	track_filename[index][0] = ['./dataset/tracks/20260619_san_pellegrino_in_alpe.geojson',
+	track_filename[index][0] = ['/dataset/tracks/20260619_san_pellegrino_in_alpe.geojson',
 				'19 GIUGNO 2026<br>SAN PELLEGRINO IN ALPE',
 				'19-06-2026 - San Pellegrino in Alpe',
 				"rgb(166, 27, 74)", true, null, null]
