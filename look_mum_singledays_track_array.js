@@ -114,6 +114,7 @@
 				"rgb(166, 27, 74)", true, null, null];
 
 
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     index += 1;
     track_description[index] = "Ore 5:45. Buio. Da lì a poco, i colori dell'alba. Un noiosissimo rettilineo fino a Viareggio. Viale dei Tigli chiuso al traffico automobilistico. Lo sterrato della riserva della Lecciona. Pisa. \
 <p>\
@@ -141,17 +142,16 @@ Davanti a me, di nuovo quel noiosissimo rettilineo. Fuori da tutti i locali dell
 <p>\
 Ore 02:15. Apro il cancello di casa e appoggio la bicicletta. Entro in bagno, mi spoglio dei vestiti buttandoli per terra, mi siedo sfinito sul piatto doccia e mi faccio scorrere l'acqua bollente addosso. Rifletto così sulle ultime venti ore. <br>\
 L'effetto sul corpo è di avere raggiunto una condizione limite di estrema stanchezza. L'effetto sulla mente è di esaltazione totale, quasi come avere partecipato ad un rave party con più di cinquanta persone.";
-    track_file_gpx[index] = "";
+    track_file_gpx[index] = "./dataset/tracks/20221031_quella_volta_che_misi_a_dura_prova_i_miei_cinquantadue_anni.gpx";
     track_file_fit[index] = "";
     track_spotify_playlist[index] = "";
     track_filename[index] = new Array();
-	track_filename[index][0] = ['./dataset/tracks/2022-10-31 - quella volta che misi a dura prova i miei cinquantadue anni.geojson',
+	track_filename[index][0] = ['./dataset/tracks/20221031_quella_volta_che_misi_a_dura_prova_i_miei_cinquantadue_anni.geojson',
 				'31 OTTOBRE 2022<br>QUELLA VOLTA CHE MISI A DURA PROVA I MIEI CINQUANTADUE ANNI',
 				'31-10-2022 - Quella volta che misi a dura prova i miei cinquantadue anni',
 				"rgb(166, 27, 74)", true, null, null];
 
 
-// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     index += 1;
     track_description[index] = "... Allora il diavolo disse al capomastro che avrebbe completato lui stesso l'opera in una sola notte, in cambio della prima anima che avesse attraversato il ponte... <a href = 'https://it.wikipedia.org/wiki/Ponte_della_Maddalena_(Borgo_a_Mozzano)' target='_blank' rel='noopener noreferrer'>Wikipedia</a>";
     track_file_gpx[index] = "/dataset/tracks/20230304_ponte_del_diavolo.gpx";
