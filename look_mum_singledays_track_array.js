@@ -101,20 +101,19 @@
 				'16-01-2022 - Pisa - Calci - Lucca',
 				"rgb(166, 27, 74)", true, null, null];
 
-             
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@             
     index += 1;
     track_description[index] = "";
-    track_file_gpx[index] = "https://drive.google.com/file/d/1My2ONEvl5WMXgDkXvHbQydvq9w_s36PQ/view?usp=sharing";
-    track_file_fit[index] = "";
+    track_file_gpx[index] = "20220130_portofino.gpx";
+    track_file_fit[index] = "20220130_portofino.fit";
     track_spotify_playlist[index] = "";
     track_filename[index] = new Array();
-	track_filename[index][0] = ['./dataset/tracks/2022-01-30 - portofino.geojson',
+	track_filename[index][0] = ['./dataset/tracks/20220130_portofino.geojson',
 				'30 GENNAIO 2022<br>PORTOFINO',
 				'30-01-2022 - Portofino',
 				"rgb(166, 27, 74)", true, null, null];
 
 
-// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     index += 1;
     track_description[index] = "Ore 5:45. Buio. Da lì a poco, i colori dell'alba. Un noiosissimo rettilineo fino a Viareggio. Viale dei Tigli chiuso al traffico automobilistico. Lo sterrato della riserva della Lecciona. Pisa. \
 <p>\
