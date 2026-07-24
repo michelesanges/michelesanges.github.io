@@ -75,18 +75,37 @@
     ];
     tour_cover[index] ="";
 
-    index += 1; // 16 GENNAIO 2022 - PISA - CALCI - LUCCA
- 	image_array[index] = ['https://cutt.ly/FPLgNSZ', 'https://cutt.ly/TPZI43F', 'https://cutt.ly/WPZOiAg', 'https://cutt.ly/rPZOIHo', 'https://cutt.ly/NPZPr5u', 'https://cutt.ly/WPZPQXS'
-    ];
-    image_caption[index] =['Viareggio - Lungomare', 'Viareggio - Lungomare', 'Pisa - Piazza dei Miracoli',
-    '<a href = "https://www.google.com/maps?q=loc:43.721867,10.522616" target="_blank" rel="noopener noreferrer">Calci - Certosa</a>',   
-    '<a href = "https://www.google.com/maps?q=loc:43.839278,10.504397" target="_blank" rel="noopener noreferrer">Lucca</a>',   
-     '<a href = "https://www.google.com/maps?q=loc:43.957274,10.231999" target="_blank" rel="noopener noreferrer">Pietrasanta</a>'   
-    ];
-    tour_cover[index] ="";
-
 
     // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    index += 1; // 16 GENNAIO 2022 - PISA - CALCI - LUCCA
+ 	image_array[index] = [
+        '/images/tours/single_day/20220116_pisa_calci_lucca/pisa_calci_lucca_01.jpg', 
+        '/images/tours/single_day/20220116_pisa_calci_lucca/pisa_calci_lucca_02.jpg', 
+        '/images/tours/single_day/20220116_pisa_calci_lucca/pisa_calci_lucca_03.jpg', 
+        '/images/tours/single_day/20220116_pisa_calci_lucca/pisa_calci_lucca_04.jpg', 
+        '/images/tours/single_day/20220116_pisa_calci_lucca/pisa_calci_lucca_05.jpg', 
+        '/images/tours/single_day/20220116_pisa_calci_lucca/pisa_calci_lucca_06.jpg' 
+    ];
+    image_caption[index] =[
+    "Viareggio - Lungomare", 
+    "Viareggio - Lungomare",
+    "Pisa - Piazza dei Miracoli",
+    "Calci - Certosa",   
+    "Lucca",   
+    "Pietrasanta"   
+    ];
+    image_coords[index] = [
+        [43.870506789610594, 10.240989631472345],
+        [43.870506789610594, 10.240989631472345],
+        [43.72307049935915, 10.396284552336413],
+        [43.72186842493018, 10.522614655635161],
+        [43.83927748743719, 10.504394314552666],
+        [43.95726020576641, 10.231940177648799]
+    ];
+    tour_cover[index] ="/images/tours/single_day/20220116_pisa_calci_lucca/pisa_calci_lucca_04.jpg";
+
+
+
     index += 1; // 30 GENNAIO 2022 - PORTOFINO
  	image_array[index] = [
         '/images/tours/single_day/20220130_portofino/portofino_01.jpg', 

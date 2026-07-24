@@ -89,19 +89,18 @@
 				'07-01-2022 - S. Anna di Stazzema',
 				"rgb(166, 27, 74)", true, null, null];
                 
-
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@             
     index += 1;
     track_description[index] = "";
-    track_file_gpx[index] = "https://drive.google.com/file/d/1yDNvo2Rq4qHMCZcUcmp4fTYx4twudqQ4/view?usp=sharing";
-    track_file_fit[index] = "";
+    track_file_gpx[index] = "";
+    track_file_fit[index] = "./dataset/tracks/20220116_pisa_calci_lucca.fit";
     track_spotify_playlist[index] = "";
     track_filename[index] = new Array();
-	track_filename[index][0] = ['./dataset/tracks/2022-01-16 - pisa - calci - lucca.geojson',
+	track_filename[index][0] = ['./dataset/tracks/20220116_pisa_calci_lucca.geojson',
 				'16 GENNAIO 2022<br>PISA - CALCI - LUCCA',
 				'16-01-2022 - Pisa - Calci - Lucca',
 				"rgb(166, 27, 74)", true, null, null];
 
-// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@             
     index += 1;
     track_description[index] = "";
     track_file_gpx[index] = "20220130_portofino.gpx";
